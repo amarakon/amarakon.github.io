@@ -23,4 +23,4 @@ options(
 options(blogdown.hugo.version = "0.97.1")
 
 # Set publish directory
-options(blogdown.publishDir = 'docs')
+# options(blogdown.publishDir = 'docs')
