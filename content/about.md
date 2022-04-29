@@ -1,5 +1,5 @@
 ---
-date: "`r Sys.Date()`"
+date: April 29, 2022
 title: About
 ---
 
