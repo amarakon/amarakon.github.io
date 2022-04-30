@@ -1,0 +1,10 @@
+---
+title: Why You Should Pay Attention to Your Choice of Software
+author: Amar Al-Zubaidi
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+slug: why-you-should-pay-attention-to-your-choice-of-software
+categories: []
+tags: []
+---
+
+Text
