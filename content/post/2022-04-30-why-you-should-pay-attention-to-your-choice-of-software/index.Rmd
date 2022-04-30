@@ -4,7 +4,7 @@ author: ~
 date: "`r format(Sys.time(), '%B %d, %Y')`"
 slug: why-you-should-pay-attention-to-your-choice-of-software
 categories: []
-tags: []
+tags: [Free Software]
 ---
 
 # Introduction
