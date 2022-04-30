@@ -1,0 +1,3 @@
+User-agent: *
+
+Sitemap: https://amarakon55.github.io/sitemap.xml
