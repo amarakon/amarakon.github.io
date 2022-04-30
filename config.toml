@@ -109,7 +109,7 @@ codeFences = false # Disable Hugo's code highlighter
 
 [markup.tableOfContents]
 startLevel = 1
-endLevel = 2
+endLevel = 1
 
 [taxonomies]
 tag = "tags"
