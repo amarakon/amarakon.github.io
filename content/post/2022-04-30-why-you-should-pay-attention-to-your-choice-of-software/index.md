@@ -1,13 +1,10 @@
 ---
 title: Why You Should Pay Attention to Your Choice of Software
 author: ~
-date: "April 30, 2022"
+date: '2022-04-30'
 slug: why-you-should-pay-attention-to-your-choice-of-software
 categories: []
 tags: []
-output:
-  blogdown::html_page:
-    toc: true
 ---
 
 # Introduction
@@ -15,7 +12,7 @@ What I've noticed about many subjects in life is that many people just want to b
 Notice how I said "want to be sheep" and not "are sheep."
 That's because my emphasis is on the fact that people are choosing to be ignorant.
 This is true in many cases, especially in politics and computing.
-In this video, I will be focusing on computing.
+In this post, I will be focusing on computing.
 I want to clarify by saying that I think there is nothing wrong with being ignorant, but it is wrong to be willfully ignorant.
 
 I remember a couple of years ago I was a very different person than I am today.
@@ -45,7 +42,7 @@ There is a tiny list of programs that people tend to use.
 It is surprising how small that list is and how it is still shrinking.
 There is not much diversity of thought when it comes to things like this.
 That's my point.
-That's what I'm getting at with this video.
+That's what I'm getting at with this post.
 
 Not only was I much more free literally by changing my choice of software, but I was free in my thinking as well.
 I could do things that I never could do before, and I understood things that I've always wanted to understand.
