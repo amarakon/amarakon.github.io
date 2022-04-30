@@ -10,21 +10,27 @@ I am interested in many things:
 -   programming
     -   C
     -   R
-    -   Shell
+    -   shell
 -   markup
     -   R Markdown
     -   LaTeX
 
-On [my GitHub](https://github.com/amarakon) is where I have all my
-projects. I also have a [YouTube
-channel](https://www.youtube.com/channel/UCbZc671K2NxNbr1Kfqz6Fmg). I
-will be creating many blog posts on this website and I might upload more
-videos on my YouTube channel.
-
 # Projects
 
+On [my GitHub](https://github.com/amarakon) is where I have all my
+projects. These are some of my best projects:
+
 [Cfetch](https://github.com/amarakon/cfetch)  
-minimal and elegent fetch program
+Minimal and elegent fetch program
 
 [FFRec](https://github.com/amarakon/ffrec)  
 Script to record easily using FFmpeg
+
+[PAVol-Cli](https://github.com/amarakon/pavol-cli)  
+Easily control PulseAudio volume from the command-line
+
+[MagickShot](https://github.com/amarakon/magickshot)  
+Minimal screenshot utility using ImageMagick
+
+[Mstatus](https://github.com/amarakon/mstatus)  
+Minimal status program for DWM, preconfigured out of the box
