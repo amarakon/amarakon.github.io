@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://amarakon55.github.io/amarakon.com/</loc>
+    <lastmod>2022-04-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://amarakon55.github.io/amarakon.com/post/</loc>
+    <lastmod>2022-04-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://amarakon55.github.io/amarakon.com/post/2022-04-30-test-post/</loc>
+    <lastmod>2022-04-30T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://amarakon55.github.io/amarakon.com/about/</loc>
     <lastmod>2022-04-29T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://amarakon55.github.io/amarakon.com/</loc>
   </url>
 </urlset>
