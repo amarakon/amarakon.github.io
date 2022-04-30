@@ -57,7 +57,7 @@ showLicenseInFooter = false
 
 # License at the end of each post
 #showLicense = true
-showToc = true
+#showToc = true
 
 # Copyright
 copyrightStartYear = "2022"
