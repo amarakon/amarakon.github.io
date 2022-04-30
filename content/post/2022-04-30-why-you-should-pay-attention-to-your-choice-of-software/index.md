@@ -1,7 +1,7 @@
 ---
 title: Why You Should Pay Attention to Your Choice of Software
 author: ~
-date: "`r format(Sys.time(), '%B %d, %Y')`"
+date: "April 30, 2022"
 slug: why-you-should-pay-attention-to-your-choice-of-software
 categories: []
 tags: []
