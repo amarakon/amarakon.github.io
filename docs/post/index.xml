@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Amar Al-Zubaidi&#39;s Website</title>
-    <link>https://amarakon55.github.io/amarakon.com/post/</link>
+    <link>https://amarakon.github.io/amarakon.com/post/</link>
     <description>Recent content in Posts on Amar Al-Zubaidi&#39;s Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 30 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://amarakon55.github.io/amarakon.com/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 30 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://amarakon.github.io/amarakon.com/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Test Post</title>
-      <link>https://amarakon55.github.io/amarakon.com/post/2022-04-30-test-post/</link>
+      <link>https://amarakon.github.io/amarakon.com/post/2022-04-30-test-post/</link>
       <pubDate>Sat, 30 Apr 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://amarakon55.github.io/amarakon.com/post/2022-04-30-test-post/</guid>
+      <guid>https://amarakon.github.io/amarakon.com/post/2022-04-30-test-post/</guid>
       <description>Lorem ipsum</description>
     </item>
     
