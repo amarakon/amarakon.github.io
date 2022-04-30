@@ -8,6 +8,15 @@
     <language>en</language>
     <lastBuildDate>Sat, 30 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://amarakon.github.io/amarakon.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Test Post</title>
+      <link>https://amarakon.github.io/amarakon.com/post/2022-04-30-test-post/</link>
+      <pubDate>Sat, 30 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://amarakon.github.io/amarakon.com/post/2022-04-30-test-post/</guid>
+      <description>Lorem ipsum</description>
+    </item>
+    
+    <item>
       <title>Why You Should Pay Attention to Your Choice of Software</title>
       <link>https://amarakon.github.io/amarakon.com/post/2022-04-30-why-you-should-pay-attention-to-your-choice-of-software/</link>
       <pubDate>Sat, 30 Apr 2022 00:00:00 +0000</pubDate>
