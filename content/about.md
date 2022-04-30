@@ -1,0 +1,30 @@
+My name is Amar Al-Zubaidi; I am an Iraqi-Canadian high school student.
+I am interested in many things:
+
+-   freedom
+-   free software philosophy
+-   minimalism
+-   GNU/Linux
+    -   Gentoo
+    -   Arch
+-   programming
+    -   C
+    -   R
+    -   Shell
+-   markup
+    -   R Markdown
+    -   LaTeX
+
+On [my GitHub](https://github.com/amarakon) is where I have all my
+projects. I also have a [YouTube
+channel](https://www.youtube.com/channel/UCbZc671K2NxNbr1Kfqz6Fmg). I
+will be creating many blog posts on this website and I might upload more
+videos on my YouTube channel.
+
+# Projects
+
+[Cfetch](https://github.com/amarakon/cfetch)  
+minimal and elegent fetch program
+
+[FFRec](https://github.com/amarakon/ffrec)  
+Script to record easily using FFmpeg

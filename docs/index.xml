@@ -8,6 +8,17 @@
     <language>en</language>
     <lastBuildDate>Sat, 30 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://amarakon.github.io/amarakon.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>About</title>
+      <link>https://amarakon.github.io/amarakon.com/about/</link>
+      <pubDate>Sat, 30 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://amarakon.github.io/amarakon.com/about/</guid>
+      <description>My name is Amar Al-Zubaidi; I am an Iraqi-Canadian high school student. I am interested in many things:
+ freedom free software philosophy minimalism GNU/Linux  Gentoo Arch   programming  C R Shell   markup  R Markdown LaTeX    On my GitHub is where I have all my projects. I also have a YouTube channel. I will be creating many blog posts on this website and I might upload more videos on my YouTube channel.
+Projects  Cfetch minimal and elegent fetch program New  </description>
+    </item>
+    
+    <item>
       <title>Why You Should Pay Attention to Your Choice of Software</title>
       <link>https://amarakon.github.io/amarakon.com/post/2022-04-30-why-you-should-pay-attention-to-your-choice-of-software/</link>
       <pubDate>Sat, 30 Apr 2022 00:00:00 +0000</pubDate>
@@ -15,15 +26,6 @@
       <guid>https://amarakon.github.io/amarakon.com/post/2022-04-30-why-you-should-pay-attention-to-your-choice-of-software/</guid>
       <description>Introduction What I&amp;rsquo;ve noticed about many subjects in life is that many people just want to be sheep. Notice how I said &amp;ldquo;want to be sheep&amp;rdquo; and not &amp;ldquo;are sheep.&amp;rdquo; That&amp;rsquo;s because my emphasis is on the fact that people are choosing to be ignorant. This is true in many cases, especially in politics and computing. In this post, I will be focusing on computing. I want to clarify by saying that I think there is nothing wrong with being ignorant, but it is wrong to be willfully ignorant.
 I remember a couple of years ago I was a very different person than I am today.</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>https://amarakon.github.io/amarakon.com/about/</link>
-      <pubDate>Fri, 29 Apr 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://amarakon.github.io/amarakon.com/about/</guid>
-      <description>Lorem ipsum</description>
     </item>
     
   </channel>
