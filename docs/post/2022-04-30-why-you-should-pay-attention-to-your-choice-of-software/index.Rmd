@@ -5,9 +5,6 @@ date: "`r format(Sys.time(), '%B %d, %Y')`"
 slug: why-you-should-pay-attention-to-your-choice-of-software
 categories: []
 tags: []
-output:
-  blogdown::html_page:
-    toc: true
 ---
 
 # Introduction
