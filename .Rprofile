@@ -24,5 +24,5 @@ options(blogdown.hugo.version = "0.97.1")
 
 # Set publish directory
 options(blogdown.author = "Amar Al-Zubaidi")
-options(blogdown.time = "`r format(Sys.time(), '%B %d, %Y')`")
+#options(blogdown.time = "`r format(Sys.time(), '%B %d, %Y')`")
 options(blogdown.ext = ".Rmd")
