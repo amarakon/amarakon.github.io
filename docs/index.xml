@@ -5,8 +5,7 @@
     <link>https://amarakon55.github.io/amarakon.com/</link>
     <description>Recent content on Amar Al-Zubaidi&#39;s Website</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Fri, 29 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://amarakon55.github.io/amarakon.com/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language><atom:link href="https://amarakon55.github.io/amarakon.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
       <link>https://amarakon55.github.io/amarakon.com/about/</link>
@@ -14,15 +13,6 @@
       
       <guid>https://amarakon55.github.io/amarakon.com/about/</guid>
       <description>Lorem ipsum</description>
-    </item>
-    
-    <item>
-      <title>Why You Should Pay Attention to Your Choice of Software</title>
-      <link>https://amarakon55.github.io/amarakon.com/post/2022-04-29-why-you-should-pay-attention-to-your-choice-of-software/</link>
-      <pubDate>Fri, 29 Apr 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://amarakon55.github.io/amarakon.com/post/2022-04-29-why-you-should-pay-attention-to-your-choice-of-software/</guid>
-      <description>Text</description>
     </item>
     
   </channel>
