@@ -1,5 +1,5 @@
 ---
-date: April 29, 2022
+date: "`r format(Sys.time(), '%B %d, %Y')`"
 title: About
 ---
 
