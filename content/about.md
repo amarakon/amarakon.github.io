@@ -1,5 +1,5 @@
 ---
-date: "`r format(Sys.time(), '%B %d, %Y')`"
+date: 2022-04-29
 title: About
 ---
 
