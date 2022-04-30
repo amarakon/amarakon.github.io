@@ -107,9 +107,9 @@ unsafe = true # Enable user to embed HTML snippets in Markdown content
 [markup.highlight]
 codeFences = false # Disable Hugo's code highlighter
 
-[markup.tableOfContents]
-startLevel = 2
-endLevel = 3
+#[markup.tableOfContents]
+#startLevel = 2
+#endLevel = 3
 
 [taxonomies]
 tag = "tags"
