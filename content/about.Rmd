@@ -10,19 +10,19 @@ I am interested in many things:
 - freedom
 - free software philosophy
 - minimalism
-- GNU/Linux
-  - Gentoo
-  - Arch
+- *GNU/Linux*
+  - *Gentoo*
+  - *Arch*
 - programming
-  - C
-  - R
+  - *C*
+  - *R*
   - shell
 - markup
-  - R Markdown
-  - LaTeX
+  - *R Markdown*
+  - *LaTeX*
 
 # Projects
-On [my GitHub](https://github.com/amarakon) is where I have all my projects.
+On [my GitHub page](https://github.com/amarakon) is where I have all my projects.
 These are some of my best projects:
 
 [Cfetch](https://github.com/amarakon/cfetch)
