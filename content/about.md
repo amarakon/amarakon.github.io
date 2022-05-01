@@ -1,10 +1,10 @@
 ---
 title: About
-date: 2022-04-30
+date: 2022-05-01
 output: md_document
 ---
 
-My name is Amar Al-Zubaidi; I am an Iraqi-Canadian high school student.
+My name is Amar Al-Zubaidi; I am an Iraqi Canadian high school student.
 I am interested in many things:
 
 - freedom
