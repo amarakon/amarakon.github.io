@@ -9,13 +9,12 @@ want to clarify by saying that I think there is nothing wrong with being
 ignorant, but it is wrong to be willfully ignorant.
 
 I remember a couple of years ago I was a very different person than I am
-today. I was a textbook example of a
-[normie](https://www.urbandictionary.com/define.php?term=Normie). I
-would use pretty much the same software everybody else was using. My
-operating system was Windows 10, my music player was Spotify. There is
-nothing morally wrong with being that way, but when you are a normie, it
-is extremely easy to be influenced and taken advantage of. You follow
-what everybody else was doing regardless if it is good or bad.
+today. I was a textbook example of a normie. I would use pretty much the
+same software everybody else was using. My operating system was Windows
+10, my music player was Spotify. There is nothing morally wrong with
+being that way, but when you are a normie, it is extremely easy to be
+influenced and taken advantage of. You follow what everybody else was
+doing regardless if it is good or bad.
 
 # Change
 
