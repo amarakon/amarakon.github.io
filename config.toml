@@ -74,7 +74,7 @@ mainSections = ["post"]
 # bgmImageChart = "000000"
 
 # License
-blicense = "CC0-1.0"
+license = "CC0-1.0"
 licenseLink = "https://github.com/Amarakon55/amarakon.com/blob/master/LICENSE"
 
 # Comments
