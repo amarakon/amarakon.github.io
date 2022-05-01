@@ -1,7 +1,7 @@
 baseURL = "https://amarakon.github.io/amarakon.com/"
 title = "Amar Al-Zubaidi’s Website"
 
-theme = "hugo-theme-fuji-2.8.2"
+theme = "hugo-fuji"
 hasCJKLanguage = false
 enableEmoji = false
 enableRobotsTXT = false
