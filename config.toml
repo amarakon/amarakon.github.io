@@ -2,9 +2,9 @@ baseURL = "https://amarakon.github.io/amarakon.com/"
 title = "Amar Al-Zubaidi’s Website"
 
 theme = "nord"
-hasCJKLanguage = true
-enableEmoji = true
-enableRobotsTXT = true
+hasCJKLanguage = false
+enableEmoji = false
+enableRobotsTXT = false
 disableKinds = ["taxonomy"]
 ignoreErrors = ["error-disable-taxonomy"]
 
@@ -31,6 +31,7 @@ home = ["HTML", "RSS", "SearchIndex"]
 post = "/:section/:filename/" # Custom post links, e.g. "/:year/:month/:title/"
 
 [params]
+math = true
 subTitle = "Where I have my blog and other things about me"
 defaultTheme = "dark"              # default theme when first visit (auto|dark|light)
 
