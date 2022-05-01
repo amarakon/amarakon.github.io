@@ -2,9 +2,9 @@ baseURL = "https://amarakon.github.io/amarakon.com/"
 title = "Amar Al-Zubaidi’s Website"
 
 theme = "hugo-theme-fuji-2.8.2"
-hasCJKLanguage = true
-enableEmoji = true
-enableRobotsTXT = true
+hasCJKLanguage = false
+enableEmoji = false
+enableRobotsTXT = false
 disableKinds = ["taxonomy"]
 ignoreErrors = ["error-disable-taxonomy"]
 
@@ -134,7 +134,7 @@ url = "/about/"
 
 [[menu.link]]
 name = "GitHub"
-url = "https://github.com/Amarakon55"
+url = "https://github.com/amarakon"
 #weight = 1
 #[[menu.link]]
 #name = "Twitter"
