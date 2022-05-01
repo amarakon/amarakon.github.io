@@ -31,9 +31,10 @@ most of the time?
 I almost gave up, but since I’ve come so far, I kept using GNU/Linux. I
 eventually solved my main issues with it. I spent the next couple of
 months experimenting with it and mastering it. During that time, I
-increasingly learned the evils of common software and how everybody,
-including myself, fell for that trap. I learned how the programs we use
-are brainwashing us. This is not an exaggeration in the slightest.
+increasingly learned the evils of common software and how
+everybody—including myself, fell for that trap. I learned how the
+programs we use are brainwashing us. This is not an exaggeration in the
+slightest.
 
 # Problem
 
