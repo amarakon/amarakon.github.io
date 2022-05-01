@@ -3,7 +3,7 @@ title: Why You Should Pay Attention to Your Choice of Software
 author: ~
 date: '2022-04-30'
 slug: why-you-should-pay-attention-to-your-choice-of-software
-categories: []
+categories: ["Opinion Article"]
 tags: ["foss"]
 ---
 
@@ -62,8 +62,8 @@ If you did know that one company literally influences what you know and think ab
 If you did know that your smartphone has devastating affects on your brain and mental health, smartphone companies would know that you would hesitate buying their products.
 I could go on and on with examples to prove that almost every single piece of technology we use today is problematic at least and purely evil at most.
 
-
 # Solution
+
 To return to the first point I made, there is nothing wrong with being ignorant, but there is plenty of wrong with being willfully ignorant.
 I believe that most people are willfully ignorant to these facts.
 Most people would react to this the exact same way.
