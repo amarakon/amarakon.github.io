@@ -80,7 +80,7 @@ disableDarkImage = true
 [markup.goldmark.renderer]
 unsafe = true # Enable user to embed HTML snippets in Markdown content
 [markup.highlight]
-style = "/home/amarakon/Documents/Themes/highlight/nord.theme"
+style = "/highlight/nord.theme"
 #codeFences = false # Disable Hugo's code highlighter
 
 [markup.tableOfContents]

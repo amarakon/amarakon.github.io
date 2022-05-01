@@ -19,6 +19,15 @@
     </item>
     
     <item>
+      <title>Test Post</title>
+      <link>https://amarakon.github.io/amarakon.com/post/2022-05-01-test-post/</link>
+      <pubDate>Sun, 01 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://amarakon.github.io/amarakon.com/post/2022-05-01-test-post/</guid>
+      <description> par(mar = c(4, 4, 2, .1)) curve(dnorm, -3, 3, xlab = &amp;#39;$x$&amp;#39;, ylab = &amp;#39;$\\phi(x)$&amp;#39;, col=&amp;#39;blue&amp;#39;) text(-1, .2, cex = 3, &amp;#39;$\\phi(x)=\\frac{1}{\\sqrt{2\\pi}}e^{\\frac{-x^2}{2}}$&amp;#39;) </description>
+    </item>
+    
+    <item>
       <title>Why You Should Pay Attention to Your Choice of Software</title>
       <link>https://amarakon.github.io/amarakon.com/post/2022-05-01-why-you-should-pay-attention-to-your-choice-of-software/</link>
       <pubDate>Sun, 01 May 2022 00:00:00 +0000</pubDate>
