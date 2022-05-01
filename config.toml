@@ -2,9 +2,9 @@ baseURL = "https://amarakon.github.io/amarakon.com/"
 title = "Amar Al-Zubaidi’s Website"
 
 theme = "hugo-fuji"
-hasCJKLanguage = false
-enableEmoji = false
-enableRobotsTXT = false
+hasCJKLanguage = true
+enableEmoji = true
+enableRobotsTXT = true
 disableKinds = ["taxonomy"]
 ignoreErrors = ["error-disable-taxonomy"]
 
@@ -31,22 +31,11 @@ home = ["HTML", "RSS", "SearchIndex"]
 post = "/:section/:filename/" # Custom post links, e.g. "/:year/:month/:title/"
 
 [params]
-#author = "DSRKafuU"                # You can also set author in post front matter individually
 subTitle = "Where I have my blog and other things about me"
-defaultTheme = "auto"              # default theme when first visit (auto|dark|light)
+defaultTheme = "dark"              # default theme when first visit (auto|dark|light)
 
 # Source URL of the website, will appear in the footer
-sourceURL = "https://github.com/Amarakon55/amarakon.com"
-
-# Use CloudFlare Workers to accelerate the Google Analytics
-# If you are using this please comment the googleAnalytics above
-# Check https://github.com/SukkaW/cloudflare-workers-async-google-analytics for more details
-# googleAnalyticsTid = "UA-000000000-0"
-# googleAnalyticsRoute = "https://*.*.workers.dev/"
-
-# Google AdSense
-# The AdSense code will be inserted between the head tags of your site.
-# googleAdsense = "0000000000000000"
+sourceURL = "https://github.com/amarakon/amarakon.com"
 
 # Word counter and read time indicator in post metadata
 showWordCounter = true
@@ -70,24 +59,9 @@ copyrightStartYear = "2022"
 # Posts shown in homepage
 mainSections = ["post"]
 
-# Bangumi image chart id
-# bgmImageChart = "000000"
-
 # License
 license = "CC0-1.0"
 licenseLink = "https://github.com/Amarakon55/amarakon.com/blob/master/LICENSE"
-
-# Comments
-# utterances, see: https://utteranc.es/
-# utterancesRepo = "*/*"
-# utterancesIssueTerm = "pathname"
-
-# Disqus, see: https://disqus.com/admin/install/platforms/universalcode/
-# disqusShortname = "*********"
-# Also use DisqusJS for accessing from Mainland China, see: https://github.com/SukkaW/DisqusJS
-# If you want to set multiple api key, see theme's README for more details
-# disqusJSApi = "https://*********/"
-# disqusJSApikey = "**********"
 
 # custom lazyload placeholder
 # 16:9
@@ -98,7 +72,7 @@ lazyPlaceholderRow = "/assets/lazyload/dsrca_loading_960x270.svg"
 lazyPlaceholderCol = "/assets/lazyload/dsrca_loading_480x540.svg"
 
 # Let images display in full brightness under dark mode
-# disableDarkImage = true
+disableDarkImage = true
 
 [markup]
 [markup.goldmark]
@@ -115,35 +89,13 @@ endLevel = 3
 tag = "tags"
 
 [menu]
-#[[menu.nav]]
-#name = "Archives"
-#url = "/archives/"
-#weight = 2
 [[menu.nav]]
 name = "About"
 url = "/about/"
-#weight = 3
-#[[menu.nav]]
-#name = "Search"
-#url = "/search/"
-#weight = 4
-#[[menu.nav]]
-#name = "RSS"
-#url = "/index.xml"
-#weight = 5
 
 [[menu.link]]
 name = "GitHub"
 url = "https://github.com/amarakon"
-#weight = 1
-#[[menu.link]]
-#name = "Twitter"
-#url = "https://twitter.com/dsrkafuu"
-#weight = 2
-#[[menu.link]]
-#name = "bilibili"
-#url = "https://space.bilibili.com/19767474"
-#weight = 3
 [[menu.link]]
 name = "YouTube"
 url = "https://www.youtube.com/channel/UCbZc671K2NxNbr1Kfqz6Fmg"
