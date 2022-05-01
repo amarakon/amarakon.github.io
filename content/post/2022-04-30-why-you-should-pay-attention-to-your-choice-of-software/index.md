@@ -4,7 +4,7 @@ author: ~
 date: '2022-04-30'
 slug: why-you-should-pay-attention-to-your-choice-of-software
 categories: []
-tags: []
+tags: ["foss"]
 ---
 
 # Introduction
