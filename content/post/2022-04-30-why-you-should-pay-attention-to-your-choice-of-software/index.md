@@ -65,7 +65,7 @@ hesitate using their search engine. If you did know that your smartphone
 has devastating affects on your brain and mental health, smartphone
 companies would know that you would hesitate buying their products. I
 could go on and on with examples to prove that almost every single piece
-of technology we use today is problematic at least and simply evil at
+of technology we use today is problematic at least and purely evil at
 most.
 
 # Solution
