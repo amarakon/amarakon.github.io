@@ -3,7 +3,7 @@ title: About
 date: 2022-05-01
 ---
 
-![](/images/amar-al-zubaidi.jpg){height='10%' width='10%'}
+![Amar Al-Zubaidi](/images/amar-al-zubaidi.jpg)
 
 My name is Amar Al-Zubaidi; I am an Iraqi Canadian high school student.
 I am interested in many things:
