@@ -30,6 +30,7 @@
 
 @mixin dark {
   --color-mode: 'dark';
+  --color-header: #{$dark-color-header};
   --color-primary: #{$dark-color-primary};
   --color-secondary: #{$dark-color-secondary};
   --color-focus: #{$dark-color-focus};
