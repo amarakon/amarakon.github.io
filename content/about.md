@@ -20,7 +20,7 @@ I am interested in many things:
   - shell
 - markup
   - *R Markdown*
-  - *LaTeX*
+  - $ \LaTeX $
 
 # Projects
 On [my GitHub page](https://github.com/amarakon) is where I have all my projects.

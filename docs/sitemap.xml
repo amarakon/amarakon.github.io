@@ -2,19 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://amarakon.github.io/amarakon.com/</loc>
+    <lastmod>2022-05-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://amarakon.github.io/amarakon.com/post/2022-05-02-education-wants-to-dumb-down-technology/</loc>
+    <lastmod>2022-05-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://amarakon.github.io/amarakon.com/post/</loc>
+    <lastmod>2022-05-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://amarakon.github.io/amarakon.com/tags/programming/</loc>
+    <lastmod>2022-05-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://amarakon.github.io/amarakon.com/tags/websites/</loc>
+    <lastmod>2022-05-02T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://amarakon.github.io/amarakon.com/about/</loc>
     <lastmod>2022-05-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://amarakon.github.io/amarakon.com/</loc>
-    <lastmod>2022-05-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://amarakon.github.io/amarakon.com/post/2022-05-01-education-wants-to-dumb-down-technology/</loc>
-    <lastmod>2022-05-01T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://amarakon.github.io/amarakon.com/tags/foss/</loc>
-    <lastmod>2022-05-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://amarakon.github.io/amarakon.com/post/</loc>
     <lastmod>2022-05-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://amarakon.github.io/amarakon.com/post/2022-05-01-you-should-pay-attention-to-your-choice-of-software/</loc>
