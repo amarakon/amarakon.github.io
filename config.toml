@@ -58,7 +58,7 @@ copyrightStartYear = "2022"
 #og = "/img/og.png"                                          # This will use the image called og.png in static/img folder
 
 # Posts shown in homepage
-mainSections = ["post"]
+mainSections = ["blog"]
 
 # License
 license = "CC0-1.0"

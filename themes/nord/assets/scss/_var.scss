@@ -13,10 +13,10 @@ $font-weight-light: 400;
 $body-font: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', 'Arial', 'Helvetica Neue',
   'Helvetica', 'PingFang SC', 'Hiragino Sans GB', 'Source Han Sans CN', 'Source Han Sans SC',
   'Microsoft YaHei', 'WenQuanYi Micro Hei', sans-serif !default;
-$mono-font: 'SF Mono', 'Fira Code', 'Consolas', -apple-system, BlinkMacSystemFont, 'SF Pro Text',
+$mono-font: 'SF Mono', 'Inconsolata', 'Consolas', -apple-system, BlinkMacSystemFont, 'SF Pro Text',
   'Segoe UI', 'Arial', 'Helvetica Neue', 'Helvetica', 'PingFang SC', 'Hiragino Sans GB',
   'Source Han Sans CN', 'Source Han Sans SC', 'Microsoft YaHei', 'WenQuanYi Micro Hei', monospace !default;
-$title-font: 'Product Sans', sans-serif !default;
+$title-font: 'Liberation Sans', sans-serif !default;
 $body-font-size: 16px !default;
 
 $width-md: 768px;
@@ -42,20 +42,21 @@ $dark-color-divider: #4C566A !default; // Discord
 $dark-color-bg: #3B4252 !default; // Discord
 $dark-color-codebg: #414449 !default; // kai GitHub
 
-@font-face {
+/* @font-face {
   font-family: 'Product Sans';
   font-style: normal;
   font-display: swap;
   font-weight: 700;
   src: url('https://cdn.jsdelivr.net/gh/dsrkafuu/dsr-cdn-main@1/fonts/product_sans/product_sans_700.woff2')
     format('woff2');
+} */
+
+@font-face {
+  font-family: "Liberation Sans";
+  src: url("/amarakon.com/fonts/LiberationSans-Regular.ttf");
 }
 
 @font-face {
-  font-family: 'Fira Code';
-  font-style: normal;
-  font-display: swap;
-  font-weight: 400;
-  src: url('https://cdn.jsdelivr.net/gh/dsrkafuu/dsr-cdn-main@1/fonts/fira_code/fira_code_400.woff2')
-    format('woff2');
+  font-family: "Inconsolata";
+  src: url("/amarakon.com/fonts/Inconsolata-Regular-Nerd-Font-Complete.otf");
 }

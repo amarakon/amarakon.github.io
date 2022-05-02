@@ -20,20 +20,20 @@ I want to clarify by saying that I think there is nothing wrong with being ignor
 I remember a couple of years ago I was a very different person than I am today.
 I was a textbook example of a [normie](https://www.urbandictionary.com/define.php?term=Normie).
 I would use pretty much the same software everybody else was using.
-My operating system was *Windows 10*, my music player was *Spotify*.
+My operating system was Windows 10, my music player was Spotify.
 There is nothing morally wrong with being that way, but when you are a normie, it is extremely easy to be influenced and taken advantage of.
 You follow what everybody else was doing regardless if it is good or bad.
 
 # Change
 
 One day, I was scrolling through YouTube and I found something that intrigued me.
-It was a video of somebody comparing three-dimensional rendering between *Windows 10* and *GNU/Linux*.
-I was extremely surprised by how much *GNU/Linux* is blatantly better than *Windows 10*.
-For the next couple of weeks, I experimented with *GNU/Linux* without much success.
+It was a video of somebody comparing three-dimensional rendering between Windows 10 and GNU/Linux.
+I was extremely surprised by how much GNU/Linux is blatantly better than Windows 10.
+For the next couple of weeks, I experimented with GNU/Linux without much success.
 I found it extremely difficult to get basic things done, like connecting to WiFi.
 Could it be that the normie lifestyle is correct and that alternatives are terrible most of the time?
 
-I almost gave up, but since I have come so far, I kept using *GNU/Linux*.
+I almost gave up, but since I have come so far, I kept using GNU/Linux.
 I eventually solved my main issues with it.
 I spent the next couple of months experimenting with it and mastering it.
 During that time, I increasingly learned the evils of common software and how everybody—including myself, fell for that trap.
