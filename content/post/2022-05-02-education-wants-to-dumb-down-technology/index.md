@@ -23,7 +23,7 @@ Since we were dependent on technology for school, what I have noticed is that **
 
 # *Classroom* is Terrible
 
-We used a website developed by Google called *[Classroom](https://edu.google.com/workspace-for-education/classroom/)*.
+We used a website developed by Google called *[Classroom](https://edu.google.com/workspace-for-education/classroom)*.
 This is the one of the worst websites I have ever had to use in my entire life.
 First, it is extremely slow.
 Each page takes a couple of seconds to load while most other websites I use load instantly.
