@@ -2,7 +2,7 @@
 title: You Should Pay Attention to Your Choice of Software
 author: ~
 date: '2022-05-01'
-slug: why-you-should-pay-attention-to-your-choice-of-software
+slug: you-should-pay-attention-to-your-choice-of-software
 categories: ["Opinion Article"]
 tags: ["foss"]
 description: It is more important than you think it is
