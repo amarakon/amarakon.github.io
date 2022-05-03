@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta name="HandheldFriendly" content="True" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta name="generator" content="Hugo 0.97.1" />
+
+
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/dsrkafuu/dsr-cdn-main@1/images/favicons/dsrca.ico" />
+
+
+
+<title>How to Install Gentoo – The Efficient Way - Amar Al-Zubaidi’s Website</title>
+
+
+
+
+<meta name="keywords" content="foss, tutorial" />
+
+
+<meta property="og:title" content="How to Install Gentoo – The Efficient Way" />
+<meta name="twitter:title" content="How to Install Gentoo – The Efficient Way" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://amarakon.github.io/amarakon.com/blog/how-to-install-gentoo-the-efficient-way/" /><meta property="og:description" content="Introduction So you finally moved from the beginner distributions and you know want to install truly the best operating system of all time; Gentoo Linux. Contrary to popular belief, installing this operating system is not difficult in the slightest but it is certainly time consuming. Usually it will take around five hours to install. This might deter you, but remember that this operating system will actually save you time in the long run. Not only is it faster than other operating systems, it also makes the user more intelligent, leading to efficient computer usage. No current Gentoo user regrets spending five hours installing the operating system to save many more hours in total." />
+<meta name="twitter:description" content="Introduction So you finally moved from the beginner distributions and you know want to install truly the best operating system of all time; Gentoo Linux. Contrary to popular belief, installing this operating system is not difficult in the slightest but it is certainly time consuming. Usually it will take around five hours to install. This might deter you, but remember that this operating system will actually save you time in the long run. Not only is it faster than other operating systems, it also makes the user more intelligent, leading to efficient computer usage. No current Gentoo user regrets spending five hours installing the operating system to save many more hours in total." /><meta name="twitter:card" content="summary" /><meta property="article:published_time" content="2022-05-03T00:00:00+00:00" /><meta property="article:modified_time" content="2022-05-03T00:00:00+00:00" />
+
+
+
+
+
+<link rel="stylesheet" href="https://amarakon.github.io/amarakon.com/assets/css/fuji.min.css" />
+
+
+
+
+
+
+
+
+</head>
+
+<body
+  data-theme="dark"
+  data-theme-auto='false'
+  >
+    <script data-cfasync="false">
+  
+  var fujiThemeData = localStorage.getItem('fuji_data-theme');
+  
+  if (!fujiThemeData) {
+    localStorage.setItem('fuji_data-theme', 'auto');
+  } else {
+    
+    if (fujiThemeData !== 'auto') {
+      document.body.setAttribute('data-theme', fujiThemeData === 'dark' ? 'dark' : 'light');
+    }
+  }
+</script>
+
+    <header>
+    <div class="container-lg clearfix">
+        <div class="col-12 header">
+            <a class="title-main" href="https://amarakon.github.io/amarakon.com/">Amar Al-Zubaidi’s Website</a>
+            
+            <span class="title-sub">Where I have my blog and other things about me</span>
+            
+        </div>
+    </div>
+</header>
+
+    <main>
+        <div class="container-lg clearfix">
+            
+            <div class="col-12 col-md-9 float-left content">
+                
+<article>
+    
+    <h2 class="post-item post-title">
+        <a href="https://amarakon.github.io/amarakon.com/blog/how-to-install-gentoo-the-efficient-way/">How to Install Gentoo – The Efficient Way</a>
+    </h2>
+    <div class="post-item post-meta">
+        <span><i class="iconfont icon-today-sharp"></i>&nbsp;2022-05-03</span>
+
+<span><i class="iconfont icon-file-tray-sharp"></i>&nbsp;1374 words</span>
+
+<span><i class="iconfont icon-pricetags-sharp"></i>&nbsp;<a href="/amarakon.com/tags/foss">foss</a>&nbsp;<a href="/amarakon.com/tags/tutorial">tutorial</a>&nbsp;</span>
+
+    </div>
+    
+    <div class="post-content markdown-body">
+        <h1 id="introduction">Introduction</h1>
+<p>So you finally moved from the beginner distributions and you know want to install truly the best operating system of all time; Gentoo Linux.
+Contrary to popular belief, installing this operating system is not difficult in the slightest but it is certainly time consuming.
+Usually it will take around five hours to install.
+This might deter you, but remember that this operating system will actually save you time in the long run.
+Not only is it faster than other operating systems, it also makes the user more intelligent, leading to efficient computer usage.
+No current Gentoo user regrets spending five hours installing the operating system to save many more hours in total.</p>
+<p>For this installation tutorial, you will need to have an existing Unix-like operating system—like any Linux distribution.
+Before I get to the beginning of the installation process, there are a few things you must know.
+First, you have to care about computing for the installation of Gentoo to be worth it.
+Second, please view the <a href="https://wiki.gentoo.org/wiki/Handbook:Main_Page" target="_blank">Gentoo handbook</a> while you are watching this video.
+It is unlikely but possible that some of the information in this video will be outdated.
+The Gentoo wiki also has many details that I will not go into because they are not important enough.
+Third, you need to know the architecture of your computer’s CPU, usually it is AMD64.
+Finally, you must know whether your computer firmware uses BIOS or UEFI.
+Generally, only extremely old computers support only BIOS, only terrible new computers support only UEFI, and most computers support both.
+You should be completely sure though to avoid messing your entire installation.</p>
+<h1 id="prepare-the-disks">Prepare the Disks</h1>
+<p>Obviously, since Gentoo requires installation from the command-line, you will need to open a terminal.
+Use the <code>lsblk</code> command do check the available block devices.
+To be cautious, you can unplug any storage devices you do not want to accidentally wipe.
+Also make sure to know which block device your current running operating system so you do not accidentally wipe that either.
+Use the <code>wipefs</code> command to wipe a block device if it already has a partition scheme.
+Then use the <code>cfdisk</code> command to begin partitioning.</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>$ lsblk
+</span></span><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># wipefs -a /dev/*NAME*</span>
+</span></span><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># cfdisk /dev/*NAME*</span>
+</span></span></code></pre></div><p>If you’re using BIOS, select DOS.
+And if you’re using UEFI, select GPT.
+If you’re using BIOS, all you need is one partition.
+If you’re using UEFI, you need to make a partition that is at least 128 MB, this will be the boot partition.
+You should label this partition “EFI system.”
+Then create the second partition using the rest of the space.</p>
+<p>Once you exited cfdisk, you need to format your partitions.
+If you’re using BIOS, all you have to do is format your one partition as ext4 or any other usable file system you prefer:</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># mkfs.ext4 /dev/*NAME*1</span>
+</span></span></code></pre></div><p>If you’re using UEFI, you must format your first partition as VFAT and your second partition your preferred file system:</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># mkfs.fat -F 32 /dev/*NAME*1</span>
+</span></span><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># mkfs.ext4 /dev/*NAME*2</span>
+</span></span></code></pre></div><p>If you’re using BIOS, mount the root partition:</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>mkdir /mnt/gentoo
+</span></span><span style="display:flex;"><span>mount /dev/*NAME*2 /mnt/gentoo
+</span></span></code></pre></div><p>If you’re using UEFI, mount the root partition and the boot partition:</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># mkdir /mnt/gentoo</span>
+</span></span><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># mount /dev/*NAME*2 /mnt/gentoo</span>
+</span></span><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># mount /dev/*NAME*1 /mnt/gentoo/boot</span>
+</span></span></code></pre></div><h1 id="installing-the-gentoo-installation-files">Installing the Gentoo Installation Files</h1>
+<p>Temporarily set the correct date and time using the <code>MMDDhhmmYYYY</code> syntax:</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># date *MMDDhhmmYYYY*</span>
+</span></span></code></pre></div><p>Go to the <a href="https://www.gentoo.org/downloads/#other-arches" target="_blank">download section</a> of the Gentoo wiki and copy the link of a stage tarball.
+I recommend the standard Stage 3 OpenRC.
+Download the tarball to <code>/mnt/gentoo</code> using the link you copied.
+Decompress the archive afterwards.</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>$ <span style="color:#81a1c1">cd</span> /mnt/gentoo
+</span></span><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># wget *URL*</span>
+</span></span><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># tar xpvf stage3-*.tar.xz --xattrs-include=&#39;*.*&#39; --numeric-owner</span>
+</span></span></code></pre></div><p>Run <code># nano /mnt/gentoo/etc/portage/make.conf</code>.
+Set march equal to native.
+The <code>-j</code> flag means the amount of threads you want Portage, the package manager to use.
+The <code>-l</code> flag means the load average.
+The <code>PORTAGE_NICENESS</code> option refers to how much priority portage should have (the higher the number, the higher the priority).
+Setting <code>ACCEPT_KEYWORDS=&quot;~amd64&quot;</code> will allow portage to install bleeding edge software.
+The <code>VIDEO_CARDS</code> option is dependent on your video card (<a href="#ref-gentoocard">Gentoo, 2020</a>).
+The <code>USE</code> flags are for features you want or do not want in your packages.
+The <code>GRUB_PLATFORMS</code> option should be set to <code>&quot;pc&quot;</code> for BIOS and <code>&quot;efi-64&quot;</code> or <code>&quot;efi-32&quot;</code> for UEFI.
+Copy everything else I did.</p>
+<pre tabindex="0"><code class="language-gentoo" data-lang="gentoo">COMMON_FLAGS=&#34;-march=native -O2 -pipe&#34;
+CFLAGS=&#34;${COMMON_FLAGS}&#34;
+CXXFLAGS=&#34;${COMMON_FLAGS}&#34;
+
+MAKEOPTS=&#34;-j2 -l3.6&#34;
+EMERGE_DEFAULT_OPTS=&#34;-j2 -l3.6&#34;
+PORTAGE_NICENESS=&#34;1&#34;
+ACCEPT_KEYWORDS=&#34;~amd64&#34;
+VIDEO_CARDS=&#34;intel i915 i965&#34;
+USE=&#34;X pulseaudio savedconfig -bluetooth -geolocation -drm&#34;
+
+# NOTE: This stage was built with the bindist Use flag enabled
+PORTDIR=&#34;/var/db/repos/gentoo&#34;
+DISTDIR=&#34;/var/cache/distfiles&#34;
+PKGDIR=&#34;/var/cache/binpkgs&#34;
+
+# This sets the language of build output to English.
+# Please keep this setting intact when reporting bugs.
+LC_MESSAGES=C
+L10N=&#34;&#34;
+
+# Other
+GRUB_PLATFORMS=&#34;pc&#34;
+GENTOO_MIRRORS=&#34;https://mirror.csclub.uwaterloo.ca/gentoo-distfiles/ https://gentoo.osuosl.org/ https://mirrors.rit.edu/gentoo/ http://mirror.csclub.uwaterloo.ca/gentoo-distfiles/ http://gentoo.osuosl.org/ http://mirrors.rit.edu/gentoo/&#34;
+</code></pre><h1 id="installing-the-base">Installing the Base</h1>
+<p>Set up the <em>gentoo</em> repository:</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># mkdir -p /mnt/gentoo/etc/portage/repos.conf</span>
+</span></span><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># cp /mnt/gentoo/usr/share/portage/config/repos.conf /mnt/gentoo/etc/portage/repos.conf/gentoo.conf</span>
+</span></span><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># cp --dereference /etc/resolv.conf /mnt/gentoo/etc/</span>
+</span></span></code></pre></div><p>Mount necessary file systems:</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># mount --types proc /proc /mnt/gentoo/proc</span>
+</span></span><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># mount --rbind /sys /mnt/gentoo/sys</span>
+</span></span><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># mount --make-rslave /mnt/gentoo/sys</span>
+</span></span><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># mount --rbind /dev /mnt/gentoo/dev</span>
+</span></span><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># mount --make-rslave /mnt/gentoo/dev</span>
+</span></span><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># mount --bind /run /mnt/gentoo/run</span>
+</span></span><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># mount --make-slave /mnt/gentoo/run </span>
+</span></span></code></pre></div><p>Enter the new installation environment by chrooting into it:</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># chroot /mnt/gentoo /bin/bash</span>
+</span></span><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># source /etc/profile</span>
+</span></span><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># export PS1=&#34;(chroot) ${PS1}&#34;</span>
+</span></span></code></pre></div><p>Installing a Gentoo ebuild repository snapshot from the web and update it:</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># emerge-webrsync</span>
+</span></span><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># emerge --sync</span>
+</span></span></code></pre></div><p>Update the @set (all of your packages).
+This will take a lot of time.
+If you get a circular dependency error, which is not uncommon, consult the Gentoo wiki (<a href="#ref-gentoocircle">Gentoo, 2022a</a>):</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># emerge -uDN @world </span>
+</span></span></code></pre></div><p>Select the time zone for the system.
+Look for the available time zones in <code>/usr/share/zoneinfo/</code>.
+I chose <code>America/Toronto</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>$ ls /usr/share/zoneinfo
+</span></span><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># echo &#34;America/Toronto&#34; &gt; /etc/timezone</span>
+</span></span><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># emerge --config sys-libs/timezone-data</span>
+</span></span></code></pre></div><p>Choose the right locale by running <code># nano /etc/locale.gen</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>en_CA.UTF-8 UTF-8
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>locale-gen
+</span></span></code></pre></div><p>Check the locale list by running <code>$ eselect locale list</code>, then select the right one:</p>
+<pre tabindex="0"><code class="language-gentoo" data-lang="gentoo">Available targets for the LANG variable:
+  [1]   C
+  [2]   C.utf8
+  [3]   en_CA.utf8
+  [4]   POSIX
+  [ ]   (free form)
+</code></pre><div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># eselect locale set 3</span>
+</span></span></code></pre></div><p>Reload the environment:</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># env-update &amp;&amp; source /etc/profile &amp;&amp; export PS1=&#34;(chroot) ${PS1}&#34;</span>
+</span></span></code></pre></div><h1 id="install-the-kernel">Install the Kernel</h1>
+<p>The easiest way to install the kernel is by installing the gentoo-kernel package.
+If you wan to customize the kernel, check the Gentoo handbook page on configuring the Linux kernel (<a href="#ref-gentookernel">Gentoo, 2015</a>)
+If you need Linux firmware (you most likely do), then install the linux-firmware package.</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># emerge gentoo-kernel linux-firmware</span>
+</span></span></code></pre></div><h1 id="configure-the-system">Configure the System</h1>
+<p>You need to set up fstab:</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># blkid &gt; /etc/fstab</span>
+</span></span></code></pre></div><p>Open the file by running <code># nano /etc/fstab</code>. If you have an SSD, you should enable the <code>noatime</code> and <code>discard</code> options.
+If you are using BIOS, arrange your fstab to something like this:</p>
+<pre><code># /dev/sda1
+UUID=9167fa6f-bb77-4337-a547-48a20506d297   /   ext4    noatime,discard 0 1
+</code></pre>
+<p>If you are using UEFI, do something like this instead:</p>
+<pre><code># /dev/sda1
+UUID=dbb15f21-c203-4665-a520-7f92f51661ae   /boot   vfat    defaults,noatime     0 2
+
+# /dev/sda2
+UUID=9167fa6f-bb77-4337-a547-48a20506d297   /   ext4    noatime,discard 0 1
+</code></pre>
+<p>Set the host name by running <code># nano /etc/conf.d/hostname</code>:</p>
+<pre><code>hostname=&quot;*host name*&quot;
+</code></pre>
+<p>Install NetworkManager and add it to the default runlevel for internet connection:</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># emerge net-misc/networkmanager</span>
+</span></span><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># rc-update add NetworkManager default</span>
+</span></span></code></pre></div><p>Edit the hosts file by running <code># nano /etc/hosts</code>:</p>
+<pre><code>127.0.0.1   localhost
+::1         localhost
+127.0.1.1   *host name*
+</code></pre>
+<p>Set the root password by simply running <code># passwd</code>.</p>
+<h1 id="configure-the-bootloader">Configure the Bootloader</h1>
+<p>You now need to install a bootloader, the most common one is GRUB.
+When using BIOS:</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># emerge sys-boot/grub</span>
+</span></span><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># grub-install /dev/*NAME*</span>
+</span></span><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># grub-mkconfig -o /boot/grub/grub.cfg</span>
+</span></span></code></pre></div><p>When using UEFI:</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># emerge sys-boot/grub</span>
+</span></span><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># grub-install --target=x86_64-efi --efi-directory=/boot</span>
+</span></span><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># grub-mkconfig -o /boot/grub/grub.cfg</span>
+</span></span></code></pre></div><h2 id="reboot-the-system">Reboot the system</h2>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># exit</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># cd</span>
+</span></span><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># umount -l /mnt/gentoo/dev{/shm,/pts,} </span>
+</span></span><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># umount -R /mnt/gentoo</span>
+</span></span><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># reboot</span>
+</span></span></code></pre></div><h1 id="finalize-the-installation">Finalize the Installation</h1>
+<p>First, log in as root:</p>
+<pre><code>Login: root
+Password: *password*
+</code></pre>
+<p>Add a user for daily use and set its password:</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># useradd -mG wheel,news,audio,video,portage *user*</span>
+</span></span><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># passwd *user*</span>
+</span></span></code></pre></div><p>Finally, remove the now unneeded tarball from the root directory:</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># rm /stage3-*.tar.*</span>
+</span></span></code></pre></div><p>Congratulations, you have successfully completed the installation of Gentoo Linux.
+But do not get too excited, because we are not technically done yet.</p>
+<h2 id="graphical-environment">Graphical Environment</h2>
+<p>Now all you need to do is install a display server, xinit or a desktop manager, and a window manager or a desktop environment.</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># emerge x11-base/xorg-server x11-apps/xinit x11-wm/dwm</span>
+</span></span><span style="display:flex;"><span>$ <span style="color:#81a1c1">echo</span> <span style="color:#a3be8c">&#34;exec dwm&#34;</span> &gt; ~/.xinitrc
+</span></span><span style="display:flex;"><span>$ startx
+</span></span></code></pre></div><h1 id="references">References</h1>
+<div id="refs" class="references csl-bib-body hanging-indent" line-spacing="2">
+<div id="ref-gentookernel" class="csl-entry">
+<p>Gentoo. (2015). <em>Configuring the linux kernel</em>. <a href="https://wiki.gentoo.org/wiki/Handbook:AMD64/Installation/Kernel" target="_blank">https://wiki.gentoo.org/wiki/Handbook:AMD64/Installation/Kernel</a></p>
+</div>
+<div id="ref-gentoocard" class="csl-entry">
+<p>Gentoo. (2020). <em>Video cards</em>. <a href="https://wiki.gentoo.org/wiki/Category:Video_cards" target="_blank">https://wiki.gentoo.org/wiki/Category:Video_cards</a></p>
+</div>
+<div id="ref-gentoocircle" class="csl-entry">
+<p>Gentoo. (2022a). <em>Circular dependencies</em>. <a href="https://wiki.gentoo.org/wiki/User:Sam/Portage_help/Circular_dependencies" target="_blank">https://wiki.gentoo.org/wiki/User:Sam/Portage_help/Circular_dependencies</a></p>
+</div>
+<div id="ref-gentoohandbook" class="csl-entry">
+<p>Gentoo. (2022b). <em>Gentoo AMD64 handbook</em>. <a href="https://wiki.gentoo.org/wiki/Handbook:AMD64" target="_blank">https://wiki.gentoo.org/wiki/Handbook:AMD64</a></p>
+</div>
+</div>
+
+    </div>
+</article>
+
+
+
+
+            </div>
+            <aside class="col-12 col-md-3 float-left sidebar">
+    
+    <div class="sidebar-item sidebar-pages">
+        <h3>Pages</h3>
+        <ul>
+            
+            <li>
+                <a href="/amarakon.com/about/">About</a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-links">
+        <h3>Links</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/amarakon" target="_blank"><span>GitHub</span></a>
+            </li>
+            
+            <li>
+                <a href="https://www.youtube.com/channel/UCbZc671K2NxNbr1Kfqz6Fmg" target="_blank"><span>YouTube</span></a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-tags">
+        <h3>Tags</h3>
+        <div>
+            
+            <span>
+                <a href="/amarakon.com/tags/foss/">foss</a>
+            </span>
+            
+            <span>
+                <a href="/amarakon.com/tags/programming/">programming</a>
+            </span>
+            
+            <span>
+                <a href="/amarakon.com/tags/tutorial/">tutorial</a>
+            </span>
+            
+            <span>
+                <a href="/amarakon.com/tags/websites/">websites</a>
+            </span>
+            
+        </div>
+    </div>
+    <div class="sidebar-item sidebar-toc">
+        <h3>Contents</h3><nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#prepare-the-disks">Prepare the Disks</a></li>
+    <li><a href="#installing-the-gentoo-installation-files">Installing the Gentoo Installation Files</a></li>
+    <li><a href="#installing-the-base">Installing the Base</a></li>
+    <li><a href="#install-the-kernel">Install the Kernel</a></li>
+    <li><a href="#configure-the-system">Configure the System</a></li>
+    <li><a href="#configure-the-bootloader">Configure the Bootloader</a>
+      <ul>
+        <li><a href="#reboot-the-system">Reboot the system</a></li>
+      </ul>
+    </li>
+    <li><a href="#finalize-the-installation">Finalize the Installation</a>
+      <ul>
+        <li><a href="#graphical-environment">Graphical Environment</a></li>
+      </ul>
+    </li>
+    <li><a href="#references">References</a></li>
+  </ul>
+</nav></div>
+</aside>
+
+        </div>
+        <div class="btn">
+    <div class="btn-menu" id="btn-menu">
+        <i class="iconfont icon-grid-sharp"></i>
+    </div>
+    <div class="btn-toggle-mode">
+        <i class="iconfont icon-contrast-sharp"></i>
+    </div>
+    <div class="btn-scroll-top">
+        <i class="iconfont icon-chevron-up-circle-sharp"></i>
+    </div>
+</div>
+<aside class="sidebar-mobile" style="display: none;">
+  <div class="sidebar-wrapper">
+    
+    <div class="sidebar-item sidebar-pages">
+        <h3>Pages</h3>
+        <ul>
+            
+            <li>
+                <a href="/amarakon.com/about/">About</a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-links">
+        <h3>Links</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/amarakon" target="_blank"><span>GitHub</span></a>
+            </li>
+            
+            <li>
+                <a href="https://www.youtube.com/channel/UCbZc671K2NxNbr1Kfqz6Fmg" target="_blank"><span>YouTube</span></a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-tags">
+        <h3>Tags</h3>
+        <div>
+            
+            <span>
+                <a href="/amarakon.com/tags/foss/">foss</a>
+            </span>
+            
+            <span>
+                <a href="/amarakon.com/tags/programming/">programming</a>
+            </span>
+            
+            <span>
+                <a href="/amarakon.com/tags/tutorial/">tutorial</a>
+            </span>
+            
+            <span>
+                <a href="/amarakon.com/tags/websites/">websites</a>
+            </span>
+            
+        </div>
+    </div>
+    
+    
+    
+    
+  </div>
+</aside>
+    </main>
+
+    <footer>
+    <div class="container-lg clearfix">
+        <div class="col-12 footer">
+            
+            <span>&copy; 2022-2022
+                <a href="https://amarakon.github.io/amarakon.com/"></a>
+                 | <a href="https://github.com/amarakon/amarakon.com">Source code</a> 
+                | Powered by <a href="https://github.com/dsrkafuu/hugo-theme-fuji/"
+                   target="_blank">Fuji-v2</a> &amp; <a href="https://gohugo.io/"
+                                                    target="_blank">Hugo</a> 
+            </span>
+        </div>
+    </div>
+</footer>
+
+    
+<script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/prismjs@1.27.0/components/prism-core.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/prismjs@1.27.0/plugins/autoloader/prism-autoloader.min.js"></script>
+
+
+
+<script defer src="/amarakon.com/assets/js/fuji.min.js"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/contrib/auto-render.min.js"></script>
+<script>
+  renderMathInElement(document.querySelector('div.content'), {
+    delimiters: [
+      { left: '$$', right: '$$', display: true },
+      { left: '\\[', right: '\\]', display: true },
+      { left: '$', right: '$', display: false },
+      { left: '\\(', right: '\\)', display: false },
+    ],
+  });
+</script>
+
+
+
+
+</body>
+
+</html>

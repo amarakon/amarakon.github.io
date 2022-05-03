@@ -5,7 +5,6 @@ date: '2022-05-03'
 slug: how-to-install-gentoo-the-efficient-way
 categories: ["Operating systems", "Tutorial"]
 tags: ["foss", "tutorial"]
-draft: true
 bibliography: ../../../static/bibliography.bib
 csl: ../../../static/citations/apa-no-initials.csl
 link-citations: true
@@ -324,7 +323,7 @@ Add a user for daily use and set its password:
 # passwd *user*
 ```
 
-Finally, remove the now unneeded tarball from the root diretory:
+Finally, remove the now unneeded tarball from the root directory:
 
 ``` sh
 # rm /stage3-*.tar.*
