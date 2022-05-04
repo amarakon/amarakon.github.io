@@ -12,8 +12,6 @@ reference-section-title: References
 nocite: ["@gentoohandbook"]
 ---
 
-# Introduction
-
 So you finally moved from the beginner distributions and you know want to install truly the best operating system of all time; Gentoo Linux.
 Contrary to popular belief, installing this operating system is not difficult in the slightest but it is certainly time consuming.
 Usually it will take around five hours to install.

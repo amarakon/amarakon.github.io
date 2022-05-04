@@ -13,7 +13,7 @@ $font-weight-light: 400;
 $body-font: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', 'Arial', 'Helvetica Neue',
   'Helvetica', 'PingFang SC', 'Hiragino Sans GB', 'Source Han Sans CN', 'Source Han Sans SC',
   'Microsoft YaHei', 'WenQuanYi Micro Hei', sans-serif !default;
-$mono-font: 'SF Mono', 'Inconsolata', 'Consolas', -apple-system, BlinkMacSystemFont, 'SF Pro Text',
+$mono-font: 'SF Mono', 'Inconsolata Nerd Font', 'Consolas', -apple-system, BlinkMacSystemFont, 'SF Pro Text',
   'Segoe UI', 'Arial', 'Helvetica Neue', 'Helvetica', 'PingFang SC', 'Hiragino Sans GB',
   'Source Han Sans CN', 'Source Han Sans SC', 'Microsoft YaHei', 'WenQuanYi Micro Hei', monospace !default;
 $title-font: 'Liberation Sans', sans-serif !default;
@@ -31,12 +31,14 @@ $light-color-divider: #e5e2e4 !default; // https://irocore.com/komachinezu/
 $light-color-bg: #fffffd !default; // https://irocore.com/shiro/
 $light-color-codebg: #f6f8fa !default; // GitHub
 
+$dark-color-caption: #6A7894 !default;
+$dark-color-visited: #B48EAD !default;
 $dark-color-selection: #4C566A !default; // https://irocore.com/aofuji/
 $dark-color-header: #A3BE8C !default; // https://irocore.com/aofuji/
 $dark-color-primary: #81A1C1 !default; // https://irocore.com/aofuji/
-$dark-color-secondary: #81A1C1 !default; // kai https://irocore.com/fujimurasaki/
-$dark-color-focus: #81A1C1 !default; // https://irocore.com/shironezumi/
-$dark-color-mute: #6A7894 !default; // https://irocore.com/suzu-iro/
+$dark-color-secondary: #BF616A !default; // kai https://irocore.com/fujimurasaki/
+$dark-color-active: #EBCB8B !default; // https://irocore.com/shironezumi/
+$dark-color-mute: #616E88 !default; // https://irocore.com/suzu-iro/
 $dark-color-font: #D8DEE9 !default; // https://irocore.com/gin-iro/
 $dark-color-divider: #4C566A !default; // Discord
 $dark-color-bg: #3B4252 !default; // Discord
@@ -57,6 +59,6 @@ $dark-color-codebg: #2E3440 !default; // kai GitHub
 }
 
 @font-face {
-  font-family: "Inconsolata";
+  font-family: "Inconsolata Nerd Font";
   src: url("/amarakon.com/fonts/Inconsolata-Regular-Nerd-Font-Complete.otf");
 }

@@ -4,6 +4,10 @@
   background-color: var(--color-selection);
 }
 
+p.caption {
+  color: var(--color-caption);
+}
+
 body {
   background-color: var(--color-bg);
   color: var(--color-font);
@@ -18,7 +22,7 @@ body {
 
 .pag-current a,
 .pag-current a:hover {
-  color: var(--color-focus);
+  color: var(--color-active);
 }
 
 .title-sub,

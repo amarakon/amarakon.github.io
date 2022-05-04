@@ -7,8 +7,6 @@ categories: ["Education", "Technology"]
 tags: ["websites", "programming"]
 ---
 
-# Introduction
-
 I am a high school student who happens to be genuinely interested in technology.
 Specifically, I am interested in operating systems, programming, and [free software philosophy](https://en.wikipedia.org/wiki/Free_software_movement).
 I have a good understanding of what makes a good piece of technology and what makes a bad piece of technology.

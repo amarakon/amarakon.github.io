@@ -8,8 +8,6 @@ tags: ["foss"]
 description: It is more important than you think it is
 ---
 
-# Introduction
-
 What I have noticed about many subjects in life is that many people just want to be sheep.
 Notice how I said "want to be sheep" and not "are sheep."
 That is because my emphasis is on the fact that people are choosing to be ignorant.
@@ -27,13 +25,13 @@ You follow what everybody else was doing regardless if it is good or bad.
 # Change
 
 One day, I was scrolling through YouTube and I found something that intrigued me.
-It was a video of somebody comparing three-dimensional rendering between Windows 10 and GNU/Linux.
-I was extremely surprised by how much GNU/Linux is blatantly better than Windows 10.
-For the next couple of weeks, I experimented with GNU/Linux without much success.
+It was a video of somebody comparing three-dimensional rendering between Windows 10 and Linux.
+I was extremely surprised by how much Linux is blatantly better than Windows 10.
+For the next couple of weeks, I experimented with Linux without much success.
 I found it extremely difficult to get basic things done, like connecting to WiFi.
 Could it be that the normie lifestyle is correct and that alternatives are terrible most of the time?
 
-I almost gave up, but since I have come so far, I kept using GNU/Linux.
+I almost gave up, but since I have come so far, I kept using Linux.
 I eventually solved my main issues with it.
 I spent the next couple of months experimenting with it and mastering it.
 During that time, I increasingly learned the evils of common software and how everybody—including myself, fell for that trap.
