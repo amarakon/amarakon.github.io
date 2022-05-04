@@ -3,8 +3,8 @@ title: 'Gentoo Linux: The Best Operating System Ever Made'
 author: ~
 date: '2022-05-04'
 slug: gentoo-linux-the-best-operating-system-ever-made
-categories: []
-tags: []
+categories: ["Operating Systems"]
+tags: ["foss"]
 bibliography: ../../../static/bibliography.bib
 csl: ../../../static/citations/apa-no-initials.csl
 link-citations: true

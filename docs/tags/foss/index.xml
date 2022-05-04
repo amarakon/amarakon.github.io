@@ -6,13 +6,24 @@
     <description>Recent content in foss on Amar Al-Zubaidi’s Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 03 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://amarakon.github.io/amarakon.com/tags/foss/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 04 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://amarakon.github.io/amarakon.com/tags/foss/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>How to Install Gentoo – The Efficient Way</title>
-      <link>https://amarakon.github.io/amarakon.com/blog/how-to-install-gentoo-the-efficient-way/</link>
+      <title>Gentoo Linux: The Best Operating System Ever Made</title>
+      <link>https://amarakon.github.io/amarakon.com/blog/gentoo-linux-the-best-operating-system-ever-made/</link>
+      <pubDate>Wed, 04 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://amarakon.github.io/amarakon.com/blog/gentoo-linux-the-best-operating-system-ever-made/</guid>
+      <description>In my previous blog post titled How to Install Gentoo – The Efficient Way, I said that Gentoo Linux is “truly the best operating system of all time” (Al-Zubaidi, 2022). I stand by that statement and there are many reasons as to why I think it is. The top three currently most popular operating systems are Windows 10, macOS, and Chrome OS. You may or may not have heard of Linux.
+Figure 1: Operating system market share  Statcounter (2022)
+Technically, Linux is not an operating in and of itself, rather it is the core of the operating system and each distribution should provide all the additional programs required for that distribution.</description>
+    </item>
+    
+    <item>
+      <title>How to Install Gentoo Linux – The Efficient Way</title>
+      <link>https://amarakon.github.io/amarakon.com/blog/how-to-install-gentoo-linux-the-efficient-way/</link>
       <pubDate>Tue, 03 May 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://amarakon.github.io/amarakon.com/blog/how-to-install-gentoo-the-efficient-way/</guid>
+      <guid>https://amarakon.github.io/amarakon.com/blog/how-to-install-gentoo-linux-the-efficient-way/</guid>
       <description>So you finally moved from the beginner distributions and you know want to install truly the best operating system of all time; Gentoo Linux. Contrary to popular belief, installing this operating system is not difficult in the slightest but it is certainly time consuming. Usually it will take around five hours to install. This might deter you, but remember that this operating system will actually save you time in the long run. Not only is it faster than other operating systems, it also makes the user more intelligent, leading to efficient computer usage. No current Gentoo user regrets spending five hours installing the operating system to save many more hours in total.</description>
     </item>
     

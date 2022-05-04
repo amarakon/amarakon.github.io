@@ -1,8 +1,8 @@
 ---
-title: How to Install Gentoo – The Efficient Way
+title: How to Install Gentoo Linux – The Efficient Way
 author: ~
 date: '2022-05-03'
-slug: how-to-install-gentoo-the-efficient-way
+slug: how-to-install-gentoo-linux-the-efficient-way
 categories: ["Operating systems", "Tutorial"]
 tags: ["foss", "tutorial"]
 bibliography: ../../../static/bibliography.bib
