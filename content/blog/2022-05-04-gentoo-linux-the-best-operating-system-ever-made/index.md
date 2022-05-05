@@ -172,7 +172,7 @@ Gentoo. (2022b). */etc/portage/package.env*. <https://wiki.gentoo.org/wiki//etc/
 
 <div id="ref-best-linux-distro" class="csl-entry">
 
-Smith, Luke. (2018). *What is ’the best’ linux distro?* <https://lukesmith.xyz/blog/what-is-the-best-linux-distro>
+Smith, Luke. (2018). *What is ‘the best’ linux distro?* <https://lukesmith.xyz/blog/what-is-the-best-linux-distro>
 
 </div>
 
