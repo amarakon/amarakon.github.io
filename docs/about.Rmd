@@ -1,9 +1,6 @@
 ---
 title: About
 date: 2022-05-01
-output:
-  blogdown::html_page:
-    toc: yes
 ---
 
 ![Amar Al-Zubaidi](/amarakon.com/images/amar-al-zubaidi.jpg)
