@@ -33,7 +33,7 @@ post = "/:section/:filename/" # Custom post links, e.g. "/:year/:month/:title/"
 [params]
 math = true
 subTitle = "Where I have my blog and other things about me"
-defaultTheme = "dark"              # default theme when first visit (auto|dark|light)
+defaultTheme = "auto"              # default theme when first visit (auto|dark|light)
 
 # Source URL of the website, will appear in the footer
 sourceURL = "https://github.com/amarakon/amarakon.com"
