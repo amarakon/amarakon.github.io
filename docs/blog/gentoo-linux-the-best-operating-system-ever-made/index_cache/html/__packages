@@ -1,5 +1,7 @@
-knitr
-pander
-DiagrammeR
-DiagrammeRsvg
-rsvg
+base
+methods
+datasets
+utils
+grDevices
+graphics
+stats
