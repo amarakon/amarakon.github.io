@@ -12,7 +12,7 @@ Specifically, I am interested in operating systems, programming, and [free softw
 I have a good understanding of what makes a good piece of technology and what makes a bad piece of technology.
 One of the most important factors in this distinction is the effort it requires to use it.
 If a piece of technology is extremely complicated but effortless to use (i.e., **dumbed down**), then it is generally bad.
-If a piece of technology is minimalist but requires genuine effort to use (e.g., C, LaTeX, flip phones), then it is generally good.
+If a piece of technology is minimalist but requires genuine effort to use (e.g., C, LaTeX, flip-phones), then it is generally good.
 
 The pandemic gave teachers an excuse to be lazy and government the excuse to be tyrannical.
 The government did an uncountable amount of lockdowns and schools went online during them.
