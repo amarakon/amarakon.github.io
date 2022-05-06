@@ -16,7 +16,7 @@ I stand by that statement and there are many reasons as to why I think it is.
 The top three currently most popular operating systems are Windows 10, macOS, and Chrome OS.
 You may or may not have heard of Linux.
 
-```{r pie, fig.cap = "Operating system market share", dev = 'svglite'}
+```{r pie, fig.cap = "Operating system market share [@desktop-os-marketshare]"}
 slices <- c(74.83, 15.37, 4.93, 2.48, 2.38)
 lbls <- c("Windows", "macOS", "Unknown", "Linux", "Chrome OS")
 pct <- round(slices/sum(slices)*100)
@@ -24,7 +24,6 @@ lbls <- paste(lbls, pct) # add percents to labels
 lbls <- paste(lbls,"%",sep="") # ad % to labels
 pie(slices, labels = lbls, col = rainbow(length(lbls)))
 ```
-@desktop-os-marketshare
 
 Technically, Linux is not an operating in and of itself, rather it is the core of the operating system and each distribution should provide all the additional programs required for that distribution.
 There are hundreds of distributions of Linux, so making a decision is tirelessly difficult for most people who are just getting started with Linux.

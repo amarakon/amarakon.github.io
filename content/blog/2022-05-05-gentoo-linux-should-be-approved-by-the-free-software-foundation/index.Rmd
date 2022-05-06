@@ -55,6 +55,29 @@ Gentoo Linux easily follows these guidelines and I will prove it.
 
 # Free Software Foundation's Justification
 
-The Free Software Foundation justifies not including Gentoo Linux on their list of free Linux distributions with the following short statement:
+The Free Software Foundation justifies not including Gentoo Linux on their list of free Linux distributions with the following short statement: "Gentoo includes installation recipes for a number of nonfree programs in its primary package system".
+This is true, Gentoo does include non-free program packages in its primary package system.
+But this should not disqualify Gentoo from being approved by the FSF.
+First, the Gentoo wiki does not endorse the installation of these packages.
+It has webpages about these packages but they are never unreasonably referenced anywhere, let alone endorsed.
+All of the applications and tools recommended and endorsed by Gentoo wiki are free [@gentoo-recommended-applications; @gentoo-recommended-tools].
+Even if the Gentoo wiki did endorse proprietary software, that would not matter because then Gentoo wiki is not part of the Gentoo operating system.
 
-> Gentoo includes installation recipes for a number of nonfree programs in its primary package system.
+The GNU FSDG states "The system should have no repositories for nonfree software and no specific recipes for installation of particular nonfree programs [@gnu-fsdg]."
+Pay attention to the wording.
+Gentoo has no repositories **for** non-free software, but it has a repository **with** non-free software.
+That is an important distinction.
+Like I pointed out earlier, the actual operating system does not contain specific recipes for the installation of particular non-free programs, but the Gentoo wiki reasonably does.
+It does not matter whether it is the official Gentoo wiki that includes these recipes or a third-party article.
+Neither are included in the operating system.
+
+If Gentoo does not follow the GNU FSDG, then neither do the supposedly free distributions endorsed by the FSF.
+It is possible and easy to add proprietary software in these distributions by adding a third-party repository.
+The FSF clearly thinks that any distribution which makes it possible to install proprietary software should be disqualified.
+I understand this view, but that should make all of the currently approved distributions disqualified as well.
+True freedom is giving the user the choice to make responsible and good decisions without any unreasonable authority.
+Gentoo Linux is a perfect example of an operating system that gives its users true freedom.
+
+**[energyman76b](https://forums.gentoo.org/profile.php?mode=viewprofile&u=17194&sid=2b558d9c692f1caa91e4c63b0ec334a8) on [Gentoo forums](https://forums.gentoo.org/viewtopic-t-791603-start-25.html):**
+
+> The FSF hates user freedom.

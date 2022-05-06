@@ -1,4 +1,4 @@
-opts_chunk$set(dev = 'png')
+knitr::opts_chunk$set(dev = 'svglite')
 
 # REMEMBER to restart R after you modify and save this file!
 

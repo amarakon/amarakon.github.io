@@ -18,14 +18,12 @@ You may or may not have heard of Linux.
 
 <div class="figure">
 
-<img src="{{< blogdown/postref >}}index_files/figure-html/pie-1.svg" alt="Operating system market share" width="672" />
+<img src="{{< blogdown/postref >}}index_files/figure-html/pie-1.svg" alt="Operating system market share [@desktop-os-marketshare]" width="672" />
 <p class="caption">
-Figure 1: Operating system market share
+Figure 1: Operating system market share ([Statcounter, 2022](#ref-desktop-os-marketshare))
 </p>
 
 </div>
-
-[Statcounter](#ref-desktop-os-marketshare) ([2022](#ref-desktop-os-marketshare))
 
 Technically, Linux is not an operating in and of itself, rather it is the core of the operating system and each distribution should provide all the additional programs required for that distribution.
 There are hundreds of distributions of Linux, so making a decision is tirelessly difficult for most people who are just getting started with Linux.
