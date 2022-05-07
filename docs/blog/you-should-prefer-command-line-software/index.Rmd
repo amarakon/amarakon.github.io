@@ -1,8 +1,7 @@
 ---
-draft: true
 title: You Should Prefer Command-Line Software
 author: ~
-date: '2022-05-06'
+publishdate: '2022-05-07'
 slug: you-should-prefer-command-line-software
 categories: ["Technology"]
 tags: ["cli"]
@@ -11,29 +10,48 @@ csl: ../../../static/citations/apa-no-initials.csl
 link-citations: true
 reference-section-title: References
 ---
+```{r}
+library(blogdown)
+```
 
 There are many benefits of preferring command-line software over graphical software.
-Graphical User Interfaces (GUI) generally promote lazy thinking. 
-Command-line interfaces (CLI) generally promote critical thinking.
+Graphical User Interfaces generally promote lazy thinking. 
+Command-line interfaces generally promote critical thinking.
 I think it is unfortunate that most people have not even heard of command-line software.
 Whenever I would be doing my work in school by running commands, most people who pass by would assume that I am coding.
 This is obviously because they have not used command-line programs, so their view of a dark terminal window and fast typing of commands they do not understand leads them to this conclusion.
-That then leads them to the conclusion that anything other than a graphical, modern "app" is too difficult for them.
+That then leads them to the conclusion that anything other than a modern graphical "app" is too difficult for them.
 This is why most people do not use command-line software.
 
 In order to efficiently use computers, you need to get rid of this mindset.
 
 # Unix Philosophy
 
-**Ken Thompson**:
+**Ken Thompson:**
 
 > This is the Unix philosophy:
 Write programs that do one thing and do it well.
 Write programs to work together.
 Write programs to handle text streams, because that is a universal interface.
 
+Graphical programs do not follow any of these three rules of the Unix philosophy.
+The Unix philosophy is important because it outlines the criteria software needs to be considered good.
+Command-line programs follow the Unix philosophy most of the time, hence they are good most of the time
+Critics of the Unix philosophy argue that "the user interface is horrid" [@the-truth-about-unix].
+Truthfully, Unix's user interface is amazing.
+Command-line interfaces are simpler and easier to understand than graphical ones.
+They are just not dumbed down for stupid people.
+
 ## Do one thing and do it well
+
+Programs should do one thing and do it well because programs are otherwise bloated.
+Bloated programs are ones that are too large in their code-base.
+They tend to be slower than they are supposed to be because they are trying to fulfill more than one purpose.
+Each program should serve one purpose, that is why there is more than one program.
+If the program doesn't serve one and only one main purpose, the program is too versatile.
+"Worse is better" seems like a contradictory statement by Richard Gabriel, but what it really means is that certain things may sound worse on paper, but truly are better in practice.
+One such example is a less versatile program.
 
 ## Work together
 
-## Handle text streams because that is a universal interface
+## Handle text streams

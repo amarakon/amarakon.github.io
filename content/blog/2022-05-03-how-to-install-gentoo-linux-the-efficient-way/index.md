@@ -39,7 +39,7 @@ Also make sure to know which block device your current running operating system 
 Use the `wipefs` command to wipe a block device if it already has a partition scheme.
 Then use the `cfdisk` command to begin partitioning.
 
-``` sh
+``` shell
 $ lsblk
 # wipefs -a /dev/*NAME*
 # cfdisk /dev/*NAME*
@@ -55,27 +55,27 @@ Then create the second partition using the rest of the space.
 Once you exited cfdisk, you need to format your partitions.
 If you’re using BIOS, all you have to do is format your one partition as ext4 or any other usable file system you prefer:
 
-``` sh
+``` shell
 # mkfs.ext4 /dev/*NAME*1
 ```
 
 If you’re using UEFI, you must format your first partition as VFAT and your second partition your preferred file system:
 
-``` sh
+``` shell
 # mkfs.fat -F 32 /dev/*NAME*1
 # mkfs.ext4 /dev/*NAME*2
 ```
 
 If you’re using BIOS, mount the root partition:
 
-``` sh
+``` shell
 mkdir /mnt/gentoo
 mount /dev/*NAME*2 /mnt/gentoo
 ```
 
 If you’re using UEFI, mount the root partition and the boot partition:
 
-``` sh
+``` shell
 # mkdir /mnt/gentoo
 # mount /dev/*NAME*2 /mnt/gentoo
 # mount /dev/*NAME*1 /mnt/gentoo/boot
@@ -85,7 +85,7 @@ If you’re using UEFI, mount the root partition and the boot partition:
 
 Temporarily set the correct date and time using the `MMDDhhmmYYYY` syntax:
 
-``` sh
+``` shell
 # date *MMDDhhmmYYYY*
 ```
 
@@ -94,7 +94,7 @@ I recommend the standard Stage 3 OpenRC.
 Download the tarball to `/mnt/gentoo` using the link you copied.
 Decompress the archive afterwards.
 
-``` sh
+``` shell
 $ cd /mnt/gentoo
 # wget *URL*
 # tar xpvf stage3-*.tar.xz --xattrs-include='*.*' --numeric-owner
@@ -142,7 +142,7 @@ GENTOO_MIRRORS="https://mirror.csclub.uwaterloo.ca/gentoo-distfiles/ https://gen
 
 Set up the *gentoo* repository:
 
-``` sh
+``` shell
 # mkdir -p /mnt/gentoo/etc/portage/repos.conf
 # cp /mnt/gentoo/usr/share/portage/config/repos.conf /mnt/gentoo/etc/portage/repos.conf/gentoo.conf
 # cp --dereference /etc/resolv.conf /mnt/gentoo/etc/
@@ -150,7 +150,7 @@ Set up the *gentoo* repository:
 
 Mount necessary file systems:
 
-``` sh
+``` shell
 # mount --types proc /proc /mnt/gentoo/proc
 # mount --rbind /sys /mnt/gentoo/sys
 # mount --make-rslave /mnt/gentoo/sys
@@ -162,7 +162,7 @@ Mount necessary file systems:
 
 Enter the new installation environment by chrooting into it:
 
-``` sh
+``` shell
 # chroot /mnt/gentoo /bin/bash
 # source /etc/profile
 # export PS1="(chroot) ${PS1}"
@@ -170,7 +170,7 @@ Enter the new installation environment by chrooting into it:
 
 Installing a Gentoo ebuild repository snapshot from the web and update it:
 
-``` sh
+``` shell
 # emerge-webrsync
 # emerge --sync
 ```
@@ -179,7 +179,7 @@ Update the @set (all of your packages).
 This will take a lot of time.
 If you get a circular dependency error, which is not uncommon, consult the Gentoo wiki ([Gentoo, 2022a](#ref-gentoocircle)):
 
-``` sh
+``` shell
 # emerge -uDN @world 
 ```
 
@@ -187,7 +187,7 @@ Select the time zone for the system.
 Look for the available time zones in `/usr/share/zoneinfo/`.
 I chose `America/Toronto`.
 
-``` sh
+``` shell
 $ ls /usr/share/zoneinfo
 # echo "America/Toronto" > /etc/timezone
 # emerge --config sys-libs/timezone-data
@@ -195,11 +195,11 @@ $ ls /usr/share/zoneinfo
 
 Choose the right locale by running `# nano /etc/locale.gen`:
 
-``` sh
+``` shell
 en_CA.UTF-8 UTF-8
 ```
 
-``` sh
+``` shell
 locale-gen
 ```
 
@@ -214,13 +214,13 @@ Available targets for the LANG variable:
   [ ]   (free form)
 ```
 
-``` sh
+``` shell
 # eselect locale set 3
 ```
 
 Reload the environment:
 
-``` sh
+``` shell
 # env-update && source /etc/profile && export PS1="(chroot) ${PS1}"
 ```
 
@@ -230,7 +230,7 @@ The easiest way to install the kernel is by installing the gentoo-kernel package
 If you wan to customize the kernel, check the Gentoo handbook page on configuring the Linux kernel ([Gentoo, 2015](#ref-gentookernel))
 If you need Linux firmware (you most likely do), then install the linux-firmware package.
 
-``` sh
+``` shell
 # emerge gentoo-kernel linux-firmware
 ```
 
@@ -238,7 +238,7 @@ If you need Linux firmware (you most likely do), then install the linux-firmware
 
 You need to set up fstab:
 
-``` sh
+``` shell
 # blkid > /etc/fstab
 ```
 
@@ -262,7 +262,7 @@ Set the host name by running `# nano /etc/conf.d/hostname`:
 
 Install NetworkManager and add it to the default runlevel for internet connection:
 
-``` sh
+``` shell
 # emerge net-misc/networkmanager
 # rc-update add NetworkManager default
 ```
@@ -280,7 +280,7 @@ Set the root password by simply running `# passwd`.
 You now need to install a bootloader, the most common one is GRUB.
 When using BIOS:
 
-``` sh
+``` shell
 # emerge sys-boot/grub
 # grub-install /dev/*NAME*
 # grub-mkconfig -o /boot/grub/grub.cfg
@@ -288,7 +288,7 @@ When using BIOS:
 
 When using UEFI:
 
-``` sh
+``` shell
 # emerge sys-boot/grub
 # grub-install --target=x86_64-efi --efi-directory=/boot
 # grub-mkconfig -o /boot/grub/grub.cfg
@@ -296,11 +296,11 @@ When using UEFI:
 
 ## Reboot the system
 
-``` sh
+``` shell
 # exit
 ```
 
-``` sh
+``` shell
 # cd
 # umount -l /mnt/gentoo/dev{/shm,/pts,} 
 # umount -R /mnt/gentoo
@@ -316,14 +316,14 @@ First, log in as root:
 
 Add a user for daily use and set its password:
 
-``` sh
+``` shell
 # useradd -mG wheel,news,audio,video,portage *user*
 # passwd *user*
 ```
 
 Finally, remove the now unneeded tarball from the root directory:
 
-``` sh
+``` shell
 # rm /stage3-*.tar.*
 ```
 
@@ -334,7 +334,7 @@ But do not get too excited, because we are not technically done yet.
 
 Now all you need to do is install a display server, xinit or a desktop manager, and a window manager or a desktop environment.
 
-``` sh
+``` shell
 # emerge x11-base/xorg-server x11-apps/xinit x11-wm/dwm
 $ echo "exec dwm" > ~/.xinitrc
 $ startx

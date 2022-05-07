@@ -87,7 +87,7 @@
     <div class="post-item post-meta">
         <span><i class="iconfont icon-today-sharp"></i>&nbsp;2022-05-03</span>
 
-<span><i class="iconfont icon-file-tray-sharp"></i>&nbsp;1373 words</span>
+<span><i class="iconfont icon-file-tray-sharp"></i>&nbsp;1376 words</span>
 
 <span><i class="iconfont icon-pricetags-sharp"></i>&nbsp;<a href="/amarakon.com/tags/foss">foss</a>&nbsp;<a href="/amarakon.com/tags/tutorial">tutorial</a>&nbsp;</span>
 
@@ -103,7 +103,8 @@ No current Gentoo user regrets spending five hours installing the operating syst
 <p>For this installation tutorial, you will need to have an existing Unix-like operating system—like any Linux distribution.
 Before I get to the beginning of the installation process, there are a few things you must know.
 First, you have to care about computing for the installation of Gentoo to be worth it.
-Second, please view the <a href="https://wiki.gentoo.org/wiki/Handbook:Main_Page" target="_blank">Gentoo handbook</a> while you are watching this video.
+Second, please view the <a href="https://wiki.gentoo.org/wiki/Handbook:Main_Page">Gentoo handbook</a>
+ while you are watching this video.
 It is unlikely but possible that some of the information in this video will be outdated.
 The Gentoo wiki also has many details that I will not go into because they are not important enough.
 Third, you need to know the architecture of your computer’s CPU, usually it is AMD64.
@@ -117,7 +118,7 @@ To be cautious, you can unplug any storage devices you do not want to accidental
 Also make sure to know which block device your current running operating system so you do not accidentally wipe that either.
 Use the <code>wipefs</code> command to wipe a block device if it already has a partition scheme.
 Then use the <code>cfdisk</code> command to begin partitioning.</p>
-<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>$ lsblk
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>$ lsblk
 </span></span><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># wipefs -a /dev/*NAME*</span>
 </span></span><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># cfdisk /dev/*NAME*</span>
 </span></span></code></pre></div><p>If you’re using BIOS, select DOS.
@@ -128,25 +129,26 @@ You should label this partition “EFI system.”
 Then create the second partition using the rest of the space.</p>
 <p>Once you exited cfdisk, you need to format your partitions.
 If you’re using BIOS, all you have to do is format your one partition as ext4 or any other usable file system you prefer:</p>
-<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># mkfs.ext4 /dev/*NAME*1</span>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># mkfs.ext4 /dev/*NAME*1</span>
 </span></span></code></pre></div><p>If you’re using UEFI, you must format your first partition as VFAT and your second partition your preferred file system:</p>
-<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># mkfs.fat -F 32 /dev/*NAME*1</span>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># mkfs.fat -F 32 /dev/*NAME*1</span>
 </span></span><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># mkfs.ext4 /dev/*NAME*2</span>
 </span></span></code></pre></div><p>If you’re using BIOS, mount the root partition:</p>
-<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>mkdir /mnt/gentoo
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>mkdir /mnt/gentoo
 </span></span><span style="display:flex;"><span>mount /dev/*NAME*2 /mnt/gentoo
 </span></span></code></pre></div><p>If you’re using UEFI, mount the root partition and the boot partition:</p>
-<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># mkdir /mnt/gentoo</span>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># mkdir /mnt/gentoo</span>
 </span></span><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># mount /dev/*NAME*2 /mnt/gentoo</span>
 </span></span><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># mount /dev/*NAME*1 /mnt/gentoo/boot</span>
 </span></span></code></pre></div><h1 id="installing-the-gentoo-installation-files">Installing the Gentoo Installation Files</h1>
 <p>Temporarily set the correct date and time using the <code>MMDDhhmmYYYY</code> syntax:</p>
-<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># date *MMDDhhmmYYYY*</span>
-</span></span></code></pre></div><p>Go to the <a href="https://www.gentoo.org/downloads/#other-arches" target="_blank">download section</a> of the Gentoo wiki and copy the link of a stage tarball.
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># date *MMDDhhmmYYYY*</span>
+</span></span></code></pre></div><p>Go to the <a href="https://www.gentoo.org/downloads/#other-arches">download section</a>
+ of the Gentoo wiki and copy the link of a stage tarball.
 I recommend the standard Stage 3 OpenRC.
 Download the tarball to <code>/mnt/gentoo</code> using the link you copied.
 Decompress the archive afterwards.</p>
-<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>$ <span style="color:#81a1c1">cd</span> /mnt/gentoo
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>$ <span style="color:#81a1c1">cd</span> /mnt/gentoo
 </span></span><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># wget *URL*</span>
 </span></span><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># tar xpvf stage3-*.tar.xz --xattrs-include=&#39;*.*&#39; --numeric-owner</span>
 </span></span></code></pre></div><p>Run <code># nano /mnt/gentoo/etc/portage/make.conf</code>.
@@ -155,7 +157,8 @@ The <code>-j</code> flag means the amount of threads you want Portage, the packa
 The <code>-l</code> flag means the load average.
 The <code>PORTAGE_NICENESS</code> option refers to how much priority portage should have (the higher the number, the higher the priority).
 Setting <code>ACCEPT_KEYWORDS=&quot;~amd64&quot;</code> will allow portage to install bleeding edge software.
-The <code>VIDEO_CARDS</code> option is dependent on your video card (<a href="#ref-gentoocard">Gentoo, 2020</a>).
+The <code>VIDEO_CARDS</code> option is dependent on your video card (<a href="#ref-gentoocard">Gentoo, 2020</a>
+).
 The <code>USE</code> flags are for features you want or do not want in your packages.
 The <code>GRUB_PLATFORMS</code> option should be set to <code>&quot;pc&quot;</code> for BIOS and <code>&quot;efi-64&quot;</code> or <code>&quot;efi-32&quot;</code> for UEFI.
 Copy everything else I did.</p>
@@ -185,11 +188,11 @@ GRUB_PLATFORMS=&#34;pc&#34;
 GENTOO_MIRRORS=&#34;https://mirror.csclub.uwaterloo.ca/gentoo-distfiles/ https://gentoo.osuosl.org/ https://mirrors.rit.edu/gentoo/ http://mirror.csclub.uwaterloo.ca/gentoo-distfiles/ http://gentoo.osuosl.org/ http://mirrors.rit.edu/gentoo/&#34;
 </code></pre><h1 id="installing-the-base">Installing the Base</h1>
 <p>Set up the <em>gentoo</em> repository:</p>
-<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># mkdir -p /mnt/gentoo/etc/portage/repos.conf</span>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># mkdir -p /mnt/gentoo/etc/portage/repos.conf</span>
 </span></span><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># cp /mnt/gentoo/usr/share/portage/config/repos.conf /mnt/gentoo/etc/portage/repos.conf/gentoo.conf</span>
 </span></span><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># cp --dereference /etc/resolv.conf /mnt/gentoo/etc/</span>
 </span></span></code></pre></div><p>Mount necessary file systems:</p>
-<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># mount --types proc /proc /mnt/gentoo/proc</span>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># mount --types proc /proc /mnt/gentoo/proc</span>
 </span></span><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># mount --rbind /sys /mnt/gentoo/sys</span>
 </span></span><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># mount --make-rslave /mnt/gentoo/sys</span>
 </span></span><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># mount --rbind /dev /mnt/gentoo/dev</span>
@@ -197,25 +200,26 @@ GENTOO_MIRRORS=&#34;https://mirror.csclub.uwaterloo.ca/gentoo-distfiles/ https:/
 </span></span><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># mount --bind /run /mnt/gentoo/run</span>
 </span></span><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># mount --make-slave /mnt/gentoo/run </span>
 </span></span></code></pre></div><p>Enter the new installation environment by chrooting into it:</p>
-<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># chroot /mnt/gentoo /bin/bash</span>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># chroot /mnt/gentoo /bin/bash</span>
 </span></span><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># source /etc/profile</span>
 </span></span><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># export PS1=&#34;(chroot) ${PS1}&#34;</span>
 </span></span></code></pre></div><p>Installing a Gentoo ebuild repository snapshot from the web and update it:</p>
-<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># emerge-webrsync</span>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># emerge-webrsync</span>
 </span></span><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># emerge --sync</span>
 </span></span></code></pre></div><p>Update the @set (all of your packages).
 This will take a lot of time.
-If you get a circular dependency error, which is not uncommon, consult the Gentoo wiki (<a href="#ref-gentoocircle">Gentoo, 2022a</a>):</p>
-<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># emerge -uDN @world </span>
+If you get a circular dependency error, which is not uncommon, consult the Gentoo wiki (<a href="#ref-gentoocircle">Gentoo, 2022a</a>
+):</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># emerge -uDN @world </span>
 </span></span></code></pre></div><p>Select the time zone for the system.
 Look for the available time zones in <code>/usr/share/zoneinfo/</code>.
 I chose <code>America/Toronto</code>.</p>
-<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>$ ls /usr/share/zoneinfo
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>$ ls /usr/share/zoneinfo
 </span></span><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># echo &#34;America/Toronto&#34; &gt; /etc/timezone</span>
 </span></span><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># emerge --config sys-libs/timezone-data</span>
 </span></span></code></pre></div><p>Choose the right locale by running <code># nano /etc/locale.gen</code>:</p>
-<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>en_CA.UTF-8 UTF-8
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>locale-gen
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>en_CA.UTF-8 UTF-8
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>locale-gen
 </span></span></code></pre></div><p>Check the locale list by running <code>$ eselect locale list</code>, then select the right one:</p>
 <pre tabindex="0"><code class="language-gentoo" data-lang="gentoo">Available targets for the LANG variable:
   [1]   C
@@ -223,17 +227,18 @@ I chose <code>America/Toronto</code>.</p>
   [3]   en_CA.utf8
   [4]   POSIX
   [ ]   (free form)
-</code></pre><div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># eselect locale set 3</span>
+</code></pre><div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># eselect locale set 3</span>
 </span></span></code></pre></div><p>Reload the environment:</p>
-<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># env-update &amp;&amp; source /etc/profile &amp;&amp; export PS1=&#34;(chroot) ${PS1}&#34;</span>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># env-update &amp;&amp; source /etc/profile &amp;&amp; export PS1=&#34;(chroot) ${PS1}&#34;</span>
 </span></span></code></pre></div><h1 id="install-the-kernel">Install the Kernel</h1>
 <p>The easiest way to install the kernel is by installing the gentoo-kernel package.
-If you wan to customize the kernel, check the Gentoo handbook page on configuring the Linux kernel (<a href="#ref-gentookernel">Gentoo, 2015</a>)
+If you wan to customize the kernel, check the Gentoo handbook page on configuring the Linux kernel (<a href="#ref-gentookernel">Gentoo, 2015</a>
+)
 If you need Linux firmware (you most likely do), then install the linux-firmware package.</p>
-<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># emerge gentoo-kernel linux-firmware</span>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># emerge gentoo-kernel linux-firmware</span>
 </span></span></code></pre></div><h1 id="configure-the-system">Configure the System</h1>
 <p>You need to set up fstab:</p>
-<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># blkid &gt; /etc/fstab</span>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># blkid &gt; /etc/fstab</span>
 </span></span></code></pre></div><p>Open the file by running <code># nano /etc/fstab</code>. If you have an SSD, you should enable the <code>noatime</code> and <code>discard</code> options.
 If you are using BIOS, arrange your fstab to something like this:</p>
 <pre><code># /dev/sda1
@@ -250,7 +255,7 @@ UUID=9167fa6f-bb77-4337-a547-48a20506d297   /   ext4    noatime,discard 0 1
 <pre><code>hostname=&quot;*host name*&quot;
 </code></pre>
 <p>Install NetworkManager and add it to the default runlevel for internet connection:</p>
-<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># emerge net-misc/networkmanager</span>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># emerge net-misc/networkmanager</span>
 </span></span><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># rc-update add NetworkManager default</span>
 </span></span></code></pre></div><p>Edit the hosts file by running <code># nano /etc/hosts</code>:</p>
 <pre><code>127.0.0.1   localhost
@@ -261,16 +266,16 @@ UUID=9167fa6f-bb77-4337-a547-48a20506d297   /   ext4    noatime,discard 0 1
 <h1 id="configure-the-bootloader">Configure the Bootloader</h1>
 <p>You now need to install a bootloader, the most common one is GRUB.
 When using BIOS:</p>
-<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># emerge sys-boot/grub</span>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># emerge sys-boot/grub</span>
 </span></span><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># grub-install /dev/*NAME*</span>
 </span></span><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># grub-mkconfig -o /boot/grub/grub.cfg</span>
 </span></span></code></pre></div><p>When using UEFI:</p>
-<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># emerge sys-boot/grub</span>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># emerge sys-boot/grub</span>
 </span></span><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># grub-install --target=x86_64-efi --efi-directory=/boot</span>
 </span></span><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># grub-mkconfig -o /boot/grub/grub.cfg</span>
 </span></span></code></pre></div><h2 id="reboot-the-system">Reboot the system</h2>
-<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># exit</span>
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># cd</span>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># exit</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># cd</span>
 </span></span><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># umount -l /mnt/gentoo/dev{/shm,/pts,} </span>
 </span></span><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># umount -R /mnt/gentoo</span>
 </span></span><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># reboot</span>
@@ -280,30 +285,34 @@ When using BIOS:</p>
 Password: *password*
 </code></pre>
 <p>Add a user for daily use and set its password:</p>
-<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># useradd -mG wheel,news,audio,video,portage *user*</span>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># useradd -mG wheel,news,audio,video,portage *user*</span>
 </span></span><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># passwd *user*</span>
 </span></span></code></pre></div><p>Finally, remove the now unneeded tarball from the root directory:</p>
-<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># rm /stage3-*.tar.*</span>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># rm /stage3-*.tar.*</span>
 </span></span></code></pre></div><p>Congratulations, you have successfully completed the installation of Gentoo Linux.
 But do not get too excited, because we are not technically done yet.</p>
 <h2 id="graphical-environment">Graphical Environment</h2>
 <p>Now all you need to do is install a display server, xinit or a desktop manager, and a window manager or a desktop environment.</p>
-<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># emerge x11-base/xorg-server x11-apps/xinit x11-wm/dwm</span>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># emerge x11-base/xorg-server x11-apps/xinit x11-wm/dwm</span>
 </span></span><span style="display:flex;"><span>$ <span style="color:#81a1c1">echo</span> <span style="color:#a3be8c">&#34;exec dwm&#34;</span> &gt; ~/.xinitrc
 </span></span><span style="display:flex;"><span>$ startx
 </span></span></code></pre></div><h1 id="references">References</h1>
 <div id="refs" class="references csl-bib-body hanging-indent" line-spacing="2">
 <div id="ref-gentookernel" class="csl-entry">
-<p>Gentoo. (2015). <em>Configuring the linux kernel</em>. <a href="https://wiki.gentoo.org/wiki/Handbook:AMD64/Installation/Kernel" target="_blank">https://wiki.gentoo.org/wiki/Handbook:AMD64/Installation/Kernel</a></p>
+<p>Gentoo. (2015). <em>Configuring the linux kernel</em>. <a href="https://wiki.gentoo.org/wiki/Handbook:AMD64/Installation/Kernel">https://wiki.gentoo.org/wiki/Handbook:AMD64/Installation/Kernel</a>
+</p>
 </div>
 <div id="ref-gentoocard" class="csl-entry">
-<p>Gentoo. (2020). <em>Video cards</em>. <a href="https://wiki.gentoo.org/wiki/Category:Video_cards" target="_blank">https://wiki.gentoo.org/wiki/Category:Video_cards</a></p>
+<p>Gentoo. (2020). <em>Video cards</em>. <a href="https://wiki.gentoo.org/wiki/Category:Video_cards">https://wiki.gentoo.org/wiki/Category:Video_cards</a>
+</p>
 </div>
 <div id="ref-gentoocircle" class="csl-entry">
-<p>Gentoo. (2022a). <em>Circular dependencies</em>. <a href="https://wiki.gentoo.org/wiki/User:Sam/Portage_help/Circular_dependencies" target="_blank">https://wiki.gentoo.org/wiki/User:Sam/Portage_help/Circular_dependencies</a></p>
+<p>Gentoo. (2022a). <em>Circular dependencies</em>. <a href="https://wiki.gentoo.org/wiki/User:Sam/Portage_help/Circular_dependencies">https://wiki.gentoo.org/wiki/User:Sam/Portage_help/Circular_dependencies</a>
+</p>
 </div>
 <div id="ref-gentoohandbook" class="csl-entry">
-<p>Gentoo. (2022b). <em>Gentoo AMD64 handbook</em>. <a href="https://wiki.gentoo.org/wiki/Handbook:AMD64" target="_blank">https://wiki.gentoo.org/wiki/Handbook:AMD64</a></p>
+<p>Gentoo. (2022b). <em>Gentoo AMD64 handbook</em>. <a href="https://wiki.gentoo.org/wiki/Handbook:AMD64">https://wiki.gentoo.org/wiki/Handbook:AMD64</a>
+</p>
 </div>
 </div>
 

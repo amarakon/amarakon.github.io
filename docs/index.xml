@@ -23,8 +23,8 @@ Time A common excuse for dozens of things outside of programming is “I don’t
       <pubDate>Thu, 05 May 2022 00:00:00 +0000</pubDate>
       
       <guid>https://amarakon.github.io/amarakon.com/blog/gentoo-linux-should-be-approved-by-the-free-software-foundation/</guid>
-      <description>Gentoo Linux is a 100% free operating system. All of its source code is publicly available on GitHub, meaning that it’s open-source. It is licensed under a free license: GNU General Public License (Version 2). It does not include any preinstalled proprietary software. Its package manager, Portage, blocks proprietary software against the user’s will by default. All of these reasons prove that is a completely free operating system that is against the use of proprietary software, so it should be in the Free Software Foundation’s (FSF) list of free Linux distributions.
-Free System Distribution Guidelines (GNU, 2022b) The GNU free system distribution guidelines (GNU FSDG) is an article supported by the FSF.</description>
+      <description>Gentoo Linux is a 100% free operating system. All of its source code is publicly available on GitHub, meaning that it’s open-source. It is licensed under a free license: GNU General Public License (Version 2). It does not include any preinstalled proprietary software. Its package manager, Portage, blocks proprietary software against the user’s will by default. All of these reasons prove that is a completely free operating system that is against the use of proprietary software, so it should be in the Free Software Foundation’s (FSF) list of free Linux distributions .
+Free System Distribution Guidelines (GNU, 2022b ) The GNU free system distribution guidelines (GNU FSDG) is an article supported by the FSF.</description>
     </item>
     
     <item>
@@ -33,8 +33,8 @@ Free System Distribution Guidelines (GNU, 2022b) The GNU free system distributio
       <pubDate>Wed, 04 May 2022 00:00:00 +0000</pubDate>
       
       <guid>https://amarakon.github.io/amarakon.com/blog/gentoo-linux-the-best-operating-system-ever-made/</guid>
-      <description>In my previous blog post titled How to Install Gentoo – The Efficient Way, I said that Gentoo Linux is “truly the best operating system of all time” (Al-Zubaidi, 2022). I stand by that statement and there are many reasons as to why I think it is. The top three currently most popular operating systems are Windows 10, macOS, and Chrome OS. You may or may not have heard of Linux.
-Figure 1: Operating system market share  Statcounter (2022)
+      <description>In my previous blog post titled How to Install Gentoo – The Efficient Way, I said that Gentoo Linux is “truly the best operating system of all time” (Al-Zubaidi, 2022 ). I stand by that statement and there are many reasons as to why I think it is. The top three currently most popular operating systems are Windows 10, macOS, and Chrome OS. You may or may not have heard of Linux.
+Figure 1: Operating system market share  Statcounter (2022 )
 Technically, Linux is not an operating in and of itself, rather it is the core of the operating system and each distribution should provide all the additional programs required for that distribution.</description>
     </item>
     
@@ -53,7 +53,7 @@ Technically, Linux is not an operating in and of itself, rather it is the core o
       <pubDate>Mon, 02 May 2022 00:00:00 +0000</pubDate>
       
       <guid>https://amarakon.github.io/amarakon.com/blog/education-wants-to-dumb-down-technology/</guid>
-      <description>I am a high school student who happens to be genuinely interested in technology. Specifically, I am interested in operating systems, programming, and free software philosophy. I have a good understanding of what makes a good piece of technology and what makes a bad piece of technology. One of the most important factors in this distinction is the effort it requires to use it. If a piece of technology is extremely complicated but effortless to use (i.e., dumbed down), then it is generally bad. If a piece of technology is minimalist but requires genuine effort to use (e.g., C, LaTeX, flip-phones), then it is generally good.</description>
+      <description>I am a high school student who happens to be genuinely interested in technology. Specifically, I am interested in operating systems, programming, and free software philosophy . I have a good understanding of what makes a good piece of technology and what makes a bad piece of technology. One of the most important factors in this distinction is the effort it requires to use it. If a piece of technology is extremely complicated but effortless to use (i.e., dumbed down), then it is generally bad. If a piece of technology is minimalist but requires genuine effort to use (e.g., C, LaTeX, flip-phones), then it is generally good.</description>
     </item>
     
     <item>
@@ -64,7 +64,7 @@ Technically, Linux is not an operating in and of itself, rather it is the core o
       <guid>https://amarakon.github.io/amarakon.com/about/</guid>
       <description>My name is Amar Al-Zubaidi; I am an Iraqi Canadian high school student. I am interested in many things:
  freedom free software philosophy minimalism GNU/Linux  Gentoo Arch   programming  C R shell   markup  R Markdown LaTeX    Projects On my GitHub page is where I have all my projects. These are some of my best projects:
- Cfetch: minimal and elegent fetch program FFRec: script to record easily using FFmpeg PAVol-Cli: easily control PulseAudio volume from the command-line MagickShot: minimal screenshot utility using ImageMagick Mstatus: minimal status program for DWM, preconfigured out of the box  </description>
+ Cfetch : minimal and elegent fetch program FFRec : script to record easily using FFmpeg PAVol-Cli : easily control PulseAudio volume from the command-line MagickShot : minimal screenshot utility using ImageMagick Mstatus : minimal status program for DWM, preconfigured out of the box  </description>
     </item>
     
     <item>
