@@ -91,7 +91,7 @@ Most of them have a help flag (usually `--help` and `-h`).
 For example: to get help with the `awk` command, all you have to do is run `awk --help` or `awk -h`.
 For more detailed help, you can read the manual page instead, using the `man` command.
 For example: to read `awk`’s man page, run `man awk`.
-To search for man pages, you have to run `mandb` (as root) for the first time.
+To search for man pages, you have to run `mandb` for the first time as root.
 After you have updated the database, simply run `apropos .`.
 
 # Easier to Write
