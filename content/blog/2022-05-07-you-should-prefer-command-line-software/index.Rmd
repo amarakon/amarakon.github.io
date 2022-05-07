@@ -1,5 +1,4 @@
 ---
-draft: true
 title: You Should Prefer Command-Line Software
 author: ~
 date: '2022-05-07'

@@ -87,7 +87,7 @@
     <div class="post-item post-meta">
         <span><i class="iconfont icon-today-sharp"></i>&nbsp;2022-05-07</span>
 
-<span><i class="iconfont icon-file-tray-sharp"></i>&nbsp;405 words</span>
+<span><i class="iconfont icon-file-tray-sharp"></i>&nbsp;1097 words</span>
 
 <span><i class="iconfont icon-pricetags-sharp"></i>&nbsp;<a href="/amarakon.com/tags/cli">cli</a>&nbsp;</span>
 
@@ -104,12 +104,12 @@ That then leads them to the conclusion that anything other than a modern graphic
 This is why most people do not use command-line software.</p>
 <p>In order to efficiently use computers, you need to get rid of this mindset.</p>
 <h1 id="unix-philosophy">Unix Philosophy</h1>
-<p><strong>Ken Thompson:</strong></p>
 <blockquote>
 <p>This is the Unix philosophy:
 Write programs that do one thing and do it well.
 Write programs to work together.
 Write programs to handle text streams, because that is a universal interface.</p>
+<p>— Ken Thompson</p>
 </blockquote>
 <p>Graphical programs do not follow any of these three rules of the Unix philosophy.
 The Unix philosophy is important because it outlines the criteria software needs to be considered good.
@@ -128,7 +128,58 @@ If the program doesn’t serve one and only one main purpose, the program is too
 “Worse is better” seems like a contradictory statement by Richard Gabriel, but what it really means is that certain things may sound worse on paper, but truly are better in practice.
 One such example is a less versatile program.</p>
 <h2 id="work-together">Work together</h2>
+<p>Another reason programs should do one thing and do it well is that they should work together.
+Instead of having one big program that does everything, have many small programs that do one thing well and work together.
+This is the main difference between command-line and graphical programs.
+Command-line programs naturally work well together using pipes; you can pipe the output of one command to another.
+Each command-line program is small but has its own unique purpose, and they all use the same interface so they should be expected to always work together.
+Graphical programs on the other hand, cannot naturally work well together because they are large and versatile.
+A graphical program can only be used by itself because its interface is unique to itself.</p>
+<p>To give two easy-to-understand examples, I will compare Windows to GNU.
+Windows is primarily graphical.
+It does have the powershell but no one uses it.
+As a result of using primarily graphical software, Windows is a huge operating system.
+It cannot even run smoothly on most old computers.
+The GNU core utilities are the opposite of Windows.
+GNU is tiny because it is comprised of small command-line programs that do one thing well and work together.</p>
 <h2 id="handle-text-streams">Handle text streams</h2>
+<p>Unlike graphical user interfaces, text streams are a universal interface.
+This means that all programs use text streams.
+Programs should handle text streams directly and efficiently, that should be their main focus.
+Obviously, all command-line programs handle standard input and standard output within the terminal.
+However, graphical programs only handle text streams within the graphical user interface.
+It is impossible to pipe the output of a command into that of another in a graphical user interface because it does not handle text streams directly.</p>
+<h1 id="easier-to-use">Easier to Use</h1>
+<p>It may not seem like it, but command-line software is easier to use than graphical software.
+All command-line programs work the same way, while all graphical programs work differently.
+For each graphical program you use, you will have to learn the user interface.
+If you do not know how to use it, you will painfully have to search how to do so online.
+This is one of the reasons why most people only use an extremely limited diversity of software.
+For each command-line program you use, you might not even have to do anything new at all.
+Most of them have very similar options to do the same thing.</p>
+<p>If you need help with a command-line program, getting help is always easy.
+Most of them have a help flag (usually <code>--help</code> and <code>-h</code>).
+For example: to get help with the <code>awk</code> command, all you have to do is run <code>awk --help</code> or <code>awk -h</code>.
+For more detailed help, you can read the manual page instead, using the <code>man</code> command.
+For example: to read <code>awk</code>’s man page, run <code>man awk</code>.
+To search for man pages, you have to run <code>mandb</code> (as root) for the first time.
+After you have updated the database, simply run <code>apropos .</code>.</p>
+<h1 id="easier-to-write">Easier to Write</h1>
+<p>Not only is command-line software easier to use, it is also easier to write.
+In <a href="/amarakon.com/blog/programming-is-invaluable-for-everyone/">my previous post</a>
+, I explained why programming is invaluable for everyone.
+Writing graphical software is extremely difficult as you need a lot of experience to do so.
+Writing command-line software is surprisingly easy because you will have experience with using them.
+If you favor open-source software—which you should, you can not only write your own unique programs, but also modify existing programs.
+This will help you optimize your workflow and make you more efficient with computers.
+Graphical programs are not only closed-source, but even when they are open-source, their code-base is huge and not legible for most people.</p>
+<h1 id="conclusion">Conclusion</h1>
+<p>To conclude, I want to clarify that I am not against graphical user interfaces.
+The purpose of this point is to prove that you should <strong>favor</strong> command-line software, you should not use it to <strong>replace</strong> all graphical software.
+Command-line software should be used most of the time, especially when the task is simple.
+Graphical software should be used when absolutely necessary.
+You should never render three-dimensional models using the command-line.
+Similarly, you should never use a command-line web browser.</p>
 <h1 id="references">References</h1>
 <div id="refs" class="references csl-bib-body hanging-indent" line-spacing="2">
 <div id="ref-the-truth-about-unix" class="csl-entry">
@@ -212,6 +263,9 @@ One such example is a less versatile program.</p>
         <li><a href="#handle-text-streams">Handle text streams</a></li>
       </ul>
     </li>
+    <li><a href="#easier-to-use">Easier to Use</a></li>
+    <li><a href="#easier-to-write">Easier to Write</a></li>
+    <li><a href="#conclusion">Conclusion</a></li>
     <li><a href="#references">References</a></li>
   </ul>
 </nav></div>
