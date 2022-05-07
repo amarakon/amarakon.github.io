@@ -87,7 +87,7 @@
     <div class="post-item post-meta">
         <span><i class="iconfont icon-today-sharp"></i>&nbsp;2022-05-03</span>
 
-<span><i class="iconfont icon-file-tray-sharp"></i>&nbsp;1373 words</span>
+<span><i class="iconfont icon-file-tray-sharp"></i>&nbsp;1376 words</span>
 
 <span><i class="iconfont icon-pricetags-sharp"></i>&nbsp;<a href="/amarakon.com/tags/foss">foss</a>&nbsp;<a href="/amarakon.com/tags/tutorial">tutorial</a>&nbsp;</span>
 
@@ -103,7 +103,8 @@ No current Gentoo user regrets spending five hours installing the operating syst
 <p>For this installation tutorial, you will need to have an existing Unix-like operating system—like any Linux distribution.
 Before I get to the beginning of the installation process, there are a few things you must know.
 First, you have to care about computing for the installation of Gentoo to be worth it.
-Second, please view the <a href="https://wiki.gentoo.org/wiki/Handbook:Main_Page" target="_blank">Gentoo handbook</a> while you are watching this video.
+Second, please view the <a href="https://wiki.gentoo.org/wiki/Handbook:Main_Page">Gentoo handbook</a>
+ while you are watching this video.
 It is unlikely but possible that some of the information in this video will be outdated.
 The Gentoo wiki also has many details that I will not go into because they are not important enough.
 Third, you need to know the architecture of your computer’s CPU, usually it is AMD64.
@@ -142,7 +143,8 @@ If you’re using BIOS, all you have to do is format your one partition as ext4 
 </span></span></code></pre></div><h1 id="installing-the-gentoo-installation-files">Installing the Gentoo Installation Files</h1>
 <p>Temporarily set the correct date and time using the <code>MMDDhhmmYYYY</code> syntax:</p>
 <div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># date *MMDDhhmmYYYY*</span>
-</span></span></code></pre></div><p>Go to the <a href="https://www.gentoo.org/downloads/#other-arches" target="_blank">download section</a> of the Gentoo wiki and copy the link of a stage tarball.
+</span></span></code></pre></div><p>Go to the <a href="https://www.gentoo.org/downloads/#other-arches">download section</a>
+ of the Gentoo wiki and copy the link of a stage tarball.
 I recommend the standard Stage 3 OpenRC.
 Download the tarball to <code>/mnt/gentoo</code> using the link you copied.
 Decompress the archive afterwards.</p>
@@ -155,7 +157,8 @@ The <code>-j</code> flag means the amount of threads you want Portage, the packa
 The <code>-l</code> flag means the load average.
 The <code>PORTAGE_NICENESS</code> option refers to how much priority portage should have (the higher the number, the higher the priority).
 Setting <code>ACCEPT_KEYWORDS=&quot;~amd64&quot;</code> will allow portage to install bleeding edge software.
-The <code>VIDEO_CARDS</code> option is dependent on your video card (<a href="#ref-gentoocard">Gentoo, 2020</a>).
+The <code>VIDEO_CARDS</code> option is dependent on your video card (<a href="#ref-gentoocard">Gentoo, 2020</a>
+).
 The <code>USE</code> flags are for features you want or do not want in your packages.
 The <code>GRUB_PLATFORMS</code> option should be set to <code>&quot;pc&quot;</code> for BIOS and <code>&quot;efi-64&quot;</code> or <code>&quot;efi-32&quot;</code> for UEFI.
 Copy everything else I did.</p>
@@ -205,7 +208,8 @@ GENTOO_MIRRORS=&#34;https://mirror.csclub.uwaterloo.ca/gentoo-distfiles/ https:/
 </span></span><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># emerge --sync</span>
 </span></span></code></pre></div><p>Update the @set (all of your packages).
 This will take a lot of time.
-If you get a circular dependency error, which is not uncommon, consult the Gentoo wiki (<a href="#ref-gentoocircle">Gentoo, 2022a</a>):</p>
+If you get a circular dependency error, which is not uncommon, consult the Gentoo wiki (<a href="#ref-gentoocircle">Gentoo, 2022a</a>
+):</p>
 <div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># emerge -uDN @world </span>
 </span></span></code></pre></div><p>Select the time zone for the system.
 Look for the available time zones in <code>/usr/share/zoneinfo/</code>.
@@ -228,7 +232,8 @@ I chose <code>America/Toronto</code>.</p>
 <div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># env-update &amp;&amp; source /etc/profile &amp;&amp; export PS1=&#34;(chroot) ${PS1}&#34;</span>
 </span></span></code></pre></div><h1 id="install-the-kernel">Install the Kernel</h1>
 <p>The easiest way to install the kernel is by installing the gentoo-kernel package.
-If you wan to customize the kernel, check the Gentoo handbook page on configuring the Linux kernel (<a href="#ref-gentookernel">Gentoo, 2015</a>)
+If you wan to customize the kernel, check the Gentoo handbook page on configuring the Linux kernel (<a href="#ref-gentookernel">Gentoo, 2015</a>
+)
 If you need Linux firmware (you most likely do), then install the linux-firmware package.</p>
 <div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># emerge gentoo-kernel linux-firmware</span>
 </span></span></code></pre></div><h1 id="configure-the-system">Configure the System</h1>
@@ -294,16 +299,20 @@ But do not get too excited, because we are not technically done yet.</p>
 </span></span></code></pre></div><h1 id="references">References</h1>
 <div id="refs" class="references csl-bib-body hanging-indent" line-spacing="2">
 <div id="ref-gentookernel" class="csl-entry">
-<p>Gentoo. (2015). <em>Configuring the linux kernel</em>. <a href="https://wiki.gentoo.org/wiki/Handbook:AMD64/Installation/Kernel" target="_blank">https://wiki.gentoo.org/wiki/Handbook:AMD64/Installation/Kernel</a></p>
+<p>Gentoo. (2015). <em>Configuring the linux kernel</em>. <a href="https://wiki.gentoo.org/wiki/Handbook:AMD64/Installation/Kernel">https://wiki.gentoo.org/wiki/Handbook:AMD64/Installation/Kernel</a>
+</p>
 </div>
 <div id="ref-gentoocard" class="csl-entry">
-<p>Gentoo. (2020). <em>Video cards</em>. <a href="https://wiki.gentoo.org/wiki/Category:Video_cards" target="_blank">https://wiki.gentoo.org/wiki/Category:Video_cards</a></p>
+<p>Gentoo. (2020). <em>Video cards</em>. <a href="https://wiki.gentoo.org/wiki/Category:Video_cards">https://wiki.gentoo.org/wiki/Category:Video_cards</a>
+</p>
 </div>
 <div id="ref-gentoocircle" class="csl-entry">
-<p>Gentoo. (2022a). <em>Circular dependencies</em>. <a href="https://wiki.gentoo.org/wiki/User:Sam/Portage_help/Circular_dependencies" target="_blank">https://wiki.gentoo.org/wiki/User:Sam/Portage_help/Circular_dependencies</a></p>
+<p>Gentoo. (2022a). <em>Circular dependencies</em>. <a href="https://wiki.gentoo.org/wiki/User:Sam/Portage_help/Circular_dependencies">https://wiki.gentoo.org/wiki/User:Sam/Portage_help/Circular_dependencies</a>
+</p>
 </div>
 <div id="ref-gentoohandbook" class="csl-entry">
-<p>Gentoo. (2022b). <em>Gentoo AMD64 handbook</em>. <a href="https://wiki.gentoo.org/wiki/Handbook:AMD64" target="_blank">https://wiki.gentoo.org/wiki/Handbook:AMD64</a></p>
+<p>Gentoo. (2022b). <em>Gentoo AMD64 handbook</em>. <a href="https://wiki.gentoo.org/wiki/Handbook:AMD64">https://wiki.gentoo.org/wiki/Handbook:AMD64</a>
+</p>
 </div>
 </div>
 
@@ -332,11 +341,11 @@ But do not get too excited, because we are not technically done yet.</p>
         <ul>
             
             <li>
-                <a href="https://github.com/amarakon" target="_blank"><span>GitHub</span></a>
+                <a href="https://github.com/amarakon"><span>GitHub</span></a>
             </li>
             
             <li>
-                <a href="https://www.youtube.com/channel/UCbZc671K2NxNbr1Kfqz6Fmg" target="_blank"><span>YouTube</span></a>
+                <a href="https://www.youtube.com/channel/UCbZc671K2NxNbr1Kfqz6Fmg"><span>YouTube</span></a>
             </li>
             
         </ul>
@@ -345,6 +354,10 @@ But do not get too excited, because we are not technically done yet.</p>
     <div class="sidebar-item sidebar-tags">
         <h3>Tags</h3>
         <div>
+            
+            <span>
+                <a href="/amarakon.com/tags/cli/">cli</a>
+            </span>
             
             <span>
                 <a href="/amarakon.com/tags/foss/">foss</a>
@@ -422,11 +435,11 @@ But do not get too excited, because we are not technically done yet.</p>
         <ul>
             
             <li>
-                <a href="https://github.com/amarakon" target="_blank"><span>GitHub</span></a>
+                <a href="https://github.com/amarakon"><span>GitHub</span></a>
             </li>
             
             <li>
-                <a href="https://www.youtube.com/channel/UCbZc671K2NxNbr1Kfqz6Fmg" target="_blank"><span>YouTube</span></a>
+                <a href="https://www.youtube.com/channel/UCbZc671K2NxNbr1Kfqz6Fmg"><span>YouTube</span></a>
             </li>
             
         </ul>
@@ -435,6 +448,10 @@ But do not get too excited, because we are not technically done yet.</p>
     <div class="sidebar-item sidebar-tags">
         <h3>Tags</h3>
         <div>
+            
+            <span>
+                <a href="/amarakon.com/tags/cli/">cli</a>
+            </span>
             
             <span>
                 <a href="/amarakon.com/tags/foss/">foss</a>
@@ -464,6 +481,7 @@ But do not get too excited, because we are not technically done yet.</p>
     
   </div>
 </aside>
+
     </main>
 
     <footer>
@@ -474,8 +492,8 @@ But do not get too excited, because we are not technically done yet.</p>
                 <a href="https://amarakon.github.io/amarakon.com/"></a>
                  | <a href="https://github.com/amarakon/amarakon.com">Source code</a> 
                 | Powered by <a href="https://github.com/dsrkafuu/hugo-theme-fuji/"
-                   target="_blank">Fuji-v2</a> and <a href="https://gohugo.io/"
-                                                    target="_blank">Hugo</a> 
+                   >Fuji-v2</a> and <a href="https://gohugo.io/"
+                                                    >Hugo</a> 
             </span>
         </div>
     </div>
