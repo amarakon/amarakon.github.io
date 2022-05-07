@@ -102,7 +102,7 @@ Writing graphical software is extremely difficult as you need a lot of experienc
 Writing command-line software is surprisingly easy because you will have experience with using them.
 If you favor open-source software—which you should, you can not only write your own unique programs, but also modify existing programs.
 This will help you optimize your workflow and make you more efficient with computers.
-Graphical programs are not only closed-source, but even when they are open-source, their code-base is huge and not legible for most people.
+Graphical programs are not only usually closed-source, but even when they are open-source, their code-base is huge and not legible for most people.
 
 # Conclusion
 
