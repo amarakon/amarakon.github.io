@@ -81,7 +81,7 @@ disableDarkImage = true
 unsafe = true # Enable user to embed HTML snippets in Markdown content
 [markup.highlight]
 style = "nord"
-#codeFences = false # Disable Hugo's code highlighter
+guessSyntax = false
 
 [markup.tableOfContents]
 startLevel = 1

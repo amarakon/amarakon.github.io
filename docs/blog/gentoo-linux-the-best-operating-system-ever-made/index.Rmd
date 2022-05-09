@@ -21,7 +21,7 @@ slices <- c(74.83, 15.37, 4.93, 2.48, 2.38)
 lbls <- c("Windows", "macOS", "Unknown", "Linux", "Chrome OS")
 pct <- round(slices/sum(slices)*100)
 lbls <- paste(lbls, pct) # add percents to labels
-lbls <- paste(lbls,"%",sep="") # ad % to labels
+lbls <- paste(lbls, "%", sep="") # ad % to labels
 pie(slices, labels = lbls, col = rainbow(length(lbls)))
 ```
 @desktop-os-marketshare
