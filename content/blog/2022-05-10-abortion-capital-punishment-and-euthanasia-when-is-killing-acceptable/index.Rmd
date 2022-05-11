@@ -1,7 +1,7 @@
 ---
 title: Abortion, Capital Punishment, and Euthanasia – When is Killing Acceptable
 author: ~
-date: '2022-05-09'
+date: '2022-05-10'
 slug: abortion-capital-punishment-and-euthanasia-when-is-killing-acceptable
 categories: ["Politics"]
 tags: ["politics", "death"]
