@@ -6,7 +6,16 @@
     <description>Recent content in foss on Amar Al-Zubaidi’s Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 05 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://amarakon.github.io/amarakon.com/tags/foss/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 13 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://amarakon.github.io/amarakon.com/tags/foss/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Comparing the Best Markup Languages for Making PDF Documents</title>
+      <link>https://amarakon.github.io/amarakon.com/blog/comparing-the-best-markup-languages-for-making-pdf-documents/</link>
+      <pubDate>Fri, 13 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://amarakon.github.io/amarakon.com/blog/comparing-the-best-markup-languages-for-making-pdf-documents/</guid>
+      <description>PDF is rightfully the standard output format for documents. All word processors can output to PDF, but it is difficult to convert PDF to files word processors can edit. Most people use “what you see is what you get” word processors like Microsoft Word, Google Docs, or LibreOffice Writer. This type of word processor is convenient but it is also limited and unprofessional. It is easier to get into, but it is harder to use in the long run. This is the problem with all “what you see is what you get” programs: they do not follow the “separation of content and presentation” design principle.</description>
+    </item>
+    
     <item>
       <title>Gentoo Linux Should be Approved by the Free Software Foundation</title>
       <link>https://amarakon.github.io/amarakon.com/blog/gentoo-linux-should-be-approved-by-the-free-software-foundation/</link>
