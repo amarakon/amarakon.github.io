@@ -63,7 +63,7 @@ Chopping off your penis, breasts, or other body parts to detach them is obviousl
 Similarly, transgender hormone therapy is self-harm because there are many dangerous side effects.
 It is unsurprisingly difficult to find a professional list of the side effects of transgender hormone therapy.
 This is obviously because this is a political issue, and the radical left controls the flow of information.
-Detransgender activist Helena Kerschner shared her experiences with conservative Michael Knowles (14:20) (\#text:michael-knowles-helena-kerschner):
+Detransgender activist Helena Kerschner shared her experiences with conservative Michael Knowles (14:20):
 
 {{% youtube "5HbPzJy9gkY" %}}
 
