@@ -1,8 +1,9 @@
 amarakon.com – Amarakon’s Website
 ================
 
-This is my personal website. It has an about page, my links, tags, and
-blog posts. The theme for the website is Nord, based on
+This is my personal website. I am using GitHub Pages instead of Netlify
+for convenience. It has an about page, my links, tags, and blog posts.
+The theme for the website is Nord, based on
 [Fuji](https://github.com/dsrkafuu/hugo-theme-fuji/). I upload to my
 blog almost every day. Sometimes I will go several days without
 uploading because I am too busy. My blog posts are about politics,

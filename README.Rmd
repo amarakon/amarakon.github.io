@@ -4,6 +4,7 @@ output: bookdown::github_document2
 ---
 
 This is my personal website.
+I am using GitHub Pages instead of Netlify for convenience.
 It has an about page, my links, tags, and blog posts.
 The theme for the website is Nord, based on [Fuji](https://github.com/dsrkafuu/hugo-theme-fuji/).
 I upload to my blog almost every day.
