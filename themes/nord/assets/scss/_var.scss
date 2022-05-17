@@ -13,7 +13,7 @@ $font-weight-light: 400;
 $body-font: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', 'Arial', 'Helvetica Neue',
   'Helvetica', 'PingFang SC', 'Hiragino Sans GB', 'Source Han Sans CN', 'Source Han Sans SC',
   'Microsoft YaHei', 'WenQuanYi Micro Hei', sans-serif !default;
-$mono-font: 'SF Mono', 'Inconsolata Nerd Font', 'Consolas', -apple-system, BlinkMacSystemFont, 'SF Pro Text',
+$mono-font: 'SF Mono', 'Liberation Mono', 'Consolas', -apple-system, BlinkMacSystemFont, 'SF Pro Text',
   'Segoe UI', 'Arial', 'Helvetica Neue', 'Helvetica', 'PingFang SC', 'Hiragino Sans GB',
   'Source Han Sans CN', 'Source Han Sans SC', 'Microsoft YaHei', 'WenQuanYi Micro Hei', monospace !default;
 $title-font: 'Liberation Sans', sans-serif !default;
@@ -59,6 +59,6 @@ $dark-color-codebg: #2E3440 !default; // kai GitHub
 }
 
 @font-face {
-  font-family: "Inconsolata Nerd Font";
-  src: url("/amarakon.com/fonts/Inconsolata-Regular-Nerd-Font-Complete.otf");
+  font-family: "Liberation Mono";
+  src: url("/amarakon.com/fonts/LiberationMono-Regular.ttf");
 }

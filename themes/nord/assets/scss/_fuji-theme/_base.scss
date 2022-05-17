@@ -80,7 +80,7 @@ body[data-theme='dark'] {
 
 @mixin link-1 {
   a {color: var(--color-primary);}
-  a:visited {color: var(--color-visited)}
+  a:visited {color: var(--color-visited);}
   a:hover {color: var(--color-secondary);}
   a:active {color: var(--color-active);}
 
@@ -88,7 +88,7 @@ body[data-theme='dark'] {
 
 @mixin link-2 {
   a {color: var(--color-primary);}
-  a:visited {color: var(--color-visited)}
+  a:visited {color: var(--color-visited);}
   a:hover {color: var(--color-secondary);}
   a:active {color: var(--color-active);}
 }
