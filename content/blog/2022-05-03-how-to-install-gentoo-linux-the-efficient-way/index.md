@@ -29,6 +29,7 @@ Third, you need to know the architecture of your computer’s CPU, usually it is
 Finally, you must know whether your computer firmware uses BIOS or UEFI.
 Generally, only extremely old computers support only BIOS, only terrible new computers support only UEFI, and most computers support both.
 You should be completely sure though to avoid messing your entire installation.
+Finally, please note that when text in code blocks are wrapped in `<>` symbols, that means that you need to replace the text.
 
 # Prepare the Disks
 
@@ -40,9 +41,9 @@ Use the `wipefs` command to wipe a block device if it already has a partition sc
 Then use the `cfdisk` command to begin partitioning.
 
 ``` shell
-$ lsblk
-# wipefs -a /dev/*NAME*
-# cfdisk /dev/*NAME*
+`# user` lsblk
+`# root` wipefs -a /dev/<NAME>
+`# root` cfdisk /dev/<NAME>
 ```
 
 If you’re using BIOS, select DOS.
@@ -56,29 +57,29 @@ Once you exited cfdisk, you need to format your partitions.
 If you’re using BIOS, all you have to do is format your one partition as ext4 or any other usable file system you prefer:
 
 ``` shell
-# mkfs.ext4 /dev/*NAME*1
+`# root` mkfs.ext4 /dev/<NAME>1
 ```
 
 If you’re using UEFI, you must format your first partition as VFAT and your second partition your preferred file system:
 
 ``` shell
-# mkfs.fat -F 32 /dev/*NAME*1
-# mkfs.ext4 /dev/*NAME*2
+`# root` mkfs.fat -F 32 /dev/<NAME>1
+`# root` mkfs.ext4 /dev/<NAME>2
 ```
 
 If you’re using BIOS, mount the root partition:
 
 ``` shell
-mkdir /mnt/gentoo
-mount /dev/*NAME*2 /mnt/gentoo
+`# user` mkdir /mnt/gentoo
+`# root` mount /dev/<NAME>2 /mnt/gentoo
 ```
 
 If you’re using UEFI, mount the root partition and the boot partition:
 
 ``` shell
-# mkdir /mnt/gentoo
-# mount /dev/*NAME*2 /mnt/gentoo
-# mount /dev/*NAME*1 /mnt/gentoo/boot
+`# root` mkdir /mnt/gentoo
+`# root` mount /dev/<NAME>2 /mnt/gentoo
+`# root` mount /dev/<NAME>1 /mnt/gentoo/boot
 ```
 
 # Installing the Gentoo Installation Files
@@ -86,7 +87,7 @@ If you’re using UEFI, mount the root partition and the boot partition:
 Temporarily set the correct date and time using the `MMDDhhmmYYYY` syntax:
 
 ``` shell
-# date *MMDDhhmmYYYY*
+`# user` date <MMDDhhmmYYYY>
 ```
 
 Go to the [download section](https://www.gentoo.org/downloads/#other-arches) of the Gentoo wiki and copy the link of a stage tarball.
@@ -95,12 +96,12 @@ Download the tarball to `/mnt/gentoo` using the link you copied.
 Decompress the archive afterwards.
 
 ``` shell
-$ cd /mnt/gentoo
-# wget *URL*
-# tar xpvf stage3-*.tar.xz --xattrs-include='*.*' --numeric-owner
+`# user` cd /mnt/gentoo
+`# root` wget <URL>
+`# root` tar xpvf stage3-*.tar.xz --xattrs-include='*.*' --numeric-owner
 ```
 
-Run `# nano /mnt/gentoo/etc/portage/make.conf`.
+Run `` `# root` nano /mnt/gentoo/etc/portage/make.conf ``.
 Set march equal to native.
 The `-j` flag means the amount of threads you want Portage, the package manager to use.
 The `-l` flag means the load average.
@@ -111,68 +112,66 @@ The `USE` flags are for features you want or do not want in your packages.
 The `GRUB_PLATFORMS` option should be set to `"pc"` for BIOS and `"efi-64"` or `"efi-32"` for UEFI.
 Copy everything else I did.
 
-``` gentoo
-COMMON_FLAGS="-march=native -O2 -pipe"
-CFLAGS="${COMMON_FLAGS}"
-CXXFLAGS="${COMMON_FLAGS}"
+    COMMON_FLAGS="-march=native -O2 -pipe"
+    CFLAGS="${COMMON_FLAGS}"
+    CXXFLAGS="${COMMON_FLAGS}"
 
-MAKEOPTS="-j2 -l3.6"
-EMERGE_DEFAULT_OPTS="-j2 -l3.6"
-PORTAGE_NICENESS="1"
-ACCEPT_KEYWORDS="~amd64"
-VIDEO_CARDS="intel i915 i965"
-USE="X pulseaudio savedconfig -bluetooth -geolocation -drm"
+    MAKEOPTS="-j2 -l3.6"
+    EMERGE_DEFAULT_OPTS="-j2 -l3.6"
+    PORTAGE_NICENESS="1"
+    ACCEPT_KEYWORDS="~amd64"
+    VIDEO_CARDS="intel i915 i965"
+    USE="X pulseaudio savedconfig -bluetooth -geolocation -drm"
 
-# NOTE: This stage was built with the bindist Use flag enabled
-PORTDIR="/var/db/repos/gentoo"
-DISTDIR="/var/cache/distfiles"
-PKGDIR="/var/cache/binpkgs"
+    # NOTE: This stage was built with the bindist Use flag enabled
+    PORTDIR="/var/db/repos/gentoo"
+    DISTDIR="/var/cache/distfiles"
+    PKGDIR="/var/cache/binpkgs"
 
-# This sets the language of build output to English.
-# Please keep this setting intact when reporting bugs.
-LC_MESSAGES=C
-L10N=""
+    # This sets the language of build output to English.
+    # Please keep this setting intact when reporting bugs.
+    LC_MESSAGES=C
+    L10N=""
 
-# Other
-GRUB_PLATFORMS="pc"
-GENTOO_MIRRORS="https://mirror.csclub.uwaterloo.ca/gentoo-distfiles/ https://gentoo.osuosl.org/ https://mirrors.rit.edu/gentoo/ http://mirror.csclub.uwaterloo.ca/gentoo-distfiles/ http://gentoo.osuosl.org/ http://mirrors.rit.edu/gentoo/"
-```
+    # Other
+    GRUB_PLATFORMS="pc"
+    GENTOO_MIRRORS="https://mirror.csclub.uwaterloo.ca/gentoo-distfiles/ https://gentoo.osuosl.org/ https://mirrors.rit.edu/gentoo/ http://mirror.csclub.uwaterloo.ca/gentoo-distfiles/ http://gentoo.osuosl.org/ http://mirrors.rit.edu/gentoo/"
 
-# Installing the Base
+# Installing the Base System
 
 Set up the *gentoo* repository:
 
 ``` shell
-# mkdir -p /mnt/gentoo/etc/portage/repos.conf
-# cp /mnt/gentoo/usr/share/portage/config/repos.conf /mnt/gentoo/etc/portage/repos.conf/gentoo.conf
-# cp --dereference /etc/resolv.conf /mnt/gentoo/etc/
+`# root` mkdir -p /mnt/gentoo/etc/portage/repos.conf
+`# root` cp /mnt/gentoo/usr/share/portage/config/repos.conf /mnt/gentoo/etc/portage/repos.conf/gentoo.conf
+`# root` cp --dereference /etc/resolv.conf /mnt/gentoo/etc/
 ```
 
 Mount necessary file systems:
 
 ``` shell
-# mount --types proc /proc /mnt/gentoo/proc
-# mount --rbind /sys /mnt/gentoo/sys
-# mount --make-rslave /mnt/gentoo/sys
-# mount --rbind /dev /mnt/gentoo/dev
-# mount --make-rslave /mnt/gentoo/dev
-# mount --bind /run /mnt/gentoo/run
-# mount --make-slave /mnt/gentoo/run 
+`# root` mount --types proc /proc /mnt/gentoo/proc
+`# root` mount --rbind /sys /mnt/gentoo/sys
+`# root` mount --make-rslave /mnt/gentoo/sys
+`# root` mount --rbind /dev /mnt/gentoo/dev
+`# root` mount --make-rslave /mnt/gentoo/dev
+`# root` mount --bind /run /mnt/gentoo/run
+`# root` mount --make-slave /mnt/gentoo/run 
 ```
 
 Enter the new installation environment by chrooting into it:
 
 ``` shell
-# chroot /mnt/gentoo /bin/bash
-# source /etc/profile
-# export PS1="(chroot) ${PS1}"
+`# root` chroot /mnt/gentoo /bin/bash
+`# root` source /etc/profile
+`# root` export PS1="(chroot) ${PS1}"
 ```
 
 Installing a Gentoo ebuild repository snapshot from the web and update it:
 
 ``` shell
-# emerge-webrsync
-# emerge --sync
+`# root` emerge-webrsync
+`# root` emerge --sync
 ```
 
 Update the @set (all of your packages).
@@ -180,7 +179,7 @@ This will take a lot of time.
 If you get a circular dependency error, which is not uncommon, consult the Gentoo wiki ([Gentoo, 2022a](#ref-gentoocircle)):
 
 ``` shell
-# emerge -uDN @world 
+`# root` emerge -uDN @world 
 ```
 
 Select the time zone for the system.
@@ -188,50 +187,46 @@ Look for the available time zones in `/usr/share/zoneinfo/`.
 I chose `America/Toronto`.
 
 ``` shell
-$ ls /usr/share/zoneinfo
-# echo "America/Toronto" > /etc/timezone
-# emerge --config sys-libs/timezone-data
+`# user` ls /usr/share/zoneinfo
+`# root` echo "America/Toronto" > /etc/timezone
+`# root` emerge --config sys-libs/timezone-data
 ```
 
-Choose the right locale by running `# nano /etc/locale.gen`:
+Choose the right locale by running `` `# root` nano /etc/locale.gen ``:
+
+    en_CA.UTF-8 UTF-8
 
 ``` shell
-en_CA.UTF-8 UTF-8
-```
-
-``` shell
-locale-gen
+`#root` locale-gen
 ```
 
 Check the locale list by running `$ eselect locale list`, then select the right one:
 
-``` gentoo
-Available targets for the LANG variable:
-  [1]   C
-  [2]   C.utf8
-  [3]   en_CA.utf8
-  [4]   POSIX
-  [ ]   (free form)
-```
+    Available targets for the LANG variable:
+      [1]   C
+      [2]   C.utf8
+      [3]   en_CA.utf8
+      [4]   POSIX
+      [ ]   (free form)
 
 ``` shell
-# eselect locale set 3
+`# root` eselect locale set 3
 ```
 
 Reload the environment:
 
 ``` shell
-# env-update && source /etc/profile && export PS1="(chroot) ${PS1}"
+`# root` env-update && source /etc/profile && export PS1="(chroot) ${PS1}"
 ```
 
 # Install the Kernel
 
 The easiest way to install the kernel is by installing the gentoo-kernel package.
-If you wan to customize the kernel, check the Gentoo handbook page on configuring the Linux kernel ([Gentoo, 2015](#ref-gentookernel))
-If you need Linux firmware (you most likely do), then install the linux-firmware package.
+If you want to customize the kernel, check the Gentoo handbook page on configuring the Linux kernel ([Gentoo, 2015](#ref-gentookernel))
+If you need Linux firmware (you most likely do), then install the `linux-firmware` package.
 
 ``` shell
-# emerge gentoo-kernel linux-firmware
+`# root` emerge gentoo-kernel linux-firmware
 ```
 
 # Configure the System
@@ -239,10 +234,11 @@ If you need Linux firmware (you most likely do), then install the linux-firmware
 You need to set up fstab:
 
 ``` shell
-# blkid > /etc/fstab
+`# root` blkid > /etc/fstab
 ```
 
-Open the file by running `# nano /etc/fstab`. If you have an SSD, you should enable the `noatime` and `discard` options.
+Open the file by running `` `# root` nano /etc/fstab ``.
+If you have an SSD, you should enable the `noatime` and `discard` options.
 If you are using BIOS, arrange your fstab to something like this:
 
     # /dev/sda1
@@ -256,24 +252,24 @@ If you are using UEFI, do something like this instead:
     # /dev/sda2
     UUID=9167fa6f-bb77-4337-a547-48a20506d297   /   ext4    noatime,discard 0 1
 
-Set the host name by running `# nano /etc/conf.d/hostname`:
+Set the host name by running `` `# root` nano /etc/conf.d/hostname ``:
 
-    hostname="*host name*"
+    hostname="<host name>"
 
 Install NetworkManager and add it to the default runlevel for internet connection:
 
 ``` shell
-# emerge net-misc/networkmanager
-# rc-update add NetworkManager default
+`# root` emerge net-misc/networkmanager
+`# root` rc-update add NetworkManager default
 ```
 
-Edit the hosts file by running `# nano /etc/hosts`:
+Edit the hosts file by running `` `# root` nano /etc/hosts ``:
 
     127.0.0.1   localhost
     ::1         localhost
-    127.0.1.1   *host name*
+    127.0.1.1   <host name>
 
-Set the root password by simply running `# passwd`.
+Set the root password by simply running `` `# root` passwd ``.
 
 # Configure the Bootloader
 
@@ -281,30 +277,30 @@ You now need to install a bootloader, the most common one is GRUB.
 When using BIOS:
 
 ``` shell
-# emerge sys-boot/grub
-# grub-install /dev/*NAME*
-# grub-mkconfig -o /boot/grub/grub.cfg
+`# root` emerge sys-boot/grub
+`# root` grub-install /dev/<NAME>
+`# root` grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
 When using UEFI:
 
 ``` shell
-# emerge sys-boot/grub
-# grub-install --target=x86_64-efi --efi-directory=/boot
-# grub-mkconfig -o /boot/grub/grub.cfg
+`# root` emerge sys-boot/grub
+`# root` grub-install --target=x86_64-efi --efi-directory=/boot
+`# root` grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
 ## Reboot the system
 
 ``` shell
-# exit
+`# root` exit
 ```
 
 ``` shell
-# cd
-# umount -l /mnt/gentoo/dev{/shm,/pts,} 
-# umount -R /mnt/gentoo
-# reboot
+`# root` cd
+`# root` umount -l /mnt/gentoo/dev{/shm,/pts,} 
+`# root` umount -R /mnt/gentoo
+`# root` reboot
 ```
 
 # Finalize the Installation
@@ -312,19 +308,19 @@ When using UEFI:
 First, log in as root:
 
     Login: root
-    Password: *password*
+    Password: <password>
 
 Add a user for daily use and set its password:
 
 ``` shell
-# useradd -mG wheel,news,audio,video,portage *user*
-# passwd *user*
+`# root` useradd -mG wheel,news,audio,video,portage <user>
+`# root` passwd <user>
 ```
 
 Finally, remove the now unneeded tarball from the root directory:
 
 ``` shell
-# rm /stage3-*.tar.*
+`# root` rm /stage3-*.tar.*
 ```
 
 Congratulations, you have successfully completed the installation of Gentoo Linux.
@@ -335,9 +331,9 @@ But do not get too excited, because we are not technically done yet.
 Now all you need to do is install a display server, xinit or a desktop manager, and a window manager or a desktop environment.
 
 ``` shell
-# emerge x11-base/xorg-server x11-apps/xinit x11-wm/dwm
-$ echo "exec dwm" > ~/.xinitrc
-$ startx
+`# root` emerge x11-base/xorg-server x11-apps/xinit x11-wm/dwm
+`# user` echo "exec dwm" > ~/.xinitrc
+`# user` startx
 ```
 
 # References
