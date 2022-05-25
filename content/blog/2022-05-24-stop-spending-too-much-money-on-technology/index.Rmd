@@ -11,3 +11,8 @@ csl: ../../../static/citations/apa-no-initials.csl
 link-citations: true
 reference-section-title: References
 ---
+
+Many people feel the need to spend a lot of money on technology.
+They think that because technology is complex and vast, they should buy from the most expensive brands.
+I think that the opposite is true.
+Because technology is complex and vast, we should buy cheap but great tech products.
