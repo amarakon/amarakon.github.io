@@ -31,7 +31,7 @@ home = ["HTML", "RSS", "SearchIndex"]
 post = "/:section/:filename/" # Custom post links, e.g. "/:year/:month/:title/"
 
 [params]
-math = true
+math = false
 subTitle = "Where I have my blog and other things about me"
 defaultTheme = "auto"              # default theme when first visit (auto|dark|light)
 
