@@ -1,5 +1,4 @@
 ---
-draft: true
 title: Stop Spending Too Much Money on Technology
 author: ~
 date: "2022-06-16"
