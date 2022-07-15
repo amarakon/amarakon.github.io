@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>websites on Amar Al-Zubaidi’s Website</title>
-    <link>https://amarakon.github.io/amarakon.com/tags/websites/</link>
-    <description>Recent content in websites on Amar Al-Zubaidi’s Website</description>
+    <title>websites on Amarakon</title>
+    <link>https://amarakon.github.io/tags/websites/</link>
+    <description>Recent content in websites on Amarakon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 02 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://amarakon.github.io/amarakon.com/tags/websites/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 02 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://amarakon.github.io/tags/websites/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Education Wants to Dumb Down Technology</title>
-      <link>https://amarakon.github.io/amarakon.com/blog/education-wants-to-dumb-down-technology/</link>
+      <link>https://amarakon.github.io/articles/education-wants-to-dumb-down-technology/</link>
       <pubDate>Mon, 02 May 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://amarakon.github.io/amarakon.com/blog/education-wants-to-dumb-down-technology/</guid>
+      <guid>https://amarakon.github.io/articles/education-wants-to-dumb-down-technology/</guid>
       <description>I am a high school student who happens to be genuinely interested in technology. Specifically, I am interested in operating systems, programming, and free software philosophy. I have a good understanding of what makes a good piece of technology and what makes a bad piece of technology. One of the most important factors in this distinction is the effort it requires to use it. If a piece of technology is extremely complicated but effortless to use (i.e., dumbed down), then it is generally bad. If a piece of technology is minimalist but requires genuine effort to use (e.g., C, LaTeX, flip-phones), then it is generally good.</description>
     </item>
     

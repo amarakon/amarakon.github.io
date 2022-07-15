@@ -1,0 +1,59 @@
+{{ define "main" }}
+<p>Welcome! My name is Amar Al-Zubaidi and this is my personal website. I am a programmer who loves Gentoo because it is the best operating system ever made. Also, I am only excellent at shell because I have not taken the time to master other languages. However, I sitll know C, R, HTML, CSS, TeX. See my <a href="/about/">about</a> page for more details.</p>
+<div id="programs" class="section level1">
+<h1><a href="/programs/">Software and Hardware I Use</a></h1>
+</div>
+
+<p class="caption">My top 4 favorite software projects</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Gentoo</th>
+<th style="text-align:center">Zsh</th>
+<th style="text-align:center">ImageMagick</th>
+<th style="text-align:center">R Markdown</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><img class="img-zoomable" src="https://www.gentoo.org/assets/img/logo/gentoo-signet.png" alt="" width="80%" />
+</td>
+<td style="text-align:center"><img class="img-zoomable" src="https://wikiless.org/media/wikipedia/commons/thumb/1/1f/Z_Shell_Logo_Color_Horizontal.svg/529px-Z_Shell_Logo_Color_Horizontal.svg.png" alt="" width = "100%" />
+</td>
+<td style="text-align:center"><img class="img-zoomable" src="https://wikiless.org/media/wikipedia/commons/thumb/9/9a/ImageMagick_logo.svg/579px-ImageMagick_logo.svg.png" alt="" width = "75%" />
+</td>
+<td style="text-align:center"><img class="img-zoomable" src="https://raw.githubusercontent.com/rstudio/rmarkdown/main/man/figures/logo.png" alt="" width="100%" />
+</td>
+</tr>
+</tbody>
+</table>
+
+<div id="projects" class="section level1">
+<h1><a href="/projects/">My Software Projects</a></h1>
+</div>
+
+<img class="img-zoomable" src="/images/dfm.gif" alt="" width="100%" />
+<p class="caption">DFM – dmenu file manager</p>
+
+<div id="articles" class="section level1">
+<h1><a href="/articles/">Articles</a></h1>
+</div>
+
+{{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
+{{ range $paginator.Pages }}
+<li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+<div class="post-item post-meta">
+{{ partial "post-meta.html" . }}
+</div>
+{{ end }}
+
+{{ if and (or .Site.Params.showLicense .Params.showLicense) (ne .Params.showLicense false) }}
+{{ end }}
+{{ if and (.Site.Params.disqusJSApi) (ne .Params.showComments false) }}
+{{ partial "comment-disqusjs.html" . }}
+{{ else if and (.Site.Params.disqusShortname) (ne .Params.showComments false) }}
+{{ partial "comment-disqus.html" . }}
+{{ else if and (.Site.Params.utterancesRepo) (ne .Params.showComments false) }}
+{{ partial "comment-utterances.html" . }}
+{{ else }}{{ end }}
+{{ end }}

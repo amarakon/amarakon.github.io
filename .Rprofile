@@ -1,5 +1,4 @@
-knitr::opts_chunk$set(dev = 'svglite')
-
+knitr::opts_chunk$set(echo = FALSE, cache = TRUE, dev = 'svglite')
 # REMEMBER to restart R after you modify and save this file!
 
 # First, execute the global .Rprofile if it exists. You may configure blogdown
@@ -25,4 +24,4 @@ options(
 options(blogdown.hugo.version = "0.97.1")
 
 # Set publish directory
-options(blogdown.publishDir = 'docs', blogdown.subdir = 'blog', blogdown.ext = '.Rmd')
+options(blogdown.publishDir = 'docs', blogdown.subdir = 'articles', blogdown.ext = '.Rmd')

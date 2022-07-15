@@ -1,0 +1,100 @@
+---
+title: Ditch the Mouse, Return to the Keyboard
+date: '2022-06-19'
+slug: ditch-the-mouse-return-to-the-keyboard
+tags: ["computers"]
+---
+
+
+I always support minimizing the amount of money you spend on technology.
+I have made that crystal clear.
+There are many things that people are spending way too much money on.
+But there are also many things that people are buying that they do not even need.
+An example of this is the mouse.
+
+<div class="figure">
+<img src="https://s1.qwant.com/thumbr/0x0/8/8/2a7aee3b5c0122068e1e6c62ff22e9d4a5a3150c12a57c98cb3111c0544602/VUyKtPFkF5oQtZwA_yQam4dW8Fjz6Akac1a1TegYx8c.jpg?u=https%3A%2F%2Fexternal-preview.redd.it%2FVUyKtPFkF5oQtZwA_yQam4dW8Fjz6Akac1a1TegYx8c.jpg%3Fwidth%3D599%26height%3D313.612565445%26auto%3Dwebp%26s%3D04dcb6a9237e431df89fba60ffed32e50cc241ca&q=0&b=1&p=0&a=0" alt="Cool gaming mouse"  />
+<p class="caption">Figure 1: Cool gaming mouse</p>
+</div>
+
+No, not that mouse.
+I am talking about computer mice.
+Computer mice are usually cheap; not costing more than $20.
+But the amount of money people spend on them adds up.
+They do not last nearly as long as keyboards do.
+But there is a bigger problem with mice.
+
+# Efficiency
+
+The main reason I do not support buying mice is to improve efficiency.
+Mice are helpful if you want to make precise cursor movements.
+This applies if you make digital three-dimensional models, for example.
+But if you do not need the precision of a mouse, you can get away with just a keyboard.
+This does not mean that you will not be able to move your cursor.
+You can still move your cursor with just a keyboard.
+To do this, you will need a keyboard that includes a trackpoint, or some other method of moving the cursor using the keyboard.
+
+<div class="figure">
+<img src="https://p1-ofp.static.pub/medias/bWFzdGVyfHJvb3R8NjEzOTR8aW1hZ2UvcG5nfGg1Mi9oZjgvMTA5NDY0ODQ2MzM2MzAucG5nfDdjODE0Mjk5ZmYwMDRjZDIyMWMxMGViZjZmZGUzMzgzOTI4ZjNmZjhhNzcxNGFmMjE1YWYxYjU4ZDFkOGI3YTI/0A33908_500.png" alt="Trackpoint"  />
+<p class="caption">Figure 2: Trackpoint</p>
+</div>
+
+A trackpoint is placed at the center of the keyboard.
+Figure <a href="#fig:trackpoint">2</a> is a Lenovo trackpoint.
+They are sold for dirt cheap.
+They have a grip texture which helps you keep your finger on the trackpoint.
+There are two problems that arise with trackpoints:
+
+1. They are imprecise.
+1. It is common to accidentally move the cursor while typing.
+
+Both of these problems are automatically fixed by practice.
+The more you practice with a trackpoint, the better it becomes.
+After practicing, they become almost as precise as a regular mouse.
+Also, I never accidentally hit the trackpoint anymore.
+The result is that I can seamlessly switch between typing and moving the mouse.
+This allows me to not unfairly favor one over the other.
+
+# Keyboard-Favoring Software
+
+I recommend using software that favor the use of the keyboard rather than the use of the mouse.
+This can start with your desktop environment.
+Most desktop environments have large icons placed in a panel (taskbar).
+This is an idea created by Microsoft Windows, so I do not recommend this.
+Instead of using icons to launch applications, you should use keyboard shortcuts.
+For applications that you have not created a shortcut for, you should use dmenu.
+
+# Hide the Cursor if it is Not Needed
+
+I barely move the cursor.
+As a result, it is annoying to have it consuming some of my display.
+It often blocks things that I actually want to see.
+I recommend two utilities to hide the cursor if it is not needed: Unclutter and Xbanish.
+Both of them do not come preinstalled on most operating systems, so you need to install them yourself.
+Also, they only work on Xorg, Linux.
+P.S. Install `unclutter-xfixes` as opposed to `unclutter` because it has more and favorable features.
+
+## Unclutter
+
+Unclutter is a program that hides the cursor if it is inactive. Simply launch it by invoking `unclutter`.
+This is the command that I like to use:
+
+```shell
+unclutter --idle 1 --ignore-buttons 1,2,3,4,5,6,7 --jitter 1 --start-hidden --hide-on-touch
+```
+
+By default, Unclutter will hide the cursor after it has been inactive for three seconds.
+I prefer hiding it after one second of inactivity.
+That is the purpose of passing the option `--idle 1`.
+`--ignore-buttons 1,2,3,4,5,6,7` will prevent Unclutter from hiding the cursor by pressing buttons other than left click, middle click, and right click.
+`--jitter 1` will prevent Unclutter from hiding the cursor when scrolling.
+`--start-hidden` will start the cursor hidden.
+`--hide-on-touch` will hide the mouse cursor on touch events.
+
+## Xbanish
+
+Xbanish is a program that hides the cursor whenever you are typing.
+This is a common sense type of program.
+Who wants to see their cursor when they are typing?
+You are not using the mouse, so you do not need the cursor.
+Simply use the command `xbanish` to **banish** the mouse when typing.

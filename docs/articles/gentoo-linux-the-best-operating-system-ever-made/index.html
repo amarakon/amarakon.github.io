@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta name="HandheldFriendly" content="True" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta name="generator" content="Hugo 0.97.1" />
+
+
+<link rel="shortcut icon" href="/images/favicon.png" />
+
+
+
+<title>Gentoo Linux: The Best Operating System Ever Made - Amarakon</title>
+
+
+
+
+<meta name="keywords" content="foss" />
+
+
+<meta property="og:title" content="Gentoo Linux: The Best Operating System Ever Made" />
+<meta name="twitter:title" content="Gentoo Linux: The Best Operating System Ever Made" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://amarakon.github.io/articles/gentoo-linux-the-best-operating-system-ever-made/" /><meta property="og:description" content="In my previous blog post titled How to Install Gentoo – The Efficient Way, I said that Gentoo Linux is “truly the best operating system of all time” (Al-Zubaidi, 2022). I stand by that statement and there are many reasons as to why I think it is. The top three currently most popular operating systems are Windows 10, macOS, and Chrome OS. You may or may not have heard of Linux.
+Figure 1: Operating system market share  Statcounter (2022)
+Technically, Linux is not an operating in and of itself, rather it is the core of the operating system and each distribution should provide all the additional programs required for that distribution." />
+<meta name="twitter:description" content="In my previous blog post titled How to Install Gentoo – The Efficient Way, I said that Gentoo Linux is “truly the best operating system of all time” (Al-Zubaidi, 2022). I stand by that statement and there are many reasons as to why I think it is. The top three currently most popular operating systems are Windows 10, macOS, and Chrome OS. You may or may not have heard of Linux.
+Figure 1: Operating system market share  Statcounter (2022)
+Technically, Linux is not an operating in and of itself, rather it is the core of the operating system and each distribution should provide all the additional programs required for that distribution." /><meta name="twitter:card" content="summary" /><meta property="article:published_time" content="2022-05-04T00:00:00+00:00" /><meta property="article:modified_time" content="2022-05-04T00:00:00+00:00" />
+
+
+
+
+
+<link rel="stylesheet" href="https://amarakon.github.io/assets/css/fuji.min.css" />
+
+
+
+
+
+
+
+
+</head>
+
+<body
+  data-theme="auto"
+  data-theme-auto='true'
+  >
+    <script data-cfasync="false">
+  
+  var fujiThemeData = localStorage.getItem('fuji_data-theme');
+  
+  if (!fujiThemeData) {
+    localStorage.setItem('fuji_data-theme', 'auto');
+  } else {
+    
+    if (fujiThemeData !== 'auto') {
+      document.body.setAttribute('data-theme', fujiThemeData === 'dark' ? 'dark' : 'light');
+    }
+  }
+</script>
+
+    <header>
+    <div class="container-lg clearfix">
+        <div class="col-12 header">
+            <a class="title-main" href="https://amarakon.github.io/">Amarakon</a>
+            
+            <span class="title-sub">My website with the programs I use, the projects I maintain, and articles about many topics</span>
+            
+        </div>
+    </div>
+</header>
+
+
+    <main>
+        <div class="container-lg clearfix">
+            
+            <div class="col-12 col-md-9 float-left content">
+                
+<article>
+    
+    <h2 class="post-item post-title">
+        <a href="https://amarakon.github.io/articles/gentoo-linux-the-best-operating-system-ever-made/">Gentoo Linux: The Best Operating System Ever Made</a>
+    </h2>
+    <div class="post-item post-meta">
+        <span><i class="iconfont icon-today-sharp"></i>&nbsp;2022-05-04</span>
+
+<span><i class="iconfont icon-file-tray-sharp"></i>&nbsp;1321 words</span>
+
+<span><i class="iconfont icon-pricetags-sharp"></i>&nbsp;<a href="/tags/foss">foss</a>&nbsp;</span>
+
+    </div>
+    
+    <div class="post-content markdown-body">
+        <p>In my previous blog post titled <em>How to Install Gentoo – The Efficient Way</em>, I said that Gentoo Linux is “truly the best operating system of all time” (<a href="#ref-install-gentoo">Al-Zubaidi, 2022</a>).
+I stand by that statement and there are many reasons as to why I think it is.
+The top three currently most popular operating systems are Windows 10, macOS, and Chrome OS.
+You may or may not have heard of Linux.</p>
+<div class="figure">
+<img src="https://amarakon.github.io/articles/gentoo-linux-the-best-operating-system-ever-made/index_files/figure-html/pie-1.svg" alt="Operating system market share" width="672" />
+<p class="caption">
+Figure 1: Operating system market share
+</p>
+</div>
+<p><a href="#ref-desktop-os-marketshare">Statcounter</a> (<a href="#ref-desktop-os-marketshare">2022</a>)</p>
+<p>Technically, Linux is not an operating in and of itself, rather it is the core of the operating system and each distribution should provide all the additional programs required for that distribution.
+There are hundreds of distributions of Linux, so making a decision is tirelessly difficult for most people who are just getting started with Linux.
+Many people have the bad habit of constantly distribution-hopping between different distributions to experience all of them for themselves.
+Some people suggest to “choose the distro that works the best for you” (<a href="#ref-best-linux-distro">Smith, 2018</a>), but the problem with this suggestion is that most people do not know what works best for them.
+The biggest issue that makes it difficult to choose the correct distribution is that too many of them are similar to each other.
+A lot of them are only different by their desktop environment, theme, and package manager.
+This post is not about solving the distribution-hopping problem, it will be instead focusing on how the Gentoo stopped me from continuing to do so.</p>
+<p>What makes Gentoo stand out from every other Linux distribution is that it is not similar to any other.
+Even its forks—such as Funtoo, Calculate Linux, and Redcore Linux—are not similar to pure Gentoo.
+The most distinct features of Gentoo is its package manager, system management, speed, and versatility.</p>
+<h1 id="portage-package-manager">Portage: Package Manager</h1>
+<p>In my opinion, Gentoo’s package manager, Portage, has the best syntax for any package manager.
+The output on the terminal is undoubtedly beautiful.
+Gentoo is a source-based based distribution.
+This means that compiles programs from their source code instead of using prebuilt binaries.
+The biggest benefit from this method is the ability to optimize the operating system for your specific computer using <code>USE</code> flags.
+To what extent you want to optimize Gentoo is absolutely your decision to make.
+You can go all out, setting as many <code>USE</code> flags as possible to achieve ultimate minimalism.
+You can set a moderate amount of <code>USE</code> flags to make the most important optimizations while leaving trivial options to their defaults.
+Or you can use no optimizations at all and instead benefit from the other perks that come with using Portage and—more broadly, Gentoo.</p>
+<p>The second biggest benefit of Portage is greater security.
+When you install an precompiled binary—even if it is free software, you have to place your trust in whoever compiled it.
+It is possible that somebody could have changed the code and it would be impossible to prove it.
+The chances of this issue occuring is obviously impossible if you compile the software from its source code.
+You might think that it is unlikely to notice any malicious code in large projects, but that is definitely <a href="https://security.stackexchange.com/questions/194953/how-is-compiling-a-program-from-source-more-secure">not the case</a>.</p>
+<p><strong><a href="https://security.stackexchange.com/users/93625/ben">Ben</a>:</strong></p>
+<blockquote>
+<p>In theory, at some point in time every line of code in Chromium, Linux, Firefox, etc.
+has been looked at by at least one person.
+Furthermore someone definitely looks at every change made. If the source code was ever non-malicious, it would be difficult to make it malicious.</p>
+</blockquote>
+<p>Nevertheless, there are a considerable amount of binary packages in Gentoo.
+You can check the names and the amount by running these commands respectfully:</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>$ eix <span style="color:#a3be8c">&#34;\-bin&#34;</span> -c --in-overlay gentoo <span style="color:#eceff4">|</span> grep <span style="color:#a3be8c">&#34;\-bin &#34;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>$ eix <span style="color:#a3be8c">&#34;\-bin&#34;</span> -c --in-overlay gentoo <span style="color:#eceff4">|</span> grep <span style="color:#a3be8c">&#34;\-bin &#34;</span> <span style="color:#eceff4">|</span> wc -l
+</span></span></code></pre></div><p>If you do not have Gentoo installed and want to search for packages, the <a href="https://gpo.zugaina.org/">Gentoo Portage Overlays</a> search engine is a good alternative.</p>
+<p>Binary packages are common for huge programs that take hours to build, or proprietary software.
+Gentoo prevents you from installing any software that is not licensed with a free license by default.
+I do not recommend installing proprietary software—but if you actually want to, set <code>ACCEPT_LICENSE=&quot;*&quot;</code> (The default is <code>-* @FREE</code> (<a href="#ref-gentoo-license-groups">Gentoo, 2021b</a>).)
+Even binary packages have <code>USE</code> flags to customize them to the most possible, although less than source packages of course.
+Options other than <code>USE</code> flags exist and can be set globally in <code>/etc/portage/make.conf</code> or per-package in <code>/etc/portage/package.env</code> (<a href="#ref-gentoo-make.conf">Gentoo, 2022a</a>, <a href="#ref-gentoo-package.env">2022b</a>).
+These include compiler flags, <code>make</code> and <code>emerge</code> options, features, CPU flags.
+Each of these options are covered extensively in the <a href="https://wiki.gentoo.org/">Gentoo wiki</a>.</p>
+<h1 id="eselect-system-management">eselect: System Management</h1>
+<p>There are ways other than the use of the package manager with which you can configure your operating system.
+Most distributions do not pay attention to this, thus they have poor system configuration.
+Arch Linux, which has the excellent package manager <code>pacman</code>, has bad system management otherwise.
+Gentoo includes the <code>eselect</code> command which allows you to easily manage your system.
+You can easily manage software versions, environment variables, repositories.
+It is a nice bonus feature that shows the passion and attention to detail the Gentoo developers have.
+Despite the difficult installation process, Gentoo is the easiest distribution to use.
+To give an example, it is much easier and safer to set your <code>/bin/sh</code> symlink.
+On Arch, you would have to risk breaking your entire system by running this command:</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># ln -sfT /bin/dash /bin/sh</span>
+</span></span></code></pre></div><p>On Gentoo, you can use <code>eselect</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># eselect sh set dash</span>
+</span></span></code></pre></div><h1 id="speed">Speed</h1>
+<p>Gentoo Linux was named after the gentoo penguin, the fastest swimming species of penguin (<a href="#ref-wikigentoo">Wikipedia, 2022</a>).
+The gentoo penguin is also slim (minimalist) unlike emperor penguins which are fat (bloated).
+This is probably not intended, but a detail I noticed.
+The reason Gentoo is very fast is its extensive customization.
+As discussed before, you can optimize the operating system to suit your computer and needs.
+This causes it to run considerably faster, since there is minimal bloat and software is trimmed down.
+Gentoo boots faster than most other operating systems due to this minimalism and its init system, OpenRC.
+It takes less than ten seconds to fully boot a computer even when using BIOS—which is slower than UEFI.</p>
+<p>Gentoo’s resource usage is always surprisingly low.
+I rarely ever exceed one gigabyte of memory usage even with many windows and browser tabs open.
+Since the file size of customized binaries is smaller than those of prebuilt binaries, you will notice more free disk space when using Gentoo.
+Just make sure to clean out your source code files and prebuilt binary packages.
+You can do so with <a href="https://packages.gentoo.org/packages/app-portage/gentoolkit">eclean</a>.
+You will also be able to complete the same tasks with a slower CPU frequency, saving electricity and money.
+I notice that it is generally much snappier in every way than any other operating system I have ever used.</p>
+<h1 id="versatility">Versatility</h1>
+<p>Gentoo Linux is versatile because it can do anything on any type of computer.
+It is currently available for nine different CPU architectures (<a href="#ref-gentoohandbook-main">Gentoo, 2021a</a>).
+You can install Gentoo on anything between a Raspberry Pi and a supercomputer.
+It works equally well for all types of computers because it is optimized for the specific type of computer.
+The reason (unlike most original distributions) it has barely any derivatives is that it’s already complete and does not need any major changes.
+The only gripe I have with Gentoo is that some of its software—including Portage, is written in Python.
+But with the <code>native-extensions</code> <code>USE</code> flag, Portage will be compiled with native C extensions to speed it up.
+Gentoo Linux is the closest thing to a perfect operating system.</p>
+<h1 id="references">References</h1>
+<div id="refs" class="references csl-bib-body hanging-indent" line-spacing="2">
+<div id="ref-install-gentoo" class="csl-entry">
+<p>Al-Zubaidi, Amar. (2022). <em>How to install gentoo – the efficient way</em>. <a href="https://amarakon.github.io/amarakon.com/blog/how-to-install-gentoo-the-efficient-way">https://amarakon.github.io/amarakon.com/blog/how-to-install-gentoo-the-efficient-way</a></p>
+</div>
+<div id="ref-gentoohandbook-main" class="csl-entry">
+<p>Gentoo. (2021a). <em>Handbook: Main page</em>. <a href="https://wiki.gentoo.org/wiki/Handbook:Main_Page">https://wiki.gentoo.org/wiki/Handbook:Main_Page</a></p>
+</div>
+<div id="ref-gentoo-license-groups" class="csl-entry">
+<p>Gentoo. (2021b). <em>License groups</em>. <a href="https://wiki.gentoo.org/wiki/License_groups">https://wiki.gentoo.org/wiki/License_groups</a></p>
+</div>
+<div id="ref-gentoo-make.conf" class="csl-entry">
+<p>Gentoo. (2022a). <em>/etc/portage/make.conf</em>. <a href="https://wiki.gentoo.org/wiki//etc/portage/make.conf">https://wiki.gentoo.org/wiki//etc/portage/make.conf</a></p>
+</div>
+<div id="ref-gentoo-package.env" class="csl-entry">
+<p>Gentoo. (2022b). <em>/etc/portage/package.env</em>. <a href="https://wiki.gentoo.org/wiki//etc/portage/package.env">https://wiki.gentoo.org/wiki//etc/portage/package.env</a></p>
+</div>
+<div id="ref-best-linux-distro" class="csl-entry">
+<p>Smith, Luke. (2018). <em>What is ‘the best’ linux distro?</em> <a href="https://lukesmith.xyz/blog/what-is-the-best-linux-distro">https://lukesmith.xyz/blog/what-is-the-best-linux-distro</a></p>
+</div>
+<div id="ref-desktop-os-marketshare" class="csl-entry">
+<p>Statcounter. (2022). <em>Desktop operating system market share worldwide</em>. <a href="https://gs.statcounter.com/os-market-share/desktop/worldwide">https://gs.statcounter.com/os-market-share/desktop/worldwide</a></p>
+</div>
+<div id="ref-wikigentoo" class="csl-entry">
+<p>Wikipedia. (2022). <em>Gentoo linux</em>. <a href="https://en.wikipedia.org/wiki/Gentoo_Linux">https://en.wikipedia.org/wiki/Gentoo_Linux</a></p>
+</div>
+</div>
+
+    </div>
+</article>
+
+
+
+
+            </div>
+            <aside class="col-12 col-md-3 float-left sidebar">
+    
+    <div class="sidebar-item sidebar-pages">
+        <h3>Pages</h3>
+        <ul>
+            
+            <li>
+                <a href="/about/">About</a>
+            </li>
+            
+            <li>
+                <a href="/articles/">Articles</a>
+            </li>
+            
+            <li>
+                <a href="/programs/">Programs</a>
+            </li>
+            
+            <li>
+                <a href="/projects/">Projects</a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-links">
+        <h3>Links</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/amarakon"><span>GitHub</span></a>
+            </li>
+            
+            <li>
+                <a href="https://www.youtube.com/channel/UCbZc671K2NxNbr1Kfqz6Fmg"><span>YouTube</span></a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-tags">
+        <h3>Tags</h3>
+        <div>
+            
+            <span>
+                <a href="/tags/cli/">cli</a>
+            </span>
+            
+            <span>
+                <a href="/tags/computers/">computers</a>
+            </span>
+            
+            <span>
+                <a href="/tags/death/">death</a>
+            </span>
+            
+            <span>
+                <a href="/tags/family/">family</a>
+            </span>
+            
+            <span>
+                <a href="/tags/foss/">foss</a>
+            </span>
+            
+            <span>
+                <a href="/tags/freedom/">freedom</a>
+            </span>
+            
+            <span>
+                <a href="/tags/fsf/">fsf</a>
+            </span>
+            
+            <span>
+                <a href="/tags/markup/">markup</a>
+            </span>
+            
+            <span>
+                <a href="/tags/money/">money</a>
+            </span>
+            
+            <span>
+                <a href="/tags/phones/">phones</a>
+            </span>
+            
+            <span>
+                <a href="/tags/politics/">politics</a>
+            </span>
+            
+            <span>
+                <a href="/tags/programming/">programming</a>
+            </span>
+            
+            <span>
+                <a href="/tags/tutorial/">tutorial</a>
+            </span>
+            
+            <span>
+                <a href="/tags/websites/">websites</a>
+            </span>
+            
+            <span>
+                <a href="/tags/www/">www</a>
+            </span>
+            
+        </div>
+    </div>
+    <div class="sidebar-item sidebar-toc">
+        <h3>Contents</h3><nav id="TableOfContents">
+  <ul>
+    <li><a href="#portage-package-manager">Portage: Package Manager</a></li>
+    <li><a href="#eselect-system-management">eselect: System Management</a></li>
+    <li><a href="#speed">Speed</a></li>
+    <li><a href="#versatility">Versatility</a></li>
+    <li><a href="#references">References</a></li>
+  </ul>
+</nav></div>
+</aside>
+
+        </div>
+        <div class="btn">
+    <div class="btn-menu" id="btn-menu">
+        <i class="iconfont icon-grid-sharp"></i>
+    </div>
+    <div class="btn-toggle-mode">
+        <i class="iconfont icon-contrast-sharp"></i>
+    </div>
+    <div class="btn-scroll-top">
+        <i class="iconfont icon-chevron-up-circle-sharp"></i>
+    </div>
+</div>
+<aside class="sidebar-mobile" style="display: none;">
+  <div class="sidebar-wrapper">
+    
+    <div class="sidebar-item sidebar-pages">
+        <h3>Pages</h3>
+        <ul>
+            
+            <li>
+                <a href="/about/">About</a>
+            </li>
+            
+            <li>
+                <a href="/articles/">Articles</a>
+            </li>
+            
+            <li>
+                <a href="/programs/">Programs</a>
+            </li>
+            
+            <li>
+                <a href="/projects/">Projects</a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-links">
+        <h3>Links</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/amarakon"><span>GitHub</span></a>
+            </li>
+            
+            <li>
+                <a href="https://www.youtube.com/channel/UCbZc671K2NxNbr1Kfqz6Fmg"><span>YouTube</span></a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-tags">
+        <h3>Tags</h3>
+        <div>
+            
+            <span>
+                <a href="/tags/cli/">cli</a>
+            </span>
+            
+            <span>
+                <a href="/tags/computers/">computers</a>
+            </span>
+            
+            <span>
+                <a href="/tags/death/">death</a>
+            </span>
+            
+            <span>
+                <a href="/tags/family/">family</a>
+            </span>
+            
+            <span>
+                <a href="/tags/foss/">foss</a>
+            </span>
+            
+            <span>
+                <a href="/tags/freedom/">freedom</a>
+            </span>
+            
+            <span>
+                <a href="/tags/fsf/">fsf</a>
+            </span>
+            
+            <span>
+                <a href="/tags/markup/">markup</a>
+            </span>
+            
+            <span>
+                <a href="/tags/money/">money</a>
+            </span>
+            
+            <span>
+                <a href="/tags/phones/">phones</a>
+            </span>
+            
+            <span>
+                <a href="/tags/politics/">politics</a>
+            </span>
+            
+            <span>
+                <a href="/tags/programming/">programming</a>
+            </span>
+            
+            <span>
+                <a href="/tags/tutorial/">tutorial</a>
+            </span>
+            
+            <span>
+                <a href="/tags/websites/">websites</a>
+            </span>
+            
+            <span>
+                <a href="/tags/www/">www</a>
+            </span>
+            
+        </div>
+    </div>
+    
+    
+    
+    
+  </div>
+</aside>
+
+    </main>
+
+    <footer>
+    <div class="container-lg clearfix">
+        <div class="col-12 footer">
+            
+            <span>&copy; 2022
+                <a href="https://amarakon.github.io/"></a>
+                 | <a href="https://github.com/amarakon/amarakon.com">Source code</a> 
+                | Powered by <a href="https://github.com/amarakon/hugo-theme-fuji-nord"
+                   >Fuji-Nord</a> and <a href="https://gohugo.io/"
+                                                    >Hugo</a> 
+            </span>
+        </div>
+    </div>
+</footer>
+
+    
+<script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/prismjs@1.27.0/components/prism-core.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/prismjs@1.27.0/plugins/autoloader/prism-autoloader.min.js"></script>
+
+
+
+<script defer src="/assets/js/fuji.min.js"></script>
+
+
+
+</body>
+
+</html>

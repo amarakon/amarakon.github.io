@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta name="HandheldFriendly" content="True" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta name="generator" content="Hugo 0.97.1" />
+
+
+<link rel="shortcut icon" href="/images/favicon.png" />
+
+
+
+<title>Comparing the Best Markup Languages for Making PDF Documents - Amarakon</title>
+
+
+
+
+<meta name="keywords" content="foss, markup" />
+
+
+<meta property="og:title" content="Comparing the Best Markup Languages for Making PDF Documents" />
+<meta name="twitter:title" content="Comparing the Best Markup Languages for Making PDF Documents" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://amarakon.github.io/articles/comparing-the-best-markup-languages-for-making-pdf-documents/" /><meta property="og:description" content="PDF is rightfully the standard output format for documents. All word processors can output to PDF, but it is difficult to convert PDF to files word processors can edit. Most people use “what you see is what you get” word processors like Microsoft Word, Google Docs, or LibreOffice Writer. This type of word processor is convenient but it is also limited and unprofessional. It is easier to get into, but it is harder to use in the long run. This is the problem with all “what you see is what you get” programs: they do not follow the “separation of content and presentation” design principle." />
+<meta name="twitter:description" content="PDF is rightfully the standard output format for documents. All word processors can output to PDF, but it is difficult to convert PDF to files word processors can edit. Most people use “what you see is what you get” word processors like Microsoft Word, Google Docs, or LibreOffice Writer. This type of word processor is convenient but it is also limited and unprofessional. It is easier to get into, but it is harder to use in the long run. This is the problem with all “what you see is what you get” programs: they do not follow the “separation of content and presentation” design principle." /><meta name="twitter:card" content="summary" /><meta property="article:published_time" content="2022-05-13T00:00:00+00:00" /><meta property="article:modified_time" content="2022-05-13T00:00:00+00:00" />
+
+
+
+
+
+<link rel="stylesheet" href="https://amarakon.github.io/assets/css/fuji.min.css" />
+
+
+
+
+
+
+
+
+</head>
+
+<body
+  data-theme="auto"
+  data-theme-auto='true'
+  >
+    <script data-cfasync="false">
+  
+  var fujiThemeData = localStorage.getItem('fuji_data-theme');
+  
+  if (!fujiThemeData) {
+    localStorage.setItem('fuji_data-theme', 'auto');
+  } else {
+    
+    if (fujiThemeData !== 'auto') {
+      document.body.setAttribute('data-theme', fujiThemeData === 'dark' ? 'dark' : 'light');
+    }
+  }
+</script>
+
+    <header>
+    <div class="container-lg clearfix">
+        <div class="col-12 header">
+            <a class="title-main" href="https://amarakon.github.io/">Amarakon</a>
+            
+            <span class="title-sub">My website with the programs I use, the projects I maintain, and articles about many topics</span>
+            
+        </div>
+    </div>
+</header>
+
+
+    <main>
+        <div class="container-lg clearfix">
+            
+            <div class="col-12 col-md-9 float-left content">
+                
+<article>
+    
+    <h2 class="post-item post-title">
+        <a href="https://amarakon.github.io/articles/comparing-the-best-markup-languages-for-making-pdf-documents/">Comparing the Best Markup Languages for Making PDF Documents</a>
+    </h2>
+    <div class="post-item post-meta">
+        <span><i class="iconfont icon-today-sharp"></i>&nbsp;2022-05-13</span>
+
+<span><i class="iconfont icon-file-tray-sharp"></i>&nbsp;1864 words</span>
+
+<span><i class="iconfont icon-pricetags-sharp"></i>&nbsp;<a href="/tags/foss">foss</a>&nbsp;<a href="/tags/markup">markup</a>&nbsp;</span>
+
+    </div>
+    
+    <div class="post-content markdown-body">
+        <p>PDF is rightfully the standard output format for documents.
+All word processors can output to PDF, but it is difficult to convert PDF to files word processors can edit.
+Most people use “what you see is what you get” word processors like Microsoft Word, Google Docs, or LibreOffice Writer.
+This type of word processor is convenient but it is also limited and unprofessional.
+It is easier to get into, but it is harder to use in the long run.
+This is the problem with all “what you see is what you get” programs: they do not follow the “<a href="https://en.wikipedia.org/wiki/Separation_of_content_and_presentation">separation of content and presentation</a>” design principle.</p>
+<p>Markup word processors are practical and professional alternatives.
+However, there are so many of them and all of them are different.
+It can be tirelessly difficult to choose the correct one.
+It took me a surprisingly long time to choose the correct one for my uses.
+And it took me even more time to create <a href="https://github.com/amarakon/amaryaml">the proper templates</a> for easier use.
+Nevertheless, they are still much easier to use in the long run as once you set everything up, the actual usage is simple.
+Currently, the best markup word processors are Groff, LaTeX, Markdown, R Markdown, and Quarto.
+I will go over the pros and cons of each one so that you can make the best decision.
+I do not recommend using any other program than the ones listed in this post because these are the only good ones.</p>
+<h1 id="groff">Groff</h1>
+<p>Groff (GNU troff) is a document formatting system included with all GNU operating systems.
+This makes it very convenient since you do not even have to install it.
+Other markup word processors require you to install their packages and these packages can potentially have hundreds of dependencies in total.
+Not everyone wants to install them and not everyone has enough storage space to do so.
+You can use the <code>groff_ms</code> macro package by passing the <code>-ms</code> flag to create PDF documents.
+It is equally convenient to render the document: running <code>groff -ms &lt;file&gt;.ms -T pdf &gt; &lt;file&gt;.pdf</code> will quickly render it.
+Other markup word processors take longer to render documents because they are more complex
+It is commonly used to create man pages with the <code>groff_man</code> macro package.</p>
+<p>The main problem with Groff is that it does not have enough features.
+Not everything is possible in Groff.
+For example: you can create mathematical equations but some of them are not possible.
+LaTeX—and all of the other markup languages that use LaTeX to render math (Markdown, R Markdown, Quarto)—can possibly create any mathematical equation.
+Groff lacks many other features including templates and geometry margin customization.
+All of the documents you create with Groff will look the same, so only consider using it if you like the default appearance.</p>
+<p>The syntax for writing Groff documents is also annoying.
+All things that must be defined (like section headers and paragraphs) have to be defined using periods and capital letters.
+Formatted text (like bold and italics) have to be put on separate lines.
+Other than that, the syntax is fine.
+But because of Groff’s flaws, Groff documents’ source code cannot be read easily in plain text.</p>
+<h1 id="latex">LaTeX</h1>
+<p>LaTeX is the golden standard for making PDF documents, and for good reasons.
+It is the very first important markup word processor.
+Almost all of the others are based on LaTeX.
+And for that, I have to give credit where credit is due.
+it does not have any major faults but it is good at pretty much everything.
+LaTeX documents can be rendered with <code>pdflatex</code>.
+Consider <code>xelatex</code> instead if you want to use a system font.</p>
+<p>LaTeX is exceptional at math typesetting.
+Most people will always write math on paper.
+This has its benefits but it is not impossible to have a nicely formatted and professional document with any math equations.
+All of the symbols—including plus and minus signs—are the perfect size as defined by the math font.
+Try creating anything like this without using LaTeX:</p>
+<div class="figure">
+<img src="https://i.stack.imgur.com/vsn9C.png" alt="Complex math made by LaTeX"  />
+<p class="caption">
+Figure 1: Complex math made by LaTeX
+</p>
+</div>
+<p>LaTeX’s formatting is exceptional too.
+You can easily define everything with just a few commands.
+These include page size, text alignment, font size.
+It is much easier than having to toggle buttons in a graphical user interface.
+Its line and page breaking is the best out of any typesetting program.</p>
+<div class="figure">
+<img src="https://i.stack.imgur.com/MgSAz.png" alt="LaTeX line and page breaking"  />
+<p class="caption">
+Figure 2: LaTeX line and page breaking
+</p>
+</div>
+<p>As mentioned before, none of LaTeX’s faults are major.
+The biggest problem with it is its commands.
+All commands use backslashes, which means you have to stretch your pinkie tirelessly often.
+Additionally, you have to use some commands just to make a working document.
+You cannot compile a document from just simple plain text.
+Its syntax is also generally too complicated at times.
+From my experience, a LaTeX file (<code>.tex</code>) usually has twice the amount of lines compared to an identical Markdown file (<code>.md</code>).</p>
+<h1 id="markdown">Markdown</h1>
+<p>Markdown is a widely used markup language that is used for more than just PDF documents.
+If you want to use Markdown for PDF documents, you need to install LaTeX and the document converter Pandoc.
+No other packages are required to convert a Markdown file to a PDF file.
+Pandoc first converts the Markdown file to a LaTeX file.
+Then, it runs <code>pdflatex</code>—or, if defined in the YAML front matter, <code>xelatex</code>.
+Because of this extra step, Markdown documents always take longer to render than LaTeX documents.</p>
+<p>Markdown’s syntax is much easier to learn and it is shorter too, because it was designed to be readable in plain text format.
+This is why LaTeX files usually have twice the amount of lines compared to identical Markdown files.
+Commands that should always be used in LaTeX (<code>\begin{document}... \end{document}</code>, <code>\maketitle</code>) are automatically applied in Markdown.
+You do not have to write any commands, meaning you can write only completely plain text.
+Common commands that are used repeatedly in LaTeX (<code>\section{}</code>, <code>\textbf{}</code>, <code>\textit{}</code>) can be replaced with shorter Markdown commands.
+To write italics in LaTeX, you need to write <code>\textit{&lt;text&gt;}</code>.
+To write italics in Markdown, you need to write <code>*&lt;text&gt;*</code>.
+Not only does this make Markdown <strong>easier</strong> than LaTeX, it also makes it <strong>faster</strong>.
+Pure LaTeX code can still be used for LaTeX commands that do not have alternative Markdown commands.</p>
+<p>The biggest downside with Markdown is that <a href="https://www.markdownguide.org/extended-syntax/#tables">making tables</a> is painful.
+It is just as tedious as with LaTeX, but LaTeX is expected to be that way.
+Markdown has its own way of making tables but it is not human-readable.
+It is strange and surprising that Markdown tables do not follow the Markdown philosophy.
+Moreover, line breaks and lists in tables require the use of <a href="https://disco.uv.es/disco_docs/wikibase/doc/cat/pandoc_manual_2.7.3.wiki?93">grid tables</a>.
+Grid tables are extremely complicated, require too much time to make, and they have to be lined perfectly.
+One small downside with Pandoc’s Markdown is that code blocks with syntax highlighting are impossible.
+On the contrary, code blocks with syntax highlighting work decently in most Markdown interpreters or compilers.
+Most people do not need to use code blocks though, so this is a minor issue.</p>
+<h1 id="r-markdown">R Markdown</h1>
+<p>R Markdown adds another layer of simplicity to the source code.
+It is similar to Markdown but it has more features.
+In order to use R Markdown, you need to have R and the <em>rmarkdown</em> package, LaTeX, and Pandoc.
+It has two more requirements than Markdown.
+R Markdown requires the most storage space out of all of the markup processors mentioned in this article.
+As you can imagine, its rendering process has one more step than Markdown.
+This makes its rendering time even longer than Markdown; the longest of all the programs here.
+First, it uses Knitr to “knit” the specified <code>.Rmd</code> file to the identical <code>.knit.md</code> file.
+Then pandoc does the rest of the work.
+Just like Markdown, R Markdown uses a YAML front matter at the top of the source code to define the document options.</p>
+<p>What makes R Markdown’s front matter stand out is that it has an extra option: <code>output:</code>.
+The <code>output:</code> option obviously defines the output format.
+This article is only about PDF documents (<code>pdf_document</code>), but keep in mind that R Markdown can be used for just about anything.
+This includes slideshows (<code>beamer_presentation</code>), HTML (<code>html_document</code>), GitHub (<code>github_document</code>).
+The <em>bookdown</em> R package can be used to add alternative output formats that make it possible to conveniently reference section headers, figures, tables, and equations (<a href="#ref-rmarkdown-cookbook-s4.7">Xie et al., 2020</a>).
+For example, use <code>output: bookdown::pdf_document2</code> instead of <code>output: pdf_document</code>.</p>
+<p>Unlike Markdown, R Markdown can display code blocks with excellent syntax highlighting.
+It can also run the code specified if you use code chunks instead of code blocks.
+You must specify the programming language for the correct syntax highlighting and to actually run the code.
+There are many ways it is beneficial to run code in the document.
+The most common language to use in R Markdown documents is R.
+This allows certain output that is simply impossible with plain Markdown.
+It also allows it to overcome the biggest downside Markdown has: tables.</p>
+<p>As an alternative to Markdown and Pandoc’s methods of making tables, R Markdown can use R packages to make tables.
+This is much more efficient and generally easier.
+You do not have to worry about alignment, readability, and typos.
+It is more professional too, as you would make them programmatically instead of using plain text.
+The most common R function to create tables is <code>kable</code>, which is from the <em>knitr</em> package that is installed as a dependency of <em>rmarkdown</em>.
+Other packages include <em>flextable</em>, <em>huxtable</em>, <em>reactable</em>, <em>xtable</em>, <em>pander</em>.
+The package I use is <em>pander</em>.
+<code>kable</code> is flawed because even though it is simple, it still does not support proper line breaks and lists.
+This is why I prefer <code>pander</code>.</p>
+<p>R Markdown has the best documentation out of all the markup word processors in this article.
+R Markdown has many excellent books such as <em><a href="https://bookdown.org/yihui/rmarkdown-cookbook/">R Markdown Cookbook</a></em> that easily explain R Markdown like you are five years old.
+When searching for answers to common problems—especially on StackOverflow, most results will be for R Markdown.
+This is true even when searching for LaTeX, Markdown, or Quarto specifically.
+Most R packages have documentation at rdocumentation.org.
+R Markdown documentation managed to teach me more about LaTeX, Markdown, and Quarto than all of those programs’ documentation themselves.</p>
+<h1 id="quarto">Quarto</h1>
+<p>Quarto is best understood as an alternative to R Markdown.
+R Markdown struggles from requiring too many packages, thus consuming too much storage.
+It also takes a long time to fully render the <code>.Rmd</code> file to the <code>.pdf</code> file.
+Quarto’s render time is shorter than R Markdown’s but longer than Markdown’s.
+It also has native support for Python, R, Julia, and Observable.
+R Markdown does not have native support for Python, Julia, or Observable.
+R Markdown is designed for R users, while Quarto is designed for all users.
+R Markdown has better documentation and is more versatile than Quarto.
+I do not recommend Quarto because it is new, undeveloped, and not special enough for me to make the switch.
+Users of R Markdown should not use Quarto unless they have a specific reason to do so.</p>
+<h1 id="references">References</h1>
+<div id="refs" class="references csl-bib-body hanging-indent" line-spacing="2">
+<div id="ref-rmarkdown-cookbook-s4.7" class="csl-entry">
+<p>Xie, Yihui, Dervieux, Christophe, &amp; Riederer, Emily. (2020). <em>R markdown cookbook</em> (1st ed., pp. 38–39). Chapman &amp; Hall/CRC.</p>
+</div>
+</div>
+
+    </div>
+</article>
+
+
+
+
+            </div>
+            <aside class="col-12 col-md-3 float-left sidebar">
+    
+    <div class="sidebar-item sidebar-pages">
+        <h3>Pages</h3>
+        <ul>
+            
+            <li>
+                <a href="/about/">About</a>
+            </li>
+            
+            <li>
+                <a href="/articles/">Articles</a>
+            </li>
+            
+            <li>
+                <a href="/programs/">Programs</a>
+            </li>
+            
+            <li>
+                <a href="/projects/">Projects</a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-links">
+        <h3>Links</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/amarakon"><span>GitHub</span></a>
+            </li>
+            
+            <li>
+                <a href="https://www.youtube.com/channel/UCbZc671K2NxNbr1Kfqz6Fmg"><span>YouTube</span></a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-tags">
+        <h3>Tags</h3>
+        <div>
+            
+            <span>
+                <a href="/tags/cli/">cli</a>
+            </span>
+            
+            <span>
+                <a href="/tags/computers/">computers</a>
+            </span>
+            
+            <span>
+                <a href="/tags/death/">death</a>
+            </span>
+            
+            <span>
+                <a href="/tags/family/">family</a>
+            </span>
+            
+            <span>
+                <a href="/tags/foss/">foss</a>
+            </span>
+            
+            <span>
+                <a href="/tags/freedom/">freedom</a>
+            </span>
+            
+            <span>
+                <a href="/tags/fsf/">fsf</a>
+            </span>
+            
+            <span>
+                <a href="/tags/markup/">markup</a>
+            </span>
+            
+            <span>
+                <a href="/tags/money/">money</a>
+            </span>
+            
+            <span>
+                <a href="/tags/phones/">phones</a>
+            </span>
+            
+            <span>
+                <a href="/tags/politics/">politics</a>
+            </span>
+            
+            <span>
+                <a href="/tags/programming/">programming</a>
+            </span>
+            
+            <span>
+                <a href="/tags/tutorial/">tutorial</a>
+            </span>
+            
+            <span>
+                <a href="/tags/websites/">websites</a>
+            </span>
+            
+            <span>
+                <a href="/tags/www/">www</a>
+            </span>
+            
+        </div>
+    </div>
+    <div class="sidebar-item sidebar-toc">
+        <h3>Contents</h3><nav id="TableOfContents">
+  <ul>
+    <li><a href="#groff">Groff</a></li>
+    <li><a href="#latex">LaTeX</a></li>
+    <li><a href="#markdown">Markdown</a></li>
+    <li><a href="#r-markdown">R Markdown</a></li>
+    <li><a href="#quarto">Quarto</a></li>
+    <li><a href="#references">References</a></li>
+  </ul>
+</nav></div>
+</aside>
+
+        </div>
+        <div class="btn">
+    <div class="btn-menu" id="btn-menu">
+        <i class="iconfont icon-grid-sharp"></i>
+    </div>
+    <div class="btn-toggle-mode">
+        <i class="iconfont icon-contrast-sharp"></i>
+    </div>
+    <div class="btn-scroll-top">
+        <i class="iconfont icon-chevron-up-circle-sharp"></i>
+    </div>
+</div>
+<aside class="sidebar-mobile" style="display: none;">
+  <div class="sidebar-wrapper">
+    
+    <div class="sidebar-item sidebar-pages">
+        <h3>Pages</h3>
+        <ul>
+            
+            <li>
+                <a href="/about/">About</a>
+            </li>
+            
+            <li>
+                <a href="/articles/">Articles</a>
+            </li>
+            
+            <li>
+                <a href="/programs/">Programs</a>
+            </li>
+            
+            <li>
+                <a href="/projects/">Projects</a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-links">
+        <h3>Links</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/amarakon"><span>GitHub</span></a>
+            </li>
+            
+            <li>
+                <a href="https://www.youtube.com/channel/UCbZc671K2NxNbr1Kfqz6Fmg"><span>YouTube</span></a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-tags">
+        <h3>Tags</h3>
+        <div>
+            
+            <span>
+                <a href="/tags/cli/">cli</a>
+            </span>
+            
+            <span>
+                <a href="/tags/computers/">computers</a>
+            </span>
+            
+            <span>
+                <a href="/tags/death/">death</a>
+            </span>
+            
+            <span>
+                <a href="/tags/family/">family</a>
+            </span>
+            
+            <span>
+                <a href="/tags/foss/">foss</a>
+            </span>
+            
+            <span>
+                <a href="/tags/freedom/">freedom</a>
+            </span>
+            
+            <span>
+                <a href="/tags/fsf/">fsf</a>
+            </span>
+            
+            <span>
+                <a href="/tags/markup/">markup</a>
+            </span>
+            
+            <span>
+                <a href="/tags/money/">money</a>
+            </span>
+            
+            <span>
+                <a href="/tags/phones/">phones</a>
+            </span>
+            
+            <span>
+                <a href="/tags/politics/">politics</a>
+            </span>
+            
+            <span>
+                <a href="/tags/programming/">programming</a>
+            </span>
+            
+            <span>
+                <a href="/tags/tutorial/">tutorial</a>
+            </span>
+            
+            <span>
+                <a href="/tags/websites/">websites</a>
+            </span>
+            
+            <span>
+                <a href="/tags/www/">www</a>
+            </span>
+            
+        </div>
+    </div>
+    
+    
+    
+    
+  </div>
+</aside>
+
+    </main>
+
+    <footer>
+    <div class="container-lg clearfix">
+        <div class="col-12 footer">
+            
+            <span>&copy; 2022
+                <a href="https://amarakon.github.io/"></a>
+                 | <a href="https://github.com/amarakon/amarakon.com">Source code</a> 
+                | Powered by <a href="https://github.com/amarakon/hugo-theme-fuji-nord"
+                   >Fuji-Nord</a> and <a href="https://gohugo.io/"
+                                                    >Hugo</a> 
+            </span>
+        </div>
+    </div>
+</footer>
+
+    
+<script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/prismjs@1.27.0/components/prism-core.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/prismjs@1.27.0/plugins/autoloader/prism-autoloader.min.js"></script>
+
+
+
+<script defer src="/assets/js/fuji.min.js"></script>
+
+
+
+</body>
+
+</html>

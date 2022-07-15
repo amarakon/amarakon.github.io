@@ -1,99 +1,55 @@
-baseURL = "https://amarakon.github.io/amarakon.com/"
-title = "Amar Al-Zubaidi’s Website"
+baseURL = "https://amarakon.github.io/"
+languageCode = "en"
+defaultContentLanguage = "en"
+title = "Amarakon"
+theme = "fuji-nord"
 
-theme = "nord"
 hasCJKLanguage = false
 enableEmoji = false
 enableRobotsTXT = false
-disableKinds = ["taxonomy"]
-ignoreErrors = ["error-disable-taxonomy"]
 
-## Change this two to switch between different language
-languageCode = "en"           # For RSS, view https://www.rssboard.org/rss-language-codes
-defaultContentLanguage = "en" # For HTML page, now support: en, zh-hans, zh-hant, ja, nl, pl, it
-
-summaryLength = 100 # Custom summary length, add <!--more--> in post file to custom split point
+summaryLength = 100
 paginate = 10
-
-# googleAnalytics = "UA-000000000-0" # Set your Google Analytics UA here
-
-[outputFormats]
-[outputFormats.SearchIndex]
-isPlainText = true
-notAlternative = true
-mediaType = "application/json"
-path = "/search/"
-
-[outputs]
-home = ["HTML", "RSS", "SearchIndex"]
-
-[permalinks]
-post = "/:section/:filename/" # Custom post links, e.g. "/:year/:month/:title/"
 
 [params]
 math = false
-subTitle = "Where I have my blog and other things about me"
-defaultTheme = "auto"              # default theme when first visit (auto|dark|light)
+subTitle = "My website with the programs I use, the projects I maintain, and articles about many topics"
+defaultTheme = "auto"
 
-# Source URL of the website, will appear in the footer
 sourceURL = "https://github.com/amarakon/amarakon.com"
 
-# Word counter and read time indicator in post metadata
 showWordCounter = true
 showReadTime = false
 
-# License in the footer
-showLicenseInFooter = false
-
-# License at the end of each post
-#showLicense = true
-#showToc = false
-
-# Copyright
-copyrightStartYear = "2022"
-
-# Open Graph & Twitter Card variables
-# You can also set description and images in post front matter individually
-#description = "A minimal Hugo theme with nice theme color."
-#og = "/img/og.png"                                          # This will use the image called og.png in static/img folder
-
-# Posts shown in homepage
-mainSections = ["blog"]
-
-# License
-license = "CC0-1.0"
-licenseLink = "https://github.com/Amarakon55/amarakon.com/blob/master/LICENSE"
-
-# custom lazyload placeholder
-# 16:9
-lazyPlaceholder = "/assets/lazyload/dsrca_loading_480x270.svg"
-# 32:9
-lazyPlaceholderRow = "/assets/lazyload/dsrca_loading_960x270.svg"
-# 8:9
-lazyPlaceholderCol = "/assets/lazyload/dsrca_loading_480x540.svg"
-
-# Let images display in full brightness under dark mode
 disableDarkImage = true
+
+[permalinks]
+post = "/:section/:filename/"
 
 [markup]
 [markup.goldmark]
 [markup.goldmark.renderer]
-unsafe = true # Enable user to embed HTML snippets in Markdown content
+unsafe = true
 [markup.highlight]
 style = "nord"
 guessSyntax = false
-
 [markup.tableOfContents]
 startLevel = 1
 endLevel = 3
-
-[taxonomies]
-tag = "tags"
 
 [menu]
 [[menu.nav]]
 name = "About"
 url = "/about/"
+[[menu.nav]]
+name = "Programs"
+url = "/programs/"
+[[menu.nav]]
+name = "Projects"
+url = "/projects/"
+[[menu.nav]]
+name = "Articles"
+url = "/articles/"
 
 [[menu.link]]
 name = "GitHub"
@@ -101,9 +57,6 @@ url = "https://github.com/amarakon"
 [[menu.link]]
 name = "YouTube"
 url = "https://www.youtube.com/channel/UCbZc671K2NxNbr1Kfqz6Fmg"
-
-[build]
-noJSConfigInAssets = true
 
 [security]
 enableInlineShortcodes = true
