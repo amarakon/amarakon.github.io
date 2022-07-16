@@ -1,6 +1,6 @@
 ---
 title: Software and Hardware I Use and Endorse
-date: "2022-07-15"
+date: "2022-07-16"
 tags: ["foss"]
 ---
 
