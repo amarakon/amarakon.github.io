@@ -1,0 +1,2 @@
+<span><i class="iconfont icon-today-sharp"></i>&nbsp;{{ .Date.Format "2006-01-02" }}</span>
+{{ if ne .Date.YearDay .Lastmod.YearDay }}<span><i class="iconfont icon-sync-circle-sharp"></i>&nbsp;{{ dateFormat ( or $.Site.Params.dateFormat "2006-01-02" ) $.Page.Params.LastMod }}</span>{{ end }}
