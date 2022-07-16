@@ -34,4 +34,42 @@ My top 4 favorite software projects
 
 # [Articles](/articles/)
 
+<style>
+#tag_tutorial:before { content: "📖" ; }
+#tag_politics:before { content: "👑" ; }
+#tag_computers:before { content: "🖥️ " ; }
+#tag_death:before { content: "☠️" ; }
+#tag_family:before { content: "👪" ; }
+#tag_phones:before { content: "📱" ; }
+#tag_money:before { content: "💵" ; }
+
+#tagcloud {
+    clear: both ;
+    padding: 0;
+    border-radius: 10px ;
+    text-align: center ;
+    margin: 0 auto ;
+    border: solid 1px ;
+    list-style: none ;
+}
+
+#tagcloud li {
+    display: inline-block ;
+}
+
+#tagcloud a {
+    display: block ;
+    width: auto ;
+    border-radius: 10px ;
+    padding: .25em ;
+    margin: 2px ;
+}
+</style>
+
+## Tags
+
+{{< tags >}}
+
+## Recent
+
 {{< articles >}}
