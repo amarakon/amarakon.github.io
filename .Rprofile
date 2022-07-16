@@ -1,4 +1,4 @@
-knitr::opts_chunk$set(echo = FALSE, cache = TRUE, dev = 'svglite')
+knitr::opts_chunk$set(echo = FALSE, dev = 'svglite')
 # REMEMBER to restart R after you modify and save this file!
 
 # First, execute the global .Rprofile if it exists. You may configure blogdown

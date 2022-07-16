@@ -7,34 +7,18 @@ Welcome! My name is Amar Al-Zubaidi and this is my personal website. I am a prog
 My top 4 favorite software projects
 </p>
 <table>
-<thead>
-<tr>
-<th style="text-align:center">
-Gentoo
-</th>
-<th style="text-align:center">
-Zsh
-</th>
-<th style="text-align:center">
-ImageMagick
-</th>
-<th style="text-align:center">
-R Markdown
-</th>
-</tr>
-</thead>
 <tbody>
 <tr>
-<td style="text-align:center">
-<img class="img-zoomable" src="https://www.gentoo.org/assets/img/logo/gentoo-signet.png" alt="" width="80%" />
+<td style="text-align:center; width:25%">
+<img class="img-zoomable" src="https://www.gentoo.org/assets/img/logo/gentoo-logo.png" alt="" width="80%" />
 </td>
-<td style="text-align:center">
+<td style="text-align:center; width:25%">
 <img class="img-zoomable" src="https://wikiless.org/media/wikipedia/commons/thumb/1/1f/Z_Shell_Logo_Color_Horizontal.svg/529px-Z_Shell_Logo_Color_Horizontal.svg.png" alt="" />
 </td>
-<td style="text-align:center">
-<img class="img-zoomable" src="https://wikiless.org/media/wikipedia/commons/thumb/9/9a/ImageMagick_logo.svg/579px-ImageMagick_logo.svg.png" alt="" width="75%" />
+<td style="text-align:center; width:25%">
+<img class="img-zoomable" src="https://wikiless.org/media/wikipedia/commons/thumb/9/9a/ImageMagick_logo.svg/579px-ImageMagick_logo.svg.png" alt="" />
 </td>
-<td style="text-align:center">
+<td style="text-align:center; width:25%">
 <img class="img-zoomable" src="https://raw.githubusercontent.com/rstudio/rmarkdown/main/man/figures/logo.png" alt="" />
 </td>
 </tr>
