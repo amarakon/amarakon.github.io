@@ -1,7 +1,7 @@
 
 Welcome! My name is Amar Al-Zubaidi and this is my personal website. I am a programmer who loves Gentoo because it is the best operating system ever made. Also, I am only excellent at shell because I have not taken the time to master other languages. However, I still know C, R, HTML, CSS, TeX. See my [about](/about/) page for more details.
 
-# [ Software and Hardware I Use](/programs/)
+# [Software and Hardware I Use](/programs/)
 
 <p class="caption">
 My top 4 favorite software projects
@@ -25,7 +25,7 @@ My top 4 favorite software projects
 </tbody>
 </table>
 
-# [ My Software Projects](/projects/)
+# [My Software Projects](/projects/)
 
 ![](/images/dfm.gif)
 <p class="caption">
@@ -42,12 +42,6 @@ My top 4 favorite software projects
 #tag_family:before { content: "👪" ; }
 #tag_phones:before { content: "📱" ; }
 #tag_money:before { content: "💵" ; }
-#tag_cli:before { content: "" ; }
-#tag_foss:before { content: "" ; }
-#tag_fsf:before { content: "" ; }
-#tag_markup:before { content: "" ; }
-#tag_programming:before { content: "" ; }
-#tag_websites:before { content: "" ; }
 
 #tagcloud {
     clear: both ;
