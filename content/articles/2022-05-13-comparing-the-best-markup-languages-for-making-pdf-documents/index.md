@@ -34,7 +34,7 @@ Other markup word processors require you to install their packages and these pac
 Not everyone wants to install them and not everyone has enough storage space to do so.
 You can use the `groff_ms` macro package by passing the `-ms` flag to create PDF documents.
 It is equally convenient to render the document: running `groff -ms <file>.ms -T pdf > <file>.pdf` will quickly render it.
-Other markup word processors take longer to render documents because they are more complex
+Other markup word processors take longer to render documents because they are more complex.
 It is commonly used to create man pages with the `groff_man` macro package.
 
 The main problem with Groff is that it does not have enough features.
