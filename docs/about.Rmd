@@ -1,6 +1,7 @@
 ---
 title: About
 date: "`r format(Sys.time(), '%Y-%m-%d')`"
+tags: ["personal"]
 ---
 
 ![](/images/amar-al-zubaidi.jpg)

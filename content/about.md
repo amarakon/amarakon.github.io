@@ -1,6 +1,7 @@
 ---
 title: About
-date: "2022-07-15"
+date: "2022-07-16"
+tags: ["personal"]
 ---
 
 ![](/images/amar-al-zubaidi.jpg)
