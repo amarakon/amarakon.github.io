@@ -1,0 +1,18 @@
+{{ define "main" }}
+<h2 class="post-item post-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+<!-- homepage range in all posts -->
+
+<div class="markdown-body">
+<article>
+{{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
+<ul>
+{{- range $paginator.Pages }}
+<li><font color="616E88">{{ partial "post-date.html" . }}</font> – <a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+{{ end }}
+</ul>
+</article>
+</div>
+
+{{- partial "pagination.html" (dict "context" . "pagi" $paginator) -}}
+
+{{ end }}

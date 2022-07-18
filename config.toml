@@ -8,8 +8,8 @@ hasCJKLanguage = false
 enableEmoji = false
 enableRobotsTXT = false
 
-summaryLength = 100
-paginate = 10
+summaryLength = 50
+paginate = 20
 
 [params]
 math = false
