@@ -1,6 +1,6 @@
 ---
 title: Software and Hardware I Use and Endorse
-date: "2022-07-16"
+date: "2022-07-21"
 tags: ["foss"]
 ---
 
@@ -35,7 +35,8 @@ Terminal emulator
 : Unfortunately, there is no perfect terminal emulator.
 They are all flawed.
 This is surprising since I view terminals as simple software.
-But the one I use is Alacritty.
+Actually, there is one perfect terminal: foot, but it is only available for Wayland.
+The one I use is Alacritty.
 It balances simplicity and features.
 It does not have tabs, or a scroll-bar, or any of that bullshit bloated terminals have.
 But it uses GPU acceleration which makes it the fastest terminal.
@@ -86,7 +87,6 @@ These are the extensions I have installed: (Hopefully their names explain what t
     - [I don't care about cookies](https://addons.mozilla.org/en-CA/firefox/addon/i-dont-care-about-cookies/)
     - [cookies.txt](https://addons.mozilla.org/en-CA/firefox/addon/cookies-txt/)
     - [LibRedirect](https://addons.mozilla.org/en-CA/firefox/addon/libredirect/)
-    - [Nord Web Theme](https://addons.mozilla.org/en-CA/firefox/addon/nord-web-theme/)
 
     For more information about web browsers, see my [article](/articles/librewolf-is-currently-the-best-web-browser/) about LibreWolf.
 
