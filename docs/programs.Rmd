@@ -125,13 +125,13 @@ So you do not need a separate program for managing torrents.
 Video/audio
 : To convert videos and audio, I use FFmpeg.
 It is so simple it is laughable: `ffmpeg input.mp4 output.mkv`.
-To record video and audio, I use [FFRec](https://github.com/amarakon/ffrec) which is based on FFmpeg.
-I developed FFRec because recording with plain FFmpeg is painfully annoying.
+To record video and audio, I use [FFrec](https://github.com/amarakon/ffrec) which is based on FFmpeg.
+I developed FFrec because recording with plain FFmpeg is painfully annoying.
 For editing videos, I don't care about the differences between most video editors, but I use Olive.
 
 Images
 : ImageMagick is the ffmpeg of image converters, enough said.
-To take screenshots, I developed [MagickShot](https://github.com/amarakon/magickshot) for the same reason I developed FFRec.
+To take screenshots, I developed [MagickShot](https://github.com/amarakon/magickshot) for the same reason I developed FFrec.
 And GIMP is the only good free image manipulation program.
 
 Typesetter

@@ -58,16 +58,16 @@ I guess it is better explained visually:
 
     ![](/images/dfm.gif)
 
-[FFRec](https://github.com/amarakon/ffrec)
+[FFrec](https://github.com/amarakon/ffrec)
 : It is annoying when the command-line option is too minimalist while the graphical option is too bloated.
-FFRec uses FFmpeg to record but makes it less of a hassle.
+FFrec uses FFmpeg to record but makes it less of a hassle.
 It makes it just as easy to record with FFmpeg as it is with OBS.
 Actually, it is even easier.
 No setup is required because the defaults are already fantastic.
 But if they do not suit you, you can change them with command-line options or the configuration file.
 
 [MagickShot](https://github.com/amarakon/magickshot)
-: MagickShot is like FFRec but for screenshots instead of recordings.
+: MagickShot is like FFrec but for screenshots instead of recordings.
 It simplifies ImageMagick so you do not feel the need to use scrot or Flameshot.
 It can screenshot the selection, the window, the monitor, or the entire display.
 And it does it just like magic 😉.
