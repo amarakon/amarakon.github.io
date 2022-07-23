@@ -13,10 +13,10 @@ My top 4 favorite software projects
 <img class="img-zoomable" src="https://www.gentoo.org/assets/img/logo/gentoo-logo.png" alt="" width="80%" />
 </td>
 <td style="text-align:center; width:25%">
-<img class="img-zoomable" src="https://wikiless.org/media/wikipedia/commons/thumb/1/1f/Z_Shell_Logo_Color_Horizontal.svg/529px-Z_Shell_Logo_Color_Horizontal.svg.png" alt="" />
+<img class="img-zoomable" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Z_Shell_Logo_Color_Horizontal.svg/1024px-Z_Shell_Logo_Color_Horizontal.svg.png" alt="" />
 </td>
 <td style="text-align:center; width:25%">
-<img class="img-zoomable" src="https://wikiless.org/media/wikipedia/commons/thumb/9/9a/ImageMagick_logo.svg/579px-ImageMagick_logo.svg.png" alt="" />
+<img class="img-zoomable" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/ImageMagick_logo.svg/800px-ImageMagick_logo.svg.png" alt="" />
 </td>
 <td style="text-align:center; width:25%">
 <img class="img-zoomable" src="https://raw.githubusercontent.com/rstudio/rmarkdown/main/man/figures/logo.png" alt="" />
