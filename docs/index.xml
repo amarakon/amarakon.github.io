@@ -6,7 +6,17 @@
     <description>Recent content on Amarakon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 22 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://amarakon.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 26 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://amarakon.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>I Thoroughly Enjoy Harvard’s CS50 Online Course</title>
+      <link>https://amarakon.github.io/articles/i-thoroughly-enjoy-harvards-cs50-online-course/</link>
+      <pubDate>Tue, 26 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://amarakon.github.io/articles/i-thoroughly-enjoy-harvards-cs50-online-course/</guid>
+      <description>Recall from my second article on this website that I did not like my school&amp;rsquo;s computer science club. I listed several reasons for it, and I will briefly summarize them here.
+ The teacher taught in a traditional way rather than what I expected. Only the Python programming language is taught.</description>
+    </item>
+    
     <item>
       <title>My Software Projects and Why You Should Follow Them</title>
       <link>https://amarakon.github.io/projects/</link>

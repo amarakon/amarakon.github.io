@@ -1,0 +1,19 @@
+---
+title: "I Thoroughly Enjoy Harvard’s CS50 Online Course"
+author: ~
+date: '2022-07-26'
+slug: i-thoroughly-enjoy-harvard-s-cs50-online-course
+categories: []
+tags: []
+---
+
+Recall from my [second](articles/education-wants-to-dumb-down-technology/) article on this website that I did not like my school's [computer science](http://localhost:1313/articles/education-wants-to-dumb-down-technology/#computer-science) club.
+I listed several reasons for it, and I will briefly summarize them here.
+
+- The teacher teached in a tradional way rather than what I expected.
+- Only the Python programming language is taught.
+  - Python is slow, easy, high-level, and interpreted
+- They did not help us **understand** how programming works, so it still seemed like magic to us.
+- The environment we programmed in was normie-friendly, dishonestly dumbing it down.
+
+I consider Harvard's CS50 
