@@ -6,7 +6,17 @@
     <description>Recent content on Amarakon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 26 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://amarakon.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 28 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://amarakon.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>https://amarakon.github.io/about/</link>
+      <pubDate>Thu, 28 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://amarakon.github.io/about/</guid>
+      <description>I am interested in many things:
+ freedom free software philosophy minimalism GNU/Linux  Gentoo Arch   programming  C R shell   markup  R Markdown LaTeX    Projects On my GitHub page is where I have all my projects. These are some of my best projects:</description>
+    </item>
+    
     <item>
       <title>I Thoroughly Enjoy Harvard’s CS50 Online Course</title>
       <link>https://amarakon.github.io/articles/i-thoroughly-enjoy-harvards-cs50-online-course/</link>
@@ -34,16 +44,6 @@
       <guid>https://amarakon.github.io/programs/</guid>
       <description>This is a list of the most important software and hardware I use. It may include programs that I have developed myself.
 What Makes a Good Program I do not endorse the use of proprietary software because it is immoral and bad. I use software that is minimal, extensible, and fast.</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>https://amarakon.github.io/about/</link>
-      <pubDate>Sat, 16 Jul 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://amarakon.github.io/about/</guid>
-      <description>I am interested in many things:
- freedom free software philosophy minimalism GNU/Linux  Gentoo Arch   programming  C R shell   markup  R Markdown LaTeX    Projects On my GitHub page is where I have all my projects. These are some of my best projects:</description>
     </item>
     
     <item>
