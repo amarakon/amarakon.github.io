@@ -6,7 +6,62 @@
     <description>Recent content on Amarakon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 28 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://amarakon.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 29 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://amarakon.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Amarlay – Amarakon’s overlay</title>
+      <link>https://amarakon.github.io/projects/amarlay/</link>
+      <pubDate>Fri, 29 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://amarakon.github.io/projects/amarlay/</guid>
+      <description>https://github.com/amarakon/amarlay
+Unlike AmaRYAML, Amarlay has a great name. It is a Gentoo overlay that includes dozens of unique packages, most of them not found in any other repository. Obviously, this will only be useful to Gentoo users. The best packages it includes are Zsh plugins, nerd-fonts-inconsolata, cfetch, and many Neovim plugins.</description>
+    </item>
+    
+    <item>
+      <title>AmaRYAML – Amarakon’s YAML</title>
+      <link>https://amarakon.github.io/projects/amaryaml/</link>
+      <pubDate>Fri, 29 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://amarakon.github.io/projects/amaryaml/</guid>
+      <description>https://github.com/amarakon/amaryaml
+It has a terrible name but this is basically a collection of R Markdown templates. There are currently five templates available in the amaryaml package:
+  Book
+  Eisvogel
+This is basically a simple document template. It is much better than the default pandoc template.
+  GitHub</description>
+    </item>
+    
+    <item>
+      <title>DFM – dmenu File Manager</title>
+      <link>https://amarakon.github.io/projects/dfm/</link>
+      <pubDate>Fri, 29 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://amarakon.github.io/projects/dfm/</guid>
+      <description>https://github.com/amarakon/dfm
+The dmenu file manager is the best and fastest way to manage files! It is even faster than using the terminal, but has the perks of a graphical user interface. Therefore, it has the best of both worlds. You can use it to quickly open files in literally around one second.</description>
+    </item>
+    
+    <item>
+      <title>FFrec – FFmpeg Record</title>
+      <link>https://amarakon.github.io/projects/ffrec/</link>
+      <pubDate>Fri, 29 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://amarakon.github.io/projects/ffrec/</guid>
+      <description>https://github.com/amarakon/ffrec
+It is annoying when the command-line option is too minimalist while the graphical option is too bloated. FFrec uses FFmpeg to record but makes it less of a hassle. It makes it just as easy to record with FFmpeg as it is with OBS. Actually, it is even easier. No setup is required because the defaults are already fantastic.</description>
+    </item>
+    
+    <item>
+      <title>MagickShot – ImageMagick Screenshot</title>
+      <link>https://amarakon.github.io/projects/magickshot/</link>
+      <pubDate>Fri, 29 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://amarakon.github.io/projects/magickshot/</guid>
+      <description>https://github.com/amarakon/magickshot
+MagickShot is a program I created because I am surprised it does not exist yet. It is a screenshot utility, but there are many screenshot utilities. However, none of them do everything I want them to do:
+ screenshot with mouse selection sceenshot a specified window screenshot a specified monitor screenshot the entire display  Most of them only support the first and last options.</description>
+    </item>
+    
     <item>
       <title>About</title>
       <link>https://amarakon.github.io/about/</link>
@@ -25,15 +80,6 @@
       <guid>https://amarakon.github.io/articles/i-thoroughly-enjoy-harvards-cs50-online-course/</guid>
       <description>Recall from my second article on this website that I did not like my school&amp;rsquo;s computer science club. I listed several reasons for it, and I will briefly summarize them here.
  The teacher taught in a traditional way rather than what I expected. Only the Python programming language is taught.</description>
-    </item>
-    
-    <item>
-      <title>My Software Projects and Why You Should Follow Them</title>
-      <link>https://amarakon.github.io/projects/</link>
-      <pubDate>Fri, 22 Jul 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://amarakon.github.io/projects/</guid>
-      <description>Similar to my programs page, this webpage will list programs that I endorse. But this is only for programs that I have specifically created. My software projects are available on GitHub. And I have plenty of good ones. I believe they should be more popular, but I am not sure how to bring more attention to them.</description>
     </item>
     
     <item>

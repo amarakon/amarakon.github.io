@@ -16,17 +16,19 @@
 
 
 
-<title>programming - Amarakon</title>
+<title>FFrec – FFmpeg Record - Amarakon</title>
 
 
 
 
-<link rel="alternate" type="application/rss+xml" href="https://amarakon.github.io/tags/programming/index.xml" title="Amarakon" />
 
-<meta property="og:title" content="programming" />
-<meta name="twitter:title" content="programming" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://amarakon.github.io/tags/programming/" /><meta name="twitter:card" content="summary" /><meta property="og:updated_time" content="2022-07-26T00:00:00+00:00" />
+<meta property="og:title" content="FFrec – FFmpeg Record" />
+<meta name="twitter:title" content="FFrec – FFmpeg Record" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://amarakon.github.io/projects/ffrec/" /><meta property="og:description" content="https://github.com/amarakon/ffrec
+It is annoying when the command-line option is too minimalist while the graphical option is too bloated. FFrec uses FFmpeg to record but makes it less of a hassle. It makes it just as easy to record with FFmpeg as it is with OBS. Actually, it is even easier. No setup is required because the defaults are already fantastic." />
+<meta name="twitter:description" content="https://github.com/amarakon/ffrec
+It is annoying when the command-line option is too minimalist while the graphical option is too bloated. FFrec uses FFmpeg to record but makes it less of a hassle. It makes it just as easy to record with FFmpeg as it is with OBS. Actually, it is even easier. No setup is required because the defaults are already fantastic." /><meta name="twitter:card" content="summary" /><meta property="article:published_time" content="2022-07-29T00:00:00+00:00" /><meta property="article:modified_time" content="2022-07-29T00:00:00+00:00" />
 
 
 
@@ -78,29 +80,98 @@
             
             <div class="col-12 col-md-9 float-left content">
                 
-<h2 class="post-item post-title"><a href="/tags/programming/">programming</a></h2>
-
-<div class="markdown-body">
 <article>
+    
+    <h2 class="post-item post-title">
+        <a href="https://amarakon.github.io/projects/ffrec/">FFrec – FFmpeg Record</a>
+    </h2>
+    <div class="post-item post-meta">
+        <span><i class="iconfont icon-today-sharp"></i>&nbsp;2022-07-29</span>
 
+<span><i class="iconfont icon-file-tray-sharp"></i>&nbsp;392 words</span>
 
-<ul>
+<span><i class="iconfont icon-pricetags-sharp"></i>&nbsp;No tags</span>
 
-<li><font color="616E88"><span><i class="iconfont icon-today-sharp"></i>&nbsp;2022-07-26</span>
+    </div>
+    
+    <div class="post-content markdown-body">
+        <p><a href="https://github.com/amarakon/ffrec">https://github.com/amarakon/ffrec</a></p>
+<p>It is annoying when the command-line option is too minimalist while the graphical option is too bloated.
+FFrec uses FFmpeg to record but makes it less of a hassle.
+It makes it just as easy to record with FFmpeg as it is with OBS.
+Actually, it is even easier.
+No setup is required because the defaults are already fantastic.
+But if they do not suit you, you can change them with command-line options or the configuration file.</p>
+<h1 id="usage">Usage</h1>
+<pre tabindex="0"><code class="language-shellell" data-lang="shellell"># Record
+`# user` ffrec --display # Record display
+`# user` ffrec --audio # Record audio
+`# user` ffrec --webcam # Record webcam
+`# user` ffrec --display --audio # Record display and audio
+`# user` ffrec --webcam --audio # Record webcam
 
-</font> – <a href="/articles/i-thoroughly-enjoy-harvards-cs50-online-course/">I Thoroughly Enjoy Harvard’s CS50 Online Course</a></li>
+# Pause/end
+`# user` ffrec --pause # Pause recording
+`# user` ffrec --end # End recording
 
-<li><font color="616E88"><span><i class="iconfont icon-today-sharp"></i>&nbsp;2022-05-06</span>
+# Preferences
+`# user` ffrec --rate=30 # Set frame rate to 30
+`# user` ffrec --preset=ultrafast # Set preset to ultrafast
+`# user` ffrec --audio-encoder=flac # Set audio encoder to flac
+`# user` ffrec --video-encoder=libx264 # Set video encoder to libx264
+`# user` ffrec --audio-extension=flac # Set audio extension to flac
+`# user` ffrec --video-extension=mkv # Set audio extension to mkv
 
-</font> – <a href="/articles/programming-is-invaluable-for-everyone/">Programming is Invaluable for Everyone</a></li>
+# Miscellaneous
+`# user` ffrec --monitor=0 # Record monitor 0
+`# user` ffrec --size=1366x18 # Record with size 1366x18
+`# user` ffrec --title=%F # Set the title format to %F (YYYY-MM-DD)
 
-<li><font color="616E88"><span><i class="iconfont icon-today-sharp"></i>&nbsp;2022-05-02</span>
-
-</font> – <a href="/articles/education-wants-to-dumb-down-technology/">Education Wants to Dumb Down Technology</a></li>
-
-</ul>
+# Help
+`# user` ffrec --help # Print the help message and exit
+</code></pre><p>As you can see, FFrec is insanely customizable.
+But the defaults are already great.
+I like to use the dmenu prompt to record display and audio.
+But to select more than one thing to record in dmenu, you need the <a href="https://tools.suckless.org/dmenu/patches/multi-selection/">multi-selection</a> patch.
+Keep that in mind.</p>
+<h1 id="dependencies">Dependencies</h1>
+<ol>
+<li>ffmpeg</li>
+<li>xrandr</li>
+<li>dmenu (menu selection)</li>
+</ol>
+<h1 id="installation">Installation</h1>
+<h2 id="universal">Universal</h2>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#a3be8c">`</span><span style="color:#616e87;font-style:italic"># user` git clone https://github.com/amarakon/ffrec</span>
+</span></span><span style="display:flex;"><span><span style="color:#a3be8c">`</span><span style="color:#616e87;font-style:italic"># user` cd ffrec</span>
+</span></span><span style="display:flex;"><span><span style="color:#a3be8c">`</span><span style="color:#616e87;font-style:italic"># root` make install</span>
+</span></span></code></pre></div><h2 id="gentoo">Gentoo</h2>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#a3be8c">`</span><span style="color:#616e87;font-style:italic"># root` eselect repository add amarlay git https://github.com/amarakon/amarlay</span>
+</span></span><span style="display:flex;"><span><span style="color:#a3be8c">`</span><span style="color:#616e87;font-style:italic"># root` emerge --sync amarlay</span>
+</span></span><span style="display:flex;"><span><span style="color:#a3be8c">`</span><span style="color:#616e87;font-style:italic"># root` emerge media-video/ffrec</span>
+</span></span></code></pre></div><h1 id="uninstallation">Uninstallation</h1>
+<h2 id="universal-1">Universal</h2>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#a3be8c">`</span><span style="color:#616e87;font-style:italic"># user` cd ffrec</span>
+</span></span><span style="display:flex;"><span><span style="color:#a3be8c">`</span><span style="color:#616e87;font-style:italic"># root` make uninstall</span>
+</span></span></code></pre></div><h2 id="gentoo-1">Gentoo</h2>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#a3be8c">`</span><span style="color:#616e87;font-style:italic"># root` emerge -c media-video/ffrec</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># Remove my overlay (optional)</span>
+</span></span><span style="display:flex;"><span><span style="color:#a3be8c">`</span><span style="color:#616e87;font-style:italic"># root` eselect-repository remove -f amarlay</span>
+</span></span><span style="display:flex;"><span><span style="color:#a3be8c">`</span><span style="color:#616e87;font-style:italic"># root` emerge --sync</span>
+</span></span></code></pre></div><h1 id="configuration">Configuration</h1>
+<p>You can change the default values of FFrec options via the configuration file.
+The configuration file is located in the configuration directory, so usually <code>~/.config/ffrec/ffrec.conf</code>.
+Here is an example configuration:</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>rate<span style="color:#81a1c1">=</span><span style="color:#b48ead">30</span>
+</span></span><span style="display:flex;"><span>preset<span style="color:#81a1c1">=</span><span style="color:#a3be8c">&#34;ultrafast&#34;</span>
+</span></span><span style="display:flex;"><span>audio_encoder<span style="color:#81a1c1">=</span>mp3
+</span></span><span style="display:flex;"><span>video_extension<span style="color:#81a1c1">=</span>mp4
+</span></span></code></pre></div>
+    </div>
 </article>
-</div>
+
+
 
 
             </div>
@@ -214,9 +285,26 @@
             
         </div>
     </div>
-    
-    
-    
+    <div class="sidebar-item sidebar-toc">
+        <h3>Contents</h3><nav id="TableOfContents">
+  <ul>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#dependencies">Dependencies</a></li>
+    <li><a href="#installation">Installation</a>
+      <ul>
+        <li><a href="#universal">Universal</a></li>
+        <li><a href="#gentoo">Gentoo</a></li>
+      </ul>
+    </li>
+    <li><a href="#uninstallation">Uninstallation</a>
+      <ul>
+        <li><a href="#universal-1">Universal</a></li>
+        <li><a href="#gentoo-1">Gentoo</a></li>
+      </ul>
+    </li>
+    <li><a href="#configuration">Configuration</a></li>
+  </ul>
+</nav></div>
 </aside>
 
         </div>

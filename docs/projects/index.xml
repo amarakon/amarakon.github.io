@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on Amarakon</title>
+    <link>https://amarakon.github.io/projects/</link>
+    <description>Recent content in Projects on Amarakon</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 29 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://amarakon.github.io/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Amarlay – Amarakon’s overlay</title>
+      <link>https://amarakon.github.io/projects/amarlay/</link>
+      <pubDate>Fri, 29 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://amarakon.github.io/projects/amarlay/</guid>
+      <description>https://github.com/amarakon/amarlay
+Unlike AmaRYAML, Amarlay has a great name. It is a Gentoo overlay that includes dozens of unique packages, most of them not found in any other repository. Obviously, this will only be useful to Gentoo users. The best packages it includes are Zsh plugins, nerd-fonts-inconsolata, cfetch, and many Neovim plugins.</description>
+    </item>
+    
+    <item>
+      <title>AmaRYAML – Amarakon’s YAML</title>
+      <link>https://amarakon.github.io/projects/amaryaml/</link>
+      <pubDate>Fri, 29 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://amarakon.github.io/projects/amaryaml/</guid>
+      <description>https://github.com/amarakon/amaryaml
+It has a terrible name but this is basically a collection of R Markdown templates. There are currently five templates available in the amaryaml package:
+  Book
+  Eisvogel
+This is basically a simple document template. It is much better than the default pandoc template.
+  GitHub</description>
+    </item>
+    
+    <item>
+      <title>DFM – dmenu File Manager</title>
+      <link>https://amarakon.github.io/projects/dfm/</link>
+      <pubDate>Fri, 29 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://amarakon.github.io/projects/dfm/</guid>
+      <description>https://github.com/amarakon/dfm
+The dmenu file manager is the best and fastest way to manage files! It is even faster than using the terminal, but has the perks of a graphical user interface. Therefore, it has the best of both worlds. You can use it to quickly open files in literally around one second.</description>
+    </item>
+    
+    <item>
+      <title>FFrec – FFmpeg Record</title>
+      <link>https://amarakon.github.io/projects/ffrec/</link>
+      <pubDate>Fri, 29 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://amarakon.github.io/projects/ffrec/</guid>
+      <description>https://github.com/amarakon/ffrec
+It is annoying when the command-line option is too minimalist while the graphical option is too bloated. FFrec uses FFmpeg to record but makes it less of a hassle. It makes it just as easy to record with FFmpeg as it is with OBS. Actually, it is even easier. No setup is required because the defaults are already fantastic.</description>
+    </item>
+    
+    <item>
+      <title>MagickShot – ImageMagick Screenshot</title>
+      <link>https://amarakon.github.io/projects/magickshot/</link>
+      <pubDate>Fri, 29 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://amarakon.github.io/projects/magickshot/</guid>
+      <description>https://github.com/amarakon/magickshot
+MagickShot is a program I created because I am surprised it does not exist yet. It is a screenshot utility, but there are many screenshot utilities. However, none of them do everything I want them to do:
+ screenshot with mouse selection sceenshot a specified window screenshot a specified monitor screenshot the entire display  Most of them only support the first and last options.</description>
+    </item>
+    
+  </channel>
+</rss>
