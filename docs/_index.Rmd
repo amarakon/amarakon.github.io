@@ -21,7 +21,7 @@ Welcome! My name is Amar Al-Zubaidi and this is my personal website. I am a prog
 # [My Software Projects](/projects/)
 
 ![](/images/dfm.gif)
-<p class="caption"><a href="https://github.com/amarakon/dfm">📁 DFM<a/> – dmenu file manager</p>
+<p class="caption"><a href="projects/dfm/">📁 DFM<a/> – dmenu file manager</p>
 
 # [📜 Articles](/articles/)
 

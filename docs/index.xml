@@ -6,7 +6,17 @@
     <description>Recent content on Amarakon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 29 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://amarakon.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 30 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://amarakon.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Software and Hardware I Use and Endorse</title>
+      <link>https://amarakon.github.io/programs/</link>
+      <pubDate>Sat, 30 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://amarakon.github.io/programs/</guid>
+      <description>This is a list of the most important software and hardware I use. It may include programs that I have developed myself (see my projects page).
+What Makes a Good Program I do not endorse the use of proprietary software because it is immoral and bad. I use software that is minimal, extensible, and fast.</description>
+    </item>
+    
     <item>
       <title>Amarlay – Amarakon’s overlay</title>
       <link>https://amarakon.github.io/projects/amarlay/</link>
@@ -80,16 +90,6 @@ MagickShot is a program I created because I am surprised it does not exist yet. 
       <guid>https://amarakon.github.io/articles/i-thoroughly-enjoy-harvards-cs50-online-course/</guid>
       <description>Recall from my second article on this website that I did not like my school&amp;rsquo;s computer science club. I listed several reasons for it, and I will briefly summarize them here.
  The teacher taught in a traditional way rather than what I expected. Only the Python programming language is taught.</description>
-    </item>
-    
-    <item>
-      <title>Software and Hardware I Use and Endorse</title>
-      <link>https://amarakon.github.io/programs/</link>
-      <pubDate>Fri, 22 Jul 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://amarakon.github.io/programs/</guid>
-      <description>This is a list of the most important software and hardware I use. It may include programs that I have developed myself.
-What Makes a Good Program I do not endorse the use of proprietary software because it is immoral and bad. I use software that is minimal, extensible, and fast.</description>
     </item>
     
     <item>

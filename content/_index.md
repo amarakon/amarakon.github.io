@@ -29,7 +29,7 @@ My top 4 favorite software projects
 
 ![](/images/dfm.gif)
 <p class="caption">
-<a href="https://github.com/amarakon/dfm">📁 DFM<a/> – dmenu file manager
+<a href="projects/dfm/">📁 DFM<a/> – dmenu file manager
 </p>
 
 # [📜 Articles](/articles/)

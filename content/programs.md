@@ -1,11 +1,11 @@
 ---
 title: Software and Hardware I Use and Endorse
-date: "2022-07-22"
+date: "2022-07-30"
 tags: ["foss"]
 ---
 
 This is a list of the most important software and hardware I use.
-It may include programs that I have developed [myself](https://github.com/amarakon).
+It may include programs that I have developed [myself](https://github.com/amarakon) (see my [projects](/projects/) page).
 
 # What Makes a Good Program
 
