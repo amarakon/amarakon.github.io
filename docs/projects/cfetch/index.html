@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta name="HandheldFriendly" content="True" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta name="generator" content="Hugo 0.97.1" />
+
+
+<link rel="shortcut icon" href="/images/favicon.png" />
+
+
+
+<title>Cfetch - Amarakon</title>
+
+
+
+
+
+<meta property="og:title" content="Cfetch" />
+<meta name="twitter:title" content="Cfetch" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://amarakon.github.io/projects/cfetch/" /><meta property="og:description" content="Cfetch is a suckless-like command-line system information tool. It displays information about your operating system, kernel, packages, and more along with ASCII art of your operating system in an elegant way. The purpose of Cfetch is to quickly get information about everything quickly instead of using one different program for getting each piece of information." />
+<meta name="twitter:description" content="Cfetch is a suckless-like command-line system information tool. It displays information about your operating system, kernel, packages, and more along with ASCII art of your operating system in an elegant way. The purpose of Cfetch is to quickly get information about everything quickly instead of using one different program for getting each piece of information." /><meta name="twitter:card" content="summary" /><meta property="article:published_time" content="2022-07-31T00:00:00+00:00" /><meta property="article:modified_time" content="2022-07-31T00:00:00+00:00" />
+
+
+
+
+
+<link rel="stylesheet" href="https://amarakon.github.io/assets/css/fuji.min.css" />
+
+
+
+
+
+
+
+
+</head>
+
+<body
+  data-theme="auto"
+  data-theme-auto='true'
+  >
+    <script data-cfasync="false">
+  
+  var fujiThemeData = localStorage.getItem('fuji_data-theme');
+  
+  if (!fujiThemeData) {
+    localStorage.setItem('fuji_data-theme', 'auto');
+  } else {
+    
+    if (fujiThemeData !== 'auto') {
+      document.body.setAttribute('data-theme', fujiThemeData === 'dark' ? 'dark' : 'light');
+    }
+  }
+</script>
+
+    <header>
+    <div class="container-lg clearfix">
+        <div class="col-12 header">
+            <a class="title-main" href="https://amarakon.github.io/">Amarakon</a>
+            
+            <span class="title-sub">My website with the programs I use, the projects I maintain, and articles about many topics</span>
+            
+        </div>
+    </div>
+</header>
+
+
+    <main>
+        <div class="container-lg clearfix">
+            
+            <div class="col-12 col-md-9 float-left content">
+                
+<article>
+    
+    <h2 class="post-item post-title">
+        <a href="https://amarakon.github.io/projects/cfetch/">Cfetch</a>
+    </h2>
+    <div class="post-item post-meta">
+        <span><i class="iconfont icon-today-sharp"></i>&nbsp;2022-07-31</span>
+
+<span><i class="iconfont icon-file-tray-sharp"></i>&nbsp;680 words</span>
+
+<span><i class="iconfont icon-pricetags-sharp"></i>&nbsp;No tags</span>
+
+    </div>
+    
+    <div class="post-content markdown-body">
+        <p>Cfetch is a suckless-like command-line system information tool.
+It displays information about your operating system, kernel, packages, and more along with ASCII art of your operating system in an elegant way.
+The purpose of Cfetch is to quickly get information about everything quickly instead of using one different program for getting each piece of information.
+<a href="https://github.com/dylanaraps/neofetch">Neofetch</a> does a poor job at this because it is extremely slow because it is written in Bash, so the purpose of Neofetch is just for screenshots.
+Despite this, Cfetch still looks more pleasing than Neofetch does.
+Cfetch is a rewrite of Neofetch in C forked from <a href="https://github.com/JaGoLi/paleofetch">JaGoLi/paleofetch</a> which was forked from <a href="https://github.com/ss7m/paleofetch">ss7m/paleofetch</a>.</p>
+<p><strong>Disclaimer:</strong> Cfetch is still in very early development.
+I am currently learning more about how to program in C and I will return to this project later.
+Stay tuned for that.</p>
+<h1 id="usage">Usage</h1>
+<p>Simply run the executable:</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>cfetch
+</span></span></code></pre></div><p>By default, <code>cfetch</code> will cache certain  information (in <code>$XDG_CACHE_HOME/cfetch</code>)
+to speed up subsequent calls. To ignore the contents of the cache (and repopulate it), run the following:</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>cfetch --recache
+</span></span></code></pre></div><p>The cache file can safely be removed at any time, Cfetch will repopulate it if it is absent.</p>
+<h1 id="dependencies">Dependencies</h1>
+<ol>
+<li>xorg-server</li>
+<li>libX11</li>
+<li>libpci</li>
+</ol>
+<h2 id="universal">Universal</h2>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#a3be8c">`</span><span style="color:#616e87;font-style:italic"># user` git clone https://github.com/amarakon/cfetch</span>
+</span></span><span style="display:flex;"><span><span style="color:#a3be8c">`</span><span style="color:#616e87;font-style:italic"># user` cd cfetch</span>
+</span></span><span style="display:flex;"><span><span style="color:#a3be8c">`</span><span style="color:#616e87;font-style:italic"># user` make install</span>
+</span></span></code></pre></div><h2 id="gentoo">Gentoo</h2>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#a3be8c">`</span><span style="color:#616e87;font-style:italic"># root` eselect repository add amarlay git https://github.com/amarakon/amarlay</span>
+</span></span><span style="display:flex;"><span><span style="color:#a3be8c">`</span><span style="color:#616e87;font-style:italic"># root` emerge --sync amarlay</span>
+</span></span><span style="display:flex;"><span><span style="color:#a3be8c">`</span><span style="color:#616e87;font-style:italic"># root` emerge app-misc/cfetch</span>
+</span></span></code></pre></div><h1 id="uninstallation">Uninstallation</h1>
+<h2 id="universal-1">Universal</h2>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#a3be8c">`</span><span style="color:#616e87;font-style:italic"># user` cd cfetch</span>
+</span></span><span style="display:flex;"><span><span style="color:#a3be8c">`</span><span style="color:#616e87;font-style:italic"># root` make uninstall</span>
+</span></span></code></pre></div><h2 id="gentoo-1">Gentoo</h2>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#a3be8c">`</span><span style="color:#616e87;font-style:italic"># root` emerge -c app-misc/cfetch</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># Remove my overlay (optional)</span>
+</span></span><span style="display:flex;"><span><span style="color:#a3be8c">`</span><span style="color:#616e87;font-style:italic"># root` eselect-repository remove -f amarlay</span>
+</span></span><span style="display:flex;"><span><span style="color:#a3be8c">`</span><span style="color:#616e87;font-style:italic"># root` emerge --sync</span>
+</span></span></code></pre></div><h1 id="configuration">Configuration</h1>
+<p>Being a suckless-like program, Cfetch is configured by editing <code>config.h</code> and recompiling.
+You can change your logo by including the appropriate header file in the logos directory.
+The color with which Cfetch draws the logo can be chosen by defining the <code>COLOR</code> macro,
+look up ANSI escape codes for information on customizing this.</p>
+<p>The last configuration is the <code>CONFIG</code> macro, which controls what information Cfetch
+prints. Each entry in this macro should look like</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#616e87;font-style:italic">/* Name        Function            Cache */</span>
+</span></span><span style="display:flex;"><span><span style="color:#eceff4">{</span> <span style="color:#a3be8c">&#34;NAME: &#34;</span><span style="color:#eceff4">,</span>    getter_function<span style="color:#eceff4">,</span>    <span style="color:#81a1c1">false</span> <span style="color:#eceff4">},</span>\
+</span></span></code></pre></div><p>Take note of the trailing comma and backslash. The first piece, <code>&quot;NAME: &quot;</code>, sets
+what Cfetch prints before printing the information; this usually tells you what
+bit of information is being shown. Note that the name entry should be unique for entries
+which are to be cached. The second piece, <code>getter_function</code>, sets
+which function Cfetch will call display. Current available getter functions are</p>
+<ul>
+<li><code>get_title</code>: prints <code>host@user</code> like in a bash prompt. Host and user will be printed in color.</li>
+<li><code>get_bar</code>: Meant to be added after <code>get_title</code>, underlines the title</li>
+<li><code>get_os</code>: Prints your operating system (including distribution)</li>
+<li><code>get_host</code>: Prints the model of computer</li>
+<li><code>get_kernel</code>: Prints the version of the linux kernel</li>
+<li><code>get_uptime</code>: Shows how long linux has been running</li>
+<li><code>get_packages</code>: Shows how many packages you have installed. Currently only works for pacman.</li>
+<li><code>get_shell</code>: Shows which shell you are using</li>
+<li><code>get_resolution</code>: Prints your screen resolution</li>
+<li><code>get_terminal</code>: Prints the name of your current terminal</li>
+<li><code>get_cpu</code>: Prints the name of your CPU, number of cores, and maximum frequency</li>
+<li><code>get_gpu1</code>, <code>get_gpu2</code>: Print the GPU on your system. If you don&rsquo;t have both integrated graphics and an external GPU, <code>get_gpu2</code> will likely be blank</li>
+<li><code>get_gpu</code>: (Tries to) print your current GPU</li>
+<li><code>get_colors1</code>, <code>get_colors2</code>: Prints the colors of your terminal</li>
+</ul>
+<p>To include a blank line between entries, put <code>SPACER \</code> between the two lines
+you want to separate.</p>
+<p>The booleans in <code>CONFIG</code> tell Cfetch whether you want to cache an entry.
+When cached, Cfetch will save the value and not recompute it whenever you run Cfetch.
+(unless you specify the <code>--recache</code> option).</p>
+<p>The CPU and GPU name can be configured as well. This is done under the CPU_CONFIG and GPU_CONFIG section
+in the config.h file. Two macros are provided to customize and tidy up the model names:</p>
+<ul>
+<li><code>REMOVE(string)</code>: removes the first occurence of <code>string</code></li>
+<li><code>REPLACE(string1, string2)</code>: replaces the first occurence of <code>string1</code> with <code>string2</code></li>
+</ul>
+<p>Don&rsquo;t forget to run Cfetch with the <code>--recache</code> flag after compiling it with your new
+configuration, otherwise it will still show the old name for already cached entries.</p>
+
+    </div>
+</article>
+
+
+
+
+            </div>
+            <aside class="col-12 col-md-3 float-left sidebar">
+    
+    <div class="sidebar-item sidebar-pages">
+        <h3>Pages</h3>
+        <ul>
+            
+            <li>
+                <a href="/about/">About</a>
+            </li>
+            
+            <li>
+                <a href="/articles/">Articles</a>
+            </li>
+            
+            <li>
+                <a href="/programs/">Programs</a>
+            </li>
+            
+            <li>
+                <a href="/projects/">Projects</a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-links">
+        <h3>Links</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/amarakon"><span>GitHub</span></a>
+            </li>
+            
+            <li>
+                <a href="https://www.youtube.com/channel/UCbZc671K2NxNbr1Kfqz6Fmg"><span>YouTube</span></a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-tags">
+        <h3>Tags</h3>
+        <div>
+            
+            <span>
+                <a href="/tags/cli/">cli</a>
+            </span>
+            
+            <span>
+                <a href="/tags/computers/">computers</a>
+            </span>
+            
+            <span>
+                <a href="/tags/death/">death</a>
+            </span>
+            
+            <span>
+                <a href="/tags/family/">family</a>
+            </span>
+            
+            <span>
+                <a href="/tags/foss/">foss</a>
+            </span>
+            
+            <span>
+                <a href="/tags/freedom/">freedom</a>
+            </span>
+            
+            <span>
+                <a href="/tags/fsf/">fsf</a>
+            </span>
+            
+            <span>
+                <a href="/tags/markup/">markup</a>
+            </span>
+            
+            <span>
+                <a href="/tags/money/">money</a>
+            </span>
+            
+            <span>
+                <a href="/tags/personal/">personal</a>
+            </span>
+            
+            <span>
+                <a href="/tags/phones/">phones</a>
+            </span>
+            
+            <span>
+                <a href="/tags/politics/">politics</a>
+            </span>
+            
+            <span>
+                <a href="/tags/programming/">programming</a>
+            </span>
+            
+            <span>
+                <a href="/tags/tutorial/">tutorial</a>
+            </span>
+            
+            <span>
+                <a href="/tags/websites/">websites</a>
+            </span>
+            
+            <span>
+                <a href="/tags/www/">www</a>
+            </span>
+            
+        </div>
+    </div>
+    <div class="sidebar-item sidebar-toc">
+        <h3>Contents</h3><nav id="TableOfContents">
+  <ul>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#dependencies">Dependencies</a>
+      <ul>
+        <li><a href="#universal">Universal</a></li>
+        <li><a href="#gentoo">Gentoo</a></li>
+      </ul>
+    </li>
+    <li><a href="#uninstallation">Uninstallation</a>
+      <ul>
+        <li><a href="#universal-1">Universal</a></li>
+        <li><a href="#gentoo-1">Gentoo</a></li>
+      </ul>
+    </li>
+    <li><a href="#configuration">Configuration</a></li>
+  </ul>
+</nav></div>
+</aside>
+
+        </div>
+        <div class="btn">
+    <div class="btn-menu" id="btn-menu">
+        <i class="iconfont icon-grid-sharp"></i>
+    </div>
+    <div class="btn-toggle-mode">
+        <i class="iconfont icon-contrast-sharp"></i>
+    </div>
+    <div class="btn-scroll-top">
+        <i class="iconfont icon-chevron-up-circle-sharp"></i>
+    </div>
+</div>
+<aside class="sidebar-mobile" style="display: none;">
+  <div class="sidebar-wrapper">
+    
+    <div class="sidebar-item sidebar-pages">
+        <h3>Pages</h3>
+        <ul>
+            
+            <li>
+                <a href="/about/">About</a>
+            </li>
+            
+            <li>
+                <a href="/articles/">Articles</a>
+            </li>
+            
+            <li>
+                <a href="/programs/">Programs</a>
+            </li>
+            
+            <li>
+                <a href="/projects/">Projects</a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-links">
+        <h3>Links</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/amarakon"><span>GitHub</span></a>
+            </li>
+            
+            <li>
+                <a href="https://www.youtube.com/channel/UCbZc671K2NxNbr1Kfqz6Fmg"><span>YouTube</span></a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-tags">
+        <h3>Tags</h3>
+        <div>
+            
+            <span>
+                <a href="/tags/cli/">cli</a>
+            </span>
+            
+            <span>
+                <a href="/tags/computers/">computers</a>
+            </span>
+            
+            <span>
+                <a href="/tags/death/">death</a>
+            </span>
+            
+            <span>
+                <a href="/tags/family/">family</a>
+            </span>
+            
+            <span>
+                <a href="/tags/foss/">foss</a>
+            </span>
+            
+            <span>
+                <a href="/tags/freedom/">freedom</a>
+            </span>
+            
+            <span>
+                <a href="/tags/fsf/">fsf</a>
+            </span>
+            
+            <span>
+                <a href="/tags/markup/">markup</a>
+            </span>
+            
+            <span>
+                <a href="/tags/money/">money</a>
+            </span>
+            
+            <span>
+                <a href="/tags/personal/">personal</a>
+            </span>
+            
+            <span>
+                <a href="/tags/phones/">phones</a>
+            </span>
+            
+            <span>
+                <a href="/tags/politics/">politics</a>
+            </span>
+            
+            <span>
+                <a href="/tags/programming/">programming</a>
+            </span>
+            
+            <span>
+                <a href="/tags/tutorial/">tutorial</a>
+            </span>
+            
+            <span>
+                <a href="/tags/websites/">websites</a>
+            </span>
+            
+            <span>
+                <a href="/tags/www/">www</a>
+            </span>
+            
+        </div>
+    </div>
+    
+    
+  </div>
+</aside>
+
+    </main>
+
+    <footer>
+    <div class="container-lg clearfix">
+        <div class="col-12 footer">
+            
+            <span>&copy; 2022
+                <a href="https://amarakon.github.io/"></a>
+                 | <a href="https://github.com/amarakon/amarakon.github.io">Source code</a> 
+                | Powered by <a href="https://github.com/amarakon/hugo-theme-fuji-nord"
+                   >Fuji-Nord</a> and <a href="https://gohugo.io/"
+                                                    >Hugo</a> 
+            </span>
+        </div>
+    </div>
+</footer>
+
+    
+<script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/prismjs@1.27.0/components/prism-core.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/prismjs@1.27.0/plugins/autoloader/prism-autoloader.min.js"></script>
+
+
+
+<script defer src="/assets/js/fuji.min.js"></script>
+
+
+
+</body>
+
+</html>

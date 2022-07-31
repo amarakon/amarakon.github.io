@@ -6,7 +6,16 @@
     <description>Recent content on Amarakon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 30 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://amarakon.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 31 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://amarakon.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cfetch</title>
+      <link>https://amarakon.github.io/projects/cfetch/</link>
+      <pubDate>Sun, 31 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://amarakon.github.io/projects/cfetch/</guid>
+      <description>Cfetch is a suckless-like command-line system information tool. It displays information about your operating system, kernel, packages, and more along with ASCII art of your operating system in an elegant way. The purpose of Cfetch is to quickly get information about everything quickly instead of using one different program for getting each piece of information.</description>
+    </item>
+    
     <item>
       <title>Software and Hardware I Use and Endorse</title>
       <link>https://amarakon.github.io/programs/</link>
