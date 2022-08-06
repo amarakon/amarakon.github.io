@@ -6,7 +6,16 @@
     <description>Recent content on Amarakon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 31 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://amarakon.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 05 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://amarakon.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>20 Best (Neo)Vim Plugins</title>
+      <link>https://amarakon.github.io/articles/20-best-neo-vim-plugins/</link>
+      <pubDate>Fri, 05 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://amarakon.github.io/articles/20-best-neo-vim-plugins/</guid>
+      <description>Introduction Vim is a text editor that is great on its own but is heavily improved by various plugins. The vast majority of the plugins in this article will not be language-specific, so they will apply whether you are coding in C or just writing a random text file. I do indeed use Neovim and not Vim, but there is only one plugin in this list that is Neovim-specific.</description>
+    </item>
+    
     <item>
       <title>Cfetch</title>
       <link>https://amarakon.github.io/projects/cfetch/</link>

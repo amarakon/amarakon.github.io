@@ -1,0 +1,235 @@
+---
+title: 20 Best (Neo)Vim Plugins
+author: ~
+date: '2022-08-05'
+slug: 20-best-neo-vim-plugins
+categories: []
+tags: ["foss"]
+---
+```{r, setup, include = FALSE}
+library(knitr)
+```
+
+# Introduction
+
+Vim is a text editor that is great on its own but is heavily improved by various
+plugins.
+The vast majority of the plugins in this article will not be language-specific,
+so they will apply whether you are coding in C or just writing a random text
+file.
+I do indeed use Neovim and not Vim, but there is only one plugin in this list
+that is Neovim-specific.
+And it does have Vim-compatible alternatives anyway.
+Also, some of the plugins here are criminally underrated.
+
+# Plugins
+
+## Automation
+
+1. [Auto Pairs](https://github.com/jiangmiao/auto-pairs)
+
+   This plugin automatically inserts a pair of brackets, parentheses, and quotes
+   in a pair.
+   This is especially convenient when programming because you will no longer have
+   errors because you forgot to end a string.
+   You might think that this could slow you down, but it does not.
+   Luckily, there are at least three ways to insert things purely.
+
+   1. `Ctrl-V` followed by the character to insert
+   1. `Alt-P` to toggle the plugin
+   1. `Del` to delete extra character
+
+1. [surround](https://github.com/tpope/vim-surround)
+
+   This is another plugin for brackets, parentheses, and quotes.
+   This plugin is all about "surroundings".
+   You can delete/change/add brackets, parentheses, quotes, etc.
+   I used to always just manually move the cursor to the beginning and end of a
+   pair to do this.
+   This plugin is great when paired with auto-pairs.
+
+1. [latex-unicoder](https://github.com/joom/latex-unicoder.vim)
+
+   One thing I surely hate to do is go on the internet just to copy and paste a
+   certain Unicode symbol.
+   If only there was a way to automate this in Vim, that would be great.
+   That's where latex-unicoder comes into play.
+   For those of you who are familiar with LaTeX, it allows you to type the LaTeX
+   names of the Unicode characters and latex-unicoder will replace them with the
+   actual symbol.
+   If you do not know LaTeX, do not worry.
+   You can just look at the [LaTeX character map](http://milde.users.sourceforge.net/LUCR/Math/).
+
+## Languages
+
+4. [emmet](https://github.com/mattn/emmet-vim)
+
+   This plugin is specific to HTML, and I rarely write HTML.
+   However, it is too good to not have it in this list.
+   Everyone agrees that HTML is one of the easiest markup languages to learn.
+   So easy that it is not even fair to call it a programming language.
+   But just like LaTeX, its syntax is quite annoying to work with.
+   It is way too time consuming just to write a single HTML page.
+
+   emmet creates shortcuts so that it is much faster to do so.
+   Consider the following example of the minimum that is needed for an HTML
+   document.
+   The first code block will be what you need to write with emmet.
+   The second code block will be the result after pressing `Ctrl-Y` `,`.
+
+   ```html
+   html:5
+   ```
+
+   ```html
+   <!DOCTYPE html>
+   <html lang="en">
+   <head>
+   	<meta charset="UTF-8">
+   	<title></title>
+   </head>
+   <body>
+   	│
+   </body>
+   </html>
+   ```
+
+   That was just one example out of dozens.
+   You should now definitely see why this plugin is a must-have for HTML developers.
+
+1. [Markdown](https://github.com/preservim/vim-markdown)
+
+   This is another plugin for a markup language.
+   This time, it is Markdown.
+   It has a lot of features suited for Markdown users.
+   But to be honest, I only use it for the syntax highlighting for fenced code
+   block languages.
+
+1. [ALE](https://github.com/dense-analysis/ale)
+
+   Asynchronous Lint Engine is not language specific, but it generally helps you
+   when programming in any language.
+   It provides syntax checking and semantic errors.
+   This means that as you write code, it will check for anything wrong and
+   notify you if there is.
+   You will save yourself from testing and debugging when using this plugin.
+   The best part is that it is automatic.
+   ALE is my favourite plugin for Vim by far.
+
+## Syntax
+
+7. [airline](https://github.com/vim-airline/vim-airline)
+
+   airline is a lean and mean status bar for Vim that is as light as air.
+   It includes many important details on the status bar, like the Git branch,
+   files, file type, and more.
+   My favourite part about it is its integration with other plugins.
+   There is an entire [list](https://github.com/vim-airline/vim-airline#seamless-integration) of plugins that it interacts with.
+   This includes ALE.
+
+1. [Colorizer](https://github.com/lilydjwg/colorizer)
+
+   Colorizer does exactly what you expect it to do: it colourizes things.
+   It colourizes text in the form `#rgb`, `#rgba`, `#rrggbb`, `#rrggbbaa`, etc.
+   I do not want to use a colour picker in order to see what a colour looks
+   like.
+
+1. [gentoo-syntax](https://github.com/gentoo/gentoo-syntax)
+
+   This plugin is only useful for people who use the Gentoo GNU/Linux operating
+   system.
+   It provides syntax highlighting for certain Gentoo configuration files.
+
+1. [Nord](https://github.com/arcticicestudio/nord-vim)
+
+   This plugin is a Vim colour theme: Nord.
+   I love the Nord colour theme because it is easy on the eyes and beautiful.
+
+```{r, nord, fig.cap = "Nord Vim color theme"}
+include_graphics("https://raw.githubusercontent.com/arcticicestudio/nord-docs/develop/assets/images/ports/vim/overview-go.png")
+```
+
+11. [Indent Blankline](https://github.com/lukas-reineke/indent-blankline.nvim)
+
+    This plugin ports something to Vim that I like from Visual Studio Code.
+    It draws vertical lines for indents, allowing you to see the beginning and
+    end of an indentation.
+    This is not very useful, but it looks very good, so I like it.
+
+1. [Rainbow Parentheses Improved](https://github.com/luochen1990/rainbow)
+
+   It sometimes stresses my eyes to look for the beginning and end of a pair of
+   parentheses or brackets.
+   This plugin simply gives each pair a unique colour.
+
+## Convenience
+
+13. [fzf](https://github.com/junegunn/fzf.vim)
+
+    fzf is a nice fuzzy finder that allows you to quickly search for something.
+    This pairs nicely with Vim so that you can easily search for commands, file
+    types.
+    It is recommended to write your own Vim commands with it to further improve
+    your workflow.
+
+1. [Supertab](https://github.com/ervandew/supertab)
+
+   Supertab allows you to use the `Tab` key for insert completions.
+   For example, if you have a variable named `variable`, you can type `var` and
+   press tab to complete it.
+   This prevents you from having to type things out completely.
+
+1. [commentary](https://github.com/tpope/vim-commentary)
+
+   This plugin allows you to comment lines or paragraphs in basically any
+   programming language with a simple Vim keybinding.
+   You can also add your own comment strings if your file type is not supported.
+   I like to bind `Ctrl-C` to this command.
+
+1. [repeat](https://github.com/tpope/vim-repeat)
+
+   The only reason you should use this plugin is if you used other plugins in
+   this list, especially plugins made by [tpope](https://github.com/tpope).
+   This basically makes the repeat binding in Vim (`.`) work with those plugins
+   as well.
+
+1. [visual-multi](https://github.com/mg979/vim-visual-multi)
+
+   The visual-multi plugin allows you to have multiple cursors.
+   This is even more powerful than the visual block mode.
+   For example, you can quickly add a string to the end of a few lines, even if
+   they have different lengths.
+   Also, it provides better visual feedback.
+   You can actually see multiple cursors typing the same thing and it is
+   satisfying.
+
+## Git
+
+18. [fugitive](https://github.com/tpope/vim-fugitive)
+
+    fugitive is such a good plugin that it should be illegal.
+    It allows Git to integrate with Vim.
+    This is basically my best dream as a plugin.
+    I hate having to open another terminal window just to use simple Git commands.
+    And using this plugin is even faster than using native Git.
+    The only problem I have with it is that the `git push` command does not seem
+    to work.
+    I will try to find a fix for it soon though.
+
+1. [rhubarb](https://github.com/tpope/vim-rhubarb)
+
+   This plugin is similar to fugitive, and they are both made by tpope.
+   However, rhubarb is for just GitHub instead of Git in general.
+   It allows commands like `:GBrowse` to browse files with the GitHub file
+   viewer.
+
+1. [gitgutter](https://github.com/airblade/vim-gitgutter)
+
+   gitgutter sort of reminds me of ALE.
+   It is basically the same concept except instead of doing syntax checking, it
+   does diff checking.
+   It checks for differences in the file compared to the last Git commit.
+   This helps you track your own changes better.
+   It has different syntax for removed lines, changed lines, and added lines.
+   Just like ALE, it is eye-pleasing.
+   Although it is a little bit less useful.

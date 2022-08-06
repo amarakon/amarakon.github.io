@@ -3,8 +3,20 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://amarakon.github.io/</loc>
-    <lastmod>2022-07-31T00:00:00+00:00</lastmod>
+    <lastmod>2022-08-05T00:00:00+00:00</lastmod>
     <priority>0</priority>
+  </url><url>
+    <loc>https://amarakon.github.io/articles/20-best-neo-vim-plugins/</loc>
+    <lastmod>2022-08-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://amarakon.github.io/articles/</loc>
+    <lastmod>2022-08-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://amarakon.github.io/tags/foss/</loc>
+    <lastmod>2022-08-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://amarakon.github.io/tags/</loc>
+    <lastmod>2022-08-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://amarakon.github.io/projects/cfetch/</loc>
     <lastmod>2022-07-31T00:00:00+00:00</lastmod>
@@ -12,13 +24,7 @@
     <loc>https://amarakon.github.io/projects/</loc>
     <lastmod>2022-07-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://amarakon.github.io/tags/foss/</loc>
-    <lastmod>2022-07-30T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://amarakon.github.io/programs/</loc>
-    <lastmod>2022-07-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://amarakon.github.io/tags/</loc>
     <lastmod>2022-07-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://amarakon.github.io/projects/amarlay/</loc>
@@ -41,9 +47,6 @@
   </url><url>
     <loc>https://amarakon.github.io/tags/personal/</loc>
     <lastmod>2022-07-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://amarakon.github.io/articles/</loc>
-    <lastmod>2022-07-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://amarakon.github.io/articles/i-thoroughly-enjoy-harvards-cs50-online-course/</loc>
     <lastmod>2022-07-26T00:00:00+00:00</lastmod>
