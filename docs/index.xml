@@ -6,7 +6,17 @@
     <description>Recent content on Amarakon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 05 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://amarakon.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 13 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://amarakon.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vim Sensible AutoComp</title>
+      <link>https://amarakon.github.io/projects/vim-sensible-autocomp/</link>
+      <pubDate>Sat, 13 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://amarakon.github.io/projects/vim-sensible-autocomp/</guid>
+      <description>Introduction https://github.com/amarakon/vim-sensible-autocomp
+This is yet another auto-completion plugin for Vim. At this point, there are probably hundreds. So I will explain what makes mine stand out from the rest. The main reason I wrote this plugin is that I wanted an auto-completion plugin written purely in Vim script or Lua. I hate seeing a cool plugin and then finding out its written in Python.</description>
+    </item>
+    
     <item>
       <title>20 Best (Neo)Vim Plugins</title>
       <link>https://amarakon.github.io/articles/20-best-neo-vim-plugins/</link>
