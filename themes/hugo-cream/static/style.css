@@ -1,3 +1,16 @@
+pre {
+	overflow: auto;
+	background-color: #2E3440;
+}
+
+pre code {
+	color: #D8DEE9;
+}
+
+img {
+	max-width: 100%;
+}
+
 a {
 	font-family: monospace;
 	color: black;
@@ -9,9 +22,7 @@ header a, #rightbar a {
 }
 
 body {
-	/*text-align: justify;*/
 	font-family: serif;
-	/*font-size: 10pt;*/
 	background-color: #E0D3AF;
 }
 
@@ -34,7 +45,6 @@ code {
 }
 
 #container {
-	/*width: fit-content;*/
 	margin: auto;
 	display: table;
 }
@@ -87,7 +97,7 @@ code {
 	float: left;
 }
 
-@media screen and (max-width: calc(66ch + 6in)) {
+@media screen and (max-width: calc(66ch + 6in + 4rem)) {
 	#leftbar {
 		display: none !important;
 	}
