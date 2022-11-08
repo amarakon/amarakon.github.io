@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>money on Amarakon</title>
-    <link>https://amarakon.github.io/tags/money/</link>
+    <link>http://example.org/tags/money/</link>
     <description>Recent content in money on Amarakon</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Thu, 16 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://amarakon.github.io/tags/money/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-ca</language>
+    <lastBuildDate>Thu, 16 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://example.org/tags/money/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Stop Spending Too Much Money on Technology</title>
-      <link>https://amarakon.github.io/articles/stop-spending-too-much-money-on-technology/</link>
+      <link>http://example.org/articles/stop-spending-too-much-money-on-technology/</link>
       <pubDate>Thu, 16 Jun 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://amarakon.github.io/articles/stop-spending-too-much-money-on-technology/</guid>
-      <description>Many people feel the need to spend a lot of money on technology. They think that because technology is complex and vast, they should buy from the most expensive brands. I think that the opposite is true. Because technology is complex and vast, we should buy cheap but great tech products.</description>
+      <guid>http://example.org/articles/stop-spending-too-much-money-on-technology/</guid>
+      <description>Many people feel the need to spend a lot of money on technology. They think that because technology is complex and vast, they should buy from the most expensive brands. I think that the opposite is true. Because technology is complex and vast, we should buy cheap but great tech products. Most importantly, we should buy technology that we actually understand. Ultra-complex technology takes advantage of everyone who uses it because no one can understand it.</description>
     </item>
     
   </channel>

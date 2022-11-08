@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language }}">
+	<head>
+		<title>{{ if not .IsHome }}{{ .Title | title }} | {{ end }}{{ .Site.Title }}</title>
+		<link rel="canonical" href="{{ .Site.BaseURL }}">
+		<link rel='stylesheet' type='text/css' href='/style.css'>
+		{{ with .Site.Params.favicon }}<link rel="icon" href="{{ . }}">
+		{{ end -}}
+		<meta name="description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ .Summary }}{{ end }}">
+		{{ if isset .Params "tags" }}<meta name="keywords" content="{{ with .Params.tags }}{{ delimit . ", " }}{{ end }}">
+		{{ end -}}
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="robots" content="index, follow">
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<header>
+			<h1><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></h1>
+		</header>
+		<div id="container">
+			<div id="leftbar">
+				<strong>Pages</strong>
+				{{ if .Site.Menus.nav }}{{ partial "nav.html" . }}{{ end -}}
+			</div>
+			<div id="main">
+				{{ if not .IsHome }}
+				<h1 style="border-bottom: none;" id="tag_{{ .Title }}">{{ block "title" . }}{{ end }}</h1>
+				{{ end }}
+				<article>
+					{{ block "main" . }}
+					{{ .Content }}
+					{{ end }}
+				</article>
+			</div>
+			<div id="rightbar">
+				{{ if .TableOfContents }}
+				<strong>Contents</strong>
+				{{ .TableOfContents }}
+				{{ end }}
+			</div>
+		</div>
+		{{ block "footer" . }}
+		<footer>
+			Copyright © 2022 Amar Al-Zubaidi. All Rights Reserved.
+		</footer>
+		{{ end }}
+	</body>
+</html>

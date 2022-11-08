@@ -2,148 +2,117 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://amarakon.github.io/</loc>
-    <lastmod>2022-08-13T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <loc>http://example.org/about/</loc>
+    <lastmod>2022-11-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://amarakon.github.io/projects/</loc>
-    <lastmod>2022-08-13T00:00:00+00:00</lastmod>
+    <loc>http://example.org/</loc>
+    <lastmod>2022-11-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://amarakon.github.io/projects/vim-sensible-autocomp/</loc>
-    <lastmod>2022-08-13T00:00:00+00:00</lastmod>
+    <loc>http://example.org/tags/personal/</loc>
+    <lastmod>2022-11-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://amarakon.github.io/articles/20-best-neo-vim-plugins/</loc>
+    <loc>http://example.org/tags/</loc>
+    <lastmod>2022-11-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://example.org/articles/20-best-neo-vim-plugins/</loc>
     <lastmod>2022-08-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://amarakon.github.io/articles/</loc>
+    <loc>http://example.org/articles/</loc>
     <lastmod>2022-08-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://amarakon.github.io/tags/foss/</loc>
+    <loc>http://example.org/tags/foss/</loc>
     <lastmod>2022-08-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://amarakon.github.io/tags/</loc>
-    <lastmod>2022-08-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://amarakon.github.io/projects/cfetch/</loc>
-    <lastmod>2022-07-31T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://amarakon.github.io/programs/</loc>
-    <lastmod>2022-07-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://amarakon.github.io/projects/amarlay/</loc>
-    <lastmod>2022-07-29T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://amarakon.github.io/projects/amaryaml/</loc>
-    <lastmod>2022-07-29T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://amarakon.github.io/projects/dfm/</loc>
-    <lastmod>2022-07-29T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://amarakon.github.io/projects/ffrec/</loc>
-    <lastmod>2022-07-29T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://amarakon.github.io/projects/magickshot/</loc>
-    <lastmod>2022-07-29T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://amarakon.github.io/about/</loc>
-    <lastmod>2022-07-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://amarakon.github.io/tags/personal/</loc>
-    <lastmod>2022-07-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://amarakon.github.io/articles/i-thoroughly-enjoy-harvards-cs50-online-course/</loc>
+    <loc>http://example.org/articles/i-thoroughly-enjoy-harvards-cs50-online-course/</loc>
     <lastmod>2022-07-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://amarakon.github.io/tags/programming/</loc>
+    <loc>http://example.org/tags/programming/</loc>
     <lastmod>2022-07-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://amarakon.github.io/tags/computers/</loc>
+    <loc>http://example.org/tags/computers/</loc>
     <lastmod>2022-06-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://amarakon.github.io/articles/ditch-the-mouse-return-to-the-keyboard/</loc>
+    <loc>http://example.org/articles/ditch-the-mouse-return-to-the-keyboard/</loc>
     <lastmod>2022-06-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://amarakon.github.io/tags/freedom/</loc>
+    <loc>http://example.org/tags/freedom/</loc>
     <lastmod>2022-06-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://amarakon.github.io/articles/thinkpad-laptops-are-timeless-machines/</loc>
+    <loc>http://example.org/articles/thinkpad-laptops-are-timeless-machines/</loc>
     <lastmod>2022-06-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://amarakon.github.io/tags/money/</loc>
+    <loc>http://example.org/tags/money/</loc>
     <lastmod>2022-06-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://amarakon.github.io/articles/stop-spending-too-much-money-on-technology/</loc>
+    <loc>http://example.org/articles/stop-spending-too-much-money-on-technology/</loc>
     <lastmod>2022-06-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://amarakon.github.io/articles/librewolf-is-currently-the-best-web-browser/</loc>
+    <loc>http://example.org/articles/librewolf-is-currently-the-best-web-browser/</loc>
     <lastmod>2022-05-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://amarakon.github.io/tags/www/</loc>
+    <loc>http://example.org/tags/www/</loc>
     <lastmod>2022-05-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://amarakon.github.io/tags/family/</loc>
+    <loc>http://example.org/tags/family/</loc>
     <lastmod>2022-05-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://amarakon.github.io/tags/phones/</loc>
+    <loc>http://example.org/tags/phones/</loc>
     <lastmod>2022-05-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://amarakon.github.io/articles/should-you-disallow-your-kid-to-have-a-smartphone/</loc>
+    <loc>http://example.org/articles/should-you-disallow-your-kid-to-have-a-smartphone/</loc>
     <lastmod>2022-05-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://amarakon.github.io/tags/politics/</loc>
+    <loc>http://example.org/tags/politics/</loc>
     <lastmod>2022-05-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://amarakon.github.io/articles/transgender-ideology-is-false-self-destructive-and-immoral/</loc>
+    <loc>http://example.org/articles/transgender-ideology-is-false-self-destructive-and-immoral/</loc>
     <lastmod>2022-05-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://amarakon.github.io/articles/jordan-peterson-is-a-brave-political-philosopher/</loc>
+    <loc>http://example.org/articles/jordan-peterson-is-a-brave-political-philosopher/</loc>
     <lastmod>2022-05-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://amarakon.github.io/articles/comparing-the-best-markup-languages-for-making-pdf-documents/</loc>
+    <loc>http://example.org/articles/comparing-the-best-markup-languages-for-making-pdf-documents/</loc>
     <lastmod>2022-05-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://amarakon.github.io/tags/markup/</loc>
+    <loc>http://example.org/tags/markup/</loc>
     <lastmod>2022-05-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://amarakon.github.io/articles/abortion-capital-punishment-and-euthanasia-when-is-killing-acceptable/</loc>
+    <loc>http://example.org/articles/abortion-capital-punishment-and-euthanasia-when-is-killing-acceptable/</loc>
     <lastmod>2022-05-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://amarakon.github.io/tags/death/</loc>
+    <loc>http://example.org/tags/death/</loc>
     <lastmod>2022-05-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://amarakon.github.io/tags/cli/</loc>
+    <loc>http://example.org/tags/cli/</loc>
     <lastmod>2022-05-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://amarakon.github.io/articles/you-should-prefer-command-line-software/</loc>
+    <loc>http://example.org/articles/you-should-prefer-command-line-software/</loc>
     <lastmod>2022-05-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://amarakon.github.io/articles/programming-is-invaluable-for-everyone/</loc>
+    <loc>http://example.org/articles/programming-is-invaluable-for-everyone/</loc>
     <lastmod>2022-05-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://amarakon.github.io/tags/fsf/</loc>
+    <loc>http://example.org/tags/fsf/</loc>
     <lastmod>2022-05-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://amarakon.github.io/articles/gentoo-linux-should-be-approved-by-the-free-software-foundation/</loc>
+    <loc>http://example.org/articles/gentoo-linux-should-be-approved-by-the-free-software-foundation/</loc>
     <lastmod>2022-05-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://amarakon.github.io/articles/gentoo-linux-the-best-operating-system-ever-made/</loc>
-    <lastmod>2022-05-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://amarakon.github.io/articles/how-to-install-gentoo-linux-the-efficient-way/</loc>
+    <loc>http://example.org/articles/how-to-install-gentoo-linux-the-efficient-way/</loc>
     <lastmod>2022-05-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://amarakon.github.io/tags/tutorial/</loc>
+    <loc>http://example.org/tags/tutorial/</loc>
     <lastmod>2022-05-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://amarakon.github.io/articles/education-wants-to-dumb-down-technology/</loc>
+    <loc>http://example.org/articles/education-wants-to-dumb-down-technology/</loc>
     <lastmod>2022-05-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://amarakon.github.io/tags/websites/</loc>
+    <loc>http://example.org/tags/websites/</loc>
     <lastmod>2022-05-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://amarakon.github.io/articles/you-should-pay-attention-to-your-choice-of-software/</loc>
+    <loc>http://example.org/articles/you-should-pay-attention-to-your-choice-of-software/</loc>
     <lastmod>2022-05-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://amarakon.github.io/categories/</loc>
+    <loc>http://example.org/categories/</loc>
   </url>
 </urlset>

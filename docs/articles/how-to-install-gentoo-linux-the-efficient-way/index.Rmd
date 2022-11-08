@@ -23,7 +23,7 @@ First, you have to care about computing for the installation of Gentoo to be wor
 Second, please view the [Gentoo handbook](https://wiki.gentoo.org/wiki/Handbook:Main_Page) while you are watching this video.
 It is unlikely but possible that some of the information in this video will be outdated.
 The Gentoo wiki also has many details that I will not go into because they are not important enough.
-Third, you need to know the architecture of your computer's CPU, usually it is AMD64. 
+Third, you need to know the architecture of your computer's CPU, usually it is AMD64.
 Finally, you must know whether your computer firmware uses BIOS or UEFI.
 Generally, only extremely old computers support only BIOS, only terrible new computers support only UEFI, and most computers support both.
 You should be completely sure though to avoid messing your entire installation.
@@ -35,7 +35,7 @@ Obviously, since Gentoo requires installation from the command-line, you will ne
 Use the `lsblk` command do check the available block devices.
 To be cautious, you can unplug any storage devices you do not want to accidentally wipe.
 Also make sure to know which block device your current running operating system so you do not accidentally wipe that either.
-Use the `wipefs` command to wipe a block device if it already has a partition scheme. 
+Use the `wipefs` command to wipe a block device if it already has a partition scheme.
 Then use the `cfdisk` command to begin partitioning.
 
 ```shell
@@ -156,7 +156,7 @@ Mount necessary file systems:
 `# root` mount --rbind /dev /mnt/gentoo/dev
 `# root` mount --make-rslave /mnt/gentoo/dev
 `# root` mount --bind /run /mnt/gentoo/run
-`# root` mount --make-slave /mnt/gentoo/run 
+`# root` mount --make-slave /mnt/gentoo/run
 ```
 
 Enter the new installation environment by chrooting into it:
@@ -174,12 +174,12 @@ Installing a Gentoo ebuild repository snapshot from the web and update it:
 `# root` emerge --sync
 ```
 
-Update the \@\world set (all of your packages).
+Update the `@world` set (all of your packages).
 This will take a lot of time.
 If you get a circular dependency error, which is not uncommon, consult the Gentoo wiki [@gentoocircle]:
 
 ```shell
-`# root` emerge -uDN @world 
+`# root` emerge -uDN @world
 ```
 
 Select the time zone for the system.
@@ -307,7 +307,7 @@ When using UEFI:
 ```
 ```shell
 `# root` cd
-`# root` umount -l /mnt/gentoo/dev{/shm,/pts,} 
+`# root` umount -l /mnt/gentoo/dev{/shm,/pts,}
 `# root` umount -R /mnt/gentoo
 `# root` reboot
 ```

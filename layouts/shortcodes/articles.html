@@ -1,8 +1,0 @@
-<ul>
-{{- range (where .Site.RegularPages "Type" "in" .Site.Params.mainSections | first 5) }}
-<li><font color="616E88">{{ partial "post-date.html" . }}</font> – <a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
-<div class="post-item post-summary markdown-body">
-{{ .Summary }}
-</div>
-{{ end }}
-</ul>

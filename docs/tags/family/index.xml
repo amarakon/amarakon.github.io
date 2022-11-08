@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>family on Amarakon</title>
-    <link>https://amarakon.github.io/tags/family/</link>
+    <link>http://example.org/tags/family/</link>
     <description>Recent content in family on Amarakon</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Mon, 16 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://amarakon.github.io/tags/family/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-ca</language>
+    <lastBuildDate>Mon, 16 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://example.org/tags/family/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Should You Disallow Your Kid to Have a Smartphone</title>
-      <link>https://amarakon.github.io/articles/should-you-disallow-your-kid-to-have-a-smartphone/</link>
+      <link>http://example.org/articles/should-you-disallow-your-kid-to-have-a-smartphone/</link>
       <pubDate>Mon, 16 May 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://amarakon.github.io/articles/should-you-disallow-your-kid-to-have-a-smartphone/</guid>
-      <description>There is sadly too little debate about if you should disallow your kid to have a smartphone. This is an important discussion. There are good arguments for and against it. But most people just let their kids do whatever without thinking through it deeply. This is dangerous and careless behavior. You should heavily regulate what your kids are able to do to protect them, as a parent always should.</description>
+      <guid>http://example.org/articles/should-you-disallow-your-kid-to-have-a-smartphone/</guid>
+      <description>There is sadly too little debate about if you should disallow your kid to have a smartphone. This is an important discussion. There are good arguments for and against it. But most people just let their kids do whatever without thinking through it deeply. This is dangerous and careless behavior. You should heavily regulate what your kids are able to do to protect them, as a parent always should. There should be no exceptions for smartphones.</description>
     </item>
     
   </channel>

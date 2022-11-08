@@ -2,152 +2,152 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Amarakon</title>
-    <link>https://amarakon.github.io/tags/</link>
+    <link>http://example.org/tags/</link>
     <description>Recent content in Tags on Amarakon</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Fri, 05 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://amarakon.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-ca</language>
+    <lastBuildDate>Mon, 07 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://example.org/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>foss</title>
-      <link>https://amarakon.github.io/tags/foss/</link>
-      <pubDate>Fri, 05 Aug 2022 00:00:00 +0000</pubDate>
+      <title>personal</title>
+      <link>http://example.org/tags/personal/</link>
+      <pubDate>Mon, 07 Nov 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://amarakon.github.io/tags/foss/</guid>
+      <guid>http://example.org/tags/personal/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>personal</title>
-      <link>https://amarakon.github.io/tags/personal/</link>
-      <pubDate>Thu, 28 Jul 2022 00:00:00 +0000</pubDate>
+      <title>foss</title>
+      <link>http://example.org/tags/foss/</link>
+      <pubDate>Fri, 05 Aug 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://amarakon.github.io/tags/personal/</guid>
+      <guid>http://example.org/tags/foss/</guid>
       <description></description>
     </item>
     
     <item>
       <title>programming</title>
-      <link>https://amarakon.github.io/tags/programming/</link>
+      <link>http://example.org/tags/programming/</link>
       <pubDate>Tue, 26 Jul 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://amarakon.github.io/tags/programming/</guid>
+      <guid>http://example.org/tags/programming/</guid>
       <description></description>
     </item>
     
     <item>
       <title>computers</title>
-      <link>https://amarakon.github.io/tags/computers/</link>
+      <link>http://example.org/tags/computers/</link>
       <pubDate>Sun, 19 Jun 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://amarakon.github.io/tags/computers/</guid>
+      <guid>http://example.org/tags/computers/</guid>
       <description></description>
     </item>
     
     <item>
       <title>freedom</title>
-      <link>https://amarakon.github.io/tags/freedom/</link>
+      <link>http://example.org/tags/freedom/</link>
       <pubDate>Fri, 17 Jun 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://amarakon.github.io/tags/freedom/</guid>
+      <guid>http://example.org/tags/freedom/</guid>
       <description></description>
     </item>
     
     <item>
       <title>money</title>
-      <link>https://amarakon.github.io/tags/money/</link>
+      <link>http://example.org/tags/money/</link>
       <pubDate>Thu, 16 Jun 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://amarakon.github.io/tags/money/</guid>
+      <guid>http://example.org/tags/money/</guid>
       <description></description>
     </item>
     
     <item>
       <title>www</title>
-      <link>https://amarakon.github.io/tags/www/</link>
+      <link>http://example.org/tags/www/</link>
       <pubDate>Wed, 18 May 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://amarakon.github.io/tags/www/</guid>
+      <guid>http://example.org/tags/www/</guid>
       <description></description>
     </item>
     
     <item>
       <title>family</title>
-      <link>https://amarakon.github.io/tags/family/</link>
+      <link>http://example.org/tags/family/</link>
       <pubDate>Mon, 16 May 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://amarakon.github.io/tags/family/</guid>
+      <guid>http://example.org/tags/family/</guid>
       <description></description>
     </item>
     
     <item>
       <title>phones</title>
-      <link>https://amarakon.github.io/tags/phones/</link>
+      <link>http://example.org/tags/phones/</link>
       <pubDate>Mon, 16 May 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://amarakon.github.io/tags/phones/</guid>
+      <guid>http://example.org/tags/phones/</guid>
       <description></description>
     </item>
     
     <item>
       <title>politics</title>
-      <link>https://amarakon.github.io/tags/politics/</link>
+      <link>http://example.org/tags/politics/</link>
       <pubDate>Sun, 15 May 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://amarakon.github.io/tags/politics/</guid>
+      <guid>http://example.org/tags/politics/</guid>
       <description></description>
     </item>
     
     <item>
       <title>markup</title>
-      <link>https://amarakon.github.io/tags/markup/</link>
+      <link>http://example.org/tags/markup/</link>
       <pubDate>Fri, 13 May 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://amarakon.github.io/tags/markup/</guid>
+      <guid>http://example.org/tags/markup/</guid>
       <description></description>
     </item>
     
     <item>
       <title>death</title>
-      <link>https://amarakon.github.io/tags/death/</link>
+      <link>http://example.org/tags/death/</link>
       <pubDate>Tue, 10 May 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://amarakon.github.io/tags/death/</guid>
+      <guid>http://example.org/tags/death/</guid>
       <description></description>
     </item>
     
     <item>
       <title>cli</title>
-      <link>https://amarakon.github.io/tags/cli/</link>
+      <link>http://example.org/tags/cli/</link>
       <pubDate>Sat, 07 May 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://amarakon.github.io/tags/cli/</guid>
+      <guid>http://example.org/tags/cli/</guid>
       <description></description>
     </item>
     
     <item>
       <title>fsf</title>
-      <link>https://amarakon.github.io/tags/fsf/</link>
+      <link>http://example.org/tags/fsf/</link>
       <pubDate>Thu, 05 May 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://amarakon.github.io/tags/fsf/</guid>
+      <guid>http://example.org/tags/fsf/</guid>
       <description></description>
     </item>
     
     <item>
       <title>tutorial</title>
-      <link>https://amarakon.github.io/tags/tutorial/</link>
+      <link>http://example.org/tags/tutorial/</link>
       <pubDate>Tue, 03 May 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://amarakon.github.io/tags/tutorial/</guid>
+      <guid>http://example.org/tags/tutorial/</guid>
       <description></description>
     </item>
     
     <item>
       <title>websites</title>
-      <link>https://amarakon.github.io/tags/websites/</link>
+      <link>http://example.org/tags/websites/</link>
       <pubDate>Mon, 02 May 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://amarakon.github.io/tags/websites/</guid>
+      <guid>http://example.org/tags/websites/</guid>
       <description></description>
     </item>
     

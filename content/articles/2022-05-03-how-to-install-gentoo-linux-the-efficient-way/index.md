@@ -48,7 +48,7 @@ If you’re using BIOS, select DOS.
 And if you’re using UEFI, select GPT.
 If you’re using BIOS, all you need is one partition.
 If you’re using UEFI, you need to make a partition that is at least 128 MB, this will be the boot partition.
-You should label this partition “EFI system.”
+You should label this partition “EFI system”.
 Then create the second partition using the rest of the space.
 
 Once you exited cfdisk, you need to format your partitions.
@@ -154,7 +154,7 @@ Mount necessary file systems:
 `# root` mount --rbind /dev /mnt/gentoo/dev
 `# root` mount --make-rslave /mnt/gentoo/dev
 `# root` mount --bind /run /mnt/gentoo/run
-`# root` mount --make-slave /mnt/gentoo/run 
+`# root` mount --make-slave /mnt/gentoo/run
 ```
 
 Enter the new installation environment by chrooting into it:
@@ -172,12 +172,12 @@ Installing a Gentoo ebuild repository snapshot from the web and update it:
 `# root` emerge --sync
 ```
 
-Update the @set (all of your packages).
+Update the `@world` set (all of your packages).
 This will take a lot of time.
 If you get a circular dependency error, which is not uncommon, consult the Gentoo wiki ([Gentoo, 2022a](#ref-gentoocircle)):
 
 ``` shell
-`# root` emerge -uDN @world 
+`# root` emerge -uDN @world
 ```
 
 Select the time zone for the system.
@@ -296,7 +296,7 @@ When using UEFI:
 
 ``` shell
 `# root` cd
-`# root` umount -l /mnt/gentoo/dev{/shm,/pts,} 
+`# root` umount -l /mnt/gentoo/dev{/shm,/pts,}
 `# root` umount -R /mnt/gentoo
 `# root` reboot
 ```
