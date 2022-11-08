@@ -94,7 +94,7 @@ code {
 	float: left;
 }
 
-@media screen and (max-width: calc(66ch + 3in + 2rem)) {
+@media screen and (max-width: calc(66ch + 3in + 4rem)) {
 	#leftbar {
 		display: none !important;
 	}
@@ -103,7 +103,7 @@ code {
 	}
 }
 
-@media screen and (max-width: calc(66ch + 2in + 2rem)) {
+@media screen and (max-width: calc(66ch + 2in + 4rem)) {
 	#leftbar, #rightbar {
 		display: none !important;
 	}

@@ -18,22 +18,22 @@ endLevel = 3
 enableInlineShortcodes = true
 
 [menu]
-[[menu.nav]]
+[[menu.pages]]
 name = "About"
 url = "/about/"
-[[menu.nav]]
+[[menu.pages]]
 name = "Programs"
 url = "/programs/"
-[[menu.nav]]
+[[menu.pages]]
 name = "Projects"
 url = "/projects/"
-[[menu.nav]]
+[[menu.pages]]
 name = "Articles"
 url = "/articles/"
 
-[[menu.link]]
+[[menu.links]]
 name = "GitHub"
 url = "https://github.com/amarakon"
-[[menu.link]]
+[[menu.links]]
 name = "YouTube"
 url = "https://www.youtube.com/channel/UCbZc671K2NxNbr1Kfqz6Fmg"

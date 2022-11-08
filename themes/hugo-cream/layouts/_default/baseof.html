@@ -15,10 +15,31 @@
 	</head>
 	<body>
 		<div id="container">
+			{{ if .Site.Menus }}
 			<div id="leftbar">
+				{{ if .Site.Menus.pages }}
 				<h2>Pages</h2>
-				{{ if .Site.Menus.nav }}{{ partial "nav.html" . }}{{ end -}}
+				<nav>
+					<ul>
+						<li><a href="/">Home</a></li>
+						{{ range.Site.Menus.pages }}
+						<li><a href="{{ .URL }}">{{ .Name }}</a></li>
+						{{- end }}
+					</ul>
+				</nav>
+				{{ end }}
+				{{ if .Site.Menus.links }}
+				<h2>Links</h2>
+				<nav>
+					<ul>
+						{{ range.Site.Menus.links }}
+						<li><a href="{{ .URL }}">{{ .Name }}</a></li>
+						{{- end }}
+					</ul>
+				</nav>
+				{{ end }}
 			</div>
+			{{ end }}
 			<div id="main">
 				{{ if .IsHome }}
 				<h1 style="border-bottom: none;">{{ .Site.Title }}</h1>
