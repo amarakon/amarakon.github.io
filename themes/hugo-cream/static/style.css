@@ -54,7 +54,7 @@ code {
 }
 
 #leftbar {
-	margin-left: 2in;
+	/*margin-left: 2in;*/
 	margin-right: 1rem;
 	padding-right: 1rem;
 	float: left;
@@ -69,8 +69,8 @@ code {
 	width: 3in;
 }
 
-#leftbar strong, #rightbar strong {
-	font-size: 150%;
+#leftbar h2, #rightbar h2 {
+	margin-bottom: 0;
 }
 
 #leftbar ul, #leftbar ol, #rightbar ul, #rightbar ol {
@@ -94,16 +94,16 @@ code {
 	float: left;
 }
 
-@media screen and (max-width: calc(66ch + 6in + 4rem)) {
+@media screen and (max-width: calc(66ch + 3in + 2rem)) {
 	#leftbar {
 		display: none !important;
 	}
 	#main {
-		margin-left: 3in;
+		margin-left: calc(1in + 1rem);
 	}
 }
 
-@media screen and (max-width: calc(66ch + 4in + 4rem)) {
+@media screen and (max-width: calc(66ch + 2in + 2rem)) {
 	#leftbar, #rightbar {
 		display: none !important;
 	}

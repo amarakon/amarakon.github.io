@@ -16,7 +16,7 @@
 	<body>
 		<div id="container">
 			<div id="leftbar">
-				<strong>Pages</strong>
+				<h2>Pages</h2>
 				{{ if .Site.Menus.nav }}{{ partial "nav.html" . }}{{ end -}}
 			</div>
 			<div id="main">
@@ -33,7 +33,7 @@
 			</div>
 			<div id="rightbar">
 				{{ if .TableOfContents }}
-				<strong>Contents</strong>
+				<h2>Contents</h2>
 				{{ .TableOfContents }}
 				{{ end }}
 			</div>
