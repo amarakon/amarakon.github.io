@@ -1,0 +1,104 @@
+---
+title: MagickShot – ImageMagick Screenshot
+date: "`r format(Sys.time(), '%Y-%m-%d')`"
+---
+
+https://github.com/amarakon/magickshot
+
+MagickShot is a program I created because I am surprised it does not exist yet.
+It is a screenshot utility, but there are many screenshot utilities.
+However, none of them do **everything** I want them to do:
+
+1. screenshot with mouse selection
+1. sceenshot a specified window
+1. screenshot a specified monitor
+1. screenshot the entire display
+
+Most of them only support the first and last options.
+Besides, they are too bloated anyways.
+MagickShot is a simple shell script that improves upon the existing `import` tool from ImageMagick.
+And it ends up taking screenshots just like magic 😉.
+
+# Usage
+
+```shell
+# Screenshot
+magickshot --selection # Select an area to screenshot with the cursor
+magickshot --window # Screenshot the focused window
+magickshot --window=62914562 # Screenshot window 62914562
+magickshot --selection --window # Select a window to screenshot with the cursor
+magickshot --monitor # Screenshot the focused monitor
+magickshot --monitor=0 # Screenshot monitor 0
+magickshot --display # Screenshot the display
+
+# Miscellaneous
+magickshot --title=%F # Set the title format to %F (YYYY-MM-DD)
+magickshot --notify # Play a notification sound
+magickshot --no-notify # Do not play a notification sound (always overrides `--notify`)
+
+# Help
+magickshot --help # Print the help message and exit
+```
+
+By default, MagickShot uses screenshots the focused window.
+The default output directory is `~/.local/share/magickshot/Screenshots`.
+If you give a directory as an argument, it will use that directory instead.
+If you use anything else as an argument, it will use that for the file name.
+
+# Dependencies
+
+1. imagemagick
+1. xdotool
+1. xrandr
+1. [printmon](https://github.com/amarakon/printmon)
+
+# Installation
+
+## Universal
+
+```shell
+git clone https://github.com/amarakon/magickshot
+cd magickshot
+sudo make install
+```
+
+## Gentoo
+
+```shell
+sudo eselect repository add amarlay git https://github.com/amarakon/amarlay
+sudo emerge --sync amarlay
+sudo emerge media-gfx/magickshot
+```
+
+# Uninstallation
+
+## Universal
+
+```shell
+cd magickshot
+sudo make uninstall
+```
+
+## Gentoo
+
+```shell
+sudo emerge -c media-gfx/magickshot
+
+# Remove my overlay (optional)
+sudo eselect-repository remove -f amarlay
+sudo emerge --sync
+```
+
+# Configuration
+
+You can change the default options for MagickShot via the configuration file.
+The configuration file is located at `~/.config/magickshot/magickshot.conf` by default.
+
+```shell
+output_directory=~/Images/Screenshots
+title="%Y-%d_%R:%S"
+
+sound_directory=/usr/share/sounds/deepin/stereo
+sound_success=$sound_directory/complete-print.wav
+sound_failure=$sound_directory/dialog-error-serious.wav
+```

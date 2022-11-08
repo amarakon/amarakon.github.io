@@ -1,0 +1,48 @@
+---
+title: AmaRYAML – Amarakon’s YAML
+date: "2022-11-07"
+---
+
+
+https://github.com/amarakon/amaryaml
+
+It has a terrible name but this is basically a collection of R Markdown templates.
+There are currently five templates available in the *amaryaml* package:
+
+1. Book
+1. Eisvogel
+
+   This is basically a simple document template.
+   It is much better than the default pandoc template.
+
+1. GitHub
+
+   The main advantage of using this template over the default R Markdown `github_document` output is that this template shifts heading levels by 1.
+   This basically means that you can use `#` headings instead of `##` headings.
+   It is a minor issue that I think is worth using my template to fix.
+
+1. NorBeam
+
+   This is a slideshow template that uses the Nord color scheme.
+   It looks much better than any other beamer theme.
+
+1. Leaflet
+
+   There is no good documentation on how to make leaflets in R Markdown.
+   With this template, it is already set up for you.
+   It could not be easier than this.
+
+
+|[Book](https://github.com/amarakon/amaryaml/blob/master/examples/book/book.pdf)|[Eisvogel](https://github.com/amarakon/amaryaml/blob/master/examples/eisvogel/eisvogel.pdf)|
+|:-----:|:---------:|
+|![Book](https://github.com/amarakon/amaryaml/blob/master/examples/book/book.png?raw=true)|![Eisvogel](https://github.com/amarakon/amaryaml/blob/master/examples/eisvogel/eisvogel.png?raw=true)|
+
+
+|[GitHub](https://github.com/amarakon/amaryaml/blob/master/examples/github/github.md)|[NorBeam](https://github.com/amarakon/amaryaml/blob/master/examples/norbeam/norbeam.pdf)|
+|:-------:|:--------:|
+|![GitHub](https://github.com/amarakon/amaryaml/blob/master/examples/github/github.png?raw=true)|![NorBeam](https://github.com/amarakon/amaryaml/blob/master/examples/norbeam/norbeam.png?raw=true)|
+
+
+|       [Leaflet [1/2]](https://github.com/amarakon/amaryaml/blob/master/examples/leaflet/leaflet.pdf)       |       [Leaflet [2/2]](https://github.com/amarakon/amaryaml/blob/master/examples/leaflet/leaflet.pdf)       |
+|:----------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------:|
+| ![Leaflet [1/2]](https://github.com/amarakon/amaryaml/blob/master/examples/leaflet/leaflet-1.png?raw=true) | ![Leaflet [2/2]](https://github.com/amarakon/amaryaml/blob/master/examples/leaflet/leaflet-2.png?raw=true) |

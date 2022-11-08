@@ -1,0 +1,106 @@
+---
+title: FFrec – FFmpeg Record
+date: "`r format(Sys.time(), '%Y-%m-%d')`"
+---
+
+https://github.com/amarakon/ffrec
+
+It is annoying when the command-line option is too minimalist while the graphical option is too bloated.
+FFrec uses FFmpeg to record but makes it less of a hassle.
+It makes it just as easy to record with FFmpeg as it is with OBS.
+Actually, it is even easier.
+No setup is required because the defaults are already fantastic.
+But if they do not suit you, you can change them with command-line options or the configuration file.
+
+# Usage
+
+```shell
+# Record
+ffrec --display # Record display
+ffrec --audio # Record audio
+ffrec --webcam # Record webcam
+ffrec --display --audio # Record display and audio
+ffrec --webcam --audio # Record webcam
+
+# Pause/end
+ffrec --pause # Pause recording
+ffrec --end # End recording
+
+# Preferences
+ffrec --rate=30 # Set frame rate to 30
+ffrec --preset=ultrafast # Set preset to ultrafast
+ffrec --audio-encoder=flac # Set audio encoder to flac
+ffrec --video-encoder=libx264 # Set video encoder to libx264
+ffrec --audio-extension=flac # Set audio extension to flac
+ffrec --video-extension=mkv # Set audio extension to mkv
+
+# Miscellaneous
+ffrec --monitor=0 # Record monitor 0
+ffrec --size=1366x18 # Record with size 1366x18
+ffrec --title=%F # Set the title format to %F (YYYY-MM-DD)
+
+# Help
+ffrec --help # Print the help message and exit
+```
+
+As you can see, FFrec is insanely customizable.
+But the defaults are already great.
+I like to use the dmenu prompt to record display and audio.
+But to select more than one thing to record in dmenu, you need the [multi-selection](https://tools.suckless.org/dmenu/patches/multi-selection/) patch.
+Keep that in mind.
+
+# Dependencies
+
+1. ffmpeg
+1. xrandr
+1. dmenu (menu selection)
+
+# Installation
+
+## Universal
+
+```shell
+git clone https://github.com/amarakon/ffrec
+cd ffrec
+sudo make install
+```
+
+## Gentoo
+
+```shell
+sudo eselect repository add amarlay git https://github.com/amarakon/amarlay
+sudo emerge --sync amarlay
+sudo emerge media-video/ffrec
+```
+
+# Uninstallation
+
+## Universal
+
+```shell
+cd ffrec
+sudo make uninstall
+```
+
+## Gentoo
+
+```shell
+sudo emerge -c media-video/ffrec
+
+# Remove my overlay (optional)
+sudo eselect-repository remove -f amarlay
+sudo emerge --sync
+```
+
+# Configuration
+
+You can change the default values of FFrec options via the configuration file.
+The configuration file is located in the configuration directory, so usually `~/.config/ffrec/ffrec.conf`.
+Here is an example configuration:
+
+```shell
+rate=30
+preset="ultrafast"
+audio_encoder=mp3
+video_extension=mp4
+```

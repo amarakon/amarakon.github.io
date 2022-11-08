@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>tutorial on Amarakon</title>
-    <link>http://example.org/tags/tutorial/</link>
-    <description>Recent content in tutorial on Amarakon</description>
+    <title>tutorial on Amarakon’s Website</title>
+    <link>https://amarakon.github.io/tags/tutorial/</link>
+    <description>Recent content in tutorial on Amarakon’s Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-ca</language>
-    <lastBuildDate>Tue, 03 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://example.org/tags/tutorial/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 03 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://amarakon.github.io/tags/tutorial/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to Install Gentoo Linux – The Efficient Way</title>
-      <link>http://example.org/articles/how-to-install-gentoo-linux-the-efficient-way/</link>
+      <link>https://amarakon.github.io/articles/how-to-install-gentoo-linux-the-efficient-way/</link>
       <pubDate>Tue, 03 May 2022 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/articles/how-to-install-gentoo-linux-the-efficient-way/</guid>
+      <guid>https://amarakon.github.io/articles/how-to-install-gentoo-linux-the-efficient-way/</guid>
       <description>So you finally moved from the beginner distributions and you know want to install truly the best operating system of all time; Gentoo Linux. Contrary to popular belief, installing this operating system is not difficult in the slightest but it is certainly time consuming. Usually it will take around five hours to install. This might deter you, but remember that this operating system will actually save you time in the long run.</description>
     </item>
     

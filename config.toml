@@ -1,6 +1,6 @@
-baseURL = "http://example.org/"
+baseURL = "https://amarakon.github.io/"
 languageCode = 'en-ca'
-title = "Amarakon"
+title = "Amarakon’s Website"
 theme = "hugo-cream"
 
 [markup]

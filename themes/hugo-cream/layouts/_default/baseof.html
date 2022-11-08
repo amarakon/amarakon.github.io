@@ -14,16 +14,15 @@
 		<meta charset="utf-8">
 	</head>
 	<body>
-		<header>
-			<h1><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></h1>
-		</header>
 		<div id="container">
 			<div id="leftbar">
 				<strong>Pages</strong>
 				{{ if .Site.Menus.nav }}{{ partial "nav.html" . }}{{ end -}}
 			</div>
 			<div id="main">
-				{{ if not .IsHome }}
+				{{ if .IsHome }}
+				<h1 style="border-bottom: none;">{{ .Site.Title }}</h1>
+				{{ else }}
 				<h1 style="border-bottom: none;" id="tag_{{ .Title }}">{{ block "title" . }}{{ end }}</h1>
 				{{ end }}
 				<article>

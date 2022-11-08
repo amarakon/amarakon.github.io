@@ -1,54 +1,64 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>foss on Amarakon</title>
-    <link>http://example.org/tags/foss/</link>
-    <description>Recent content in foss on Amarakon</description>
+    <title>foss on Amarakon’s Website</title>
+    <link>https://amarakon.github.io/tags/foss/</link>
+    <description>Recent content in foss on Amarakon’s Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-ca</language>
-    <lastBuildDate>Fri, 05 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://example.org/tags/foss/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 07 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://amarakon.github.io/tags/foss/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Software and Hardware I Use and Endorse</title>
+      <link>https://amarakon.github.io/programs/</link>
+      <pubDate>Mon, 07 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://amarakon.github.io/programs/</guid>
+      <description>This is a list of the most important software and hardware I use. It may include programs that I have developed myself (see my projects page).
+What Makes a Good Program I do not endorse the use of proprietary software because it is immoral and bad. I use software that is minimal, extensible, and fast. Very rarely do I use software that is written in Python. I like to do something in the simplest way possible.</description>
+    </item>
+    
     <item>
       <title>20 Best (Neo)Vim Plugins</title>
-      <link>http://example.org/articles/20-best-neo-vim-plugins/</link>
+      <link>https://amarakon.github.io/articles/20-best-neo-vim-plugins/</link>
       <pubDate>Fri, 05 Aug 2022 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/articles/20-best-neo-vim-plugins/</guid>
+      <guid>https://amarakon.github.io/articles/20-best-neo-vim-plugins/</guid>
       <description>Introduction Vim is a text editor that is great on its own but is heavily improved by various plugins. The vast majority of the plugins in this article will not be language-specific, so they will apply whether you are coding in C or just writing a random text file. I do indeed use Neovim and not Vim, but there is only one plugin in this list that is Neovim-specific. And it does have Vim-compatible alternatives anyway.</description>
     </item>
     
     <item>
       <title>Comparing the Best Markup Languages for Making PDF Documents</title>
-      <link>http://example.org/articles/comparing-the-best-markup-languages-for-making-pdf-documents/</link>
+      <link>https://amarakon.github.io/articles/comparing-the-best-markup-languages-for-making-pdf-documents/</link>
       <pubDate>Fri, 13 May 2022 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/articles/comparing-the-best-markup-languages-for-making-pdf-documents/</guid>
+      <guid>https://amarakon.github.io/articles/comparing-the-best-markup-languages-for-making-pdf-documents/</guid>
       <description>PDF is rightfully the standard output format for documents. All word processors can output to PDF, but it is difficult to convert PDF to files word processors can edit. Most people use “what you see is what you get” word processors like Microsoft Word, Google Docs, or LibreOffice Writer. This type of word processor is convenient but it is also limited and unprofessional. It is easier to get into, but it is harder to use in the long run.</description>
     </item>
     
     <item>
       <title>Gentoo Linux Should be Approved by the Free Software Foundation</title>
-      <link>http://example.org/articles/gentoo-linux-should-be-approved-by-the-free-software-foundation/</link>
+      <link>https://amarakon.github.io/articles/gentoo-linux-should-be-approved-by-the-free-software-foundation/</link>
       <pubDate>Thu, 05 May 2022 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/articles/gentoo-linux-should-be-approved-by-the-free-software-foundation/</guid>
+      <guid>https://amarakon.github.io/articles/gentoo-linux-should-be-approved-by-the-free-software-foundation/</guid>
       <description>Gentoo Linux is a 100% free operating system. All of its source code is publicly available on GitHub, meaning that it’s open-source. It is licensed under a free license: GNU General Public License (Version 2). It does not include any preinstalled proprietary software. Its package manager, Portage, blocks proprietary software against the user’s will by default. All of these reasons prove that is a completely free operating system that is against the use of proprietary software, so it should be in the Free Software Foundation’s (FSF) list of free Linux distributions.</description>
     </item>
     
     <item>
       <title>How to Install Gentoo Linux – The Efficient Way</title>
-      <link>http://example.org/articles/how-to-install-gentoo-linux-the-efficient-way/</link>
+      <link>https://amarakon.github.io/articles/how-to-install-gentoo-linux-the-efficient-way/</link>
       <pubDate>Tue, 03 May 2022 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/articles/how-to-install-gentoo-linux-the-efficient-way/</guid>
+      <guid>https://amarakon.github.io/articles/how-to-install-gentoo-linux-the-efficient-way/</guid>
       <description>So you finally moved from the beginner distributions and you know want to install truly the best operating system of all time; Gentoo Linux. Contrary to popular belief, installing this operating system is not difficult in the slightest but it is certainly time consuming. Usually it will take around five hours to install. This might deter you, but remember that this operating system will actually save you time in the long run.</description>
     </item>
     
     <item>
       <title>You Should Pay Attention to Your Choice of Software</title>
-      <link>http://example.org/articles/you-should-pay-attention-to-your-choice-of-software/</link>
+      <link>https://amarakon.github.io/articles/you-should-pay-attention-to-your-choice-of-software/</link>
       <pubDate>Sun, 01 May 2022 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/articles/you-should-pay-attention-to-your-choice-of-software/</guid>
+      <guid>https://amarakon.github.io/articles/you-should-pay-attention-to-your-choice-of-software/</guid>
       <description>What I have noticed about many subjects in life is that many people just want to be sheep. Notice how I said &amp;ldquo;want to be sheep&amp;rdquo; and not &amp;ldquo;are sheep.&amp;rdquo; That is because my emphasis is on the fact that people are choosing to be ignorant. This is true in many cases, especially in politics and computing. In this post, I will be focusing on computing. I want to clarify by saying that I think there is nothing wrong with being ignorant, but it is wrong to be willfully ignorant.</description>
     </item>
     
