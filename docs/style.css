@@ -36,7 +36,7 @@ h1, h2, h3, h4, h5, h6 {
 
 footer {
 	text-align: center;
-	clear: both;
+	margin-top: 1em;
 }
 
 code {
@@ -54,17 +54,16 @@ code {
 }
 
 #leftbar {
-	/*margin-left: 2in;*/
-	margin-right: 1rem;
-	padding-right: 1rem;
+	margin-right: 1em;
+	padding-right: 1em;
 	float: left;
 	text-align: right;
 	width: 1in;
 }
 
 #rightbar {
-	margin-left: 1rem;
-	padding-left: 1rem;
+	margin-left: 1em;
+	padding-left: 1em;
 	float: left;
 	width: 3in;
 }
@@ -78,7 +77,7 @@ code {
 }
 
 #rightbar li {
-	margin-top: 0.5rem;
+	margin-top: 0.5em;
 }
 
 #leftbar ul, #leftbar ol {
@@ -86,38 +85,28 @@ code {
 }
 
 #rightbar ul, #rightbar ol {
-	padding-left: 0.5rem;
+	padding-left: 0.5em;
 }
 
 #main {
-	width: 66ch;
+	width: 80ch;
 	float: left;
 }
 
-@media screen and (max-width: calc(66ch + 3in + 4rem)) {
+@media screen and (max-width: calc(80ch + 4in + 4em)) {
 	#leftbar {
-		display: none !important;
-	}
-	#main {
-		margin-left: calc(1in + 1rem);
+		display: none;
 	}
 }
 
-@media screen and (max-width: calc(66ch + 2in + 4rem)) {
+@media screen and (max-width: calc(80ch + 3in + 2em)) {
 	#leftbar, #rightbar {
-		display: none !important;
+		display: none;
 	}
 	#main {
-		margin-left: 0;
 		float: none;
-	}
-}
-
-@media screen and (max-width: 66ch) {
-	#leftbar, #rightbar {
-		display: none !important;
-	}
-	#main {
 		width: unset;
+		max-width: 88ch;
+		margin: auto;
 	}
 }
