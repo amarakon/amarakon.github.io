@@ -4,12 +4,21 @@
 {{ define "main" -}}
 {{ .Content }}
 {{ if .IsHome }}
-<ul>
-{{- range (where .Site.RegularPages "Type" "in" .Site.Params.mainSections | first 5) }}
-<li><a href="{{ .RelPermalink }}">{{ .Title }}</a><br><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time></li>
-{{ .Summary }}
-{{ end }}
-</ul>
+<table style="text-align: left;">
+	{{- range (where .Site.RegularPages "Type" "in" .Site.Params.mainSections | first 5) }}
+	<tr>
+		<td><h3 style="margin: 0;"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3></td>
+		<td>
+			<h3 style="margin: 0;">
+				<time datetime="{{ .Date.Format "2006-01-02" }}">
+					{{ .Date.Format "January 2, 2006" }}
+				</time>
+			</h3>
+		</td>
+	</tr>
+	<tr><td colspan="2">{{ .Summary }}</td></tr>
+	{{ end }}
+</table>
 {{ else }}
 <table id="list">
 	<thead>
