@@ -1,7 +1,4 @@
 /* Booktabs style tables: https://stackoverflow.com/a/68808784 */
-table {
-	text-align: left;
-}
 
 table:not(#list) {
 	border-collapse: collapse;
