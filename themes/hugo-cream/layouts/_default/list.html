@@ -3,15 +3,30 @@
 {{- end }}
 {{ define "main" -}}
 {{ .Content }}
+{{ if .IsHome }}
 <ul>
+{{- range (where .Site.RegularPages "Type" "in" .Site.Params.mainSections | first 5) }}
+<li><a href="{{ .RelPermalink }}">{{ .Title }}</a><br><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time></li>
+{{ .Summary }}
+{{ end }}
+</ul>
+{{ else }}
+<table id="list">
+	<thead>
+		<tr>
+			<th>Date</th>
+			<th>Title</th>
+		</tr>
+	</thead>
 	{{- range.Pages }}
-	<li>
-		{{- if .Param "datesinlist" }}<time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">{{ .Date.Format "2006 Jan 02" }}</time> &ndash; {{ end -}}
-		<a href="{{ .RelPermalink }}">{{ .Title }}</a>
+	<tr>
+		<td><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time></td>
+		<td><a href="{{ .RelPermalink }}">{{ .Title }}</a></td>
 		{{- if .Param "authorsinlist" }}
 		{{- range .Param "authors" }} by {{ . }}{{ end -}}
 		{{ end -}}
-	</li>
+	</tr>
 	{{- end }}
-</ul>
+</table>
+{{ end }}
 {{- end }}

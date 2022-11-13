@@ -14,7 +14,7 @@
       
       <guid>https://amarakon.github.io/projects/amarlay/</guid>
       <description>https://github.com/amarakon/amarlay
-Unlike AmaRYAML, Amarlay has a great name. It is a Gentoo overlay that includes dozens of unique packages, most of them not found in any other repository. Obviously, this will only be useful to Gentoo users. The best packages it includes are Zsh plugins, nerd-fonts-inconsolata, cfetch, and many Neovim plugins. It also includes ebuilds for all of my GitHub repositories. So if you are a Gentoo user, and you like my software, enable this overlay!</description>
+Unlike AmaRYAML, Amarlay has a great name. It is a Gentoo overlay that includes dozens of unique packages, most of them not found in any other repository. Obviously, this will only be useful to Gentoo users. The best packages it includes are Zsh plugins, nerd-fonts-inconsolata, cfetch, and many Neovim plugins.</description>
     </item>
     
     <item>
@@ -28,8 +28,7 @@ It has a terrible name but this is basically a collection of R Markdown template
   Book
   Eisvogel
 This is basically a simple document template. It is much better than the default pandoc template.
-  GitHub
-The main advantage of using this template over the default R Markdown github_document output is that this template shifts heading levels by 1.</description>
+  GitHub</description>
     </item>
     
     <item>
@@ -39,7 +38,7 @@ The main advantage of using this template over the default R Markdown github_doc
       
       <guid>https://amarakon.github.io/projects/cfetch/</guid>
       <description>https://github.com/amarakon/cfetch
-Cfetch is a suckless-like command-line system information tool. It displays information about your operating system, kernel, packages, and more along with ASCII art of your operating system in an elegant way. The purpose of Cfetch is to quickly get information about everything quickly instead of using one different program for getting each piece of information. Neofetch does a poor job at this because it is extremely slow because it is written in Bash, so the purpose of Neofetch is just for screenshots.</description>
+Cfetch is a suckless-like command-line system information tool. It displays information about your operating system, kernel, packages, and more along with ASCII art of your operating system in an elegant way. The purpose of Cfetch is to quickly get information about everything quickly instead of using one different program for getting each piece of information.</description>
     </item>
     
     <item>
@@ -49,7 +48,7 @@ Cfetch is a suckless-like command-line system information tool. It displays info
       
       <guid>https://amarakon.github.io/projects/dfm/</guid>
       <description>https://github.com/amarakon/dfm
-The dmenu file manager is the best and fastest way to manage files! It is even faster than using the terminal, but has the perks of a graphical user interface. Therefore, it has the best of both worlds. You can use it to quickly open files in literally around one second. And unlike graphical file managers, it supports shell abbreviations such as .., *, and ~. You can also quickly go back to any directory by typing part of its name!</description>
+The dmenu file manager is the best and fastest way to manage files! It is even faster than using the terminal, but has the perks of a graphical user interface. Therefore, it has the best of both worlds. You can use it to quickly open files in literally around one second.</description>
     </item>
     
     <item>
@@ -59,7 +58,7 @@ The dmenu file manager is the best and fastest way to manage files! It is even f
       
       <guid>https://amarakon.github.io/projects/ffrec/</guid>
       <description>https://github.com/amarakon/ffrec
-It is annoying when the command-line option is too minimalist while the graphical option is too bloated. FFrec uses FFmpeg to record but makes it less of a hassle. It makes it just as easy to record with FFmpeg as it is with OBS. Actually, it is even easier. No setup is required because the defaults are already fantastic. But if they do not suit you, you can change them with command-line options or the configuration file.</description>
+It is annoying when the command-line option is too minimalist while the graphical option is too bloated. FFrec uses FFmpeg to record but makes it less of a hassle. It makes it just as easy to record with FFmpeg as it is with OBS. Actually, it is even easier. No setup is required because the defaults are already fantastic.</description>
     </item>
     
     <item>
@@ -70,7 +69,7 @@ It is annoying when the command-line option is too minimalist while the graphica
       <guid>https://amarakon.github.io/projects/magickshot/</guid>
       <description>https://github.com/amarakon/magickshot
 MagickShot is a program I created because I am surprised it does not exist yet. It is a screenshot utility, but there are many screenshot utilities. However, none of them do everything I want them to do:
- screenshot with mouse selection sceenshot a specified window screenshot a specified monitor screenshot the entire display  Most of them only support the first and last options. Besides, they are too bloated anyways.</description>
+ screenshot with mouse selection sceenshot a specified window screenshot a specified monitor screenshot the entire display  Most of them only support the first and last options.</description>
     </item>
     
     <item>
@@ -80,7 +79,7 @@ MagickShot is a program I created because I am surprised it does not exist yet. 
       
       <guid>https://amarakon.github.io/projects/vim-sensible-autocomp/</guid>
       <description>Introduction https://github.com/amarakon/vim-sensible-autocomp
-This is yet another auto-completion plugin for Vim. At this point, there are probably hundreds. So I will explain what makes mine stand out from the rest. The main reason I wrote this plugin is that I wanted an auto-completion plugin written purely in Vim script or Lua. I hate seeing a cool plugin and then finding out its written in Python. Not only will that make the plugin slower and more bloated, but installing it and setting it up will be such a hassle that it is not worth it.</description>
+This is yet another auto-completion plugin for Vim. At this point, there are probably hundreds. So I will explain what makes mine stand out from the rest. The main reason I wrote this plugin is that I wanted an auto-completion plugin written purely in Vim script or Lua. I hate seeing a cool plugin and then finding out its written in Python.</description>
     </item>
     
   </channel>

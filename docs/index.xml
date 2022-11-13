@@ -14,8 +14,7 @@
       
       <guid>https://amarakon.github.io/about/</guid>
       <description>I am interested in many things:
- freedom free software philosophy minimalism GNU/Linux  Gentoo Arch   programming  C R shell   markup  R Markdown LaTeX    Projects On my GitHub page is where I have all my projects. These are some of my best projects:
- Cfetch: minimal and elegent fetch program FFrec: script to record easily using FFmpeg PAvol-Cli: easily control PulseAudio volume from the command-line MagickShot: minimal screenshot utility using ImageMagick Mstatus: minimal status program for DWM, preconfigured out of the box  </description>
+ freedom free software philosophy minimalism GNU/Linux  Gentoo Arch   programming  C R shell   markup  R Markdown LaTeX    Projects On my GitHub page is where I have all my projects. These are some of my best projects:</description>
     </item>
     
     <item>
@@ -25,7 +24,7 @@
       
       <guid>https://amarakon.github.io/projects/amarlay/</guid>
       <description>https://github.com/amarakon/amarlay
-Unlike AmaRYAML, Amarlay has a great name. It is a Gentoo overlay that includes dozens of unique packages, most of them not found in any other repository. Obviously, this will only be useful to Gentoo users. The best packages it includes are Zsh plugins, nerd-fonts-inconsolata, cfetch, and many Neovim plugins. It also includes ebuilds for all of my GitHub repositories. So if you are a Gentoo user, and you like my software, enable this overlay!</description>
+Unlike AmaRYAML, Amarlay has a great name. It is a Gentoo overlay that includes dozens of unique packages, most of them not found in any other repository. Obviously, this will only be useful to Gentoo users. The best packages it includes are Zsh plugins, nerd-fonts-inconsolata, cfetch, and many Neovim plugins.</description>
     </item>
     
     <item>
@@ -39,8 +38,7 @@ It has a terrible name but this is basically a collection of R Markdown template
   Book
   Eisvogel
 This is basically a simple document template. It is much better than the default pandoc template.
-  GitHub
-The main advantage of using this template over the default R Markdown github_document output is that this template shifts heading levels by 1.</description>
+  GitHub</description>
     </item>
     
     <item>
@@ -50,7 +48,7 @@ The main advantage of using this template over the default R Markdown github_doc
       
       <guid>https://amarakon.github.io/projects/cfetch/</guid>
       <description>https://github.com/amarakon/cfetch
-Cfetch is a suckless-like command-line system information tool. It displays information about your operating system, kernel, packages, and more along with ASCII art of your operating system in an elegant way. The purpose of Cfetch is to quickly get information about everything quickly instead of using one different program for getting each piece of information. Neofetch does a poor job at this because it is extremely slow because it is written in Bash, so the purpose of Neofetch is just for screenshots.</description>
+Cfetch is a suckless-like command-line system information tool. It displays information about your operating system, kernel, packages, and more along with ASCII art of your operating system in an elegant way. The purpose of Cfetch is to quickly get information about everything quickly instead of using one different program for getting each piece of information.</description>
     </item>
     
     <item>
@@ -60,7 +58,7 @@ Cfetch is a suckless-like command-line system information tool. It displays info
       
       <guid>https://amarakon.github.io/projects/dfm/</guid>
       <description>https://github.com/amarakon/dfm
-The dmenu file manager is the best and fastest way to manage files! It is even faster than using the terminal, but has the perks of a graphical user interface. Therefore, it has the best of both worlds. You can use it to quickly open files in literally around one second. And unlike graphical file managers, it supports shell abbreviations such as .., *, and ~. You can also quickly go back to any directory by typing part of its name!</description>
+The dmenu file manager is the best and fastest way to manage files! It is even faster than using the terminal, but has the perks of a graphical user interface. Therefore, it has the best of both worlds. You can use it to quickly open files in literally around one second.</description>
     </item>
     
     <item>
@@ -70,7 +68,7 @@ The dmenu file manager is the best and fastest way to manage files! It is even f
       
       <guid>https://amarakon.github.io/projects/ffrec/</guid>
       <description>https://github.com/amarakon/ffrec
-It is annoying when the command-line option is too minimalist while the graphical option is too bloated. FFrec uses FFmpeg to record but makes it less of a hassle. It makes it just as easy to record with FFmpeg as it is with OBS. Actually, it is even easier. No setup is required because the defaults are already fantastic. But if they do not suit you, you can change them with command-line options or the configuration file.</description>
+It is annoying when the command-line option is too minimalist while the graphical option is too bloated. FFrec uses FFmpeg to record but makes it less of a hassle. It makes it just as easy to record with FFmpeg as it is with OBS. Actually, it is even easier. No setup is required because the defaults are already fantastic.</description>
     </item>
     
     <item>
@@ -81,7 +79,7 @@ It is annoying when the command-line option is too minimalist while the graphica
       <guid>https://amarakon.github.io/projects/magickshot/</guid>
       <description>https://github.com/amarakon/magickshot
 MagickShot is a program I created because I am surprised it does not exist yet. It is a screenshot utility, but there are many screenshot utilities. However, none of them do everything I want them to do:
- screenshot with mouse selection sceenshot a specified window screenshot a specified monitor screenshot the entire display  Most of them only support the first and last options. Besides, they are too bloated anyways.</description>
+ screenshot with mouse selection sceenshot a specified window screenshot a specified monitor screenshot the entire display  Most of them only support the first and last options.</description>
     </item>
     
     <item>
@@ -91,7 +89,7 @@ MagickShot is a program I created because I am surprised it does not exist yet. 
       
       <guid>https://amarakon.github.io/programs/</guid>
       <description>This is a list of the most important software and hardware I use. It may include programs that I have developed myself (see my projects page).
-What Makes a Good Program I do not endorse the use of proprietary software because it is immoral and bad. I use software that is minimal, extensible, and fast. Very rarely do I use software that is written in Python. I like to do something in the simplest way possible.</description>
+What Makes a Good Program I do not endorse the use of proprietary software because it is immoral and bad. I use software that is minimal, extensible, and fast.</description>
     </item>
     
     <item>
@@ -101,7 +99,7 @@ What Makes a Good Program I do not endorse the use of proprietary software becau
       
       <guid>https://amarakon.github.io/projects/vim-sensible-autocomp/</guid>
       <description>Introduction https://github.com/amarakon/vim-sensible-autocomp
-This is yet another auto-completion plugin for Vim. At this point, there are probably hundreds. So I will explain what makes mine stand out from the rest. The main reason I wrote this plugin is that I wanted an auto-completion plugin written purely in Vim script or Lua. I hate seeing a cool plugin and then finding out its written in Python. Not only will that make the plugin slower and more bloated, but installing it and setting it up will be such a hassle that it is not worth it.</description>
+This is yet another auto-completion plugin for Vim. At this point, there are probably hundreds. So I will explain what makes mine stand out from the rest. The main reason I wrote this plugin is that I wanted an auto-completion plugin written purely in Vim script or Lua. I hate seeing a cool plugin and then finding out its written in Python.</description>
     </item>
     
     <item>
@@ -110,7 +108,7 @@ This is yet another auto-completion plugin for Vim. At this point, there are pro
       <pubDate>Fri, 05 Aug 2022 00:00:00 +0000</pubDate>
       
       <guid>https://amarakon.github.io/articles/20-best-neo-vim-plugins/</guid>
-      <description>Introduction Vim is a text editor that is great on its own but is heavily improved by various plugins. The vast majority of the plugins in this article will not be language-specific, so they will apply whether you are coding in C or just writing a random text file. I do indeed use Neovim and not Vim, but there is only one plugin in this list that is Neovim-specific. And it does have Vim-compatible alternatives anyway.</description>
+      <description>Introduction Vim is a text editor that is great on its own but is heavily improved by various plugins. The vast majority of the plugins in this article will not be language-specific, so they will apply whether you are coding in C or just writing a random text file. I do indeed use Neovim and not Vim, but there is only one plugin in this list that is Neovim-specific.</description>
     </item>
     
     <item>
@@ -120,7 +118,7 @@ This is yet another auto-completion plugin for Vim. At this point, there are pro
       
       <guid>https://amarakon.github.io/articles/i-thoroughly-enjoy-harvards-cs50-online-course/</guid>
       <description>Recall from my second article on this website that I did not like my school&amp;rsquo;s computer science club. I listed several reasons for it, and I will briefly summarize them here.
- The teacher taught in a traditional way rather than what I expected. Only the Python programming language is taught.  Python is slow, easy, high-level, and interpreted   They did not help us understand how programming works, so it still seemed like magic to us.</description>
+ The teacher taught in a traditional way rather than what I expected. Only the Python programming language is taught.</description>
     </item>
     
     <item>
@@ -129,9 +127,7 @@ This is yet another auto-completion plugin for Vim. At this point, there are pro
       <pubDate>Sun, 19 Jun 2022 00:00:00 +0000</pubDate>
       
       <guid>https://amarakon.github.io/articles/ditch-the-mouse-return-to-the-keyboard/</guid>
-      <description>I always support minimizing the amount of money you spend on technology. I have made that crystal clear. There are many things that people are spending way too much money on. But there are also many things that people are buying that they do not even need. An example of this is the mouse.
-Figure 1: Cool gaming mouse
- No, not that mouse. I am talking about computer mice. Computer mice are usually cheap; not costing more than $20.</description>
+      <description>I always support minimizing the amount of money you spend on technology. I have made that crystal clear. There are many things that people are spending way too much money on. But there are also many things that people are buying that they do not even need. An example of this is the mouse.</description>
     </item>
     
     <item>
@@ -140,7 +136,7 @@ Figure 1: Cool gaming mouse
       <pubDate>Fri, 17 Jun 2022 00:00:00 +0000</pubDate>
       
       <guid>https://amarakon.github.io/articles/thinkpad-laptops-are-timeless-machines/</guid>
-      <description>It is important to favor timeless computers over timed ones. Timed computers are designed to last only a short period of time; maybe a year or so. This is because they are designed to be not only fragile but also difficult to repair. This cruel combination manifests a consumerist mindset into most people. Timeless computers are designed to last as long as possible. They are always durable and reliable, not just the hardware but also the software.</description>
+      <description>It is important to favor timeless computers over timed ones. Timed computers are designed to last only a short period of time; maybe a year or so. This is because they are designed to be not only fragile but also difficult to repair. This cruel combination manifests a consumerist mindset into most people.</description>
     </item>
     
     <item>
@@ -149,7 +145,7 @@ Figure 1: Cool gaming mouse
       <pubDate>Thu, 16 Jun 2022 00:00:00 +0000</pubDate>
       
       <guid>https://amarakon.github.io/articles/stop-spending-too-much-money-on-technology/</guid>
-      <description>Many people feel the need to spend a lot of money on technology. They think that because technology is complex and vast, they should buy from the most expensive brands. I think that the opposite is true. Because technology is complex and vast, we should buy cheap but great tech products. Most importantly, we should buy technology that we actually understand. Ultra-complex technology takes advantage of everyone who uses it because no one can understand it.</description>
+      <description>Many people feel the need to spend a lot of money on technology. They think that because technology is complex and vast, they should buy from the most expensive brands. I think that the opposite is true. Because technology is complex and vast, we should buy cheap but great tech products.</description>
     </item>
     
     <item>
@@ -160,7 +156,7 @@ Figure 1: Cool gaming mouse
       <guid>https://amarakon.github.io/articles/librewolf-is-currently-the-best-web-browser/</guid>
       <description>Qualifications In order for me to consider them good, web browsers must
   not send analytics. It should not make analytics either. I do not want to hear about how it maintains the software’s survival. I genuinely do not care. I do not want “bug reports.”
-  have no home pages. Seriously, I do not want my browser to start on Google. The address bar is there for a reason.</description>
+  have no home pages.</description>
     </item>
     
     <item>
@@ -169,7 +165,7 @@ Figure 1: Cool gaming mouse
       <pubDate>Mon, 16 May 2022 00:00:00 +0000</pubDate>
       
       <guid>https://amarakon.github.io/articles/should-you-disallow-your-kid-to-have-a-smartphone/</guid>
-      <description>There is sadly too little debate about if you should disallow your kid to have a smartphone. This is an important discussion. There are good arguments for and against it. But most people just let their kids do whatever without thinking through it deeply. This is dangerous and careless behavior. You should heavily regulate what your kids are able to do to protect them, as a parent always should. There should be no exceptions for smartphones.</description>
+      <description>There is sadly too little debate about if you should disallow your kid to have a smartphone. This is an important discussion. There are good arguments for and against it. But most people just let their kids do whatever without thinking through it deeply. This is dangerous and careless behavior. You should heavily regulate what your kids are able to do to protect them, as a parent always should.</description>
     </item>
     
     <item>
@@ -178,7 +174,7 @@ Figure 1: Cool gaming mouse
       <pubDate>Sun, 15 May 2022 00:00:00 +0000</pubDate>
       
       <guid>https://amarakon.github.io/articles/transgender-ideology-is-false-self-destructive-and-immoral/</guid>
-      <description>You cannot change the reality of who you are. You cannot change your race, sex, age because those are immutable properties. Most people in society understand and accept this fact. But the left has created terms called “gender” and “transgender” to get around this. They know believe it is possible to change one’s sex, but they relabeled it as “gender.” They argue that sex is biological while gender is a social construct.</description>
+      <description>You cannot change the reality of who you are. You cannot change your race, sex, age because those are immutable properties. Most people in society understand and accept this fact. But the left has created terms called “gender” and “transgender” to get around this. They know believe it is possible to change one’s sex, but they relabeled it as “gender.</description>
     </item>
     
     <item>
@@ -196,7 +192,7 @@ Figure 1: Cool gaming mouse
       <pubDate>Fri, 13 May 2022 00:00:00 +0000</pubDate>
       
       <guid>https://amarakon.github.io/articles/comparing-the-best-markup-languages-for-making-pdf-documents/</guid>
-      <description>PDF is rightfully the standard output format for documents. All word processors can output to PDF, but it is difficult to convert PDF to files word processors can edit. Most people use “what you see is what you get” word processors like Microsoft Word, Google Docs, or LibreOffice Writer. This type of word processor is convenient but it is also limited and unprofessional. It is easier to get into, but it is harder to use in the long run.</description>
+      <description>PDF is rightfully the standard output format for documents. All word processors can output to PDF, but it is difficult to convert PDF to files word processors can edit. Most people use “what you see is what you get” word processors like Microsoft Word, Google Docs, or LibreOffice Writer. This type of word processor is convenient but it is also limited and unprofessional.</description>
     </item>
     
     <item>
@@ -205,7 +201,7 @@ Figure 1: Cool gaming mouse
       <pubDate>Tue, 10 May 2022 00:00:00 +0000</pubDate>
       
       <guid>https://amarakon.github.io/articles/abortion-capital-punishment-and-euthanasia-when-is-killing-acceptable/</guid>
-      <description>Conservatives and liberals strongly disagree on when killing another human being should be considered acceptable. They both agree that killing is justified in self-defense, but the agreements end there. Conservatives usually think that abortion and euthanasia are wrong while capital punishment (the death penalty) is just. They argue that killing an innocent and defenseless person (abortion and euthanasia) is always wrong while killing soulless criminals (the death penalty) is just. On the other hand, liberals think that abortion and euthanasia are sometimes justifiable while the death penalty is unjust.</description>
+      <description>Conservatives and liberals strongly disagree on when killing another human being should be considered acceptable. They both agree that killing is justified in self-defense, but the agreements end there. Conservatives usually think that abortion and euthanasia are wrong while capital punishment (the death penalty) is just. They argue that killing an innocent and defenseless person (abortion and euthanasia) is always wrong while killing soulless criminals (the death penalty) is just.</description>
     </item>
     
     <item>
@@ -214,7 +210,7 @@ Figure 1: Cool gaming mouse
       <pubDate>Sat, 07 May 2022 00:00:00 +0000</pubDate>
       
       <guid>https://amarakon.github.io/articles/you-should-prefer-command-line-software/</guid>
-      <description>There are many benefits of preferring command-line software over graphical software. Graphical User Interfaces generally promote lazy thinking. Command-line interfaces generally promote critical thinking. I think it is unfortunate that most people have not even heard of command-line software. Whenever I would be doing my work in school by running commands, most people who pass by would assume that I am coding. This is obviously because they have not used command-line programs, so their view of a dark terminal window and fast typing of commands they do not understand leads them to this conclusion.</description>
+      <description>There are many benefits of preferring command-line software over graphical software. Graphical User Interfaces generally promote lazy thinking. Command-line interfaces generally promote critical thinking. I think it is unfortunate that most people have not even heard of command-line software. Whenever I would be doing my work in school by running commands, most people who pass by would assume that I am coding.</description>
     </item>
     
     <item>
@@ -223,7 +219,7 @@ Figure 1: Cool gaming mouse
       <pubDate>Fri, 06 May 2022 00:00:00 +0000</pubDate>
       
       <guid>https://amarakon.github.io/articles/programming-is-invaluable-for-everyone/</guid>
-      <description>Most people view programming as something that only a specific type of people are able to do and should do. This specific type of person is portrayed as a genius; smarter than everyone else. This means that they think most normal people are unable to learn programming because they are not smart enough. But since they do not want to learn it themselves, they make the excuse that it is not important for them.</description>
+      <description>Most people view programming as something that only a specific type of people are able to do and should do. This specific type of person is portrayed as a genius; smarter than everyone else. This means that they think most normal people are unable to learn programming because they are not smart enough.</description>
     </item>
     
     <item>
@@ -232,7 +228,7 @@ Figure 1: Cool gaming mouse
       <pubDate>Thu, 05 May 2022 00:00:00 +0000</pubDate>
       
       <guid>https://amarakon.github.io/articles/gentoo-linux-should-be-approved-by-the-free-software-foundation/</guid>
-      <description>Gentoo Linux is a 100% free operating system. All of its source code is publicly available on GitHub, meaning that it’s open-source. It is licensed under a free license: GNU General Public License (Version 2). It does not include any preinstalled proprietary software. Its package manager, Portage, blocks proprietary software against the user’s will by default. All of these reasons prove that is a completely free operating system that is against the use of proprietary software, so it should be in the Free Software Foundation’s (FSF) list of free Linux distributions.</description>
+      <description>Gentoo Linux is a 100% free operating system. All of its source code is publicly available on GitHub, meaning that it’s open-source. It is licensed under a free license: GNU General Public License (Version 2). It does not include any preinstalled proprietary software. Its package manager, Portage, blocks proprietary software against the user’s will by default.</description>
     </item>
     
     <item>
@@ -241,7 +237,7 @@ Figure 1: Cool gaming mouse
       <pubDate>Tue, 03 May 2022 00:00:00 +0000</pubDate>
       
       <guid>https://amarakon.github.io/articles/how-to-install-gentoo-linux-the-efficient-way/</guid>
-      <description>So you finally moved from the beginner distributions and you know want to install truly the best operating system of all time; Gentoo Linux. Contrary to popular belief, installing this operating system is not difficult in the slightest but it is certainly time consuming. Usually it will take around five hours to install. This might deter you, but remember that this operating system will actually save you time in the long run.</description>
+      <description>So you finally moved from the beginner distributions and you know want to install truly the best operating system of all time; Gentoo Linux. Contrary to popular belief, installing this operating system is not difficult in the slightest but it is certainly time consuming. Usually it will take around five hours to install.</description>
     </item>
     
     <item>
@@ -250,7 +246,7 @@ Figure 1: Cool gaming mouse
       <pubDate>Mon, 02 May 2022 00:00:00 +0000</pubDate>
       
       <guid>https://amarakon.github.io/articles/education-wants-to-dumb-down-technology/</guid>
-      <description>I am a high school student who happens to be genuinely interested in technology. Specifically, I am interested in operating systems, programming, and free software philosophy. I have a good understanding of what makes a good piece of technology and what makes a bad piece of technology. One of the most important factors in this distinction is the effort it requires to use it. If a piece of technology is extremely complicated but effortless to use (i.</description>
+      <description>I am a high school student who happens to be genuinely interested in technology. Specifically, I am interested in operating systems, programming, and free software philosophy. I have a good understanding of what makes a good piece of technology and what makes a bad piece of technology. One of the most important factors in this distinction is the effort it requires to use it.</description>
     </item>
     
     <item>
@@ -259,7 +255,7 @@ Figure 1: Cool gaming mouse
       <pubDate>Sun, 01 May 2022 00:00:00 +0000</pubDate>
       
       <guid>https://amarakon.github.io/articles/you-should-pay-attention-to-your-choice-of-software/</guid>
-      <description>What I have noticed about many subjects in life is that many people just want to be sheep. Notice how I said &amp;ldquo;want to be sheep&amp;rdquo; and not &amp;ldquo;are sheep.&amp;rdquo; That is because my emphasis is on the fact that people are choosing to be ignorant. This is true in many cases, especially in politics and computing. In this post, I will be focusing on computing. I want to clarify by saying that I think there is nothing wrong with being ignorant, but it is wrong to be willfully ignorant.</description>
+      <description>What I have noticed about many subjects in life is that many people just want to be sheep. Notice how I said &amp;ldquo;want to be sheep&amp;rdquo; and not &amp;ldquo;are sheep.&amp;rdquo; That is because my emphasis is on the fact that people are choosing to be ignorant. This is true in many cases, especially in politics and computing.</description>
     </item>
     
   </channel>

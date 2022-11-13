@@ -2,6 +2,9 @@ baseURL = "https://amarakon.github.io/"
 languageCode = 'en-ca'
 title = "Amarakon’s Website"
 theme = "hugo-cream"
+mainSections = "/articles/"
+summaryLength = 50
+paginate = 20
 
 [markup]
 [markup.goldmark]
