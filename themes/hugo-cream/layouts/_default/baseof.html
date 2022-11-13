@@ -54,6 +54,11 @@
 					{{ .Content }}
 					{{ end }}
 				</article>
+				{{ block "footer" . }}
+				<footer>
+					Copyright © 2022 Amar Al-Zubaidi. All Rights Reserved.
+				</footer>
+				{{ end }}
 			</div>
 			<div id="rightbar">
 				{{ if .TableOfContents }}
@@ -62,10 +67,5 @@
 				{{ end }}
 			</div>
 		</div>
-		{{ block "footer" . }}
-		<footer>
-			Copyright © 2022 Amar Al-Zubaidi. All Rights Reserved.
-		</footer>
-		{{ end }}
 	</body>
 </html>
