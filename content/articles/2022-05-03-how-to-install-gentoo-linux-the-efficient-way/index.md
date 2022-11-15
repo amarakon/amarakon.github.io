@@ -1,6 +1,7 @@
 ---
 title: How to Install Gentoo Linux – The Efficient Way
 date: '2022-05-03'
+lastmod: 2022-11-14
 slug: how-to-install-gentoo-linux-the-efficient-way
 tags: ["foss", "tutorial"]
 bibliography: ../../../static/bibliography.bib
@@ -194,20 +195,24 @@ sudo emerge --config sys-libs/timezone-data
 
 Choose the right locale by running `sudo nano /etc/locale.gen`:
 
-    en_CA.UTF-8 UTF-8
+``` text
+en_CA.UTF-8 UTF-8
+```
 
 ``` shell
-`#root` locale-gen
+sudo locale-gen
 ```
 
 Check the locale list by running `$ eselect locale list`, then select the right one:
 
-    Available targets for the LANG variable:
-      [1]   C
-      [2]   C.utf8
-      [3]   en_CA.utf8
-      [4]   POSIX
-      [ ]   (free form)
+``` text
+Available targets for the LANG variable:
+  [1]   C
+  [2]   C.utf8
+  [3]   en_CA.utf8
+  [4]   POSIX
+  [ ]   (free form)
+```
 
 ``` shell
 sudo eselect locale set 3
@@ -241,20 +246,26 @@ Open the file by running `sudo nano /etc/fstab`.
 If you have an SSD, you should enable the `noatime` and `discard` options.
 If you are using BIOS, arrange your fstab to something like this:
 
-    # /dev/sda1
-    UUID=9167fa6f-bb77-4337-a547-48a20506d297   /   ext4    noatime,discard 0 1
+``` text
+# /dev/sda1
+UUID=9167fa6f-bb77-4337-a547-48a20506d297   /   ext4    noatime,discard 0 1
+```
 
 If you are using UEFI, do something like this instead:
 
-    # /dev/sda1
-    UUID=dbb15f21-c203-4665-a520-7f92f51661ae   /boot   vfat    defaults,noatime     0 2
+``` text
+# /dev/sda1
+UUID=dbb15f21-c203-4665-a520-7f92f51661ae   /boot   vfat    defaults,noatime     0 2
 
-    # /dev/sda2
-    UUID=9167fa6f-bb77-4337-a547-48a20506d297   /   ext4    noatime,discard 0 1
+# /dev/sda2
+UUID=9167fa6f-bb77-4337-a547-48a20506d297   /   ext4    noatime,discard 0 1
+```
 
 Set the host name by running `sudo nano /etc/conf.d/hostname`:
 
-    hostname="<host name>"
+``` shell
+hostname="<host name>"
+```
 
 Install NetworkManager and add it to the default runlevel for internet connection:
 
@@ -265,9 +276,11 @@ sudo rc-update add NetworkManager default
 
 Edit the hosts file by running `sudo nano /etc/hosts`:
 
-    127.0.0.1   localhost
-    ::1         localhost
-    127.0.1.1   <host name>
+``` text
+127.0.0.1   localhost
+::1         localhost
+127.0.1.1   <host name>
+```
 
 Set the root password by simply running `sudo passwd`.
 
@@ -307,8 +320,10 @@ sudo reboot
 
 First, log in as root:
 
-    Login: root
-    Password: <password>
+``` text
+Login: root
+Password: <password>
+```
 
 Add a user for daily use and set its password:
 

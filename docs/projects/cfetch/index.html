@@ -3,10 +3,11 @@
 	<head>
 		<title>Cfetch | Amarakon’s Website</title>
 		<link rel="canonical" href="https://amarakon.github.io/">
-		<link rel='stylesheet' type='text/css' href='/style.css'>
+		<link rel='stylesheet' type='text/css' href='/css/style.css'>
 		
-		<link rel='stylesheet' type='text/css' href='/table.css'>
+		<link rel='stylesheet' type='text/css' href='/css/table.css'>
 		
+		<link rel="stylesheet" type="text/css" href="/css/headings.css">
 		<meta name="description" content="https://github.com/amarakon/cfetch
 Cfetch is a suckless-like command-line system information tool. It displays information about your operating system, kernel, packages, and more along with ASCII art of your operating system in an elegant way. The purpose of Cfetch is to quickly get information about everything quickly instead of using one different program for getting each piece of information.">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -45,6 +46,11 @@ Cfetch is a suckless-like command-line system information tool. It displays info
 			<div id="main">
 				
 				<h1 style="border-bottom: none;" id="tag_Cfetch">Cfetch</h1>
+				<strong>Uploaded:</strong>
+				<time datetime="2022-11-07">
+					November 7, 2022
+				</time>
+				
 				
 				<article>
 					
@@ -58,46 +64,86 @@ Cfetch is a rewrite of Neofetch in C forked from <a href="https://github.com/JaG
 <p><strong>Disclaimer:</strong> Cfetch is still in very early development.
 I am currently learning more about how to program in C and I will return to this project later.
 Stay tuned for that.</p>
-<h1 id="usage">Usage</h1>
+<div class="heading">
+	<div class="heading-icon">
+		<a href="#usage"></a>
+	</div>
+	<h2 id="usage">Usage</h2>
+</div>
 <p>Simply run the executable:</p>
-<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>cfetch
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>cfetch
 </span></span></code></pre></div><p>By default, <code>cfetch</code> will cache certain  information (in <code>$XDG_CACHE_HOME/cfetch</code>)
 to speed up subsequent calls. To ignore the contents of the cache (and repopulate it), run the following:</p>
-<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>cfetch --recache
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>cfetch --recache
 </span></span></code></pre></div><p>The cache file can safely be removed at any time, Cfetch will repopulate it if it is absent.</p>
-<h1 id="dependencies">Dependencies</h1>
+<div class="heading">
+	<div class="heading-icon">
+		<a href="#dependencies"></a>
+	</div>
+	<h2 id="dependencies">Dependencies</h2>
+</div>
 <ol>
 <li>xorg-server</li>
 <li>libX11</li>
 <li>libpci</li>
 </ol>
-<h2 id="universal">Universal</h2>
-<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git clone https://github.com/amarakon/cfetch
-</span></span><span style="display:flex;"><span><span style="color:#81a1c1">cd</span> cfetch
+<div class="heading">
+	<div class="heading-icon">
+		<a href="#universal"></a>
+	</div>
+	<h3 id="universal">Universal</h3>
+</div>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git clone https://github.com/amarakon/cfetch
+</span></span><span style="display:flex;"><span><span style="color:#204a87">cd</span> cfetch
 </span></span><span style="display:flex;"><span>make install
-</span></span></code></pre></div><h2 id="gentoo">Gentoo</h2>
-<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sudo eselect repository add amarlay git https://github.com/amarakon/amarlay
+</span></span></code></pre></div><div class="heading">
+	<div class="heading-icon">
+		<a href="#gentoo"></a>
+	</div>
+	<h3 id="gentoo">Gentoo</h3>
+</div>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sudo eselect repository add amarlay git https://github.com/amarakon/amarlay
 </span></span><span style="display:flex;"><span>sudo emerge --sync amarlay
 </span></span><span style="display:flex;"><span>sudo emerge app-misc/cfetch
-</span></span></code></pre></div><h1 id="uninstallation">Uninstallation</h1>
-<h2 id="universal-1">Universal</h2>
-<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#81a1c1">cd</span> cfetch
+</span></span></code></pre></div><div class="heading">
+	<div class="heading-icon">
+		<a href="#uninstallation"></a>
+	</div>
+	<h2 id="uninstallation">Uninstallation</h2>
+</div>
+<div class="heading">
+	<div class="heading-icon">
+		<a href="#universal-1"></a>
+	</div>
+	<h3 id="universal-1">Universal</h3>
+</div>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#204a87">cd</span> cfetch
 </span></span><span style="display:flex;"><span>sudo make uninstall
-</span></span></code></pre></div><h2 id="gentoo-1">Gentoo</h2>
-<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sudo emerge -c app-misc/cfetch
+</span></span></code></pre></div><div class="heading">
+	<div class="heading-icon">
+		<a href="#gentoo-1"></a>
+	</div>
+	<h3 id="gentoo-1">Gentoo</h3>
+</div>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sudo emerge -c app-misc/cfetch
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># Remove my overlay (optional)</span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"># Remove my overlay (optional)</span>
 </span></span><span style="display:flex;"><span>sudo eselect-repository remove -f amarlay
 </span></span><span style="display:flex;"><span>sudo emerge --sync
-</span></span></code></pre></div><h1 id="configuration">Configuration</h1>
+</span></span></code></pre></div><div class="heading">
+	<div class="heading-icon">
+		<a href="#configuration"></a>
+	</div>
+	<h2 id="configuration">Configuration</h2>
+</div>
 <p>Being a suckless-like program, Cfetch is configured by editing <code>config.h</code> and recompiling.
 You can change your logo by including the appropriate header file in the logos directory.
 The color with which Cfetch draws the logo can be chosen by defining the <code>COLOR</code> macro,
 look up ANSI escape codes for information on customizing this.</p>
 <p>The last configuration is the <code>CONFIG</code> macro, which controls what information Cfetch
 prints. Each entry in this macro should look like</p>
-<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#616e87;font-style:italic">/* Name        Function            Cache */</span>
-</span></span><span style="display:flex;"><span><span style="color:#eceff4">{</span> <span style="color:#a3be8c">&#34;NAME: &#34;</span><span style="color:#eceff4">,</span>    getter_function<span style="color:#eceff4">,</span>    <span style="color:#81a1c1">false</span> <span style="color:#eceff4">},</span>\
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">/* Name        Function            Cache */</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{</span> <span style="color:#4e9a06">&#34;NAME: &#34;</span><span style="color:#000;font-weight:bold">,</span>    <span style="color:#000">getter_function</span><span style="color:#000;font-weight:bold">,</span>    <span style="color:#204a87">false</span> <span style="color:#000;font-weight:bold">},</span>\
 </span></span></code></pre></div><p>Take note of the trailing comma and backslash. The first piece, <code>&quot;NAME: &quot;</code>, sets
 what Cfetch prints before printing the information; this usually tells you what
 bit of information is being shown. Note that the name entry should be unique for entries
@@ -166,4 +212,8 @@ configuration, otherwise it will still show the old name for already cached entr
 			</div>
 		</div>
 	</body>
+	
+	<script src="/clipboard.js"></script>
+	<link rel="stylesheet" href="/css/clipboard.css">
+	
 </html>

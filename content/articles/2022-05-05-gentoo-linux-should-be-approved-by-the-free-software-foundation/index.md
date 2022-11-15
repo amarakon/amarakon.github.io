@@ -89,7 +89,7 @@ Gentoo does not contain any digital rights management, back doors, or spyware.
 
 ## Commitment to correct mistakes
 
-According to [Wikipedia](#ref-wikigentoo) ([2022](#ref-wikigentoo)), in 2018 the Gentoo GitHub repository was hacked because an attacker was able to deduce the password.
+According to Wikipedia ([2022](#ref-wikigentoo)), in 2018 the Gentoo GitHub repository was hacked because an attacker was able to deduce the password.
 Gentoo immediately responded by improving their security practices to prevent this from happening again.
 Gentoo has made no other major mistakes.
 

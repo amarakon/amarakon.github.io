@@ -3,10 +3,11 @@
 	<head>
 		<title>Ditch the Mouse, Return to the Keyboard | Amarakon’s Website</title>
 		<link rel="canonical" href="https://amarakon.github.io/">
-		<link rel='stylesheet' type='text/css' href='/style.css'>
+		<link rel='stylesheet' type='text/css' href='/css/style.css'>
 		
-		<link rel='stylesheet' type='text/css' href='/table.css'>
+		<link rel='stylesheet' type='text/css' href='/css/table.css'>
 		
+		<link rel="stylesheet" type="text/css" href="/css/headings.css">
 		<meta name="description" content="I always support minimizing the amount of money you spend on technology. I have made that crystal clear. There are many things that people are spending way too much money on. But there are also many things that people are buying that they do not even need. An example of this is the mouse.">
 		<meta name="keywords" content="computers">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -45,6 +46,11 @@
 			<div id="main">
 				
 				<h1 style="border-bottom: none;" id="tag_Ditch the Mouse, Return to the Keyboard">Ditch the Mouse, Return to the Keyboard</h1>
+				<strong>Uploaded:</strong>
+				<time datetime="2022-06-19">
+					June 19, 2022
+				</time>
+				
 				
 				<article>
 					
@@ -63,7 +69,12 @@ Computer mice are usually cheap; not costing more than $20.
 But the amount of money people spend on them adds up.
 They do not last nearly as long as keyboards do.
 But there is a bigger problem with mice.</p>
-<h1 id="efficiency">Efficiency</h1>
+<div class="heading">
+	<div class="heading-icon">
+		<a href="#efficiency"></a>
+	</div>
+	<h2 id="efficiency">Efficiency</h2>
+</div>
 <p>The main reason I do not support buying mice is to improve efficiency.
 Mice are helpful if you want to make precise cursor movements.
 This applies if you make digital three-dimensional models, for example.
@@ -90,14 +101,24 @@ After practicing, they become almost as precise as a regular mouse.
 Also, I never accidentally hit the trackpoint anymore.
 The result is that I can seamlessly switch between typing and moving the mouse.
 This allows me to not unfairly favor one over the other.</p>
-<h1 id="keyboard-favoring-software">Keyboard-Favoring Software</h1>
+<div class="heading">
+	<div class="heading-icon">
+		<a href="#keyboard-favoring-software"></a>
+	</div>
+	<h2 id="keyboard-favoring-software">Keyboard-Favoring Software</h2>
+</div>
 <p>I recommend using software that favor the use of the keyboard rather than the use of the mouse.
 This can start with your desktop environment.
 Most desktop environments have large icons placed in a panel (taskbar).
 This is an idea created by Microsoft Windows, so I do not recommend this.
 Instead of using icons to launch applications, you should use keyboard shortcuts.
 For applications that you have not created a shortcut for, you should use dmenu.</p>
-<h1 id="hide-the-cursor-if-it-is-not-needed">Hide the Cursor if it is Not Needed</h1>
+<div class="heading">
+	<div class="heading-icon">
+		<a href="#hide-the-cursor-if-it-is-not-needed"></a>
+	</div>
+	<h2 id="hide-the-cursor-if-it-is-not-needed">Hide the Cursor if it is Not Needed</h2>
+</div>
 <p>I barely move the cursor.
 As a result, it is annoying to have it consuming some of my display.
 It often blocks things that I actually want to see.
@@ -105,10 +126,15 @@ I recommend two utilities to hide the cursor if it is not needed: Unclutter and 
 Both of them do not come preinstalled on most operating systems, so you need to install them yourself.
 Also, they only work on Xorg, Linux.
 P.S. Install <code>unclutter-xfixes</code> as opposed to <code>unclutter</code> because it has more and favorable features.</p>
-<h2 id="unclutter">Unclutter</h2>
+<div class="heading">
+	<div class="heading-icon">
+		<a href="#unclutter"></a>
+	</div>
+	<h3 id="unclutter">Unclutter</h3>
+</div>
 <p>Unclutter is a program that hides the cursor if it is inactive. Simply launch it by invoking <code>unclutter</code>.
 This is the command that I like to use:</p>
-<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>unclutter --idle <span style="color:#b48ead">1</span> --ignore-buttons 1,2,3,4,5,6,7 --jitter <span style="color:#b48ead">1</span> --start-hidden --hide-on-touch
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>unclutter --idle <span style="color:#0000cf;font-weight:bold">1</span> --ignore-buttons 1,2,3,4,5,6,7 --jitter <span style="color:#0000cf;font-weight:bold">1</span> --start-hidden --hide-on-touch
 </span></span></code></pre></div><p>By default, Unclutter will hide the cursor after it has been inactive for three seconds.
 I prefer hiding it after one second of inactivity.
 That is the purpose of passing the option <code>--idle 1</code>.
@@ -116,7 +142,12 @@ That is the purpose of passing the option <code>--idle 1</code>.
 <code>--jitter 1</code> will prevent Unclutter from hiding the cursor when scrolling.
 <code>--start-hidden</code> will start the cursor hidden.
 <code>--hide-on-touch</code> will hide the mouse cursor on touch events.</p>
-<h2 id="xbanish">Xbanish</h2>
+<div class="heading">
+	<div class="heading-icon">
+		<a href="#xbanish"></a>
+	</div>
+	<h3 id="xbanish">Xbanish</h3>
+</div>
 <p>Xbanish is a program that hides the cursor whenever you are typing.
 This is a common sense type of program.
 Who wants to see their cursor when they are typing?
@@ -150,4 +181,8 @@ Simply use the command <code>xbanish</code> to <strong>banish</strong> the mouse
 			</div>
 		</div>
 	</body>
+	
+	<script src="/clipboard.js"></script>
+	<link rel="stylesheet" href="/css/clipboard.css">
+	
 </html>

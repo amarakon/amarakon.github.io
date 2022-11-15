@@ -3,10 +3,11 @@
 	<head>
 		<title>Comparing the Best Markup Languages for Making PDF Documents | Amarakon’s Website</title>
 		<link rel="canonical" href="https://amarakon.github.io/">
-		<link rel='stylesheet' type='text/css' href='/style.css'>
+		<link rel='stylesheet' type='text/css' href='/css/style.css'>
 		
-		<link rel='stylesheet' type='text/css' href='/table.css'>
+		<link rel='stylesheet' type='text/css' href='/css/table.css'>
 		
+		<link rel="stylesheet" type="text/css" href="/css/headings.css">
 		<meta name="description" content="PDF is rightfully the standard output format for documents. All word processors can output to PDF, but it is difficult to convert PDF to files word processors can edit. Most people use “what you see is what you get” word processors like Microsoft Word, Google Docs, or LibreOffice Writer. This type of word processor is convenient but it is also limited and unprofessional.">
 		<meta name="keywords" content="foss, markup">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -45,6 +46,11 @@
 			<div id="main">
 				
 				<h1 style="border-bottom: none;" id="tag_Comparing the Best Markup Languages for Making PDF Documents">Comparing the Best Markup Languages for Making PDF Documents</h1>
+				<strong>Uploaded:</strong>
+				<time datetime="2022-05-13">
+					May 13, 2022
+				</time>
+				
 				
 				<article>
 					
@@ -63,7 +69,12 @@ Nevertheless, they are still much easier to use in the long run as once you set 
 Currently, the best markup word processors are Groff, LaTeX, Markdown, R Markdown, and Quarto.
 I will go over the pros and cons of each one so that you can make the best decision.
 I do not recommend using any other program than the ones listed in this post because these are the only good ones.</p>
-<h1 id="groff">Groff</h1>
+<div class="heading">
+	<div class="heading-icon">
+		<a href="#groff"></a>
+	</div>
+	<h2 id="groff">Groff</h2>
+</div>
 <p>Groff (GNU troff) is a document formatting system included with all GNU operating systems.
 This makes it very convenient since you do not even have to install it.
 Other markup word processors require you to install their packages and these packages can potentially have hundreds of dependencies in total.
@@ -83,7 +94,12 @@ All things that must be defined (like section headers and paragraphs) have to be
 Formatted text (like bold and italics) have to be put on separate lines.
 Other than that, the syntax is fine.
 But because of Groff’s flaws, Groff documents’ source code cannot be read easily in plain text.</p>
-<h1 id="latex">LaTeX</h1>
+<div class="heading">
+	<div class="heading-icon">
+		<a href="#latex"></a>
+	</div>
+	<h2 id="latex">LaTeX</h2>
+</div>
 <p>LaTeX is the golden standard for making PDF documents, and for good reasons.
 It is the very first important markup word processor.
 Almost all of the others are based on LaTeX.
@@ -120,7 +136,12 @@ Additionally, you have to use some commands just to make a working document.
 You cannot compile a document from just simple plain text.
 Its syntax is also generally too complicated at times.
 From my experience, a LaTeX file (<code>.tex</code>) usually has twice the amount of lines compared to an identical Markdown file (<code>.md</code>).</p>
-<h1 id="markdown">Markdown</h1>
+<div class="heading">
+	<div class="heading-icon">
+		<a href="#markdown"></a>
+	</div>
+	<h2 id="markdown">Markdown</h2>
+</div>
 <p>Markdown is a widely used markup language that is used for more than just PDF documents.
 If you want to use Markdown for PDF documents, you need to install LaTeX and the document converter Pandoc.
 No other packages are required to convert a Markdown file to a PDF file.
@@ -145,7 +166,12 @@ Grid tables are extremely complicated, require too much time to make, and they h
 One small downside with Pandoc’s Markdown is that code blocks with syntax highlighting are impossible.
 On the contrary, code blocks with syntax highlighting work decently in most Markdown interpreters or compilers.
 Most people do not need to use code blocks though, so this is a minor issue.</p>
-<h1 id="r-markdown">R Markdown</h1>
+<div class="heading">
+	<div class="heading-icon">
+		<a href="#r-markdown"></a>
+	</div>
+	<h2 id="r-markdown">R Markdown</h2>
+</div>
 <p>R Markdown adds another layer of simplicity to the source code.
 It is similar to Markdown but it has more features.
 In order to use R Markdown, you need to have R and the <em>rmarkdown</em> package, LaTeX, and Pandoc.
@@ -184,7 +210,12 @@ When searching for answers to common problems—especially on StackOverflow, mos
 This is true even when searching for LaTeX, Markdown, or Quarto specifically.
 Most R packages have documentation at rdocumentation.org.
 R Markdown documentation managed to teach me more about LaTeX, Markdown, and Quarto than all of those programs’ documentation themselves.</p>
-<h1 id="quarto">Quarto</h1>
+<div class="heading">
+	<div class="heading-icon">
+		<a href="#quarto"></a>
+	</div>
+	<h2 id="quarto">Quarto</h2>
+</div>
 <p>Quarto is best understood as an alternative to R Markdown.
 R Markdown struggles from requiring too many packages, thus consuming too much storage.
 It also takes a long time to fully render the <code>.Rmd</code> file to the <code>.pdf</code> file.
@@ -195,7 +226,12 @@ R Markdown is designed for R users, while Quarto is designed for all users.
 R Markdown has better documentation and is more versatile than Quarto.
 I do not recommend Quarto because it is new, undeveloped, and not special enough for me to make the switch.
 Users of R Markdown should not use Quarto unless they have a specific reason to do so.</p>
-<h1 id="references">References</h1>
+<div class="heading">
+	<div class="heading-icon">
+		<a href="#references"></a>
+	</div>
+	<h2 id="references">References</h2>
+</div>
 <div id="refs" class="references csl-bib-body hanging-indent" line-spacing="2">
 <div id="ref-rmarkdown-cookbook-s4.7" class="csl-entry">
 <p>Xie, Yihui, Dervieux, Christophe, &amp; Riederer, Emily. (2020). <em>R markdown cookbook</em> (1st ed., pp. 38–39). Chapman &amp; Hall/CRC.</p>
@@ -227,4 +263,5 @@ Users of R Markdown should not use Quarto unless they have a specific reason to 
 			</div>
 		</div>
 	</body>
+	
 </html>

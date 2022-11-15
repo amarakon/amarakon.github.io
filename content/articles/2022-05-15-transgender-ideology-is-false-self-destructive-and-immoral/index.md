@@ -13,7 +13,7 @@ You cannot change the reality of who you are.
 You cannot change your race, sex, age because those are immutable properties.
 Most people in society understand and accept this fact.
 But the left has created terms called “gender” and “transgender” to get around this.
-They know believe it is possible to change one’s sex, but they relabeled it as “gender.”
+They know believe it is possible to change one’s sex, but they relabeled it as “gender”.
 They argue that sex is biological while gender is a social construct.
 Well, if sex is the biological truth and gender is a made-up, incorrect social construct, why should not we be truthful and get rid of the made-up, incorrect social construct?
 If gender is truly a social construct, why are we even giving value to such a “social construct?”
@@ -105,7 +105,7 @@ Gender dysphoria is an undoubtedly tragic disorder.
 I will never deny that.
 But it is disgusting to suggest that sex hormones and sex-reassignment surgery are solutions.
 The suicide rate among people with gender dysphoria is extraordinarily high, but there is no evidence that suggests sex hormones and sex-reassignment surgery decrease it.
-According to [APA](#ref-mental-disorders) ([2013](#ref-mental-disorders)), “Those who had received a diagnosis of gender identity disorder or transsexualism and were seeking hormone treatment and/or surgery” is only .005 to .014% for males and .002 to .003% for females.
+According to APA ([2013](#ref-mental-disorders)), “Those who had received a diagnosis of gender identity disorder or transsexualism and were seeking hormone treatment and/or surgery” is only .005 to .014% for males and .002 to .003% for females.
 However, that number is rapidly and tremendously increasing.
 This could only possibly be caused by indoctrination.
 

@@ -3,10 +3,11 @@
 	<head>
 		<title>You Should Prefer Command-Line Software | Amarakon’s Website</title>
 		<link rel="canonical" href="https://amarakon.github.io/">
-		<link rel='stylesheet' type='text/css' href='/style.css'>
+		<link rel='stylesheet' type='text/css' href='/css/style.css'>
 		
-		<link rel='stylesheet' type='text/css' href='/table.css'>
+		<link rel='stylesheet' type='text/css' href='/css/table.css'>
 		
+		<link rel="stylesheet" type="text/css" href="/css/headings.css">
 		<meta name="description" content="There are many benefits of preferring command-line software over graphical software. Graphical User Interfaces generally promote lazy thinking. Command-line interfaces generally promote critical thinking. I think it is unfortunate that most people have not even heard of command-line software. Whenever I would be doing my work in school by running commands, most people who pass by would assume that I am coding.">
 		<meta name="keywords" content="cli">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -45,6 +46,11 @@
 			<div id="main">
 				
 				<h1 style="border-bottom: none;" id="tag_You Should Prefer Command-Line Software">You Should Prefer Command-Line Software</h1>
+				<strong>Uploaded:</strong>
+				<time datetime="2022-05-07">
+					May 7, 2022
+				</time>
+				
 				
 				<article>
 					
@@ -57,7 +63,12 @@ This is obviously because they have not used command-line programs, so their vie
 That then leads them to the conclusion that anything other than a modern graphical “app” is too difficult for them.
 This is why most people do not use command-line software.</p>
 <p>In order to efficiently use computers, you need to get rid of this mindset.</p>
-<h1 id="unix-philosophy">Unix Philosophy</h1>
+<div class="heading">
+	<div class="heading-icon">
+		<a href="#unix-philosophy"></a>
+	</div>
+	<h2 id="unix-philosophy">Unix Philosophy</h2>
+</div>
 <blockquote>
 <p>This is the Unix philosophy:
 Write programs that do one thing and do it well.
@@ -72,7 +83,12 @@ Critics of the Unix philosophy argue that “the user interface is horrid” (<a
 Truthfully, Unix’s user interface is amazing.
 Command-line interfaces are simpler and easier to understand than graphical ones.
 They are just not dumbed down for stupid people.</p>
-<h2 id="do-one-thing-and-do-it-well">Do one thing and do it well</h2>
+<div class="heading">
+	<div class="heading-icon">
+		<a href="#do-one-thing-and-do-it-well"></a>
+	</div>
+	<h3 id="do-one-thing-and-do-it-well">Do one thing and do it well</h3>
+</div>
 <p>Programs should do one thing and do it well because programs are otherwise bloated.
 Bloated programs are ones that are too large in their code-base.
 They tend to be slower than they are supposed to be because they are trying to fulfill more than one purpose.
@@ -80,7 +96,12 @@ Each program should serve one purpose, that is why there is more than one progra
 If the program doesn’t serve one and only one main purpose, the program is too versatile.
 “Worse is better” seems like a contradictory statement by Richard Gabriel, but what it really means is that certain things may sound worse on paper, but truly are better in practice.
 One such example is a less versatile program.</p>
-<h2 id="work-together">Work together</h2>
+<div class="heading">
+	<div class="heading-icon">
+		<a href="#work-together"></a>
+	</div>
+	<h3 id="work-together">Work together</h3>
+</div>
 <p>Another reason programs should do one thing and do it well is that they should work together.
 Instead of having one big program that does everything, have many small programs that do one thing well and work together.
 This is the main difference between command-line and graphical programs.
@@ -95,14 +116,24 @@ As a result of using primarily graphical software, Windows is a huge operating s
 It cannot even run smoothly on most old computers.
 The GNU core utilities are the opposite of Windows.
 GNU is tiny because it is comprised of small command-line programs that do one thing well and work together.</p>
-<h2 id="handle-text-streams">Handle text streams</h2>
+<div class="heading">
+	<div class="heading-icon">
+		<a href="#handle-text-streams"></a>
+	</div>
+	<h3 id="handle-text-streams">Handle text streams</h3>
+</div>
 <p>Unlike graphical user interfaces, text streams are a universal interface.
 This means that all programs use text streams.
 Programs should handle text streams directly and efficiently, that should be their main focus.
 Obviously, all command-line programs handle standard input and standard output within the terminal.
 However, graphical programs only handle text streams within the graphical user interface.
 It is impossible to pipe the output of a command into that of another in a graphical user interface because it does not handle text streams directly.</p>
-<h1 id="easier-to-use">Easier to Use</h1>
+<div class="heading">
+	<div class="heading-icon">
+		<a href="#easier-to-use"></a>
+	</div>
+	<h2 id="easier-to-use">Easier to Use</h2>
+</div>
 <p>It may not seem like it, but command-line software is easier to use than graphical software.
 All command-line programs work the same way, while all graphical programs work differently.
 For each graphical program you use, you will have to learn the user interface.
@@ -117,7 +148,12 @@ For more detailed help, you can read the manual page instead, using the <code>ma
 For example: to read <code>awk</code>’s man page, run <code>man awk</code>.
 To search for man pages, you have to run <code>mandb</code> for the first time as root.
 After you have updated the database, simply run <code>apropos .</code>.</p>
-<h1 id="easier-to-write">Easier to Write</h1>
+<div class="heading">
+	<div class="heading-icon">
+		<a href="#easier-to-write"></a>
+	</div>
+	<h2 id="easier-to-write">Easier to Write</h2>
+</div>
 <p>Not only is command-line software easier to use, it is also easier to write.
 In <a href="/articles/programming-is-invaluable-for-everyone/">my previous post</a>, I explained why programming is invaluable for everyone.
 Writing graphical software is extremely difficult as you need a lot of experience to do so.
@@ -125,14 +161,24 @@ Writing command-line software is surprisingly easy because you will have experie
 If you favor open-source software—which you should, you can not only write your own unique programs, but also modify existing programs.
 This will help you optimize your workflow and make you more efficient with computers.
 Graphical programs are not only usually closed-source, but even when they are open-source, their code-base is huge and not legible for most people.</p>
-<h1 id="conclusion">Conclusion</h1>
+<div class="heading">
+	<div class="heading-icon">
+		<a href="#conclusion"></a>
+	</div>
+	<h2 id="conclusion">Conclusion</h2>
+</div>
 <p>To conclude, I want to clarify that I am not against graphical user interfaces.
 The purpose of this point is to prove that you should <strong>favor</strong> command-line software, you should not use it to <strong>replace</strong> all graphical software.
 Command-line software should be used most of the time, especially when the task is simple.
 Graphical software should be used when absolutely necessary.
 You should never render three-dimensional models using the command-line.
 Similarly, you should never use a command-line web browser.</p>
-<h1 id="references">References</h1>
+<div class="heading">
+	<div class="heading-icon">
+		<a href="#references"></a>
+	</div>
+	<h2 id="references">References</h2>
+</div>
 <div id="refs" class="references csl-bib-body hanging-indent" line-spacing="2">
 <div id="ref-the-truth-about-unix" class="csl-entry">
 <p>Norman, Donald. (1981). <em>The truth about unix: The user interface is horrid</em>. <a href="http://www.ceri.memphis.edu/people/smalley/ESCI7205_misc_files/The_truth_about_Unix_cleaned.pdf">http://www.ceri.memphis.edu/people/smalley/ESCI7205_misc_files/The_truth_about_Unix_cleaned.pdf</a></p>
@@ -169,4 +215,5 @@ Similarly, you should never use a command-line web browser.</p>
 			</div>
 		</div>
 	</body>
+	
 </html>

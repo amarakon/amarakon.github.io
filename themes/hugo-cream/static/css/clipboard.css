@@ -1,0 +1,21 @@
+.clipboard-button {
+	position: absolute;
+	right: 0;
+	background: transparent;
+	border: transparent;
+	size: 0.5ch;
+	margin-top: 1ch;
+	opacity: 0;
+}
+
+.clipboard-button:hover {
+	cursor: pointer;
+}
+
+.highlight {
+	position: relative;
+}
+
+.highlight:hover > .clipboard-button {
+	opacity: 1;
+}

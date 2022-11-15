@@ -3,10 +3,11 @@
 	<head>
 		<title>MagickShot – ImageMagick Screenshot | Amarakon’s Website</title>
 		<link rel="canonical" href="https://amarakon.github.io/">
-		<link rel='stylesheet' type='text/css' href='/style.css'>
+		<link rel='stylesheet' type='text/css' href='/css/style.css'>
 		
-		<link rel='stylesheet' type='text/css' href='/table.css'>
+		<link rel='stylesheet' type='text/css' href='/css/table.css'>
 		
+		<link rel="stylesheet" type="text/css" href="/css/headings.css">
 		<meta name="description" content="https://github.com/amarakon/magickshot
 MagickShot is a program I created because I am surprised it does not exist yet. It is a screenshot utility, but there are many screenshot utilities. However, none of them do everything I want them to do:
  screenshot with mouse selection sceenshot a specified window screenshot a specified monitor screenshot the entire display  Most of them only support the first and last options.">
@@ -46,6 +47,11 @@ MagickShot is a program I created because I am surprised it does not exist yet. 
 			<div id="main">
 				
 				<h1 style="border-bottom: none;" id="tag_MagickShot – ImageMagick Screenshot">MagickShot – ImageMagick Screenshot</h1>
+				<strong>Uploaded:</strong>
+				<time datetime="2022-11-07">
+					November 7, 2022
+				</time>
+				
 				
 				<article>
 					
@@ -63,62 +69,107 @@ However, none of them do <strong>everything</strong> I want them to do:</p>
 Besides, they are too bloated anyways.
 MagickShot is a simple shell script that improves upon the existing <code>import</code> tool from ImageMagick.
 And it ends up taking screenshots just like magic 😉.</p>
-<h1 id="usage">Usage</h1>
-<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># Screenshot</span>
-</span></span><span style="display:flex;"><span>magickshot --selection <span style="color:#616e87;font-style:italic"># Select an area to screenshot with the cursor</span>
-</span></span><span style="display:flex;"><span>magickshot --window <span style="color:#616e87;font-style:italic"># Screenshot the focused window</span>
-</span></span><span style="display:flex;"><span>magickshot --window<span style="color:#81a1c1">=</span><span style="color:#b48ead">62914562</span> <span style="color:#616e87;font-style:italic"># Screenshot window 62914562</span>
-</span></span><span style="display:flex;"><span>magickshot --selection --window <span style="color:#616e87;font-style:italic"># Select a window to screenshot with the cursor</span>
-</span></span><span style="display:flex;"><span>magickshot --monitor <span style="color:#616e87;font-style:italic"># Screenshot the focused monitor</span>
-</span></span><span style="display:flex;"><span>magickshot --monitor<span style="color:#81a1c1">=</span><span style="color:#b48ead">0</span> <span style="color:#616e87;font-style:italic"># Screenshot monitor 0</span>
-</span></span><span style="display:flex;"><span>magickshot --display <span style="color:#616e87;font-style:italic"># Screenshot the display</span>
+<div class="heading">
+	<div class="heading-icon">
+		<a href="#usage"></a>
+	</div>
+	<h2 id="usage">Usage</h2>
+</div>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"># Screenshot</span>
+</span></span><span style="display:flex;"><span>magickshot --selection <span style="color:#8f5902;font-style:italic"># Select an area to screenshot with the cursor</span>
+</span></span><span style="display:flex;"><span>magickshot --window <span style="color:#8f5902;font-style:italic"># Screenshot the focused window</span>
+</span></span><span style="display:flex;"><span>magickshot --window<span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#0000cf;font-weight:bold">62914562</span> <span style="color:#8f5902;font-style:italic"># Screenshot window 62914562</span>
+</span></span><span style="display:flex;"><span>magickshot --selection --window <span style="color:#8f5902;font-style:italic"># Select a window to screenshot with the cursor</span>
+</span></span><span style="display:flex;"><span>magickshot --monitor <span style="color:#8f5902;font-style:italic"># Screenshot the focused monitor</span>
+</span></span><span style="display:flex;"><span>magickshot --monitor<span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#0000cf;font-weight:bold">0</span> <span style="color:#8f5902;font-style:italic"># Screenshot monitor 0</span>
+</span></span><span style="display:flex;"><span>magickshot --display <span style="color:#8f5902;font-style:italic"># Screenshot the display</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># Miscellaneous</span>
-</span></span><span style="display:flex;"><span>magickshot --title<span style="color:#81a1c1">=</span>%F <span style="color:#616e87;font-style:italic"># Set the title format to %F (YYYY-MM-DD)</span>
-</span></span><span style="display:flex;"><span>magickshot --notify <span style="color:#616e87;font-style:italic"># Play a notification sound</span>
-</span></span><span style="display:flex;"><span>magickshot --no-notify <span style="color:#616e87;font-style:italic"># Do not play a notification sound (always overrides `--notify`)</span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"># Miscellaneous</span>
+</span></span><span style="display:flex;"><span>magickshot --title<span style="color:#ce5c00;font-weight:bold">=</span>%F <span style="color:#8f5902;font-style:italic"># Set the title format to %F (YYYY-MM-DD)</span>
+</span></span><span style="display:flex;"><span>magickshot --notify <span style="color:#8f5902;font-style:italic"># Play a notification sound</span>
+</span></span><span style="display:flex;"><span>magickshot --no-notify <span style="color:#8f5902;font-style:italic"># Do not play a notification sound (always overrides `--notify`)</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># Help</span>
-</span></span><span style="display:flex;"><span>magickshot --help <span style="color:#616e87;font-style:italic"># Print the help message and exit</span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"># Help</span>
+</span></span><span style="display:flex;"><span>magickshot --help <span style="color:#8f5902;font-style:italic"># Print the help message and exit</span>
 </span></span></code></pre></div><p>By default, MagickShot uses screenshots the focused window.
 The default output directory is <code>~/.local/share/magickshot/Screenshots</code>.
 If you give a directory as an argument, it will use that directory instead.
 If you use anything else as an argument, it will use that for the file name.</p>
-<h1 id="dependencies">Dependencies</h1>
+<div class="heading">
+	<div class="heading-icon">
+		<a href="#dependencies"></a>
+	</div>
+	<h2 id="dependencies">Dependencies</h2>
+</div>
 <ol>
 <li>imagemagick</li>
 <li>xdotool</li>
 <li>xrandr</li>
 <li><a href="https://github.com/amarakon/printmon">printmon</a></li>
 </ol>
-<h1 id="installation">Installation</h1>
-<h2 id="universal">Universal</h2>
-<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git clone https://github.com/amarakon/magickshot
-</span></span><span style="display:flex;"><span><span style="color:#81a1c1">cd</span> magickshot
+<div class="heading">
+	<div class="heading-icon">
+		<a href="#installation"></a>
+	</div>
+	<h2 id="installation">Installation</h2>
+</div>
+<div class="heading">
+	<div class="heading-icon">
+		<a href="#universal"></a>
+	</div>
+	<h3 id="universal">Universal</h3>
+</div>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git clone https://github.com/amarakon/magickshot
+</span></span><span style="display:flex;"><span><span style="color:#204a87">cd</span> magickshot
 </span></span><span style="display:flex;"><span>sudo make install
-</span></span></code></pre></div><h2 id="gentoo">Gentoo</h2>
-<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sudo eselect repository add amarlay git https://github.com/amarakon/amarlay
+</span></span></code></pre></div><div class="heading">
+	<div class="heading-icon">
+		<a href="#gentoo"></a>
+	</div>
+	<h3 id="gentoo">Gentoo</h3>
+</div>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sudo eselect repository add amarlay git https://github.com/amarakon/amarlay
 </span></span><span style="display:flex;"><span>sudo emerge --sync amarlay
 </span></span><span style="display:flex;"><span>sudo emerge media-gfx/magickshot
-</span></span></code></pre></div><h1 id="uninstallation">Uninstallation</h1>
-<h2 id="universal-1">Universal</h2>
-<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#81a1c1">cd</span> magickshot
+</span></span></code></pre></div><div class="heading">
+	<div class="heading-icon">
+		<a href="#uninstallation"></a>
+	</div>
+	<h2 id="uninstallation">Uninstallation</h2>
+</div>
+<div class="heading">
+	<div class="heading-icon">
+		<a href="#universal-1"></a>
+	</div>
+	<h3 id="universal-1">Universal</h3>
+</div>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#204a87">cd</span> magickshot
 </span></span><span style="display:flex;"><span>sudo make uninstall
-</span></span></code></pre></div><h2 id="gentoo-1">Gentoo</h2>
-<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sudo emerge -c media-gfx/magickshot
+</span></span></code></pre></div><div class="heading">
+	<div class="heading-icon">
+		<a href="#gentoo-1"></a>
+	</div>
+	<h3 id="gentoo-1">Gentoo</h3>
+</div>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sudo emerge -c media-gfx/magickshot
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># Remove my overlay (optional)</span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"># Remove my overlay (optional)</span>
 </span></span><span style="display:flex;"><span>sudo eselect-repository remove -f amarlay
 </span></span><span style="display:flex;"><span>sudo emerge --sync
-</span></span></code></pre></div><h1 id="configuration">Configuration</h1>
+</span></span></code></pre></div><div class="heading">
+	<div class="heading-icon">
+		<a href="#configuration"></a>
+	</div>
+	<h2 id="configuration">Configuration</h2>
+</div>
 <p>You can change the default options for MagickShot via the configuration file.
 The configuration file is located at <code>~/.config/magickshot/magickshot.conf</code> by default.</p>
-<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>output_directory<span style="color:#81a1c1">=</span>~/Images/Screenshots
-</span></span><span style="display:flex;"><span>title<span style="color:#81a1c1">=</span><span style="color:#a3be8c">&#34;%Y-%d_%R:%S&#34;</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#000">output_directory</span><span style="color:#ce5c00;font-weight:bold">=</span>~/Images/Screenshots
+</span></span><span style="display:flex;"><span><span style="color:#000">title</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">&#34;%Y-%d_%R:%S&#34;</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>sound_directory<span style="color:#81a1c1">=</span>/usr/share/sounds/deepin/stereo
-</span></span><span style="display:flex;"><span>sound_success<span style="color:#81a1c1">=</span>$sound_directory/complete-print.wav
-</span></span><span style="display:flex;"><span>sound_failure<span style="color:#81a1c1">=</span>$sound_directory/dialog-error-serious.wav
+</span></span><span style="display:flex;"><span><span style="color:#000">sound_directory</span><span style="color:#ce5c00;font-weight:bold">=</span>/usr/share/sounds/deepin/stereo
+</span></span><span style="display:flex;"><span><span style="color:#000">sound_success</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#000">$sound_directory</span>/complete-print.wav
+</span></span><span style="display:flex;"><span><span style="color:#000">sound_failure</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#000">$sound_directory</span>/dialog-error-serious.wav
 </span></span></code></pre></div>
 					
 				</article>
@@ -154,4 +205,8 @@ The configuration file is located at <code>~/.config/magickshot/magickshot.conf<
 			</div>
 		</div>
 	</body>
+	
+	<script src="/clipboard.js"></script>
+	<link rel="stylesheet" href="/css/clipboard.css">
+	
 </html>

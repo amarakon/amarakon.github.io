@@ -7,9 +7,9 @@
 <table style="text-align: left;">
 	{{- range (where .Site.RegularPages "Type" "in" .Site.Params.mainSections | first 5) }}
 	<tr>
-		<td><h3 style="margin: 0;"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3></td>
-		<td>
-			<h3 style="margin: 0;">
+		<td><h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3></td>
+		<td style="white-space: nowrap;">
+			<h3>
 				<time datetime="{{ .Date.Format "2006-01-02" }}">
 					{{ .Date.Format "January 2, 2006" }}
 				</time>

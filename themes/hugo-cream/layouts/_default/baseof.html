@@ -3,10 +3,11 @@
 	<head>
 		<title>{{ if not .IsHome }}{{ .Title | title }} | {{ end }}{{ .Site.Title }}</title>
 		<link rel="canonical" href="{{ .Site.BaseURL }}">
-		<link rel='stylesheet' type='text/css' href='/style.css'>
+		<link rel='stylesheet' type='text/css' href='/css/style.css'>
 		{{ if not .IsHome }}
-		<link rel='stylesheet' type='text/css' href='/table.css'>
+		<link rel='stylesheet' type='text/css' href='/css/table.css'>
 		{{ end }}
+		<link rel="stylesheet" type="text/css" href="/css/headings.css">
 		{{ with .Site.Params.favicon }}<link rel="icon" href="{{ . }}">
 		{{ end -}}
 		<meta name="description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ .Summary }}{{ end }}">
@@ -48,6 +49,17 @@
 				<h1 style="border-bottom: none;">{{ .Site.Title }}</h1>
 				{{ else }}
 				<h1 style="border-bottom: none;" id="tag_{{ .Title }}">{{ block "title" . }}{{ end }}</h1>
+				<strong>Uploaded:</strong>
+				<time datetime="{{ .Date.Format "2006-01-02" }}">
+					{{ .Date.Format "January 2, 2006" }}
+				</time>
+				{{ if not (eq .Lastmod .Date) }}
+				⋅
+				<strong>Modified:</strong>
+				<time datetime="{{ .Lastmod.Format "2006-01-02" }}">
+					{{ .Lastmod.Format "January 2, 2006" }}
+				</time>
+				{{ end }}
 				{{ end }}
 				<article>
 					{{ block "main" . }}
@@ -68,4 +80,8 @@
 			</div>
 		</div>
 	</body>
+	{{ if (findRE "<pre" .Content 1) }}
+	<script src="/clipboard.js"></script>
+	<link rel="stylesheet" href="/css/clipboard.css">
+	{{ end }}
 </html>

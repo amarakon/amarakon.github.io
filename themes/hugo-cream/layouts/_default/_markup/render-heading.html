@@ -1,0 +1,6 @@
+<div class="heading">
+	<div class="heading-icon">
+		<a href="#{{ .Anchor | safeURL }}"></a>
+	</div>
+	<h{{ add .Level 1 }} id="{{ .Anchor | safeURL }}">{{ .Text | safeHTML }}</h{{ add .Level 1 }}>
+</div>

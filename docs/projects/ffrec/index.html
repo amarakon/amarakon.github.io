@@ -3,10 +3,11 @@
 	<head>
 		<title>FFrec – FFmpeg Record | Amarakon’s Website</title>
 		<link rel="canonical" href="https://amarakon.github.io/">
-		<link rel='stylesheet' type='text/css' href='/style.css'>
+		<link rel='stylesheet' type='text/css' href='/css/style.css'>
 		
-		<link rel='stylesheet' type='text/css' href='/table.css'>
+		<link rel='stylesheet' type='text/css' href='/css/table.css'>
 		
+		<link rel="stylesheet" type="text/css" href="/css/headings.css">
 		<meta name="description" content="https://github.com/amarakon/ffrec
 It is annoying when the command-line option is too minimalist while the graphical option is too bloated. FFrec uses FFmpeg to record but makes it less of a hassle. It makes it just as easy to record with FFmpeg as it is with OBS. Actually, it is even easier. No setup is required because the defaults are already fantastic.">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -45,6 +46,11 @@ It is annoying when the command-line option is too minimalist while the graphica
 			<div id="main">
 				
 				<h1 style="border-bottom: none;" id="tag_FFrec – FFmpeg Record">FFrec – FFmpeg Record</h1>
+				<strong>Uploaded:</strong>
+				<time datetime="2022-11-07">
+					November 7, 2022
+				</time>
+				
 				
 				<article>
 					
@@ -55,71 +61,116 @@ It makes it just as easy to record with FFmpeg as it is with OBS.
 Actually, it is even easier.
 No setup is required because the defaults are already fantastic.
 But if they do not suit you, you can change them with command-line options or the configuration file.</p>
-<h1 id="usage">Usage</h1>
-<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># Record</span>
-</span></span><span style="display:flex;"><span>ffrec --display <span style="color:#616e87;font-style:italic"># Record display</span>
-</span></span><span style="display:flex;"><span>ffrec --audio <span style="color:#616e87;font-style:italic"># Record audio</span>
-</span></span><span style="display:flex;"><span>ffrec --webcam <span style="color:#616e87;font-style:italic"># Record webcam</span>
-</span></span><span style="display:flex;"><span>ffrec --display --audio <span style="color:#616e87;font-style:italic"># Record display and audio</span>
-</span></span><span style="display:flex;"><span>ffrec --webcam --audio <span style="color:#616e87;font-style:italic"># Record webcam</span>
+<div class="heading">
+	<div class="heading-icon">
+		<a href="#usage"></a>
+	</div>
+	<h2 id="usage">Usage</h2>
+</div>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"># Record</span>
+</span></span><span style="display:flex;"><span>ffrec --display <span style="color:#8f5902;font-style:italic"># Record display</span>
+</span></span><span style="display:flex;"><span>ffrec --audio <span style="color:#8f5902;font-style:italic"># Record audio</span>
+</span></span><span style="display:flex;"><span>ffrec --webcam <span style="color:#8f5902;font-style:italic"># Record webcam</span>
+</span></span><span style="display:flex;"><span>ffrec --display --audio <span style="color:#8f5902;font-style:italic"># Record display and audio</span>
+</span></span><span style="display:flex;"><span>ffrec --webcam --audio <span style="color:#8f5902;font-style:italic"># Record webcam</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># Pause/end</span>
-</span></span><span style="display:flex;"><span>ffrec --pause <span style="color:#616e87;font-style:italic"># Pause recording</span>
-</span></span><span style="display:flex;"><span>ffrec --end <span style="color:#616e87;font-style:italic"># End recording</span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"># Pause/end</span>
+</span></span><span style="display:flex;"><span>ffrec --pause <span style="color:#8f5902;font-style:italic"># Pause recording</span>
+</span></span><span style="display:flex;"><span>ffrec --end <span style="color:#8f5902;font-style:italic"># End recording</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># Preferences</span>
-</span></span><span style="display:flex;"><span>ffrec --rate<span style="color:#81a1c1">=</span><span style="color:#b48ead">30</span> <span style="color:#616e87;font-style:italic"># Set frame rate to 30</span>
-</span></span><span style="display:flex;"><span>ffrec --preset<span style="color:#81a1c1">=</span>ultrafast <span style="color:#616e87;font-style:italic"># Set preset to ultrafast</span>
-</span></span><span style="display:flex;"><span>ffrec --audio-encoder<span style="color:#81a1c1">=</span>flac <span style="color:#616e87;font-style:italic"># Set audio encoder to flac</span>
-</span></span><span style="display:flex;"><span>ffrec --video-encoder<span style="color:#81a1c1">=</span>libx264 <span style="color:#616e87;font-style:italic"># Set video encoder to libx264</span>
-</span></span><span style="display:flex;"><span>ffrec --audio-extension<span style="color:#81a1c1">=</span>flac <span style="color:#616e87;font-style:italic"># Set audio extension to flac</span>
-</span></span><span style="display:flex;"><span>ffrec --video-extension<span style="color:#81a1c1">=</span>mkv <span style="color:#616e87;font-style:italic"># Set audio extension to mkv</span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"># Preferences</span>
+</span></span><span style="display:flex;"><span>ffrec --rate<span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#0000cf;font-weight:bold">30</span> <span style="color:#8f5902;font-style:italic"># Set frame rate to 30</span>
+</span></span><span style="display:flex;"><span>ffrec --preset<span style="color:#ce5c00;font-weight:bold">=</span>ultrafast <span style="color:#8f5902;font-style:italic"># Set preset to ultrafast</span>
+</span></span><span style="display:flex;"><span>ffrec --audio-encoder<span style="color:#ce5c00;font-weight:bold">=</span>flac <span style="color:#8f5902;font-style:italic"># Set audio encoder to flac</span>
+</span></span><span style="display:flex;"><span>ffrec --video-encoder<span style="color:#ce5c00;font-weight:bold">=</span>libx264 <span style="color:#8f5902;font-style:italic"># Set video encoder to libx264</span>
+</span></span><span style="display:flex;"><span>ffrec --audio-extension<span style="color:#ce5c00;font-weight:bold">=</span>flac <span style="color:#8f5902;font-style:italic"># Set audio extension to flac</span>
+</span></span><span style="display:flex;"><span>ffrec --video-extension<span style="color:#ce5c00;font-weight:bold">=</span>mkv <span style="color:#8f5902;font-style:italic"># Set audio extension to mkv</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># Miscellaneous</span>
-</span></span><span style="display:flex;"><span>ffrec --monitor<span style="color:#81a1c1">=</span><span style="color:#b48ead">0</span> <span style="color:#616e87;font-style:italic"># Record monitor 0</span>
-</span></span><span style="display:flex;"><span>ffrec --size<span style="color:#81a1c1">=</span>1366x18 <span style="color:#616e87;font-style:italic"># Record with size 1366x18</span>
-</span></span><span style="display:flex;"><span>ffrec --title<span style="color:#81a1c1">=</span>%F <span style="color:#616e87;font-style:italic"># Set the title format to %F (YYYY-MM-DD)</span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"># Miscellaneous</span>
+</span></span><span style="display:flex;"><span>ffrec --monitor<span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#0000cf;font-weight:bold">0</span> <span style="color:#8f5902;font-style:italic"># Record monitor 0</span>
+</span></span><span style="display:flex;"><span>ffrec --size<span style="color:#ce5c00;font-weight:bold">=</span>1366x18 <span style="color:#8f5902;font-style:italic"># Record with size 1366x18</span>
+</span></span><span style="display:flex;"><span>ffrec --title<span style="color:#ce5c00;font-weight:bold">=</span>%F <span style="color:#8f5902;font-style:italic"># Set the title format to %F (YYYY-MM-DD)</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># Help</span>
-</span></span><span style="display:flex;"><span>ffrec --help <span style="color:#616e87;font-style:italic"># Print the help message and exit</span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"># Help</span>
+</span></span><span style="display:flex;"><span>ffrec --help <span style="color:#8f5902;font-style:italic"># Print the help message and exit</span>
 </span></span></code></pre></div><p>As you can see, FFrec is insanely customizable.
 But the defaults are already great.
 I like to use the dmenu prompt to record display and audio.
 But to select more than one thing to record in dmenu, you need the <a href="https://tools.suckless.org/dmenu/patches/multi-selection/">multi-selection</a> patch.
 Keep that in mind.</p>
-<h1 id="dependencies">Dependencies</h1>
+<div class="heading">
+	<div class="heading-icon">
+		<a href="#dependencies"></a>
+	</div>
+	<h2 id="dependencies">Dependencies</h2>
+</div>
 <ol>
 <li>ffmpeg</li>
 <li>xrandr</li>
 <li>dmenu (menu selection)</li>
 </ol>
-<h1 id="installation">Installation</h1>
-<h2 id="universal">Universal</h2>
-<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git clone https://github.com/amarakon/ffrec
-</span></span><span style="display:flex;"><span><span style="color:#81a1c1">cd</span> ffrec
+<div class="heading">
+	<div class="heading-icon">
+		<a href="#installation"></a>
+	</div>
+	<h2 id="installation">Installation</h2>
+</div>
+<div class="heading">
+	<div class="heading-icon">
+		<a href="#universal"></a>
+	</div>
+	<h3 id="universal">Universal</h3>
+</div>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git clone https://github.com/amarakon/ffrec
+</span></span><span style="display:flex;"><span><span style="color:#204a87">cd</span> ffrec
 </span></span><span style="display:flex;"><span>sudo make install
-</span></span></code></pre></div><h2 id="gentoo">Gentoo</h2>
-<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sudo eselect repository add amarlay git https://github.com/amarakon/amarlay
+</span></span></code></pre></div><div class="heading">
+	<div class="heading-icon">
+		<a href="#gentoo"></a>
+	</div>
+	<h3 id="gentoo">Gentoo</h3>
+</div>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sudo eselect repository add amarlay git https://github.com/amarakon/amarlay
 </span></span><span style="display:flex;"><span>sudo emerge --sync amarlay
 </span></span><span style="display:flex;"><span>sudo emerge media-video/ffrec
-</span></span></code></pre></div><h1 id="uninstallation">Uninstallation</h1>
-<h2 id="universal-1">Universal</h2>
-<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#81a1c1">cd</span> ffrec
+</span></span></code></pre></div><div class="heading">
+	<div class="heading-icon">
+		<a href="#uninstallation"></a>
+	</div>
+	<h2 id="uninstallation">Uninstallation</h2>
+</div>
+<div class="heading">
+	<div class="heading-icon">
+		<a href="#universal-1"></a>
+	</div>
+	<h3 id="universal-1">Universal</h3>
+</div>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#204a87">cd</span> ffrec
 </span></span><span style="display:flex;"><span>sudo make uninstall
-</span></span></code></pre></div><h2 id="gentoo-1">Gentoo</h2>
-<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sudo emerge -c media-video/ffrec
+</span></span></code></pre></div><div class="heading">
+	<div class="heading-icon">
+		<a href="#gentoo-1"></a>
+	</div>
+	<h3 id="gentoo-1">Gentoo</h3>
+</div>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sudo emerge -c media-video/ffrec
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#616e87;font-style:italic"># Remove my overlay (optional)</span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"># Remove my overlay (optional)</span>
 </span></span><span style="display:flex;"><span>sudo eselect-repository remove -f amarlay
 </span></span><span style="display:flex;"><span>sudo emerge --sync
-</span></span></code></pre></div><h1 id="configuration">Configuration</h1>
+</span></span></code></pre></div><div class="heading">
+	<div class="heading-icon">
+		<a href="#configuration"></a>
+	</div>
+	<h2 id="configuration">Configuration</h2>
+</div>
 <p>You can change the default values of FFrec options via the configuration file.
 The configuration file is located in the configuration directory, so usually <code>~/.config/ffrec/ffrec.conf</code>.
 Here is an example configuration:</p>
-<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>rate<span style="color:#81a1c1">=</span><span style="color:#b48ead">30</span>
-</span></span><span style="display:flex;"><span>preset<span style="color:#81a1c1">=</span><span style="color:#a3be8c">&#34;ultrafast&#34;</span>
-</span></span><span style="display:flex;"><span>audio_encoder<span style="color:#81a1c1">=</span>mp3
-</span></span><span style="display:flex;"><span>video_extension<span style="color:#81a1c1">=</span>mp4
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#000">rate</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#0000cf;font-weight:bold">30</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">preset</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">&#34;ultrafast&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">audio_encoder</span><span style="color:#ce5c00;font-weight:bold">=</span>mp3
+</span></span><span style="display:flex;"><span><span style="color:#000">video_extension</span><span style="color:#ce5c00;font-weight:bold">=</span>mp4
 </span></span></code></pre></div>
 					
 				</article>
@@ -155,4 +206,8 @@ Here is an example configuration:</p>
 			</div>
 		</div>
 	</body>
+	
+	<script src="/clipboard.js"></script>
+	<link rel="stylesheet" href="/css/clipboard.css">
+	
 </html>

@@ -78,8 +78,8 @@ MagickShot is a program I created because I am surprised it does not exist yet. 
       <pubDate>Mon, 07 Nov 2022 00:00:00 +0000</pubDate>
       
       <guid>https://amarakon.github.io/projects/vim-sensible-autocomp/</guid>
-      <description>Introduction https://github.com/amarakon/vim-sensible-autocomp
-This is yet another auto-completion plugin for Vim. At this point, there are probably hundreds. So I will explain what makes mine stand out from the rest. The main reason I wrote this plugin is that I wanted an auto-completion plugin written purely in Vim script or Lua. I hate seeing a cool plugin and then finding out its written in Python.</description>
+      <description>  Introduction  https://github.com/amarakon/vim-sensible-autocomp
+This is yet another auto-completion plugin for Vim. At this point, there are probably hundreds. So I will explain what makes mine stand out from the rest. The main reason I wrote this plugin is that I wanted an auto-completion plugin written purely in Vim script or Lua.</description>
     </item>
     
   </channel>

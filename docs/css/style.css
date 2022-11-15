@@ -12,7 +12,7 @@ h1, h2, h3, h4, h5, h6 {
 
 body {
 	font-family: serif;
-	background-color: #E0D3AF;
+	background-color: #E1D2AF;
 }
 
 a {
@@ -35,15 +35,12 @@ img {
 
 pre {
 	overflow: auto;
-	background-color: #2E3440;
+	padding: 1ch;
+	border-radius: 0.5ch;
 }
 
-pre code {
-	color: #D8DEE9;
-}
-
-code {
-	color: black;
+.highlight pre, pre {
+	background-color: #D7C8A5 !important;
 }
 
 footer {
@@ -63,6 +60,7 @@ footer {
 #main {
 	width: 80ch;
 	float: left;
+	margin-left: 1em !important;
 }
 
 #leftbar, #rightbar {
@@ -104,20 +102,20 @@ footer {
 	padding-left: 0.5em;
 }
 
-@media screen and (max-width: calc(80ch + 4in + 4em)) {
+@media screen and (max-width: calc(80ch + 4in + 5em)) {
 	#leftbar {
 		display: none;
 	}
 }
 
-@media screen and (max-width: calc(80ch + 3in + 2em)) {
+@media screen and (max-width: calc(80ch + 3in + 3em + 1ch)) {
 	#leftbar, #rightbar {
 		display: none;
 	}
 	#main {
 		float: none;
 		width: unset;
-		max-width: 88ch;
+		max-width: 80ch;
 		margin: auto;
 	}
 }

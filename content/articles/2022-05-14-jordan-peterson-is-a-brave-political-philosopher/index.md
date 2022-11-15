@@ -14,7 +14,7 @@ He became famous after standing up against [Bill C-16](https://www.parl.ca/Docum
 He is also mainly known for criticizing the radical left.
 He is often described as conservative by the right.
 However, just because he criticizes left-wing extremists, does not mean he is a conservative
-He said in an interview that he’s “no right-winger.”
+He said in an interview that he’s “no right-winger”.
 
 {{% youtube "1OeWGMr_tns" %}}
 

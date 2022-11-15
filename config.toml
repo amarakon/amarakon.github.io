@@ -11,8 +11,7 @@ paginate = 20
 [markup.goldmark.renderer]
 unsafe = true
 [markup.highlight]
-style = "nord"
-guessSyntax = false
+style = "tango"
 [markup.tableOfContents]
 startLevel = 1
 endLevel = 3

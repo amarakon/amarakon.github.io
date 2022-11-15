@@ -14,7 +14,7 @@
       
       <guid>https://amarakon.github.io/programs/</guid>
       <description>This is a list of the most important software and hardware I use. It may include programs that I have developed myself (see my projects page).
-What Makes a Good Program I do not endorse the use of proprietary software because it is immoral and bad. I use software that is minimal, extensible, and fast.</description>
+  What Makes a Good Program  I do not endorse the use of proprietary software because it is immoral and bad. I use software that is minimal, extensible, and fast.</description>
     </item>
     
     <item>
@@ -23,7 +23,7 @@ What Makes a Good Program I do not endorse the use of proprietary software becau
       <pubDate>Fri, 05 Aug 2022 00:00:00 +0000</pubDate>
       
       <guid>https://amarakon.github.io/articles/20-best-neo-vim-plugins/</guid>
-      <description>Introduction Vim is a text editor that is great on its own but is heavily improved by various plugins. The vast majority of the plugins in this article will not be language-specific, so they will apply whether you are coding in C or just writing a random text file. I do indeed use Neovim and not Vim, but there is only one plugin in this list that is Neovim-specific.</description>
+      <description>  Introduction  Vim is a text editor that is great on its own but is heavily improved by various plugins. The vast majority of the plugins in this article will not be language-specific, so they will apply whether you are coding in C or just writing a random text file.</description>
     </item>
     
     <item>

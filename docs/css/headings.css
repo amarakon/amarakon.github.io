@@ -1,0 +1,15 @@
+.heading {
+	display: flex;
+	align-items: baseline;
+	align-items: center;
+}
+
+.heading-icon {
+	position: absolute;
+	margin-left: -1em;
+	opacity: 0;
+}
+
+.heading:hover .heading-icon {
+	opacity: 100;
+}
