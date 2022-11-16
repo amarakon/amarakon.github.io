@@ -1,3 +1,29 @@
 {{ define "title" -}}
 {{ .Title }}
 {{- end }}
+{{ define "above" -}}
+<div style="margin-top: 1px; margin-bottom: 1em;">
+{{ $format := "January 2, 2006" }}
+{{ $dates := slice (print "<strong>Uploaded:</strong>&nbsp;" (.Date.Format $format)) }}
+
+{{ if and .PublishDate (ne .PublishDate .Date) }}
+{{ $dates = slice (print "<strong>Published:</strong>&nbsp;" (.PublishDate.Format $format)) | append $dates }}
+{{ end }}
+
+{{ if and .Lastmod (ne .Lastmod .Date) }}
+{{ $dates = $dates | append slice (print "<strong>Modified:</strong>&nbsp;" (.Lastmod.Format $format)) }}
+{{ end }}
+
+{{ if .ExpiryDate }}
+{{ $dates = $dates | append slice (print "<strong>Expiry:</strong>&nbsp;" (.ExpiryDate.Format $format)) }}
+{{ end }}
+
+{{ delimit $dates "&nbsp;⋅ " }}
+<br>
+<!-- https://stackoverflow.com/a/59565425 -->
+<strong><a href="/tags/">Tags:</a></strong>&nbsp;{{ range $i, $v := .Params.tags -}}
+	{{- if $i -}}, {{ end -}}
+	<a href='{{ "/tags/" | relLangURL }}{{ . | urlize }}'>{{ $v }}</a>
+{{- end -}}
+</div>
+{{- end }}

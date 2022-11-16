@@ -1,0 +1,37 @@
+baseURL: 'https://amarakon.github.io/'
+languageCode: en-ca
+title: Amarakon’s Website
+theme: hugo-cream
+mainSections:
+  - /articles/
+  - /projects/
+summaryLength: 50
+paginate: 20
+params:
+  name: Amar Al-Zubaidi
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    style: tango
+  tableOfContents:
+    startLevel: 1
+    endLevel: 3
+security:
+  enableInlineShortcodes: true
+menu:
+  pages:
+    - name: About
+      url: /about/
+    - name: Programs
+      url: /programs/
+    - name: Projects
+      url: /projects/
+    - name: Articles
+      url: /articles/
+  links:
+    - name: GitHub
+      url: 'https://github.com/amarakon'
+    - name: YouTube
+      url: 'https://www.youtube.com/channel/UCbZc671K2NxNbr1Kfqz6Fmg'

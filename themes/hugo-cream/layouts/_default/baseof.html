@@ -49,27 +49,55 @@
 				<h1 style="border-bottom: none;">{{ .Site.Title }}</h1>
 				{{ else }}
 				<h1 style="border-bottom: none;" id="tag_{{ .Title }}">{{ block "title" . }}{{ end }}</h1>
-				<strong>Uploaded:</strong>
-				<time datetime="{{ .Date.Format "2006-01-02" }}">
-					{{ .Date.Format "January 2, 2006" }}
-				</time>
-				{{ if not (eq .Lastmod .Date) }}
-				⋅
-				<strong>Modified:</strong>
-				<time datetime="{{ .Lastmod.Format "2006-01-02" }}">
-					{{ .Lastmod.Format "January 2, 2006" }}
-				</time>
-				{{ end }}
+				{{ block "above" . }}{{ end }}
 				{{ end }}
 				<article>
+					<div id="nav">
+						{{ if .Site.Menus.pages }}
+						<div id="links">
+							<div style="display: inline-block;">
+								<h2>Pages:</h2>
+							</div>
+							{{ range $i, $v := .Site.Menus.pages -}}
+							{{- if $i -}}, {{ end -}}
+							<a href="{{ .URL }}">{{ .Name }}</a>
+							{{- end -}}
+							<br>
+							{{ end }}
+
+							{{ if .Site.Menus.links }}
+							<div style="display: inline-block;">
+								<h2>Links:</h2>
+							</div>
+							{{ range $i, $v := .Site.Menus.links -}}
+							{{- if $i -}}, {{ end -}}
+							<a href="{{ .URL }}">{{ .Name }}</a>
+							{{- end -}}
+							{{ end }}
+						</div>
+						<div id="toc">
+							{{ if .TableOfContents }}
+							<details>
+								<summary>
+									<div style="display: inline-block;">
+										<h2>Contents</h2>
+									</div>
+								</summary>
+								{{ .TableOfContents }}
+							</details>
+							{{ end }}
+						</div>
+					</div>
 					{{ block "main" . }}
 					{{ .Content }}
 					{{ end }}
 				</article>
+				{{ if .Site.Params.Name }}
 				{{ block "footer" . }}
 				<footer>
-					Copyright © 2022 Amar Al-Zubaidi. All Rights Reserved.
+					Copyright © 2022 {{ .Site.Params.Name }}. All Rights Reserved.
 				</footer>
+				{{ end }}
 				{{ end }}
 			</div>
 			<div id="rightbar">

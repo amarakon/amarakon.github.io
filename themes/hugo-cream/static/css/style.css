@@ -2,11 +2,11 @@ header h1 {
 	text-align: center;
 }
 
-header a, #rightbar a {
+header a, #rightbar a, #toc a {
 	font-family: unset;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5 {
 	margin: 0;
 }
 
@@ -60,7 +60,7 @@ footer {
 #main {
 	width: 80ch;
 	float: left;
-	margin-left: 1em !important;
+	margin-left: 1em;
 }
 
 #leftbar, #rightbar {
@@ -70,7 +70,7 @@ footer {
 }
 
 #leftbar {
-	margin-right: 1em;
+	margin-right: 1ch;
 	padding-right: 1em;
 	width: 1in;
 	text-align: right;
@@ -82,15 +82,15 @@ footer {
 	width: 3in;
 }
 
-#leftbar h2, #rightbar h2 {
-	margin-bottom: 0;
+#links, #toc {
+	display: none;
 }
 
-#leftbar ul, #leftbar ol, #rightbar ul, #rightbar ol {
+#leftbar ul, #leftbar ol, #rightbar ul, #rightbar ol, #toc ul, #toc ol {
 	list-style-type: none;
 }
 
-#rightbar li {
+#rightbar li, #toc li {
 	margin-top: 0.5em;
 }
 
@@ -98,24 +98,40 @@ footer {
 	padding-left: 0;
 }
 
-#rightbar ul, #rightbar ol {
+#rightbar ul, #rightbar ol, #toc ol {
 	padding-left: 0.5em;
 }
 
-@media screen and (max-width: calc(80ch + 4in + 5em)) {
+@media screen and (max-width: calc(81ch + 4in + 4em)) {
 	#leftbar {
 		display: none;
 	}
+	#nav {
+		margin-bottom: 1em;
+	}
+	#links {
+		display: unset;
+	}
 }
 
-@media screen and (max-width: calc(80ch + 3in + 3em + 1ch)) {
+@media screen and (max-width: calc(81ch + 3in + 3em)) {
 	#leftbar, #rightbar {
 		display: none;
+	}
+	#toc {
+		display: unset;
 	}
 	#main {
 		float: none;
 		width: unset;
 		max-width: 80ch;
 		margin: auto;
+	}
+}
+
+@media screen and (max-width: calc(80ch + 1em)) {
+	#main {
+		margin-left: 1em;
+		margin-right: 1em;
 	}
 }
