@@ -9,7 +9,7 @@
 	margin-left: -1em;
 	opacity: 0;
 	@media only screen and (hover: none) and (pointer: coarse) {
-		opacity: 1;
+		opacity: 1 !important;
 	}
 }
 
