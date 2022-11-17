@@ -8,8 +8,11 @@
 	position: absolute;
 	margin-left: -1em;
 	opacity: 0;
+	@media handheld {
+		opacity: 1;
+	}
 }
 
 .heading:hover .heading-icon {
-	opacity: 100;
+	opacity: 1;
 }
