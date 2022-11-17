@@ -8,11 +8,14 @@
 	position: absolute;
 	margin-left: -1em;
 	opacity: 0;
-	@media only screen and (hover: none) and (pointer: coarse) {
-		opacity: 1 !important;
-	}
 }
 
 .heading:hover .heading-icon {
 	opacity: 1;
+}
+
+@media only screen and (hover: none) and (pointer: coarse) {
+	.heading-icon {
+		opacity: 1;
+	}
 }
