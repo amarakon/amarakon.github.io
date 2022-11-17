@@ -1,3 +1,9 @@
+{{ $columnWidth := "80ch" }}
+{{ $navbarMargin := "1em" }}
+{{ $navbarPadding := $navbarMargin }}
+{{ $leftbarWidth := "1in" }}
+{{ $rightbarWidth := "3in" }}
+
 header h1 {
 	text-align: center;
 }
@@ -26,7 +32,7 @@ table {
 }
 
 td, th {
-	vertical-align:top;
+	vertical-align: top;
 }
 
 img {
@@ -58,9 +64,9 @@ footer {
 }
 
 #main {
-	width: 80ch;
+	width: {{ $columnWidth }};
 	float: left;
-	margin-left: 1em;
+	margin-left: {{ $navbarMargin }};
 }
 
 #leftbar, #rightbar {
@@ -71,15 +77,15 @@ footer {
 
 #leftbar {
 	margin-right: 1ch;
-	padding-right: 1em;
-	width: 1in;
+	padding-right: {{ $navbarPadding }};
+	width: {{ $leftbarWidth }};
 	text-align: right;
 }
 
 #rightbar {
-	margin-left: 1em;
-	padding-left: 1em;
-	width: 3in;
+	margin-left: {{ $navbarMargin }};
+	padding-left: {{ $navbarPadding }};
+	width: {{ $rightbarWidth }};
 }
 
 #links, #toc {
@@ -102,19 +108,19 @@ footer {
 	padding-left: 0.5em;
 }
 
-@media screen and (max-width: calc(81ch + 4in + 4em)) {
+@media screen and (max-width: calc({{ $columnWidth }} + {{ $leftbarWidth }} + {{ $rightbarWidth }} + {{ $navbarMargin }} * 2 + {{ $navbarPadding }} * 2 + 1ch)) {
 	#leftbar {
 		display: none;
 	}
 	#nav {
-		margin-bottom: 1em;
+		margin-bottom: {{ $navbarMargin }};
 	}
 	#links {
 		display: unset;
 	}
 }
 
-@media screen and (max-width: calc(81ch + 3in + 3em)) {
+@media screen and (max-width: calc({{ $columnWidth }} + {{ $rightbarWidth }} + {{ $navbarMargin }} * 2 + {{ $navbarPadding }} + 1ch)) {
 	#leftbar, #rightbar {
 		display: none;
 	}
@@ -124,14 +130,14 @@ footer {
 	#main {
 		float: none;
 		width: unset;
-		max-width: 80ch;
+		max-width: {{ $columnWidth }};
 		margin: auto;
 	}
 }
 
-@media screen and (max-width: calc(80ch + 1em)) {
+@media screen and (max-width: calc({{ $columnWidth }} + {{ $navbarMargin }})) {
 	#main {
-		margin-left: 1em;
-		margin-right: 1em;
+		margin-left: {{ $navbarMargin }};
+		margin-right: {{ $navbarMargin }};
 	}
 }

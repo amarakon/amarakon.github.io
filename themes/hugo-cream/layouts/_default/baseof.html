@@ -3,11 +3,17 @@
 	<head>
 		<title>{{ if not .IsHome }}{{ .Title | title }} | {{ end }}{{ .Site.Title }}</title>
 		<link rel="canonical" href="{{ .Site.BaseURL }}">
-		<link rel='stylesheet' type='text/css' href='/css/style.css'>
+		{{ $templateStyle := resources.Get "css/style.css" }}
+		{{ $style := $templateStyle | resources.ExecuteAsTemplate "css/style.css" . }}
+		<link rel="stylesheet" href="{{ $style.Permalink }}">
 		{{ if not .IsHome }}
-		<link rel='stylesheet' type='text/css' href='/css/table.css'>
+		{{ $templateTable := resources.Get "css/table.css" }}
+		{{ $table := $templateTable | resources.ExecuteAsTemplate "css/table.css" . }}
+		<link rel="stylesheet" href="{{ $table.Permalink }}">
 		{{ end }}
-		<link rel="stylesheet" type="text/css" href="/css/headings.css">
+		{{ $templateHeadings := resources.Get "css/headings.css" }}
+		{{ $headings := $templateHeadings | resources.ExecuteAsTemplate "css/headings.css" . }}
+		<link rel="stylesheet" href="{{ $headings.Permalink }}">
 		{{ with .Site.Params.favicon }}<link rel="icon" href="{{ . }}">
 		{{ end -}}
 		<meta name="description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ .Summary }}{{ end }}">
@@ -109,7 +115,11 @@
 		</div>
 	</body>
 	{{ if (findRE "<pre" .Content 1) }}
-	<script src="/clipboard.js"></script>
-	<link rel="stylesheet" href="/css/clipboard.css">
+	{{ $templateClipboardjs := resources.Get "js/clipboard.js" }}
+	{{ $clipboardjs := $templateClipboardjs | resources.ExecuteAsTemplate "js/clipboard.js" . }}
+	<script src="{{ $clipboardjs.Permalink }}"></script>
+	{{ $templateClipboard := resources.Get "css/clipboard.css" }}
+	{{ $clipboard := $templateClipboard | resources.ExecuteAsTemplate "css/clipboard.css" . }}
+	<link rel="stylesheet" href="{{ $clipboard.Permalink }}">
 	{{ end }}
 </html>

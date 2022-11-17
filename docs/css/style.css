@@ -1,3 +1,9 @@
+
+
+
+
+
+
 header h1 {
 	text-align: center;
 }
@@ -26,7 +32,7 @@ table {
 }
 
 td, th {
-	vertical-align:top;
+	vertical-align: top;
 }
 
 img {
@@ -102,7 +108,7 @@ footer {
 	padding-left: 0.5em;
 }
 
-@media screen and (max-width: calc(81ch + 4in + 4em)) {
+@media screen and (max-width: calc(80ch + 1in + 3in + 1em * 2 + 1em * 2 + 1ch)) {
 	#leftbar {
 		display: none;
 	}
@@ -114,7 +120,7 @@ footer {
 	}
 }
 
-@media screen and (max-width: calc(81ch + 3in + 3em)) {
+@media screen and (max-width: calc(80ch + 3in + 1em * 2 + 1em + 1ch)) {
 	#leftbar, #rightbar {
 		display: none;
 	}
