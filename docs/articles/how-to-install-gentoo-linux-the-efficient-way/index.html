@@ -4,6 +4,8 @@
 		<title>How to Install Gentoo Linux – The Efficient Way | Amarakon’s Website</title>
 		<link rel="canonical" href="https://amarakon.github.io/">
 		
+		<link rel="stylesheet" href="/css/nerd-fonts-generated.css">
+		
 		
 		<link rel="stylesheet" href="https://amarakon.github.io/css/style.css">
 		
@@ -137,7 +139,7 @@ You should be completely sure though to avoid messing your entire installation.
 Finally, please note that when text in code blocks are wrapped in <code>&lt;&gt;</code> symbols, that means that you need to replace the text.</p>
 <div class="heading">
 	<div class="heading-icon">
-		<a href="#prepare-the-disks"></a>
+		<a href="#prepare-the-disks"><span class="nf nf-mdi-link_variant"></span></a>
 	</div>
 	<h2 id="prepare-the-disks">Prepare the Disks</h2>
 </div>
@@ -171,7 +173,7 @@ If you’re using BIOS, all you have to do is format your one partition as ext4 
 </span></span><span style="display:flex;"><span>sudo mount /dev/&lt;NAME&gt;1 /mnt/gentoo/boot
 </span></span></code></pre></div><div class="heading">
 	<div class="heading-icon">
-		<a href="#installing-the-gentoo-installation-files"></a>
+		<a href="#installing-the-gentoo-installation-files"><span class="nf nf-mdi-link_variant"></span></a>
 	</div>
 	<h2 id="installing-the-gentoo-installation-files">Installing the Gentoo Installation Files</h2>
 </div>
@@ -220,7 +222,7 @@ Copy everything else I did.</p>
 </span></span><span style="display:flex;"><span><span style="color:#000">GENTOO_MIRRORS</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">&#34;https://mirror.csclub.uwaterloo.ca/gentoo-distfiles/ https://gentoo.osuosl.org/ https://mirrors.rit.edu/gentoo/ http://mirror.csclub.uwaterloo.ca/gentoo-distfiles/ http://gentoo.osuosl.org/ http://mirrors.rit.edu/gentoo/&#34;</span>
 </span></span></code></pre></div><div class="heading">
 	<div class="heading-icon">
-		<a href="#installing-the-base-system"></a>
+		<a href="#installing-the-base-system"><span class="nf nf-mdi-link_variant"></span></a>
 	</div>
 	<h2 id="installing-the-base-system">Installing the Base System</h2>
 </div>
@@ -268,7 +270,7 @@ I chose <code>America/Toronto</code>.</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sudo env-update <span style="color:#ce5c00;font-weight:bold">&amp;&amp;</span> <span style="color:#204a87">source</span> /etc/profile <span style="color:#ce5c00;font-weight:bold">&amp;&amp;</span> <span style="color:#204a87">export</span> <span style="color:#000">PS1</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">&#34;(chroot) </span><span style="color:#4e9a06">${</span><span style="color:#000">PS1</span><span style="color:#4e9a06">}</span><span style="color:#4e9a06">&#34;</span>
 </span></span></code></pre></div><div class="heading">
 	<div class="heading-icon">
-		<a href="#install-the-kernel"></a>
+		<a href="#install-the-kernel"><span class="nf nf-mdi-link_variant"></span></a>
 	</div>
 	<h2 id="install-the-kernel">Install the Kernel</h2>
 </div>
@@ -278,7 +280,7 @@ If you need Linux firmware (you most likely do), then install the <code>linux-fi
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sudo emerge gentoo-kernel linux-firmware
 </span></span></code></pre></div><div class="heading">
 	<div class="heading-icon">
-		<a href="#configure-the-system"></a>
+		<a href="#configure-the-system"><span class="nf nf-mdi-link_variant"></span></a>
 	</div>
 	<h2 id="configure-the-system">Configure the System</h2>
 </div>
@@ -307,7 +309,7 @@ If you are using BIOS, arrange your fstab to something like this:</p>
 </span></span></code></pre></div><p>Set the root password by simply running <code>sudo passwd</code>.</p>
 <div class="heading">
 	<div class="heading-icon">
-		<a href="#configure-the-bootloader"></a>
+		<a href="#configure-the-bootloader"><span class="nf nf-mdi-link_variant"></span></a>
 	</div>
 	<h2 id="configure-the-bootloader">Configure the Bootloader</h2>
 </div>
@@ -322,7 +324,7 @@ When using BIOS:</p>
 </span></span><span style="display:flex;"><span>sudo grub-mkconfig -o /boot/grub/grub.cfg
 </span></span></code></pre></div><div class="heading">
 	<div class="heading-icon">
-		<a href="#reboot-the-system"></a>
+		<a href="#reboot-the-system"><span class="nf nf-mdi-link_variant"></span></a>
 	</div>
 	<h3 id="reboot-the-system">Reboot the system</h3>
 </div>
@@ -333,7 +335,7 @@ When using BIOS:</p>
 </span></span><span style="display:flex;"><span>sudo reboot
 </span></span></code></pre></div><div class="heading">
 	<div class="heading-icon">
-		<a href="#finalize-the-installation"></a>
+		<a href="#finalize-the-installation"><span class="nf nf-mdi-link_variant"></span></a>
 	</div>
 	<h2 id="finalize-the-installation">Finalize the Installation</h2>
 </div>
@@ -349,7 +351,7 @@ When using BIOS:</p>
 But do not get too excited, because we are not technically done yet.</p>
 <div class="heading">
 	<div class="heading-icon">
-		<a href="#graphical-environment"></a>
+		<a href="#graphical-environment"><span class="nf nf-mdi-link_variant"></span></a>
 	</div>
 	<h3 id="graphical-environment">Graphical Environment</h3>
 </div>
@@ -359,7 +361,7 @@ But do not get too excited, because we are not technically done yet.</p>
 </span></span><span style="display:flex;"><span>startx
 </span></span></code></pre></div><div class="heading">
 	<div class="heading-icon">
-		<a href="#references"></a>
+		<a href="#references"><span class="nf nf-mdi-link_variant"></span></a>
 	</div>
 	<h2 id="references">References</h2>
 </div>

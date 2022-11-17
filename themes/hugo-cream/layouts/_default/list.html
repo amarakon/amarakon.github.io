@@ -5,12 +5,6 @@
 {{ .Content }}
 {{ if .IsHome }}
 <h2>Main pages</h2>
-{{ range $i, $v := .Site.Params.mainSections -}}
-{{ $v }}
-<!--<details>-->
-<!--	<summary><big><b>{{ $v | humanize }}</b></big></summary>-->
-<!--</details>-->
-{{- end -}}
 <!--<details>-->
 <!--	<summary><big><b>Articles</b></big></summary>-->
 <!--	{{- range (where .Site.RegularPages "Type" "in" .Site.Params.mainSections | first 5) }}-->

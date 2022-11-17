@@ -1,6 +1,6 @@
 <div class="heading">
 	<div class="heading-icon">
-		<a href="#{{ .Anchor | safeURL }}"></a>
+		<a href="#{{ .Anchor | safeURL }}"><span class="nf nf-mdi-link_variant"></span></a>
 	</div>
 	<h{{ add .Level 1 }} id="{{ .Anchor | safeURL }}">{{ .Text | safeHTML }}</h{{ add .Level 1 }}>
 </div>

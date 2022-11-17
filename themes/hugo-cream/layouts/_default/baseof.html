@@ -3,6 +3,8 @@
 	<head>
 		<title>{{ if not .IsHome }}{{ .Title | title }} | {{ end }}{{ .Site.Title }}</title>
 		<link rel="canonical" href="{{ .Site.BaseURL }}">
+		<!--<link rel="stylesheet" href="https://raw.githubusercontent.com/ryanoasis/nerd-fonts/master/css/nerd-fonts-generated.css">-->
+		<link rel="stylesheet" href="/css/nerd-fonts-generated.css">
 		{{ $templateStyle := resources.Get "css/style.css" }}
 		{{ $style := $templateStyle | resources.ExecuteAsTemplate "css/style.css" . }}
 		<link rel="stylesheet" href="{{ $style.Permalink }}">

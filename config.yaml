@@ -2,12 +2,13 @@ baseURL: 'https://amarakon.github.io/'
 languageCode: en-ca
 title: Amarakon’s Website
 theme: hugo-cream
-mainSections:
-  - /articles/
-  - /projects/
+#mainSections:
+#  - name: /articles/
+#  - name: /projects/
 summaryLength: 50
 paginate: 20
 params:
+  mainPages: [ articles, projects ]
   name: Amar Al-Zubaidi
 markup:
   goldmark:
