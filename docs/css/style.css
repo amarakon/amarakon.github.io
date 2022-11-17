@@ -108,7 +108,7 @@ footer {
 	padding-left: 0.5em;
 }
 
-@media screen and (max-width: calc(80ch + 1in + 3in + 1em * 2 + 1em * 2 + 1ch)) {
+@media only screen and (max-width: calc(80ch + 1in + 3in + 1em * 2 + 1em * 2 + 1ch)) {
 	#leftbar {
 		display: none;
 	}
@@ -120,7 +120,7 @@ footer {
 	}
 }
 
-@media screen and (max-width: calc(80ch + 3in + 1em * 2 + 1em + 1ch)) {
+@media only screen and (max-width: calc(80ch + 3in + 1em * 2 + 1em + 1ch)) {
 	#leftbar, #rightbar {
 		display: none;
 	}
@@ -135,7 +135,7 @@ footer {
 	}
 }
 
-@media screen and (max-width: calc(80ch + 1em)) {
+@media only screen and (max-width: calc(80ch + 1em)) {
 	#main {
 		margin-left: 1em;
 		margin-right: 1em;

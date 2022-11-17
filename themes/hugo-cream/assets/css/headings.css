@@ -8,7 +8,7 @@
 	position: absolute;
 	margin-left: -1em;
 	opacity: 0;
-	@media handheld {
+	@media only screen and (hover: none) and (pointer: coarse) {
 		opacity: 1;
 	}
 }

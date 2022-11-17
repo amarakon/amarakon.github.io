@@ -108,7 +108,7 @@ footer {
 	padding-left: 0.5em;
 }
 
-@media screen and (max-width: calc({{ $columnWidth }} + {{ $leftbarWidth }} + {{ $rightbarWidth }} + {{ $navbarMargin }} * 2 + {{ $navbarPadding }} * 2 + 1ch)) {
+@media only screen and (max-width: calc({{ $columnWidth }} + {{ $leftbarWidth }} + {{ $rightbarWidth }} + {{ $navbarMargin }} * 2 + {{ $navbarPadding }} * 2 + 1ch)) {
 	#leftbar {
 		display: none;
 	}
@@ -120,7 +120,7 @@ footer {
 	}
 }
 
-@media screen and (max-width: calc({{ $columnWidth }} + {{ $rightbarWidth }} + {{ $navbarMargin }} * 2 + {{ $navbarPadding }} + 1ch)) {
+@media only screen and (max-width: calc({{ $columnWidth }} + {{ $rightbarWidth }} + {{ $navbarMargin }} * 2 + {{ $navbarPadding }} + 1ch)) {
 	#leftbar, #rightbar {
 		display: none;
 	}
@@ -135,7 +135,7 @@ footer {
 	}
 }
 
-@media screen and (max-width: calc({{ $columnWidth }} + {{ $navbarMargin }})) {
+@media only screen and (max-width: calc({{ $columnWidth }} + {{ $navbarMargin }})) {
 	#main {
 		margin-left: {{ $navbarMargin }};
 		margin-right: {{ $navbarMargin }};
