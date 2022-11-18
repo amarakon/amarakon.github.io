@@ -3,7 +3,6 @@
 	<head>
 		<title>{{ if not .IsHome }}{{ .Title | title }} | {{ end }}{{ .Site.Title }}</title>
 		<link rel="canonical" href="{{ .Site.BaseURL }}">
-		<!--<link rel="stylesheet" href="https://raw.githubusercontent.com/ryanoasis/nerd-fonts/master/css/nerd-fonts-generated.css">-->
 		<link rel="stylesheet" href="/css/nerd-fonts-generated.css">
 		{{ $templateStyle := resources.Get "css/style.css" }}
 		{{ $style := $templateStyle | resources.ExecuteAsTemplate "css/style.css" . }}
@@ -53,6 +52,7 @@
 			</div>
 			{{ end }}
 			<div id="main">
+				{{ block "nav" . }} {{ end }}
 				{{ if .IsHome }}
 				<h1 style="border-bottom: none;">{{ .Site.Title }}</h1>
 				{{ else }}
@@ -60,43 +60,19 @@
 				{{ block "above" . }}{{ end }}
 				{{ end }}
 				<article>
-					<div id="nav">
-						{{ if .Site.Menus.pages }}
-						<div id="links">
-							<div style="display: inline-block;">
-								<h2>Pages:</h2>
-							</div>
-							{{ range $i, $v := .Site.Menus.pages -}}
-							{{- if $i -}}, {{ end -}}
-							<a href="{{ .URL }}">{{ .Name }}</a>
-							{{- end -}}
-							<br>
-							{{ end }}
-
-							{{ if .Site.Menus.links }}
-							<div style="display: inline-block;">
-								<h2>Links:</h2>
-							</div>
-							{{ range $i, $v := .Site.Menus.links -}}
-							{{- if $i -}}, {{ end -}}
-							<a href="{{ .URL }}">{{ .Name }}</a>
-							{{- end -}}
-							{{ end }}
-						</div>
-						<div id="toc">
-							{{ if .TableOfContents }}
-							<details>
-								<summary>
-									<div style="display: inline-block;">
-										<h2>Contents</h2>
-									</div>
-								</summary>
-								{{ .TableOfContents }}
-							</details>
-							{{ end }}
-						</div>
-					</div>
 					{{ block "main" . }}
+					<div id="toc">
+						{{ if .TableOfContents }}
+						<details>
+							<summary>
+								<div style="display: inline-block;">
+									<h2>Contents</h2>
+								</div>
+							</summary>
+							{{ .TableOfContents }}
+						</details>
+						{{ end }}
+					</div>
 					{{ .Content }}
 					{{ end }}
 				</article>

@@ -3,6 +3,8 @@
 {{ $navbarPadding := $navbarMargin }}
 {{ $leftbarWidth := "1in" }}
 {{ $rightbarWidth := "3in" }}
+{{ $bgColour := "#E1D2AF" }}
+{{ $altBGColour := "#D7C8A5" }}
 
 header h1 {
 	text-align: center;
@@ -17,8 +19,9 @@ h1, h2, h3, h4, h5 {
 }
 
 body {
+	margin: 0;
 	font-family: serif;
-	background-color: #E1D2AF;
+	background-color: {{ $bgColour }};
 }
 
 a {
@@ -70,7 +73,7 @@ footer {
 }
 
 #leftbar, #rightbar {
-	top: 0;
+	top: 1em;
 	position: sticky;
 	float: left;
 }
@@ -86,6 +89,13 @@ footer {
 	margin-left: {{ $navbarMargin }};
 	padding-left: {{ $navbarPadding }};
 	width: {{ $rightbarWidth }};
+}
+
+#nav {
+	top: 0;
+	position: sticky;
+	background-color: {{ $bgColour }};
+	z-index: 1;
 }
 
 #links, #toc {
@@ -113,7 +123,8 @@ footer {
 		display: none;
 	}
 	#nav {
-		margin-bottom: {{ $navbarMargin }};
+		border-bottom: 2px solid;
+		padding-bottom: 1ch;
 	}
 	#links {
 		display: unset;
