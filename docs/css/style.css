@@ -4,6 +4,8 @@
 
 
 
+
+
 header h1 {
 	text-align: center;
 }
@@ -17,6 +19,7 @@ h1, h2, h3, h4, h5 {
 }
 
 body {
+	margin: 0;
 	font-family: serif;
 	background-color: #E1D2AF;
 }
@@ -70,7 +73,7 @@ footer {
 }
 
 #leftbar, #rightbar {
-	top: 0;
+	top: 1em;
 	position: sticky;
 	float: left;
 }
@@ -86,6 +89,13 @@ footer {
 	margin-left: 1em;
 	padding-left: 1em;
 	width: 3in;
+}
+
+#nav {
+	top: 0;
+	position: sticky;
+	background-color: #E1D2AF;
+	z-index: 1;
 }
 
 #links, #toc {
@@ -113,7 +123,8 @@ footer {
 		display: none;
 	}
 	#nav {
-		margin-bottom: 1em;
+		border-bottom: 2px solid;
+		padding-bottom: 1ch;
 	}
 	#links {
 		display: unset;
