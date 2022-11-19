@@ -52,7 +52,30 @@
 			</div>
 			{{ end }}
 			<div id="main">
-				{{ block "nav" . }} {{ end }}
+				<div id="nav">
+					<div id="links">
+						{{ if .Site.Menus.pages }}
+						<div style="display: inline-block;">
+							<h2>Pages:</h2>
+						</div>
+						{{ range $i, $v := .Site.Menus.pages -}}
+						{{- if $i -}}, {{ end -}}
+						<a href="{{ .URL }}">{{ .Name }}</a>
+						{{- end -}}
+						<br>
+						{{ end }}
+
+						{{ if .Site.Menus.links }}
+						<div style="display: inline-block;">
+							<h2>Links:</h2>
+						</div>
+						{{ range $i, $v := .Site.Menus.links -}}
+						{{- if $i -}}, {{ end -}}
+						<a href="{{ .URL }}">{{ .Name }}</a>
+						{{- end -}}
+						{{ end }}
+					</div>
+				</div>
 				{{ if .IsHome }}
 				<h1 style="border-bottom: none;">{{ .Site.Title }}</h1>
 				{{ else }}
