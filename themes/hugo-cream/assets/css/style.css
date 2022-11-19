@@ -4,7 +4,6 @@
 {{ $leftbarWidth := "1in" }}
 {{ $rightbarWidth := "3in" }}
 {{ $bgColour := "#E1D2AF" }}
-{{ $altBGColour := "#D7C8A5" }}
 
 header h1 {
 	text-align: center;
@@ -92,10 +91,7 @@ footer {
 }
 
 #nav {
-	top: 0;
-	position: sticky;
 	background-color: {{ $bgColour }};
-	z-index: 1;
 }
 
 #links, #toc {

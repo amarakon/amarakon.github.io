@@ -5,7 +5,6 @@
 
 
 
-
 header h1 {
 	text-align: center;
 }
@@ -92,10 +91,7 @@ footer {
 }
 
 #nav {
-	top: 0;
-	position: sticky;
 	background-color: #E1D2AF;
-	z-index: 1;
 }
 
 #links, #toc {
