@@ -9,7 +9,6 @@ summaryLength: 50
 paginate: 20
 params:
   mainPages: [ articles, projects ]
-  name: Amar Al-Zubaidi
 markup:
   goldmark:
     renderer:

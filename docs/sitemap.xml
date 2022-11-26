@@ -3,11 +3,17 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://amarakon.github.io/</loc>
-    <lastmod>2022-11-14T00:00:00+00:00</lastmod>
+    <lastmod>2022-11-26T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url><url>
     <loc>https://amarakon.github.io/about/</loc>
-    <lastmod>2022-11-07T00:00:00+00:00</lastmod>
+    <lastmod>2022-11-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://amarakon.github.io/tags/personal/</loc>
+    <lastmod>2022-11-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://amarakon.github.io/tags/</loc>
+    <lastmod>2022-11-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://amarakon.github.io/projects/amarlay/</loc>
     <lastmod>2022-11-07T00:00:00+00:00</lastmod>
@@ -30,17 +36,11 @@
     <loc>https://amarakon.github.io/projects/magickshot/</loc>
     <lastmod>2022-11-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://amarakon.github.io/tags/personal/</loc>
-    <lastmod>2022-11-07T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://amarakon.github.io/projects/</loc>
     <lastmod>2022-11-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://amarakon.github.io/programs/</loc>
     <lastmod>2022-11-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://amarakon.github.io/tags/</loc>
-    <lastmod>2022-11-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://amarakon.github.io/projects/vim-sensible-autocomp/</loc>
     <lastmod>2022-11-07T00:00:00+00:00</lastmod>

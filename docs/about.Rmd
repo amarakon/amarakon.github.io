@@ -4,8 +4,6 @@ date: "`r format(Sys.time(), '%Y-%m-%d')`"
 tags: ["personal"]
 ---
 
-![](/images/amar-al-zubaidi.jpg)
-
 I am interested in many things:
 
 - freedom

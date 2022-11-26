@@ -1,10 +1,8 @@
 ---
 title: About
-lastmod: 2022-11-07
+date: "2022-11-26"
 tags: ["personal"]
 ---
-
-![](/images/amar-al-zubaidi.jpg)
 
 I am interested in many things:
 
